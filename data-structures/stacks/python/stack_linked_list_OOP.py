@@ -52,7 +52,7 @@ class Stack():
         
         # Check if the stack is NOT empty
         if not self.is_empty():
-             # Point to the next element in the list
+             # Adjust the pointer to the next node
             new_node.set_next(self.top)
 
         # Set top to point to the new node
@@ -79,7 +79,7 @@ class Stack():
         
         peeked_data = None
         
-        if self.top == None:
+        if self.is_empty():
             print("\nStack is empty - nothing to peek")
         else:
              # Get data from the top of the stack

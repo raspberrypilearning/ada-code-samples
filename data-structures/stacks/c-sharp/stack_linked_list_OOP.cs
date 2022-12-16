@@ -76,7 +76,7 @@ namespace IsaacCodeSamples
 
             // Check if the stack is NOT empty
             if (!IsEmpty()) {
-                // Point to the next element in the list
+                // Adjust the pointer to the next node
                 newNode.SetNext(top);
             }
             
