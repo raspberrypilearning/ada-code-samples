@@ -1,5 +1,5 @@
-# isaac-code-samples
+# code-samples
 
-Code samples to support learning material on the [Isaac Computer Science](https://isaaccomputerscience.org/) website.
+These samples have been written to complement teaching and learning material produced by the Computer Science Education team at the Raspberry Pi Foundation.
 
 All usage is [licensed under CC BY-SA 4](https://github.com/isaaccomputerscience/isaac-code-samples/blob/main/LICENCE.md).
