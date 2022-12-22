@@ -8,7 +8,7 @@
 ' 4. Run the program
 
 
-Module LinearSearch
+Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
