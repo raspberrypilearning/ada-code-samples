@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/css/sustain.css">
+        <title>Pledges</title>
+    </head>
+
+    <body>
+	    <h1>Make a pledge</h1>
+
+        <p>Make your pledge to help meet the global sustainability goals.</p>
+        <form action="" method="POST">
+            <table>
+              <tr>
+                <td>Name to display:</td>
+                <td><input type="text" name="screen_name" /></td>
+              </tr>
+              <tr>
+                <td>Country:</td>
+                <td><input type="text" name="country" /></td>
+              </tr>
+              <tr>
+                <td>Pledge:</td>
+                <td><textarea name="pledge" placeholder="Enter your pledge" rows="5" cols="30">
+                </textarea></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Make pledge"></td>
+              </tr>
+            </table>
+        </form>
+
+
+        <table class="styled-table">
+          <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Pledge</th>
+          </tr>
+
+        {% for r in pledge_data %}
+
+          <tr>
+            <td>{{r.screen_name}}</td>
+            <td>{{r.country}}</td>
+            <td>{{r.pledge}}</td>
+          </tr>
+
+        {%endfor%}
+        </table>
+
+    </body>
+</html>

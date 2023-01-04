@@ -1,0 +1,20 @@
+body {
+	background-color: #e8f4ea;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.styled-table td, th {
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
