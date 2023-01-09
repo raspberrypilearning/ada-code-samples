@@ -46,15 +46,15 @@ namespace IsaacCodeSamples
             int[] rightHalf; // Stores items in the right half of the items array
             int[] mergedItems = new int[items.Length]; // Stores the merged items in each recursive call
 
-            Console.Write("Splitting ");
-            Console.WriteLine("[{0}]", string.Join(", ", items));
-
             // Base case for recursion:
             // The recursion will stop when the array has been divided into single items
             if (items.Length <= 1)
                 return items;
             else
-            {
+                {
+                 Console.Write("Splitting ");
+                 Console.WriteLine("[{0}]", string.Join(", ", items));
+            
                 int midpoint = (items.Length - 1) / 2; // Calculate the midpoint index
                 int leftSize = midpoint + 1; // Size of the left half array
                 int rightSize; // Size of the right half array
