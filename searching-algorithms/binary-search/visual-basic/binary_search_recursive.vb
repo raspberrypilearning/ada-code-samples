@@ -12,7 +12,7 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
-        Dim testItems As Integer() = New Integer() {10, 11, 13, 15, 18, 25, 29}  ' Test data
+        Dim testItems As Integer() = {10, 11, 13, 15, 18, 25, 29}  ' Test data
         Dim firstIndex As Integer = 0
         Dim lastIndex As Integer = testItems.Length - 1
         Console.WriteLine("### Binary search (recursive) ###")
