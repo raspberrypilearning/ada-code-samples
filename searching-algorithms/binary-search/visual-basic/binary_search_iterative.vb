@@ -12,7 +12,7 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
-        Dim testItems As Integer() = New Integer() {10, 11, 13, 15, 18, 25, 29}
+        Dim testItems As Integer() = {10, 11, 13, 15, 18, 25, 29}
         Console.WriteLine("### Binary search (iterative) ###")
         Console.WriteLine("[{0}]", String.Join(", ", testItems))
         Dim testData As Integer = 15  'Test data - item in list
