@@ -22,7 +22,7 @@ Module Program
 
         For passNum As Integer = 1 To numItems - 1
 
-            For index As Integer = 0 To numItems - 1 - 1
+            For index As Integer = 0 To numItems - 2
 
                 If items(index) > items(index + 1) Then
                     Dim temp As Integer = items(index)
