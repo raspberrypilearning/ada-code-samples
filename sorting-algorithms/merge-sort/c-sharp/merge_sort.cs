@@ -26,12 +26,12 @@ namespace IsaacCodeSamples
             //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
             //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
             //int[] testItems = new int[] {2, 3, 7, 21, 35, 43, 50, 64, 80}; // Sorted
-            int[] testItems = new int[] {43, 21, 2, 50, 3, 80, 35, 7, 64}; // Random
+            int[] testItems = new int[] { 43, 21, 2, 50, 3, 80, 35, 7, 64 }; // Random
 
             Console.WriteLine("### Merge sort (recursive) ###");
             Console.Write("Original items ");
             Console.WriteLine("[{0}]", string.Join(", ", testItems));
-            
+
             int[] sortedItems = MergeSort(testItems); // Assign the returned sorted array
 
             Console.Write("Sorted items ");
@@ -53,7 +53,8 @@ namespace IsaacCodeSamples
             // The recursion will stop when the array has been divided into single items
             if (items.Length <= 1)
                 return items;
-            else {
+            else
+            {
                 int midpoint = (items.Length - 1) / 2; // Calculate the midpoint index
                 int leftSize = midpoint + 1; // Size of the left half array
                 int rightSize; // Size of the right half array
@@ -73,7 +74,8 @@ namespace IsaacCodeSamples
 
                 // Populate right half array with the items after the midpoint
                 int indexItems = midpoint + 1;
-                for (int i = 0; i < rightSize; i++) {
+                for (int i = 0; i < rightSize; i++)
+                {
                     rightHalf[i] = items[indexItems];
                     indexItems++;
                 }
@@ -81,38 +83,41 @@ namespace IsaacCodeSamples
                 leftHalf = MergeSort(leftHalf); // Recursive call on left half
                 rightHalf = MergeSort(rightHalf); // Recursive call on right half
 
-                Console.Write("Items before merge "); // Testing
-                Console.WriteLine("[{0}]", string.Join(", ", items));
+                Console.WriteLine("Merging: "); // Testing
+                Console.WriteLine($"[{string.Join(", ", leftHalf)}] and [{string.Join(", ", rightHalf)}]");
 
                 mergedItems = Merge(leftHalf, rightHalf); // Call function to merge both halves
 
-                Console.Write("Merged items "); // Testing
+                Console.WriteLine("Merged items:"); // Testing
                 Console.WriteLine("[{0}]", string.Join(", ", mergedItems));
                 Console.WriteLine();
 
                 return mergedItems;
             }
         }
-  
+
         // Merges the items in left and right into a new ordered list called merged
         public static int[] Merge(int[] left, int[] right)
         {
             int mergedSize = left.Length + right.Length; // Size of the new array
             int[] merged = new int[mergedSize]; // New array for merging the items
-            
+
             int indexLeft = 0; // left current position
             int indexRight = 0; // right current position
             int indexMerged = 0; // merged current position
 
             // While there are still items to merge
-            while (indexLeft < left.Length && indexRight < right.Length) {
+            while (indexLeft < left.Length && indexRight < right.Length)
+            {
                 // Find the lowest of the two items being compared and add it to the new array 
-                if (left[indexLeft] < right[indexRight]) {
+                if (left[indexLeft] < right[indexRight])
+                {
                     merged[indexMerged] = left[indexLeft];
                     indexLeft++;
                     indexMerged++;
                 }
-                else {
+                else
+                {
                     merged[indexMerged] = right[indexRight];
                     indexRight++;
                     indexMerged++;
@@ -120,14 +125,16 @@ namespace IsaacCodeSamples
             }
 
             // Add to the merged array any remaining data from left array
-            while (indexLeft < left.Length) {
+            while (indexLeft < left.Length)
+            {
                 merged[indexMerged] = left[indexLeft];
                 indexLeft++;
                 indexMerged++;
             }
 
             // Add to the merged array any remaining data from right array
-            while (indexRight < right.Length) {
+            while (indexRight < right.Length)
+            {
                 merged[indexMerged] = right[indexRight];
                 indexRight++;
                 indexMerged++;
@@ -136,6 +143,6 @@ namespace IsaacCodeSamples
             return merged;
         }
 
-        
+
     }
 }
