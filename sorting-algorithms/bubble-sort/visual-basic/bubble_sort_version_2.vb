@@ -11,9 +11,13 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
-        Dim testItems As Integer() = {43, 21, 2, 50, 3, 80, 35, 7, 64}
+        Dim testItems As Integer() = {43, 21, 2, 50, 3, 80, 35, 7, 64} 'Array of test data
+        'Dim testItems As Integer() = {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
+        'Dim testItems As Integer() = {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
+        'Dim testItems As Integer() = {2, 3, 7, 21, 35, 43, 50, 64, 80}; // Sorted
+        'Dim testItems As Integer() = {43, 21, 2, 50, 3, 80, 35, 7, 64}; // Random
         Console.WriteLine("### Bubble sort version 2 (while and for loops) ###")
-        Console.WriteLine("[{0}]", String.Join(", ", testItems))  'Display array of test data
+        Console.WriteLine("[{0}]", String.Join(", ", testItems)) 'Display array of test data
         BubbleSortVersion2(testItems)
     End Sub
 
@@ -24,7 +28,7 @@ Module Program
         While swapped = True
             swapped = False
 
-            For index As Integer = 0 To numItems - 2
+            For index As Integer = 0 To numItems - 1 - 1
 
                 If items(index) > items(index + 1) Then
                     Dim temp As Integer = items(index)
@@ -37,5 +41,6 @@ Module Program
             Console.WriteLine("[{0}]", String.Join(", ", items))
         End While
     End Sub
+
 
 End Module
