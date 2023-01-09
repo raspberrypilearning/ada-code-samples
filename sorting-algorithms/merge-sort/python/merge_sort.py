@@ -20,7 +20,7 @@ def merge_sort(items):
         left_half = merge_sort(left_half) # Recursive call on left half
         right_half = merge_sort(right_half) # Recursive call on right half
         
-        print(f"Items before merge {items}") # Testing
+        print(f"Merging {left_half} and {right_half}")
 
         # Call procedure to merge both halves
         merged_items = merge(left_half, right_half) # Call function to merge both halves
@@ -73,7 +73,7 @@ def main():
 
     sorted_items = merge_sort(test_items) # Assign the returned sorted array
 
-    print(f"Sorted items {sorted_items}")
+    print(f"Final list of sorted items {sorted_items}")
 
 
 # This code will run if this file is executed directly
