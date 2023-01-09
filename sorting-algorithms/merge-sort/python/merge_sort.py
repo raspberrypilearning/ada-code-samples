@@ -6,13 +6,13 @@
 
 def merge_sort(items):
     """"A recursive merge sort algorithm"""
-    print("Splitting", items)
-
+    
     # Base case for recursion:
     # The recursion will stop when the list has been divided into single items
     if len(items) <= 1:
         return items
     else:
+        print("Splitting", items)
         midpoint = (len(items)-1) // 2 # Calculate the midpoint index
         left_half = items[0:midpoint+1] # Create left half list
         right_half = items[midpoint+1:len(items)] # Create right half list
