@@ -23,9 +23,14 @@ namespace IsaacCodeSamples
         
         // The Main method is the entry point for all C# programs
         public static void Main() {
-            string testWord = "kayak";
+            string testWord = "kayak"; // Test data
             bool isPalindrome = Palindrome(testWord);
             string result = $"{testWord}: {isPalindrome}";
+            Console.WriteLine(result);
+            
+            testWord = "apple"; // Test data
+            isPalindrome = Palindrome(testWord);
+            result = $"{testWord}: {isPalindrome}";
             Console.WriteLine(result);
         }
         
