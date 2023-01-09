@@ -67,14 +67,15 @@ def get_test_data():
 
 def main():
     """Execute all three versions of the bubble sort algorithms"""
+    data_to_sort = get_test_data()
     print("\n### Bubble sort version 1 (for loops) ###")
-    bubble_sort_version_1(get_test_data())
+    bubble_sort_version_1(data_to_sort)
     
     print("\n### Bubble sort version 2 (while and for loops) ###")
-    bubble_sort_version_2(get_test_data())
+    bubble_sort_version_2(data_to_sort)
     
     print("\n### Bubble sort version 3 (while and for loops improved) ###")
-    bubble_sort_version_3(get_test_data())
+    bubble_sort_version_3(data_to_sort)
 
 
 # This code will run if this file is executed directly
