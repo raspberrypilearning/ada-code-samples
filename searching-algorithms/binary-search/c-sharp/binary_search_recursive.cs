@@ -41,7 +41,9 @@ namespace IsaacCodeSamples
                 Console.WriteLine($"The item was found at index {index}");
             }
         }
+        
 
+        // Performs a binary search recursively
         public static int BinarySearchRecursive(int[] items, int searchItem, int first, int last)
         {
             // Base case for recursion: The recursion will stop when the
@@ -59,7 +61,7 @@ namespace IsaacCodeSamples
                     // If the item has been found, return the midpoint position
                     return midpoint;
                 }
-                // Check if the item at the midpoint is less than the search item
+                // Check if the search item is greater than the item at the midpoint is less than the 
                 else if (searchItem > items[midpoint]) {
                     // Focus on the items after the midpoint
                     first = midpoint + 1;
