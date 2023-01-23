@@ -26,7 +26,7 @@ namespace IsaacCodeSamples
             string userInput = Console.ReadLine();
             int week = Int32.Parse(userInput);
 
-            if (week > 0 && week <= 52) {
+            if (week >= 1 && week <= 52) {
                 Console.WriteLine($"You have chosen week {week}");
             }
             else {
