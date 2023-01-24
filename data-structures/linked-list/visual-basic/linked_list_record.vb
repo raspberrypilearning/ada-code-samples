@@ -14,7 +14,7 @@ Class NodeRecord
     Public nextItem As NodeRecord
 End Class
 
-' A class for a linked list
+' A class to represent a linked list
 Class LinkedList
     Public head As NodeRecord
 End Class
@@ -24,21 +24,33 @@ Module Program
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
         Console.WriteLine("### Linked list (Record) ###")
+        
+        ' Instantiate a new linked list
         Dim myList As LinkedList = New LinkedList()
+        
+        ' Insert test data and display list
         Console.WriteLine(vbLf & "Insert test data into the linked list in order:")
         InsertTestData(myList)
         Traverse(myList)
+        
+        'Insert a node at the front of the list
         Console.WriteLine(vbLf & "Insert a node to the front of the list:")
         InsertAtFront(myList, "Albus")
         Traverse(myList)
+        
+        'Insert a node at the end of the list
         Console.WriteLine(vbLf & "Insert a node to the end of the list:")
         InsertInOrder(myList, "Zeb")
         Traverse(myList)
+        
+        'Delete a node from the list
         Console.WriteLine(vbLf & "Delete a node from the list:")
         Delete(myList, "Sabrina")
         Traverse(myList)
     End Sub
 
+    
+    'Insert a node at the front of a linked list
     Sub InsertAtFront(ByVal myList As LinkedList, ByVal data As String)
         Dim newNode As NodeRecord = New NodeRecord()
         newNode.data = data
@@ -51,6 +63,7 @@ Module Program
         End If
     End Sub
 
+    'Insert a node at the end of a linked list
     Sub InsertInOrder(ByVal myList As LinkedList, ByVal data As String)
         Dim newNode As NodeRecord = New NodeRecord()
         newNode.data = data
@@ -71,7 +84,9 @@ Module Program
             current.nextItem = newNode
         End If
     End Sub
-
+    
+    
+    ' Display linked list
     Sub Traverse(ByVal myList As LinkedList)
         Dim current As NodeRecord = myList.head
 
@@ -80,7 +95,9 @@ Module Program
             current = current.nextItem
         End While
     End Sub
-
+    
+    
+    ' Delete item from a linked list
     Sub Delete(ByVal myList As LinkedList, ByVal data As String)
         Dim current As NodeRecord = myList.head
 
@@ -96,6 +113,8 @@ Module Program
         End If
     End Sub
 
+    
+    ' Create a set of test data
     Sub InsertTestData(ByVal myList As LinkedList)
         InsertInOrder(myList, "Julie")
         InsertInOrder(myList, "Rey")
