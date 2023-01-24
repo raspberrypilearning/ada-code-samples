@@ -11,9 +11,9 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
-        Dim BaseNumber As Double = 9
-        Dim SquareRoot As Double = Math.Sqrt(9)
-        Console.WriteLine($"The square root of {BaseNumber} is {SquareRoot}")
+        Dim baseNumber As Double = 9
+        Dim squareRoot As Double = Math.Sqrt(9)
+        Console.WriteLine($"The square root of {baseNumber} is {squareRoot}")
     End Sub
 
 
