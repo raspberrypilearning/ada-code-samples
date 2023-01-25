@@ -17,8 +17,8 @@ Class Node
     ' Constructor method
     Public Sub New(ByVal itemData As Integer)
         data = itemData
-    End Sub  
-  
+    End Sub
+
 End Class
 
 
@@ -76,18 +76,18 @@ Class BST
     End Sub
 
 
-  ' A post-order traversal of the binary search tree
-  Public Sub PostOrderTraversal(ByVal node As Node)
+    ' A post-order traversal of the binary search tree
+    Public Sub PostOrderTraversal(ByVal node As Node)
         ' Check any nodes to the left of the current node
         If node.left IsNot Nothing Then
-            InOrderTraversal(node.left)
+            PostOrderTraversal(node.left)
         End If
 
         ' Check any nodes to the right of the current node
         If node.right IsNot Nothing Then
-            InOrderTraversal(node.right)
+            PostOrderTraversal(node.right)
         End If
-    
+
         ' Output the data of the current node
         Console.WriteLine(node.data)
 
@@ -117,7 +117,7 @@ Module program
 
         ' Output the binary search tree using an in-order traversal
         Console.WriteLine(vbLf & "### Binary search tree (in-order traversal) ###")
-        bst.InOrderTraversal(root)
+        bst.PostOrderTraversal(root)
     End Sub
 
 
