@@ -1,3 +1,11 @@
+' Raspberry Pi Foundation
+' Usage licensed under CC BY-SA 4
+' Note: This file is designed to be copied out and compiled on your machine.
+' To run this file you need to:
+' 1. Copy the contents
+' 2. Paste them into the Visual Basic IDE of your choice (Visual Studio, for example)
+' 3. Compile the program
+' 4. Run the program
 
 Module program
 
@@ -34,6 +42,7 @@ Module program
         finalPoppedValues = Pop(stack, top)
     End Sub
 
+
     ' Check if the stack is empty
     Function IsEmpty(ByVal top As Integer) As Boolean
         If top = -1 Then
@@ -43,6 +52,7 @@ Module program
         End If
     End Function
 
+
     ' Check if the stack is full
     Function IsFull(ByVal top As Integer) As Boolean
         If top = MAXSIZE Then
@@ -51,6 +61,7 @@ Module program
             Return False
         End If
     End Function
+
 
     ' Push data onto the top of the stack
     Function Push(ByVal stack As String(), ByVal top As Integer, ByVal data As String) As Integer
@@ -63,6 +74,7 @@ Module program
         End If
         Return top
     End Function
+
 
     ' Return a copy of the item from the top of stack without removing it
     Function Peek(ByVal stack As String(), ByVal top As Integer) As String
@@ -77,6 +89,7 @@ Module program
 
         Return peekedItem
     End Function
+
 
     ' Return the item from the top of stack and remove it from the stack
     Function Pop(ByVal stack As String(), ByVal top As Integer) As Tuple(Of String, Integer)
@@ -95,6 +108,7 @@ Module program
         Return Tuple.Create(poppedItem, top)
     End Function
 
+
     ' Output the state of the stack
     Sub OutputStack(ByVal stack As String(), ByVal top As Integer)
         ' Testing
@@ -110,5 +124,6 @@ Module program
 
         Console.WriteLine($"Top pointer: {top}")
     End Sub
+
 
 End Module
