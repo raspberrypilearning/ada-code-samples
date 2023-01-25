@@ -115,8 +115,8 @@ Module program
         Console.WriteLine("The root is the left-most value and the children are to the right" & vbLf)
         OutputTree(root)
 
-        ' Output the binary search tree using an in-order traversal
-        Console.WriteLine(vbLf & "### Binary search tree (in-order traversal) ###")
+        ' Output the binary search tree using a post-order traversal
+        Console.WriteLine(vbLf & "### Binary search tree (post-order traversal) ###")
         bst.PostOrderTraversal(root)
     End Sub
 
