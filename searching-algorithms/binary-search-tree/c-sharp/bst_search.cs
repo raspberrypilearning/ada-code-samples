@@ -34,7 +34,7 @@ namespace IsaacCodeSamples
     // A class for constructing a binary search tree (BST)
     class BST
     {
-        private Node root; // Do not intialise the root yet as the tree is empty
+        private Node root; // Do not initialise the root yet as the tree is empty
 
         // Return the root node
         public Node GetRoot()
