@@ -142,7 +142,7 @@ Module program
             Else
                 ' Get the unvisited node with the lowest cost
                 Dim min = unvisited.Min(Function(item) CInt(item.Value(COST)))
-                Dim currentNode As String = Enumerable.FirstOrDefault(Of KeyValuePair(Of Global.System.[String], Global.System.Collections.Generic.List(Of Global.System.[Object])))(Enumerable.Where(Of KeyValuePair(Of Global.System.[String], Global.System.Collections.Generic.List(Of Global.System.[Object])))(unvisited, CType(Function(pair) CBool(pair.Value.Contains(CObj(min))), Func(Of KeyValuePair(Of String, List(Of Object)), Boolean)))).Key
+                Dim currentNode As String = Enumerable.FirstOrDefault(Of KeyValuePair(Of String, List(Of Object)))(Enumerable.Where(Of KeyValuePair(Of String, List(Of Object)))(unvisited, CType(Function(pair) CBool(pair.Value.Contains(CObj(min))), Func(Of KeyValuePair(Of String, List(Of Object)), Boolean)))).Key
                 Console.WriteLine($"Current node >>> {currentNode}") ' Testing
 
                 ' Get the current node's list of neighbours
