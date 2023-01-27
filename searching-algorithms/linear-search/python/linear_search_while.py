@@ -15,12 +15,14 @@ def linear_search_version_2(items, search_item):
     # Repeat while the end of the list has not been reached
     # and the search item has not been found
     while current < len(items) and found == False:
+        print(f"Checking index {current} with value {items[current]}")
         
         # Compare the item at the current index to the search item
         if items[current] == search_item:
             # If the item has been found, store the current index
             found_index = current 
             found = True # Raise the flag to stop the loop
+            print("Item found! Stopping the search")
 
         current = current + 1 # Go to the next index in the list
 
@@ -36,12 +38,14 @@ def main():
     print(test_items)
 
     # Search for a value and return the found index
-    index = linear_search_version_2(test_items, 15)
+    item_to_find = 15
+    print(f"\nThe search item is {item_to_find}\n")
+    index = linear_search_version_2(test_items, item_to_find)
 
     if index == -1:
-        print("The item was not found in the list")
+        print(f"\n{item_to_find} was not found in the list")
     else:
-        print(f"The item was found at index {index}")
+        print(f"\n{item_to_find} was found at index {index}")
 
 
 # This code will run if this file is executed directly

@@ -76,11 +76,13 @@ class BST:
         # Check if the search item is greater than the node data
         # and there is another node to the right to check
         elif search_item > node.data and node.right is not None:
+            print(f"Checking right branch of node {node.data}")
             return self.search(node.right, search_item)
 
         # Check if the search item is less than the node data
         # and there is another node to the left to check
         elif search_item < node.data and node.left is not None:
+            print(f"Checking left branch of node {node.data}")
             return self.search(node.left, search_item)
 
         # Base case for recursion:
@@ -129,16 +131,15 @@ def main():
     output_tree(root)
 
     # Search for a value and return if it has been found
-    item_to_find = 6
+    item_to_find = 7
+    print(f"\nThe search item is {item_to_find}\n")
     found = bst.search(root, item_to_find)
 
     # Output the search result
-    print(f"\nThe search item is {item_to_find}")
-    
     if found == True:
-        print(f"{item_to_find} was found in the binary search tree")
+        print(f"\n{item_to_find} was found in the binary search tree")
     else:
-        print(f"{item_to_find} does not exist in the binary search tree")
+        print(f"\n{item_to_find} was NOT found in the binary search tree")
     
 
 # This code will run if this file is executed directly

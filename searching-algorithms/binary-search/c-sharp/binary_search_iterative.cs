@@ -29,13 +29,15 @@ namespace IsaacCodeSamples
             Console.WriteLine("[{0}]", string.Join(", ", testItems));
 
             // Search for a value and return the found index
-            int index = BinarySearch(testItems, 15);
+            int itemToFind = 18;
+            Console.WriteLine("\nThe search item is " + itemToFind + "\n");
+            int index = BinarySearch(testItems, itemToFind);
 
             if (index == -1) {
-                Console.WriteLine("The item was not found in the list");
+                Console.WriteLine($"\n{itemToFind} was not found in the array");
             }
             else {
-                Console.WriteLine($"The item was found at index {index}");
+                Console.WriteLine($"\n{itemToFind} was found at index {index}");
             }
         }
 
@@ -55,12 +57,14 @@ namespace IsaacCodeSamples
             while (first <= last && found == false) {
                 // Find the midpoint position (in the middle of the range)
                 midpoint = (first + last) / 2;
+                Console.WriteLine($"Checking from index {first} to {last} with midpoint {midpoint}");
 
                 // Compare the item at the midpoint to the search item
                 if (items[midpoint] == searchItem) {
                     // If the item has been found, store the midpoint position
                     foundIndex = midpoint;
                     found = true; // Raise the flag to stop the loop
+                    Console.WriteLine("Item found! Stopping the search");
                 }
                 // Check if the item at the midpoint is less than the search item
                 else if (items[midpoint] < searchItem) {

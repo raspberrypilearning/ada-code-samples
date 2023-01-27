@@ -19,12 +19,14 @@ def binary_search(items, search_item):
 
         # Find the midpoint position (in the middle of the range)
         midpoint = (first + last) // 2
+        print(f"Checking from index {first} to {last} with midpoint {midpoint}")
 
         # Compare the item at the midpoint to the search item
         if items[midpoint] == search_item:
             # If the item has been found, store the midpoint position
             found_index = midpoint
             found = True # Raise the flag to stop the loop
+            print("Item found! Stopping the search")
 
         # Check if the item at the midpoint is less than the search item    
         elif items[midpoint] < search_item:
@@ -48,12 +50,14 @@ def main():
     print(test_items)
 
     # Search for a value and return the found index
-    index = binary_search(test_items, 18)
+    item_to_find = 18
+    print(f"\nThe search item is {item_to_find}\n")
+    index = binary_search(test_items, item_to_find)
 
     if index == -1:
-        print("The item was not found in the list")
+        print(f"\n{item_to_find} was not found in the list")
     else:
-        print(f"The item was found at index {index}")
+        print(f"\n{item_to_find} was found at index {index}")
 
 
 # This code will run if this file is executed directly

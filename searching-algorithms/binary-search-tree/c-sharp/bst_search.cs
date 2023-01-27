@@ -42,7 +42,6 @@ namespace IsaacCodeSamples
             return root;
         }
 
-
         // Insert a new node
         public void Insert(int item)
         {
@@ -105,12 +104,14 @@ namespace IsaacCodeSamples
             // Check if the search item is greater than the node data
             // and there is another node to the right to check
             else if (searchItem > node.data && node.right != null) {
+                Console.WriteLine($"Checking right branch of node {node.data}");
                 return Search(node.right, searchItem);
             }
 
             // Check if the search item is less than the node data
             // and there is another node to the left to check
             else if (searchItem < node.data && node.left != null) {
+                Console.WriteLine($"Checking left branch of node {node.data}");
                 return Search(node.left, searchItem);
             }
 
@@ -144,16 +145,16 @@ namespace IsaacCodeSamples
             OutputTree(root);
 
             // Search for a value and return if it has been found
-            int itemToFind = 6;
+            int itemToFind = 7;
+            Console.WriteLine($"\nThe search item is {itemToFind}\n");
             bool found = bst.Search(root, itemToFind);
 
             // Output the search result
-            Console.WriteLine($"\nThe search item is {itemToFind}");
             if (found == true) {
-                Console.WriteLine($"{itemToFind} was found in the binary search tree");
+                Console.WriteLine($"\n{itemToFind} was found in the binary search tree");
             }
             else {
-                Console.WriteLine($"{itemToFind} does not exist in the binary search tree");
+                Console.WriteLine($"\n{itemToFind} was NOT found in the binary search tree");
             }
         }
 

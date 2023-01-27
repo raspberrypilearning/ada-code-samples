@@ -29,13 +29,15 @@ namespace IsaacCodeSamples
             Console.WriteLine("[{0}]", string.Join(", ", testItems));
 
             // Search for a value and return the found index
-            int index = LinearSearchVersion2(testItems, 15);
+            int itemToFind = 15;
+            Console.WriteLine("\nThe search item is " + itemToFind + "\n");
+            int index = LinearSearchVersion2(testItems, itemToFind);
 
             if (index == -1) {
-                Console.WriteLine("The item was not found in the array");
+                Console.WriteLine($"\n{itemToFind} was not found in the array");
             }
             else {
-                Console.WriteLine($"The item was found at index {index}");
+                Console.WriteLine($"\n{itemToFind} was found at index {index}");
             }
         }
 
@@ -51,12 +53,14 @@ namespace IsaacCodeSamples
             // Repeat while the end of the array has not been reached
             // and the search item has not been found
             while (found == false && current < items.Length) {
+                Console.WriteLine($"Checking index {current} with value {items[current]}");
 
                 // Compare the item at the current index to the search item
                 if (items[current] == searchItem) {
                     // If the item has been found, store the current index 
                     found_index = current;
                     found = true; // Raise the flag to stop the loop
+                    Console.WriteLine("Item found! Stopping the search");
                 }
                 current = current + 1; // Go to the next index in the array
             }
