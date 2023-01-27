@@ -8,7 +8,7 @@
 ' 4. Run the program
 
 
-Friend Class PlayingCard
+Class PlayingCard
     Private suit As String
     Private rank As String
     Private value As Integer
@@ -22,7 +22,7 @@ Friend Class PlayingCard
 End Class
 
 
-Friend Class Deck
+Class Deck
 
     Private cards As PlayingCard() = New PlayingCard(51) {} ' Declare an array of 52 elements
     Private suits As String() = {"Clubs", "Diamonds", "Hearts", "Spades"}
@@ -48,7 +48,6 @@ Friend Class Deck
         End While
     End Sub
 
-
 End Class
 
 
@@ -59,6 +58,5 @@ Module Program
         ' Instantiate a new deck object
         Dim myDeck As Deck = New Deck()
     End Sub
-
 
 End Module
