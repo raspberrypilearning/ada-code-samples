@@ -11,7 +11,7 @@
 Module Program
 
 
-    ' The Main method is the entry point for all C# programs
+    ' The Main method is the default entry point for all VB programs
     Sub Main()
         Console.WriteLine("Enter a name for your pet ")
         Dim petName As String = Console.ReadLine()
@@ -30,6 +30,7 @@ Module Program
         Dim name As String = myPet.GetName()
         Dim colour As String = myPet.GetColour()
         Console.WriteLine($"{name} is now {colour}")
+        
     End Sub
 
 
