@@ -17,12 +17,12 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    
-    class ProgrammingConstructs  // Count controlled loop
+    class ProgrammingConstructs
     {
-        
-        // For loop that prints a line five times
-        void Main() {           
+        // The Main method is the entry point for all C# programs
+        public static void Main()
+        {
+            // A for loop is a count controlled loop
             for (int i = 0; i < 2; i++) {
                 Console.WriteLine("Hip, Hip, Hooray!");
             }

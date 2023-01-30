@@ -17,13 +17,15 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
-    class ProgrammingConstructs  // Simple selection
+    class ProgrammingConstructs
     {
-       
-        public static void Main() {
+        // The Main method is the entry point for all C# programs
+        public static void Main()
+        {
+            // An example of selection
             Console.WriteLine("Which animal has a long bendy trunk?");
             string animal = Console.ReadLine();
+            
             if (animal == "Elephant") {
                 Console.WriteLine("You are correct");
             } else {

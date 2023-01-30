@@ -17,18 +17,21 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    
-    class ProgrammingConstructs  // Condition controlled loop
+    class ProgrammingConstructs
     {
-        
-        // A guessing game, user guesses names until they get the right answer
-        public static void Main() {            
+        // The Main method is the entry point for all C# programs
+        public static void Main()
+        {            
+            // A guessing game, user guesses names until they get the right answer
             Console.WriteLine("Please enter your name ");
             string name = Console.ReadLine();
+
+            // A while loop is a condition controlled loop
             while (name != "Fergus") {
                 Console.WriteLine("Please enter your name");
                 name = Console.ReadLine();
             }
+
             Console.WriteLine("You guessed my name!");
         }
         

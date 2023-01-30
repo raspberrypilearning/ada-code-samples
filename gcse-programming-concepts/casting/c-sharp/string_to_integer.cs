@@ -17,17 +17,18 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    
     class Casting
     {
-
-        static void Main() {
+        // The Main method is the entry point for all C# programs
+        public static void Main()
+        {
             DoubleIt();
         }
         
 
         // Asks the user for a number and doubles it
-        static void DoubleIt() {
+        public static void DoubleIt()
+        {
             Console.WriteLine("Enter a number ");
             string number = Console.ReadLine();
             int intNumber = int.Parse(number);
