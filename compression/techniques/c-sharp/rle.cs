@@ -16,10 +16,8 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class CompressionTechniques
     {
-
         // The Main method is the entry point for all C# programs
         public static void Main()
         {
@@ -50,6 +48,7 @@ namespace IsaacCodeSamples
             Console.WriteLine(RLE(text));
         }
 
+
         // A simple version of Run Length Encoding for text strings
         public static string RLE(string textString)
         {
@@ -71,6 +70,7 @@ namespace IsaacCodeSamples
             compressed = compressed + counter.ToString();
             return compressed;
         }
-    }
 
+        
+    }
 }
