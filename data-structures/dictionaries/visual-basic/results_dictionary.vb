@@ -21,21 +21,27 @@ Module Program
         {"Elsa", 29}}
         Dim score As Integer = results("Charlie")
         Console.WriteLine($"Charlie's score is {score}")
-
+        
+        'Add new entry to dictionary
         results("Bob") = 78
         Console.WriteLine($"Bob has been added with score {results("Bob")}")
 
+        'Update an entry in the dictionary
         results("Hwa") = 71
         Console.WriteLine($"Hwa's new score is {results("Hwa")}")
 
+        'Delete an entry from the dictionary
         results.Remove("Elsa")
         Console.WriteLine("Elsa has been deleted" & vbLf)
-
+        
+        'Display the entire dictionary
         For Each kvp As KeyValuePair(Of String, Integer) In results
             Dim key As String = kvp.Key
             Dim value As Integer = kvp.Value
             Console.WriteLine($"Key: {key}  Value: {value}")
         Next
+    
     End Sub
+
 
 End Module
