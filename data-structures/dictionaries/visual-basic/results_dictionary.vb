@@ -13,12 +13,15 @@ Module Program
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
         Dim results As Dictionary(Of String, Integer) = New Dictionary(Of String, Integer)() From {
-        {"Detra", 17},
-        {"Nova", 84},
-        {"Charlie", 22},
-        {"Hwa", 75},
-        {"Roxann", 92},
-        {"Elsa", 29}}
+            {"Detra", 17},
+            {"Nova", 84},
+            {"Charlie", 22},
+            {"Hwa", 75},
+            {"Roxann", 92},
+            {"Elsa", 29}
+        }
+        
+        'Get value for a given key
         Dim score As Integer = results("Charlie")
         Console.WriteLine($"Charlie's score is {score}")
         
