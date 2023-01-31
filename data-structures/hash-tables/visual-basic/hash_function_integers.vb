@@ -19,6 +19,7 @@ Module Program
     End Sub
 
     Function HashInteger(ByVal hashKey As Integer, ByVal numberOfSlots As Integer) As Integer
+        ' Calculate the hash value using the modulo operator
         Dim hashValue As Integer = hashKey Mod numberOfSlots
         Return hashValue
     End Function
