@@ -9,15 +9,16 @@
 
 
 ' A structure to represent a node in a linked list
-Structure NodeRecord
+Class NodeRecord
     Dim data As String
     Dim nextItem As NodeRecord
-End Structure
+End Class
+
 
 ' A structure to represent a linked list
-Structure LinkedList
+Class LinkedList
     Dim head As NodeRecord
-End Structure
+End Class
 
 Module Program
 
