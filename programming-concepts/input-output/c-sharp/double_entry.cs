@@ -17,11 +17,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
-    class Variables
+    class InputOutput
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             Console.WriteLine("Enter your email address: ");
             string email = Console.ReadLine();
 

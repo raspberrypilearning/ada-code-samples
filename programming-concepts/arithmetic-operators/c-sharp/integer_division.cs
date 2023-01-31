@@ -17,11 +17,12 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class ArithmeticOperators
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
+            // Perform an integer division on two numbers
             int result = 9 / 2;
             Console.WriteLine(result);
         }

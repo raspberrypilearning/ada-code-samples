@@ -17,12 +17,13 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class InputOutput
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             Console.WriteLine("Enter a number");
+            
             try {
                 string userInput = Console.ReadLine();
                 int numValue = Int32.Parse(userInput);

@@ -17,14 +17,15 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class InputOutput
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             Console.WriteLine("How old are you?");
-            string user_response = Console.ReadLine();
-            int age = Int32.Parse(user_response);
+            string userInput = Console.ReadLine();
+            int age = Int32.Parse(userInput);
+            
             int months = age * 12;
             Console.WriteLine($"Wow, you have been alive for around {months} months!");
         }

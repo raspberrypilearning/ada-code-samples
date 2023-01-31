@@ -20,8 +20,7 @@ def calculate_weight_on_mars(weight_on_earth):
 
 
 def main():
-    """Execute both subroutines and output the results
-"""
+    """Execute both subroutines and output the results"""
 
     weight = 35.7
     print(conv(weight))

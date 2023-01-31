@@ -17,12 +17,10 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class GoodProgrammingPractice
     {
         const double GravityOnEarth = 9.81;
         const double GravityOnMars = 3.711;
-
 
         // The Main method is the entry point for all C# programs
         public static void Main()
