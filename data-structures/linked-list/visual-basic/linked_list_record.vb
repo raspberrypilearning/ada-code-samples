@@ -8,16 +8,16 @@
 ' 4. Run the program
 
 
-' A class to represent a node as a record in a linked list
-Class NodeRecord
-    Public data As String
-    Public nextItem As NodeRecord
-End Class
+' A structure to represent a node in a linked list
+Structure NodeRecord
+    Dim data As String
+    Dim nextItem As NodeRecord
+End Structure
 
-' A class to represent a linked list
-Class LinkedList
-    Public head As NodeRecord
-End Class
+' A structure to represent a linked list
+Structure LinkedList
+    Dim head As NodeRecord
+End Structure
 
 Module Program
 
@@ -25,7 +25,7 @@ Module Program
     Sub Main()
         Console.WriteLine("### Linked list (Record) ###")
         
-        ' Instantiate a new linked list
+        ' Create a new linked list
         Dim myList As LinkedList = New LinkedList()
         
         ' Insert test data and display list
