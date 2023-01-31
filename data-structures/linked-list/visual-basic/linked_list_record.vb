@@ -10,15 +10,16 @@
 
 ' A structure to represent a node in a linked list
 Class NodeRecord
-    Dim data As String
-    Dim nextItem As NodeRecord
+    Public data As String
+    Public nextItem As NodeRecord
 End Class
 
 
 ' A structure to represent a linked list
 Class LinkedList
-    Dim head As NodeRecord
+    Public head As NodeRecord
 End Class
+
 
 Module Program
 
