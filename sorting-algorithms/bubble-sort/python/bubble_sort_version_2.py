@@ -12,7 +12,7 @@ def bubble_sort_version_2(items):
 
     # Repeat while one or more swaps have been made
     while swapped == True:
-        swapped = False
+        swapped = False # Assume sorted
         # Perform a pass
         for index in range(0, num_items - 1):
             # Compare items to check if they are out of order

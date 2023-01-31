@@ -45,7 +45,7 @@ namespace IsaacCodeSamples
 
             // Repeat while one or more swaps have been made
             while (swapped == true) {
-                swapped = false;
+                swapped = false; // Assume sorted
                 // Perform a pass, reducing the number of comparisons each time
                 for (int index = 0; index < numItems - passNum; index++) {
                     // Compare items to check if they are out of order

@@ -24,7 +24,7 @@ def bubble_sort_version_2(items):
     pass_num = 1 # Testing
     
     while swapped == True:
-        swapped = False
+        swapped = False # Assume sorted
         for index in range(0, num_items - 1): # pseudocode: num_items - 2
             if items[index] > items[index + 1]:
                 temp = items[index]
@@ -42,7 +42,7 @@ def bubble_sort_version_3(items):
     pass_num = 1
     
     while swapped == True:
-        swapped = False
+        swapped = False # Assume sorted
         for index in range(0, num_items - pass_num): # pseudocode: num_items - 1 - pass_num
             if items[index] > items[index + 1]:
                 temp = items[index]

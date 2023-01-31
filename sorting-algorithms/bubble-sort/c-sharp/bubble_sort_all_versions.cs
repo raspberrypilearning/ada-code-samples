@@ -80,7 +80,7 @@ namespace IsaacCodeSamples
             int passNum = 1; // Testing
 
             while (swapped == true) {
-                swapped = false;
+                swapped = false; // Assume sorted
                 int index = 0; // Declared outside of the for loop for testing below
                 for (index = 0; index < numItems - 1; index++) {
                     if (items[index] > items[index + 1]) {
@@ -108,7 +108,7 @@ namespace IsaacCodeSamples
             int passNum = 1;
 
             while (swapped == true) {
-                swapped = false;
+                swapped = false; // Assume sorted
                 int index = 0; // Declared outside of the for loop for testing below
                 for (index = 0; index < numItems - passNum; index++) {
                     if (items[index] > items[index + 1]) {
