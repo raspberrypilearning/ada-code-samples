@@ -20,12 +20,16 @@ Module Program
 
     Function HashString(ByVal hashKey As String, ByVal numberOfSlots As Integer) As Integer
         Dim total As Integer = 0
-
+        
+        ' For each character in the hash key
         For i As Integer = 0 To hashKey.Length - 1
+            'Get the ASCII code for the character
             Dim asciiCode As Integer = Asc(hashKey(i))
+            ' Add the value of the code to the total
             total = total + asciiCode
         Next
 
+    ' Calculate the hash value using the modulo operator
         Dim hashValue As Integer = total Mod numberOfSlots
         Return hashValue
     End Function
