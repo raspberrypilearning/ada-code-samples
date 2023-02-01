@@ -4,8 +4,9 @@
 # Usage licensed under CC BY-SA 4
 
 def main():
-    for i in range(10,0,-2):
-        print(i)
+    word = "iteration"
+    for letter in word:
+        print(letter)
 
 
 # This code will run if this file is executed directly

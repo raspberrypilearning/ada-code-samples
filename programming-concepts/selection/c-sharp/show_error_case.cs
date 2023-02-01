@@ -17,17 +17,18 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Selection
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             ShowError();
         }
 
 
         // Example of a switch/case statement to match the error code
-        public static void ShowError() {
+        public static void ShowError()
+        {
             Console.WriteLine("Enter the error code: ");
             string errorCode = Console.ReadLine();
 

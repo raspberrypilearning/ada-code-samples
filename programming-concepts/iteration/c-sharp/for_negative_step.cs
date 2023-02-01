@@ -17,11 +17,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Iteration
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             for (int i = 10; i >= 1; i -= 2) {
                 Console.WriteLine(i);
             }

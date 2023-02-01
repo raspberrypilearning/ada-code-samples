@@ -17,11 +17,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Variables
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
           int score;
 
           Console.WriteLine("Would you like to start a new game?");

@@ -17,11 +17,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Selection
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             Console.WriteLine("Enter a test score");
             string userInput = Console.ReadLine();
             int testScore = Int32.Parse(userInput);

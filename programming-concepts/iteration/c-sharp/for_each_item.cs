@@ -17,12 +17,12 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Iteration
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
-            string[] rainbow = {"red","orange","yellow","green","blue","indigo","violet"};
+        public static void Main()
+        {
+            string[] rainbow = { "red", "orange", "yellow", "green", "blue", "indigo", "violet" };
 
             foreach (string colour in rainbow) {
                 Console.WriteLine(colour);

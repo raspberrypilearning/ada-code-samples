@@ -17,12 +17,12 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Iteration
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
-            int[] numbersToGuess = {1,4,8,3,10};
+        public static void Main()
+        {
+            int[] numbersToGuess = { 1, 4, 8, 3, 10 };
             
             Console.WriteLine("Guess my numbers, each number is between 1 and 10");
 
@@ -32,7 +32,7 @@ namespace IsaacCodeSamples
                 int guess = Int32.Parse(userInput);
 
                 while (guess != number) {
-                    Console.WriteLine("Enter a number to guess: ");
+                    Console.WriteLine("Incorrect number. Try again: ");
                     userInput = Console.ReadLine();
                     guess = Int32.Parse(userInput);
                 }

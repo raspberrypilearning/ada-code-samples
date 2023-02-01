@@ -17,17 +17,18 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Selection
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             RentCheck();
         }
         
 
         // Example of nested selection to check user can rent a flat
-        public static void RentCheck() {
+        public static void RentCheck()
+        {
             Console.WriteLine("Enter your age: ");
             string inputAge = Console.ReadLine();
             int age = Int32.Parse(inputAge);
@@ -59,6 +60,7 @@ namespace IsaacCodeSamples
                 Console.WriteLine("I am sorry but you can't rent the flat");
             }
         }
+
 
     }
 }

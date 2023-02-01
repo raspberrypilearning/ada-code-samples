@@ -17,11 +17,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Selection
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             int testScore = 71;
 
             if (testScore >= 60) {

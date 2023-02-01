@@ -17,11 +17,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class LogicalOperators
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             bool tired = false;
             bool earlyStart = false;
 

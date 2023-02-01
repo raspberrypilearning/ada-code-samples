@@ -20,7 +20,7 @@ Module Program
             Dim guess As Integer = Int32.Parse(userInput)
 
             While guess <> number
-                Console.WriteLine("Enter a number to guess: ")
+                Console.WriteLine("Incorrect number. Try again: ")
                 userInput = Console.ReadLine()
                 guess = Int32.Parse(userInput)
             End While

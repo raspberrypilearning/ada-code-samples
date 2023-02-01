@@ -4,7 +4,7 @@
 # Usage licensed under CC BY-SA 4
 
 def main():
-    for i in range(10,0,-2):
+    for i in range(10, 0, -2):
         print(i)
 
 

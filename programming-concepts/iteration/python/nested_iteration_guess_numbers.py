@@ -13,7 +13,7 @@ def main():
         guess = int(user_input)
 
         while guess != number:
-            user_input = input("Enter a number to guess: ")
+            user_input = input("Incorrect number. Try again: ")
             guess = int(user_input)
 
         print("Well done, next number to guess")
