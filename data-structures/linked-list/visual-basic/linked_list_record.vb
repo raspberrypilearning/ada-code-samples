@@ -65,23 +65,23 @@ Module Program
         End If
     End Sub
 
-    'Insert a node at the end of a linked list
+    'Insert a node in correct position within a linked list
     Sub InsertInOrder(ByVal myList As LinkedList, ByVal data As String)
         Dim newNode As NodeRecord = New NodeRecord()
         newNode.data = data
         Dim current As NodeRecord = myList.head
 
+        'List is empty
         If current Is Nothing Then
             myList.head = newNode
-        ElseIf String.Compare(newNode.data, current.data) < 0 Then
+        ElseIf String.Compare(newNode.data, current.data) < 0 Then ' Item must be first in list
             newNode.nextItem = myList.head
             myList.head = newNode
-        Else
-
-            While current.nextItem IsNot Nothing AndAlso String.Compare(current.nextItem.data, newNode.data) < 0
+        Else  ' Need to find insertion point
+            While current.nextItem IsNot Nothing AndAlso String.Compare(current.nextItem.data, newNode.data) < 0  ' Keep searching
                 current = current.nextItem
             End While
-
+            ' Insertion point found
             newNode.nextItem = current.nextItem
             current.nextItem = newNode
         End If
