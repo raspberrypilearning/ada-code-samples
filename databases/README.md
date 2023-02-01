@@ -1,7 +1,7 @@
-Raspberry Pi Foundation
-Developed to be used alongside Isaac Computer Science, part of the National Centre for Computing Education
-Usage licensed under CC BY-SA 4
+- Raspberry Pi Foundation
+- Developed to be used alongside the learning materials in Ada Computer Science.
+- Usage licensed under CC BY-NC-SA 4.0 - https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-These files support the Isaac CS databases and SQL topics
+These files support the Ada Computer Science databases and SQL topics
 They are designed to be used with DB Browser (SQLite):
 https://sqlitebrowser.org/dl/
