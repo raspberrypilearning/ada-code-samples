@@ -17,24 +17,25 @@ using System;
 
 namespace IsaacCodeSamples 
 {
-    
     class RecursionExamples
     {
         // The Main method is the entry point for all C# programs
-        static void Main() {
+        public static void Main()
+        {
             int x = 259;
             int y = 111;
             int answer = GCD(x, y);
-            string output = $"The lowest common denominator of {x} and {y} is {answer}";
-            Console.WriteLine(output);
+            Console.WriteLine($"The lowest common denominator of {x} and {y} is {answer}");
         }
         
 
         // Euclidian algorithm to find greatest common denominator
-        public static int GCD(int x, int y){
+        public static int GCD(int x, int y)
+        {
             if (y == 0) {
                 return x;
-            } else {
+            }
+            else {
                 return GCD(y, x % y);
             }
         }

@@ -17,25 +17,25 @@ using System;
 
 namespace IsaacCodeSamples 
 {
-    
     class RecursionExamples
     {
-        
         // The Main method is the entry point for all C# programs
-        static void Main(string[] args) {
+        public static void Main()
+        {
             int n = 6;
             int increment = 3;
             int result = NthTerm(n, increment);
-            string output = $"Term {n} is {result}";
-            Console.WriteLine(output);
+            Console.WriteLine($"Term {n} is {result}");
         }
         
 
         // Returns the nth term of a numerical sequence
-        public static int NthTerm(int n, int increment) {
+        public static int NthTerm(int n, int increment)
+        {
             if (n == 1) {
                 return 1;
-            } else {
+            }
+            else {
                 return increment + NthTerm(n-1, increment);
             }
         }

@@ -15,13 +15,17 @@ def palindrome(word):
         return False
 
 
-# This code will run if this file is executed directly
-# (i.e. not called by another program)
-if __name__ == '__main__':
+def main():
     test_word = "kayak"  # Test data
     is_palindrome = palindrome(test_word)
-    print (f"{test_word}: {is_palindrome}")
+    print(f"{test_word}: {is_palindrome}")
     
     test_word = "apple"  # Test data
     is_palindrome = palindrome(test_word)
-    print (f"{test_word}: {is_palindrome}")
+    print(f"{test_word}: {is_palindrome}")
+
+
+# This code will run if this file is executed directly
+# (i.e. not called by another program)
+if __name__ == '__main__':
+    main()

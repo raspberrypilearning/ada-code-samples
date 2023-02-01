@@ -17,26 +17,28 @@ using System;
 
 namespace IsaacCodeSamples 
 {
-    
     class RecursionBasics
     {
         // The Main method is the entry point for all C# programs
-        static void Main() {
+        public static void Main()
+        {
             int n = 6;
             int result = SumToN(n);
-            string output = $"The sum of 1 to {n} is: {result}";
-            Console.WriteLine(output);
+            Console.WriteLine($"The sum of 1 to {n} is: {result}");
         }
         
 
         // Returns the sum of all natural numbers from 1 to n inclusive
-        public static int SumToN(int n) {
+        public static int SumToN(int n)
+        {
             if (n == 1) {
                 return 1;
-            } else {
+            }
+            else {
                 return n + SumToN(n-1);
             }
         }
-                
+
+
     }
 }

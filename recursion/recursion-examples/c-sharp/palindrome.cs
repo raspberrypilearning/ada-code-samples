@@ -17,33 +17,33 @@ using System;
 
 namespace IsaacCodeSamples 
 {
-    
     class RecursionExamples
     {
-        
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             string testWord = "kayak"; // Test data
             bool isPalindrome = Palindrome(testWord);
-            string result = $"{testWord}: {isPalindrome}";
-            Console.WriteLine(result);
+            Console.WriteLine($"{testWord}: {isPalindrome}");
             
             testWord = "apple"; // Test data
             isPalindrome = Palindrome(testWord);
-            result = $"{testWord}: {isPalindrome}";
-            Console.WriteLine(result);
+            Console.WriteLine($"{testWord}: {isPalindrome}");
         }
         
 
         // Returns True if string is a palindrome
-        public static bool Palindrome(string word) {
+        public static bool Palindrome(string word)
+        {
             int length = word.Length;
             if (length == 0 || length == 1) {
                 return true;
-            } else if (word[0] == word[length - 1]) {
+            }
+            else if (word[0] == word[length - 1]) {
                 string newWord = word.Substring(1, length - 2);
                 return Palindrome(newWord);
-            } else {
+            }
+            else {
                 return false;
             }
         }

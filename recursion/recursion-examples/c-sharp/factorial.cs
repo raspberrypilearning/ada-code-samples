@@ -17,28 +17,28 @@ using System;
 
 namespace IsaacCodeSamples 
 {
-    
-    class RecursionExamples
+class RecursionExamples
+{
+    // The Main method is the entry point for all C# programs
+    public static void Main()
     {
-        
-        // The Main method is the entry point for all C# programs
-        public static void Main() {
-            int n = 5;
-            int result = Factorial(n);
-            string output = $"{n}! is: {result}";
-            Console.WriteLine(output);
-        }
-        
-
-        // Returns the value of n!
-        public static int Factorial(int n) {            
-            if (n == 1){
-                return 1;
-            } else {
-                return n * Factorial(n-1);
-            }
-        }
-        
-        
+        int n = 5;
+        int result = Factorial(n);
+        Console.WriteLine($"{n}! is: {result}");
     }
+    
+
+    // Returns the value of n!
+    public static int Factorial(int n)
+    {            
+        if (n == 1) {
+            return 1;
+        }
+        else {
+            return n * Factorial(n-1);
+        }
+    }
+    
+    
+}
 }
