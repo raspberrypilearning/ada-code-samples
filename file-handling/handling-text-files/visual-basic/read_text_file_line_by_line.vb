@@ -15,15 +15,15 @@ Module Program
     End Sub
 
     Sub ReadLineByLine()
-            Using reader As System.IO.StreamReader = New System.IO.StreamReader("bridge.txt")
-                Dim line As String
-                line = reader.ReadLine()
-                While line IsNot Nothing
-                    Console.WriteLine(line)
-                    line = reader.ReadLine()
-                End While
-            End Using
-        End Sub
+         Using reader As System.IO.StreamReader = New System.IO.StreamReader("bridge.txt")
+             Dim line As String
+             line = reader.ReadLine()
+            While line IsNot Nothing ' While not end of file
+                Console.WriteLine(line) 
+                line = reader.ReadLine() ' Read next ine of file
+             End While
+         End Using
+     End Sub
 
 
 End Module
