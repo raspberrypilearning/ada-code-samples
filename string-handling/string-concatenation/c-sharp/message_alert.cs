@@ -17,19 +17,19 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    
     class StringConcatenation
     {
-        
-        // The main method is the entry point for all C# programs
-        public static void Main() {
+        // The Main method is the entry point for all C# programs
+        public static void Main()
+        {
             int newMessages = 5;
             MessageAlert(newMessages);           
         }
 
         
-        //Example of type conversion for string concatenation
-        public static void MessageAlert(int newMessages) {            
+        // Example of type conversion for string concatenation
+        public static void MessageAlert(int newMessages)
+        {            
             Console.WriteLine("You have " + newMessages.ToString() + " new messages");
         }
         

@@ -15,7 +15,7 @@ Module Program
     End Sub
 
     Sub StripStartAndEnd()
-        Dim myString As String = "UIsaac Computer Science?"
+        Dim myString As String = "UAda Computer Science?"
         Dim strippedString As String = myString.Trim("U"c, "?"c)
         Console.WriteLine(strippedString)
     End Sub

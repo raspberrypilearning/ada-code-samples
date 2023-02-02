@@ -17,23 +17,23 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    
     class StringConcatenation
     {
-        
-        // The main method is the entry point for all C# programs
-        public static void Main() {
+        // The Main method is the entry point for all C# programs
+        public static void Main()
+        {
             GreetUser();           
         }
 
         
         // Demonstration of string concatenation
-        public static void GreetUser() {
-            Console.Write("Please enter your first name ");
+        public static void GreetUser()
+        {
+            Console.WriteLine("Please enter your first name ");
             string firstName = Console.ReadLine();
             Console.WriteLine("Greetings " + firstName);
 
-            Console.Write("Please enter your last name ");
+            Console.WriteLine("Please enter your last name ");
             string lastName = Console.ReadLine();
             
             string userName = firstName + " " + lastName;

@@ -11,18 +11,18 @@ def check_password(password):
     return is_valid
 
 
-def test():
-    #normal data
+def main():
+    # normal test data
     password = "elephant1234"
     result = check_password(password)
     print(f"{password} is valid: {result}")
     
-    #boundary data 
+    # boundary test data 
     password = "elephant" # 8 characters
     result = check_password(password)
     print(f"{password} is valid: {result}")  
     
-    #too short
+    # password too short
     password = "1234" # 4 characters
     result = check_password(password)
     print(f"{password} is valid: {result}")
@@ -31,4 +31,4 @@ def test():
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
 if __name__ == '__main__':
-    test()
+    main()

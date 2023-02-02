@@ -17,19 +17,19 @@ using System;
 
 namespace IsaacCodeSamples    
 {
-    
     class StringCharacteristics
-    {        
-        
-        // The main method is the entry point for all C# programs
-        public static void Main() {
+    {               
+        // The Main method is the entry point for all C# programs
+        public static void Main()
+        {
             ShowPasswordLength();
-         }
+        }
 
         
         // Prompts for a password and displays its length
-        public static void ShowPasswordLength() {
-            Console.Write("Please enter a password ");
+        public static void ShowPasswordLength()
+        {
+            Console.WriteLine("Please enter a password ");
             string password = Console.ReadLine();
             Console.WriteLine(password.Length);
         }

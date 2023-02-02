@@ -17,12 +17,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Substrings
     {
-
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             string fileName = "monster.csv";
             string extension = GetExtension(fileName);
             Console.WriteLine(extension);
@@ -30,8 +29,9 @@ namespace IsaacCodeSamples
 
 
         // Extracts everything after dot in file name
-        public static string GetExtension(string fileName) {
-            int position = fileName.IndexOf(".");
+        public static string GetExtension(string fileName)
+        {
+            int position = fileName.IndexOf('.');
             int index = position + 1;
             string extension = fileName.Substring(index);
             return extension;

@@ -17,10 +17,8 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class StringCharacteristics
     {
-
         // The Main method is the entry point for all C# programs
         public static void Main()
         {

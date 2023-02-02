@@ -11,10 +11,6 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
-        Test()
-    End Sub
-
-    Sub Test()
         Dim password As String = "elephant1234"
         Dim result As Boolean = CheckPassword(password)
         Console.WriteLine($"{password} is valid: {result}")

@@ -5,7 +5,7 @@
 
 def strip_start_and_end():
     """Demonstrates stripping characters from the start and end of a string"""
-    my_string = "UIsaac Computer Science?"
+    my_string = "UAda Computer Science?"
     stripped_string = my_string.strip("U?")
     print(stripped_string)
     

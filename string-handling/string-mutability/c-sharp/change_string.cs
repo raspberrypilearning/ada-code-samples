@@ -17,12 +17,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class StringMutability
     {
-
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             string myString = "An aardvark is an animal";
             string newString = ChangeString(myString);
             Console.WriteLine(newString);
@@ -30,16 +29,19 @@ namespace IsaacCodeSamples
 
 
         // Demonstrates how to use ASCII codes to convert letter case
-        public static string ChangeString(string myString) {
+        public static string ChangeString(string myString)
+        {
             string newString = "";  // New empty string
-            foreach (var character in myString)
-            {
+
+            foreach (char character in myString) {
                 if (character == 'a') {
                     newString = newString + "b";
-                } else {
+                }
+                else {
                     newString = newString + character;
                 }
             }
+            
             return newString;
         }
 

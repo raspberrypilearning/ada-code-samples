@@ -19,15 +19,16 @@ namespace IsaacCodeSamples
 {
     class StringCharacteristics
     {
-        
-        // The main method is the entry point for all C# programs
-        public static void Main() {
+        // The Main method is the entry point for all C# programs
+        public static void Main()
+        {
             DemonstrateEmptyStrings();
         }
         
 
         // Demonstrates the difference between a null and a space 
-        public static void DemonstrateEmptyStrings() {
+        public static void DemonstrateEmptyStrings()
+        {
             string emptyString = "";
             Console.WriteLine(emptyString.Length);
 

@@ -5,7 +5,7 @@
 
 def strip_whitespace():
     """Demonstrates stripping whitespace from the start and end of a string"""
-    my_string = "     Isaac Computer Science  \n"
+    my_string = "     Ada Computer Science  \n"
     stripped_string = my_string.strip()
     print(stripped_string)
     

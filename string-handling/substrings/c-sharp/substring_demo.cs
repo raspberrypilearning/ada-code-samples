@@ -17,18 +17,18 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class Substrings
     {
-
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             ShowSubstrings();
         }
 
 
         // Demonstrates extracting substrings
-        public static void ShowSubstrings() {
+        public static void ShowSubstrings()
+        {
             string myString = "Computer Science";
 
             // Display characters 7 to 9

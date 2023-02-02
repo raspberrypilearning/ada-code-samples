@@ -15,7 +15,7 @@ Module Program
     End Sub
 
     Sub StripWhitespace()
-        Dim myString As String = "     Isaac Computer Science  " & vbLf
+        Dim myString As String = "     Ada Computer Science  " & vbLf
         Dim strippedString As String = myString.Trim()
         Console.WriteLine(strippedString)
     End Sub

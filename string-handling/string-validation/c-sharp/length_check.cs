@@ -17,23 +17,17 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class StringValidation
     {
-
         // The Main method is the entry point for all C# programs
-        public static void Main() {
-            Test();
-        }
-
-        // Test data
-        public static void Test() {
-            // normal data
+        public static void Main()
+        {
+            // normal test data
             string password = "elephant1234";
             bool result = CheckPassword(password);
             Console.WriteLine($"{password} is valid: {result}");
 
-            // boundary data
+            // boundary test data
             password = "elephant";  // 8 characters exactly
             result = CheckPassword(password);
             Console.WriteLine($"{password} is valid: {result}");
@@ -46,11 +40,14 @@ namespace IsaacCodeSamples
 
 
         // Checks password length
-        public static bool CheckPassword(string password) {
+        public static bool CheckPassword(string password)
+        {
             bool isValid = true;
+
             if (password.Length < 8) {
                 isValid = false;
             }
+            
             return isValid;
         }
         
