@@ -15,7 +15,7 @@ Module Program
     End Sub
 
     Sub CreateFile()
-    Dim fileObject As New System.IO.StreamWriter("playlist.txt") 'Will create file if none exists
+        Dim fileObject As New System.IO.StreamWriter("playlist.txt") 'Will create file if none exists
     End Sub
 
 
