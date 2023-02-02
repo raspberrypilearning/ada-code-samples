@@ -3,6 +3,7 @@
 # part of the National Centre for Computing Education
 # Usage licensed under CC BY-SA 4
 
+
 def blast_off(n):
     """Count down timer"""
 
@@ -12,8 +13,12 @@ def blast_off(n):
         print(n)
         blast_off(n-1)
 
+
 def main():
     blast_off(5)
 
+
+# This code will run if this file is executed directly
+# (i.e. not called by another program)
 if __name__ == '__main__':
     main()

@@ -20,5 +20,7 @@ def main():
     print("I hope you enjoyed using the product calculator")
 
 
+# This code will run if this file is executed directly
+# (i.e. not called by another program)
 if __name__ == '__main__':
     main()

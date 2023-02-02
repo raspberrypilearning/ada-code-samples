@@ -2,7 +2,7 @@
 # Developed to be used alongside Isaac Computer Science,
 # part of the National Centre for Computing Education
 # Usage licensed under CC BY-SA 4
-# https://isaaccomputerscience.org/concepts/prog_sub_value_reference
+
 
 def change_value(item):
     """demonstrates passing by reference"""
@@ -14,6 +14,7 @@ def change_value(item):
     print(f"New value in change_value: {item}")
     object_id = id(item)
     print(f"New object id in change_value: {object_id}")
+
 
 def main():
     word = "dog"
@@ -28,5 +29,7 @@ def main():
     print(f"Object id in main after function call: {object_id}")
 
 
+# This code will run if this file is executed directly
+# (i.e. not called by another program)
 if __name__ == '__main__':
     main()
