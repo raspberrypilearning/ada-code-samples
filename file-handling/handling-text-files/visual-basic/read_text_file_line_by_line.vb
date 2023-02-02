@@ -18,7 +18,7 @@ Module Program
          Using reader As System.IO.StreamReader = New System.IO.StreamReader("bridge.txt")
              Dim line As String
              line = reader.ReadLine()
-            While line IsNot Nothing ' While not end of file
+             While line IsNot Nothing ' While not end of file
                 Console.WriteLine(line) 
                 line = reader.ReadLine() ' Read next ine of file
              End While
