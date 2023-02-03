@@ -11,6 +11,7 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB programModule Program
     Sub Main()
+        ' Demonstrates a runtime error when entering a string value
         Console.WriteLine("Please enter a number:")
         Dim number As Integer = Int32.Parse(Console.ReadLine())
         Console.WriteLine(number)

@@ -9,7 +9,7 @@
 
 Module Program
 
-    ' The Main subroutine is the default entry point for a VB programModule Program
+    ' The Main subroutine is the default entry point for a VB program
     Sub Main()
         Dim amount As Double = 130.4
         Dim result As Double = AddVat(amount)
@@ -17,6 +17,7 @@ Module Program
     End Sub
 
     Function AddVat(ByVal amount As Double) As Double
+        ' Demonstrates a logic error
         Dim RATE As Integer = 20
         Dim vat As Double = amount * RATE
         Dim withVat As Double = amount + vat

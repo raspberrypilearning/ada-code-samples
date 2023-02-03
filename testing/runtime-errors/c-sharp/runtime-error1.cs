@@ -17,13 +17,18 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Testing
+    class RuntimeErrors
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
+            // Demonstrates a runtime error when entering a string value
             Console.WriteLine("Please enter a number:");
-            int number = Int32.Parse(Console.ReadLine());
+            string numberString = Console.ReadLine();
+            int number = Int32.Parse(numberString);
             Console.WriteLine(number);
         }
+
+
     }
 }

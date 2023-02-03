@@ -11,11 +11,10 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB programModule Program
     Sub Main()
-
-    Dim file As String = "highscores.txt"
-    Dim contents As String() = System.IO.File.ReadAllLines(file)
-    Console.WriteLine(contents)
-
+      ' Demonstrates a runtime error
+      Dim file As String = "highscores.txt"
+      Dim contents As String() = System.IO.File.ReadAllLines(file)
+      Console.WriteLine(contents)
     End Sub
 
 

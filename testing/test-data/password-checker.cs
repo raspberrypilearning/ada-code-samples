@@ -17,19 +17,29 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Testing
+    class TestData
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
-            
+        public static void Main()
+        {
+            string passwordToCheck = "test";
+            bool result = CheckPassword(passwordToCheck);
+            Console.WriteLine($"Valid password? {result}");
         }
         
-        public bool CheckPassword (string password) {
+
+        // Checks that a password length is between 8 and 14 characters. Returns True if valid
+        public static bool CheckPassword(string password)
+        {
             bool isValid = true;
+            
             if (password.Length < 8 || password.Length > 14) {
                 isValid = false;
             }
+
             return isValid;
         }
+
+
     }
 }

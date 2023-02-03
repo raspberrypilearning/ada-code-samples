@@ -11,8 +11,8 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB programModule Program
     Sub Main()
-
-        Console.WriteLin("Please enter your name: ")
+        ' Demonstrates a syntax error
+        Console.WriteLine("Please enter your name: ")
         Dim name As String = Console.ReadLine()
 
         If name = "Ada" Then

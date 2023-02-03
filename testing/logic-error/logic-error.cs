@@ -17,21 +17,27 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Testing
+    class LogicErrors
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             double amount = 130.40;
             double result = AddVat(amount);
             Console.WriteLine(result);
         }
 
-        // Calculate the vat and add to the amount
-        public static double AddVat(double amount) {
+
+        // Calculates and applies VAT at standard rate
+        public static double AddVat(double amount)
+        {
+            // Demonstrates a logic error
             int RATE = 20;
             double vat = amount * RATE;
             double withVat = amount + vat;
             return withVat;
         }
+
+
     }
 }

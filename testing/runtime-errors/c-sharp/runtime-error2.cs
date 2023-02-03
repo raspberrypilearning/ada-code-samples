@@ -17,18 +17,19 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Testing
+    class RuntimeErrors
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
-            
-        }
-        public static void ReadAll() {
+        public static void Main()
+        {
+            // Demonstrates a runtime error
             string lines;
             using (StreamReader reader = new StreamReader("highscores.txt")) {
-            lines = reader.ReadToEnd();
+                lines = reader.ReadToEnd();
             } 
             Console.WriteLine(lines);
         }
+
+
     }
 }

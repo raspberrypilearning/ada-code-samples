@@ -17,11 +17,12 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Testing
+    class SyntaxErrors
     {
         // The Main method is the entry point for all C# programs
         public static void Main()
         {
+            // Demonstrates a syntax error
             Console.WriteLin("Please enter your name: "); 
             string name = Console.ReadLine();
             if (name == "Ada") {
@@ -31,5 +32,7 @@ namespace IsaacCodeSamples
                 Console.WriteLine("Hello " + name);
             }
         }
+
+
     }
 }
