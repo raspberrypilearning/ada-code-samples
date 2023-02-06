@@ -11,15 +11,15 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
-        Dim validBooking As Boolean = False
+        Dim validLength As Boolean = False
         Console.WriteLine("Enter your booking reference: ")
         Dim booking As String = Console.ReadLine()
 
         If booking.Length = 8 Then
-            validBooking = True
+            validLength = True
         End If
 
-        Console.WriteLine(validBooking)
+        Console.WriteLine(validLength)
     End Sub
 
 End Module
