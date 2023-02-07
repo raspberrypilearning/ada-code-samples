@@ -22,7 +22,7 @@ Module Program
     Function SumToN(ByVal n As Integer) As Integer
         Dim total As Integer = 0
 
-        For i As Integer = 1 To n + 1 - 1
+        For i As Integer = 1 To n
             total = total + i
         Next
 
