@@ -10,7 +10,7 @@
 
 Module Program
 
-    ' The Main method is the default entry point for all VB programs
+    ' The Main subroutine is the default entry point for all VB programs
     Sub Main()
         Dim length As Single = 12
         Dim result = CalculateArea(length)
