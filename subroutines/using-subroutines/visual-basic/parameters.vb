@@ -14,7 +14,7 @@ Module Program
         CalculateTwoNumbers(5, 10)
     End Sub
 
-    Sub CalculateTwoNumbers(ByVal number1 As Integer, ByVal number2 As Integer)
+    Sub CalculateSum(ByVal number1 As Integer, ByVal number2 As Integer)
         Dim answer As Integer = number1 + number2
         Console.WriteLine($"The sum of {number1} and {number2} is {answer}")
     End Sub
