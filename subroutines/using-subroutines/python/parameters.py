@@ -12,11 +12,11 @@ def calculate_sum(number1, number2):
 def main():
     print("Enter a number:")
     user_response = input()
-    number1 = int(user_response)  // Convert input value to integer
+    number1 = int(user_response)  # Convert input value to integer
     print("Enter another number:")
     user_response = input()
-    number2 = int(user_response)  // Convert input value to integer
-    calculate_sum(number1, number2)  Calls calculate_two_numbers
+    number2 = int(user_response)  # Convert input value to integer
+    calculate_sum(number1, number2)  # Calls calculate_sum
     
     
 # This code will run if this file is executed directly
