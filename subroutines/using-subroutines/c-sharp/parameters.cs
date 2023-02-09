@@ -27,7 +27,7 @@ namespace IsaacCodeSamples
 
 
         // Adds two numbers
-        public static void CalculateTwoNumbers(int number1, int number2)
+        public static void CalculateSum(int number1, int number2)
         {
             int answer = number1 + number2;
             Console.WriteLine(answer);
