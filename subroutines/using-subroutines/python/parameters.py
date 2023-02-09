@@ -10,8 +10,13 @@ def calculate_sum(number1, number2):
 
 
 def main():
-    answer = calculate_sum(5, 10)
-    print(answer)
+    print("Enter a number:")
+    user_response = input()
+    number1 = int(user_response)  // Convert input value to integer
+    print("Enter another number:")
+    user_response = input()
+    number2 = int(user_response)  // Convert input value to integer
+    calculate_sum(number1, number2)  Calls calculate_two_numbers
     
     
 # This code will run if this file is executed directly
