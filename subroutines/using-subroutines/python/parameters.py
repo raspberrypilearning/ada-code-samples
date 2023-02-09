@@ -4,13 +4,13 @@
 # Usage licensed under CC BY-SA 4
 
 
-def calculate_two_numbers(number1, number2):
+def calculate_sum(number1, number2):
     answer = number1 + number2
     return answer
 
 
 def main():
-    answer = calculate_two_numbers(5, 10)
+    answer = calculate_sum(5, 10)
     print(answer)
     
     
