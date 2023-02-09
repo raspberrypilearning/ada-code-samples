@@ -11,7 +11,7 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
-        CalculateTwoNumbers(5, 10)
+        CalculateSum(5, 10)
     End Sub
 
     Sub CalculateSum(ByVal number1 As Integer, ByVal number2 As Integer)
