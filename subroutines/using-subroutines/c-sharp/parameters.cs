@@ -20,19 +20,20 @@ namespace IsaacCodeSamples
     class UsingSubroutines
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
-            CalculateSum(5, 10);
-        }
+        public static void Main() {
+            Console.WriteLine("Enter a number:");
+            string userResponse = Console.ReadLine();
+            int number1 = Int32.Parse(userResponse);  // Convert input value to integer
+            Console.WriteLine("Enter another number:");
+            userResponse = Console.ReadLine();
+            int number2 = Int32.Parse(userResponse);
+            CalculateSum(number1, number2);  // Calls CalculateSum
+        }   
 
-
-        // Adds two numbers
-        public static void CalculateSum(int number1, int number2)
-        {
+        public static void CalculateSum(int number1, int number2) {
             int answer = number1 + number2;
             Console.WriteLine(answer);
         }
-
 
     }
 }
