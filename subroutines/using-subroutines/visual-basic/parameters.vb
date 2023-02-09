@@ -11,7 +11,13 @@ Module Program
 
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
-        CalculateSum(5, 10)
+        Console.WriteLine("Enter a number: ")
+        Dim userResponse As String = Console.ReadLine()
+        Dim number1 As Integer = Int32.Parse(userResponse)  // Convert input value to integer
+        Console.WriteLine("Enter another number: ")
+        userResponse = Console.ReadLine()
+        Dim number2 As Integer = Int32.Parse(userResponse)
+        CalculateSum(number1, number2)  // Calls CalculateSum
     End Sub
 
     Sub CalculateSum(ByVal number1 As Integer, ByVal number2 As Integer)
