@@ -21,12 +21,12 @@ class UsingSubroutines
     // The main method is the entry point for all Java programs
     public static void main(String[] args)
     {
-        calculateTwoNumbers(5, 10);
+        calculateSum(5, 10);
     }
 
 
     // Adds two numbers
-    public static void calculateTwoNumbers(int number1, int number2)
+    public static void calculateSum(int number1, int number2)
     {
         int answer = number1 + number2;
         System.out.println(answer);
