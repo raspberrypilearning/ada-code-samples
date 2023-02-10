@@ -9,7 +9,7 @@
 
 Module Program
 
-    ' The Main subroutine is the default entry point for a VB programModule Program
+    ' The Main subroutine is the default entry point for a VB program
     Sub Main()
         ' Demonstrates a syntax error
         Console.WriteLine("Please enter your name: ")
