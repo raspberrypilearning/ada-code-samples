@@ -9,11 +9,11 @@
 
 Module Program
 
-    ' The Main subroutine is the default entry point for a VB programModule Program
+    ' The Main subroutine is the default entry point for a VB program
     Sub Main()
       ' Demonstrates a runtime error
       Dim file As String = "highscores.txt"
-      Dim contents As String() = System.IO.File.ReadAllLines(file)
+      Dim contents As String() = File.ReadAllLines(file)
       Console.WriteLine(contents)
     End Sub
 
