@@ -20,8 +20,8 @@ Module Program
         Console.WriteLine(myString.Substring(7, 3))
         ' Display 5 characters from start of string ("Compu")
         Console.WriteLine(myString.Substring(0, 5))
-        ' Display characters from index position 6 to end of string ("er Science")
-        Console.WriteLine(myString.Substring(6))
+        ' Display the last 6 characters of the string ("er Science")
+        Console.WriteLine(Right(Substring, 6))
     End Sub
 
 
