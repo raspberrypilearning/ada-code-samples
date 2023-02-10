@@ -19,9 +19,9 @@ Module Program
         ' Display characters 7 To 9 ("r S")
         Console.WriteLine(myString.Substring(7, 3))
         ' Display 5 characters from start of string ("Compu")
-        Console.WriteLine(myString.Substring(0, 5))
+        Console.WriteLine(Left(myString, 5))
         ' Display the last 10 characters of the string ("er Science")
-        Console.WriteLine(Right(Substring, 10))
+        Console.WriteLine(Right(myString, 10))
     End Sub
 
 
