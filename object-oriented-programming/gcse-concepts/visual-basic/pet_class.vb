@@ -35,7 +35,7 @@ Class Pet
     End Function
 
 
-    Public Overloads Function GetPetType() As String
+    Public Function GetPetType() As String
         Return petType
     End Function
 
