@@ -78,9 +78,9 @@ Class Pet
     Public Sub Play()
         If sleeping = True Then
             Console.WriteLine("Zzzzzzz. I am sleeping")
-        ElseIf Equals(mood, "hungry") Then
+        ElseIf mood = "hungry" Then
             Console.WriteLine("I am too hungry to play")
-        ElseIf Equals(mood, "tired") Then
+        ElseIf mood = "tired" Then
             Console.WriteLine("I am too tired to play")
         Else
             Console.WriteLine("This is fun, I love playing")
@@ -96,9 +96,9 @@ Class Pet
         If sleeping = True Then
             Console.WriteLine("Zzzzzzz. I am sleeping")
         End If
-        If Equals(mood, "tired") Then
+        If mood = "tired" Then
             Console.WriteLine("I am too sleepy to eat anything now")
-        ElseIf Equals(mood, "playful") Then
+        ElseIf mood = "playful" Then
             Console.WriteLine("I am not hungry - I want to play")
         Else
             Console.WriteLine("Yum - yum - that tastes great")
@@ -108,9 +108,9 @@ Class Pet
 
 
     Public Sub Sleep()
-        If Equals(mood, "playful") Then
+        If mood = "playful" Then
             Console.WriteLine("I am too playful to sleep")
-        ElseIf Equals(mood, "hungry") Then
+        ElseIf mood = "hungry" Then
             Console.WriteLine("I need something to eat before I can go to sleep")
         Else
             Console.WriteLine("Zzzzzzzz")
