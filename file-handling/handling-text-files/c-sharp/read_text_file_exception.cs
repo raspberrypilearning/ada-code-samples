@@ -18,16 +18,18 @@ using System.IO;
 
 namespace IsaacCodeSamples
 {
-    class Program
+    class HandlingTextFiles
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             ReadFileWithExceptionHandler();
         }
 
 
         // Use an exception handler to catch file not found error
-        public static void ReadFileWithExceptionHandler() {
+        public static void ReadFileWithExceptionHandler()
+        {
             try {
                 using (StreamReader reader = new StreamReader("twynkle.txt")) {
                     string line;

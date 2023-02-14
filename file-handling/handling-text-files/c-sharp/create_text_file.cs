@@ -18,16 +18,18 @@ using System.IO;
 
 namespace IsaacCodeSamples
 {
-    class Program
+    class HandlingTextFiles
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             CreateFile();
         }
 
 
         // Create an empty text file
-        public static void CreateFile() {
+        public static void CreateFile()
+        {
             File.Create("playlist.txt");
         }
 

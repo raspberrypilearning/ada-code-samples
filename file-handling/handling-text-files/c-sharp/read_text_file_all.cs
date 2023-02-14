@@ -18,20 +18,24 @@ using System.IO;
 
 namespace IsaacCodeSamples
 {
-    class Program
+    class HandlingTextFiles
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             ReadAll();
         }
 
 
         // Read all the text of a file
-        public static void ReadAll() {
+        public static void ReadAll()
+        {
             string rhyme;
+            
             using (StreamReader reader = new StreamReader("bridge.txt")) {
                 rhyme = reader.ReadToEnd();
             } // The stream is now closed
+            
             Console.WriteLine(rhyme);
         }
 
