@@ -38,7 +38,7 @@ namespace IsaacCodeSamples
                 {"9", new List<string>() {"1", "3", "7"} }
             };
 
-            Console.WriteLine("### Depth-first search (DFS) - Graph implementation ###");
+            Console.WriteLine("### Graph traversal - depth-first search (DFS) ###");
 
             // Search for a value and return true if it has been found
             string itemToFind = "4";
