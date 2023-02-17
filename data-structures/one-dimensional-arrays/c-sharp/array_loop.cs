@@ -16,7 +16,6 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class OneDimensionalArrays
     {
         // The Main method is the entry point for all C# programs
@@ -36,8 +35,9 @@ namespace IsaacCodeSamples
 
             emotions[1] = "";  // Deletes the item in the second element of the array
 
-            for (int i = 0; i < 6; i++)
-            {
+            // Output each element of the array
+            Console.WriteLine("Output each element of the array:");
+            for (int i = 0; i < emotions.Length; i++) {
                 Console.WriteLine(emotions[i]);
             }
 

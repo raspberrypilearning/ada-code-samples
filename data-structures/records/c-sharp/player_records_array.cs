@@ -52,7 +52,7 @@ namespace IsaacCodeSamples
             
             PlayerRecord player4 = CreatePlayer(4, "Kiera", "Welsh", 
                 4, 8, 1998, "Midfielder", false);
-            firstTeam[3]mon = player4;
+            firstTeam[3] = player4;
             
             // Display information about each player
             DisplayPlayers(firstTeam);

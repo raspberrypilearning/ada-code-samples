@@ -23,14 +23,14 @@ namespace IsaacCodeSamples
         // The Main method is the entry point for all C# programs
         public static void Main()
         {
-            // Intialise a new dictionary of students and results
+            // Initialise a new dictionary of students and results
             Dictionary<string, int> results = new Dictionary<string, int>() {
-                {"Detra", 17},	
-                {"Nova", 84},
-                {"Charlie", 22},
-                {"Hwa", 75},
-                {"Roxann", 92},
-                {"Elsa", 29}
+                { "Detra", 17 },	
+                { "Nova", 84 },
+                { "Charlie", 22 },
+                { "Hwa", 75 },
+                { "Roxann", 92 },
+                { "Elsa", 29 }
             };
 
             // Display the score of Charlie

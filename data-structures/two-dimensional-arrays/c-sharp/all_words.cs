@@ -16,13 +16,12 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class TwoDimensionalArrays
     {
         // The Main method is the entry point for all C# programs
         public static void Main()
         {
-            string[,] spellingWords = new string[3, 3]; // Declare a two dimensional array
+            string[,] spellingWords = new string[3, 3]; // Declare a two-dimensional array
 
             spellingWords[0, 0] = "school";
             spellingWords[0, 1] = "pull";
@@ -34,10 +33,8 @@ namespace IsaacCodeSamples
             spellingWords[2, 1] = "answer";
             spellingWords[2, 2] = "eight";
 
-            for (int level = 0; level < 3; level++)
-            {
-                for (int word = 0; word < 3; word++)
-                {
+            for (int level = 0; level < spellingWords.GetLength(0); level++) {
+                for (int word = 0; word < spellingWords.GetLength(1); word++) {
                     Console.WriteLine(spellingWords[level, word]);
                 }
             }

@@ -18,15 +18,15 @@ using System.Collections.Generic;
 
 namespace IsaacCodeSamples
 {
-
     class Dictionaries
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             Dictionary<string, int> results = new Dictionary<string, int>() {
-                {"Detra", 17},	
-                {"Nova", 84},
-                {"Charlie", 22}
+                { "Detra", 17 },	
+                { "Nova", 84 },
+                { "Charlie", 22 }
             };
             Console.WriteLine(results["Detra"]);
         }

@@ -18,38 +18,38 @@ using System;
 namespace IsaacCodeSamples
 {
     // A class for a node in a linked list
-class Node
-{
-    private string data;
-    private int priority;
-    private Node next;
-
-    // Constructor method
-    public Node(string itemData, int itemPriority)
+    class Node
     {
-        data = itemData;
-        priority = itemPriority;
-    }
+        private string data;
+        private int priority;
+        private Node next;
 
-    public string GetData()
-    {
-        return data;
-    }
+        // Constructor method
+        public Node(string itemData, int itemPriority)
+        {
+            data = itemData;
+            priority = itemPriority;
+        }
 
-    public int GetPriority()
-    {
-        return priority;
-    }
+        public string GetData()
+        {
+            return data;
+        }
 
-    public Node GetNext()
-    {
-        return next;
-    }
+        public int GetPriority()
+        {
+            return priority;
+        }
 
-    public void SetNext(Node newNext)
-    {
-        next = newNext;
-    }
+        public Node GetNext()
+        {
+            return next;
+        }
+
+        public void SetNext(Node newNext)
+        {
+            next = newNext;
+        }
 
         // Testing
         public void OutputNode()
@@ -230,12 +230,12 @@ class Node
         {
             Console.WriteLine("\n------ Dequeuing 10 items ------\n");
 
-            for (int i = 0; i < 10; i++)
-            {
+            for (int i = 0; i < 10; i++) {
                 myQueue.Dequeue();
                 myQueue.OutputQueue();
             }
         }
+
 
     }
 }

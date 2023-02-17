@@ -17,7 +17,7 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Stacks
+    class StacksExample
     {
         public const int MaxSize = 4;
 
@@ -49,13 +49,13 @@ namespace IsaacCodeSamples
 
             // Peek the top item of the stack
             string peekedItem = Peek(stack, top);
-            Console.Write($"\nPeeked top of the stack {peekedItem}");
+            Console.Write($"\nPeeked top of the stack: {peekedItem}");
             OutputStack(stack, top);
 
             // Pop all of the items
-            foreach (string item in stack) {
+            for (int i = 0; i < stack.Length; i++) {
                 // Tuple is used to store multiple return values
-                Tuple<string, int> poppedValues; // item, top
+                Tuple<string, int> poppedValues; // data, top
 
                 poppedValues = Pop(stack, top);
                 top = poppedValues.Item2;
@@ -64,7 +64,7 @@ namespace IsaacCodeSamples
             }
 
             // Try to pop - should say stack is empty
-            Tuple<string, int> finalPoppedValues; // item, top
+            Tuple<string, int> finalPoppedValues; // data, top
             finalPoppedValues = Pop(stack, top);
             top = finalPoppedValues.Item2;
         }
@@ -90,7 +90,7 @@ namespace IsaacCodeSamples
         // Push data onto the top of the stack
         public static int Push(string[] stack, int top, string data)
         {
-            if (IsFull(top) == true)
+            if (IsFull(top))
                 Console.WriteLine($"\nStack is full - {data} not added");
             else {
                 top = top + 1;
@@ -120,7 +120,7 @@ namespace IsaacCodeSamples
         {
             string poppedItem;
 
-            if (IsEmpty(top) == true) {
+            if (IsEmpty(top)) {
                 Console.WriteLine("\nStack is empty - nothing to pop");
                 poppedItem = "";
             }
@@ -140,15 +140,16 @@ namespace IsaacCodeSamples
             Console.WriteLine("\n------ State of the stack (first item is the top) ------");
 
             for (int i = MaxSize - 1; i >= 0; i--) {
-                string item = stack[i];
-                if (string.IsNullOrEmpty(item)) {
-                    item = "null";
+                string data = stack[i];
+                if (string.IsNullOrEmpty(data)) {
+                    data = "null";
                 }
-                Console.WriteLine($"{item}");
+                Console.WriteLine(data);
             }
 
             Console.WriteLine($"Top pointer: {top}");
         }
+        
 
     }
 }

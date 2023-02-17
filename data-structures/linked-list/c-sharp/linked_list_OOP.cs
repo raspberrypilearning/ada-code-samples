@@ -49,7 +49,7 @@ namespace IsaacCodeSamples
     // A class for the linked list
     class LinkedList
     {
-        private Node head; // Do not intialise yet as the linked list is empty
+        private Node head; // Do not initialise yet as the linked list is empty
 
         public Node GetHead()
         {

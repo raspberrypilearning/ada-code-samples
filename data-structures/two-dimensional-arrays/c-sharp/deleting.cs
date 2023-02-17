@@ -16,7 +16,6 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class TwoDimensionalArrays
     {
         // The Main method is the entry point for all C# programs

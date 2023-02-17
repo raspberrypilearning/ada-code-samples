@@ -17,7 +17,7 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Queues
+    class QueuesCircularExample
     {
         public const int MaxSize = 4;
 
@@ -33,7 +33,7 @@ namespace IsaacCodeSamples
 
             // Tuples are used to store multiple return values
             Tuple<int, int> enqueuedValues; // front, rear
-            Tuple<string, int, int> dequeuedValues; // item, front, rear
+            Tuple<string, int, int> dequeuedValues; // data, front, rear
 
             // Insert test data into the queue
             enqueuedValues = Enqueue(queue, front, rear, "Julie");
@@ -114,7 +114,7 @@ namespace IsaacCodeSamples
         // Enqueue an item
         public static Tuple<int, int> Enqueue(string[] queue, int front, int rear, string data)
         {
-            if (IsFull(front, rear) == true)
+            if (IsFull(front, rear))
                 Console.WriteLine($"\nQueue is full - {data} not added");
             else {
                 rear = (rear + 1) % MaxSize;
@@ -130,7 +130,7 @@ namespace IsaacCodeSamples
         {
             string dequeuedItem;
 
-            if (IsEmpty(front) == true) {
+            if (IsEmpty(front)) {
                 Console.WriteLine("\nQueue is empty - nothing to dequeue");
                 dequeuedItem = "";
             }
@@ -158,6 +158,7 @@ namespace IsaacCodeSamples
             Console.WriteLine($"Front: {front}");
             Console.WriteLine($"Rear: {rear}");
         }
+        
 
     }
 }

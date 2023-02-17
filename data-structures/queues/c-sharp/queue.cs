@@ -17,7 +17,7 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Queues
+    class QueuesExample
     {
         public const int MaxSize = 4;
 
@@ -49,9 +49,9 @@ namespace IsaacCodeSamples
             OutputQueue(queue, front, rear);
 
             // Dequeue all of the items
-            foreach (string item in queue) {
+            for (int i = 0; i < queue.Length; i++) {
                 // Tuple is used to store multiple return values
-                Tuple<string, int> dequeuedValues; // item, front
+                Tuple<string, int> dequeuedValues; // data, front
 
                 dequeuedValues = Dequeue(queue, front, rear);
                 front = dequeuedValues.Item2;
@@ -61,6 +61,7 @@ namespace IsaacCodeSamples
             // This shouldn't enqueue Eirini since there is no implementation for
             // writing over any dequeued elements
             rear = Enqueue(queue, rear, "Eirini");
+            Console.WriteLine($"Rear: {rear}");
         }
 
         // Check if the queue is empty
@@ -84,8 +85,9 @@ namespace IsaacCodeSamples
         // Enqueue an item
         public static int Enqueue(string[] queue, int rear, string data)
         {
-            if (IsFull(rear) == true)
+            if (IsFull(rear)) {
                 Console.WriteLine($"\nQueue is full - {data} not added");
+            }
             else {
                 rear = rear + 1;
                 queue[rear] = data;
@@ -98,7 +100,7 @@ namespace IsaacCodeSamples
         {
             string dequeuedItem;
 
-            if (IsEmpty(front, rear) == true) {
+            if (IsEmpty(front, rear)) {
                 Console.WriteLine("\nQueue is empty - nothing to dequeue");
                 dequeuedItem = "";
             }
@@ -119,6 +121,7 @@ namespace IsaacCodeSamples
             Console.WriteLine($"Front: {front}");
             Console.WriteLine($"Rear: {rear}");
         }
+        
 
     }
 }

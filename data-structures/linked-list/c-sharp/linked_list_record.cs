@@ -28,7 +28,7 @@ namespace IsaacCodeSamples
     // A class for the linked list
     class LinkedList
     {
-        public NodeRecord head; // Do not intialise yet as the linked list is empty
+        public NodeRecord head; // Do not initialise yet as the linked list is empty
     }
 
 

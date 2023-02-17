@@ -48,8 +48,9 @@ namespace IsaacCodeSamples
         public void OutputNode()
         {
             string nextData = "null";
-            if (next != null)
+            if (next != null) {
                 nextData = next.data;
+            }
             Console.WriteLine($"Data: {data}, next: {nextData}");
         }
     }
@@ -178,6 +179,7 @@ namespace IsaacCodeSamples
             myStack.Push("Eirini");
             myStack.OutputStack();
         }
+        
 
     }
 }

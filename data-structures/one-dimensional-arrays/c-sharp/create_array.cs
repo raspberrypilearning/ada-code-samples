@@ -17,7 +17,6 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class OneDimensionalArrays
     {
         // The Main method is the entry point for all C# programs
@@ -31,7 +30,7 @@ namespace IsaacCodeSamples
             emotions[3] = "enthusiastic";
             emotions[4] = "lively";
 
-            Console.WriteLine(emotions[2]);
+            Console.WriteLine(emotions[2]);  // Displays the third element of the array
         }
 
 

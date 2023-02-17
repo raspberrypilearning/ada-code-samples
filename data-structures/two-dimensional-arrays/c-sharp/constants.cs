@@ -16,12 +16,11 @@ using System;
 
 namespace IsaacCodeSamples
 {
-
     class TwoDimensionalArrays
     {
-        const int LEVEL1 = 0;
-        const int LEVEL2 = 1;
-        const int LEVEL3 = 2;
+        public const int LEVEL1 = 0;
+        public const int LEVEL2 = 1;
+        public const int LEVEL3 = 2;
 
         // The Main method is the entry point for all C# programs
         public static void Main()
@@ -38,8 +37,7 @@ namespace IsaacCodeSamples
             spellingWords[2, 1] = "answer";
             spellingWords[2, 2] = "eight";
 
-            for (int word = 0; word < 3; word++)
-            {
+            for (int word = 0; word < spellingWords.GetLength(1); word++) {
                 Console.WriteLine(spellingWords[LEVEL2, word]);
             }
 
@@ -47,4 +45,3 @@ namespace IsaacCodeSamples
         }
     }
 }
-
