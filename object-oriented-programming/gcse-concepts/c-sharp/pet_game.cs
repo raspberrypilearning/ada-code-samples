@@ -2,6 +2,7 @@
 Raspberry Pi Foundation
 Developed to be used alongside Isaac Computer Science, part of the National Centre for Computing Education
 Usage licensed under CC BY-SA 4
+
 Note: This file is designed to be copied out and compiled on your machine.
 In order for it to compile properly you need to ensure that the project name is the same as the "namespace" in this file.
 To run this file you need to:
@@ -12,11 +13,10 @@ To run this file you need to:
 5. Run the program
 */
 
-
 using System;
+
 namespace IsaacCodeSamples
 {
-    
     class Program
     {
         // The Main method is the entry point for all C# programs
@@ -24,45 +24,42 @@ namespace IsaacCodeSamples
         {
             Console.WriteLine("Enter a name for your pet ");
             string petName = Console.ReadLine();
+
             Console.WriteLine($"What type of animal is {petName}? ");
             string petType = Console.ReadLine();
+
             Console.WriteLine($"What colour is {petName}? ");
             string petColour = Console.ReadLine();
+
             Pet myPet = new Pet(petName, petType, petColour); // Makes a pet object
-            Boolean finished = false;
-            while (finished == false)
-            {
+            
+            bool finished = false;
+            while (finished == false) {
                 ShowGameOptions();
-                Console.WriteLine(" What do you want to do? ");
+
+                Console.WriteLine("What do you want to do? ");
                 string choice = Console.ReadLine();
-                Console.WriteLine("\n");
-                if (choice == "1")
-                {
+                
+                if (choice == "1") {
                     myPet.Feed();
                 }
-                else if (choice == "2")
-                {
+                else if (choice == "2") {
                     myPet.Play();
                 }
-                else if (choice == "3")
-                {
+                else if (choice == "3") {
                     myPet.Sleep();
                 }
-                else if (choice == "4")
-                {
+                else if (choice == "4") {
                     myPet.Wake();
                 }
-                else if (choice == "5")
-                {
+                else if (choice == "5") {
                     ChangePet(myPet);
                 }
-                else if (choice == "9")
-                {
+                else if (choice == "9") {
                     finished = true; // This will cause game to end
                     Console.WriteLine("Thanks for playing the pet game");
                 }
-                else
-                {
+                else {
                     Console.WriteLine("That is not a menu option");
                 }
             }
@@ -72,13 +69,13 @@ namespace IsaacCodeSamples
         // Display options for playing game
         public static void ShowGameOptions()
         {
-            Console.WriteLine("\n");
-            Console.WriteLine("  1. Feed your pet");
-            Console.WriteLine("  2. Play with your pet");
-            Console.WriteLine("  3. Put your pet to bed");
-            Console.WriteLine("  4. Wake your pet up");
-            Console.WriteLine("  5. Change pet");
-            Console.WriteLine("  9. Finish the game");
+            Console.WriteLine();
+            Console.WriteLine(" 1. Feed your pet");
+            Console.WriteLine(" 2. Play with your pet");
+            Console.WriteLine(" 3. Put your pet to bed");
+            Console.WriteLine(" 4. Wake your pet up");
+            Console.WriteLine(" 5. Change pet");
+            Console.WriteLine(" 9. Finish the game");
         }
         
         
@@ -87,33 +84,37 @@ namespace IsaacCodeSamples
         {
             Console.WriteLine("\nDo you want to change the name of your pet(y/n)? ");
             string answer = Console.ReadLine();
-            if (answer.ToLower() == "y")
-            {
+
+            if (answer.ToLower() == "y") {
                 Console.WriteLine("Enter a new name for your pet ");
                 string newName = Console.ReadLine();
                 myPet.SetName(newName);
             }
+
             Console.WriteLine("\nDo you want to change the type of pet you have(y/n)? ");
             answer = Console.ReadLine();
-            if (answer.ToLower() == "y")
-            {
+
+            if (answer.ToLower() == "y") {
                 string petName = myPet.GetName();
                 Console.WriteLine($"What type of animal is {petName}? ");
                 string newType = Console.ReadLine();
                 myPet.SetType(newType);
             }
+
             Console.WriteLine("\nDo you want to change the colour of your pet(y/n)? ");
             answer = Console.ReadLine();
-            if (answer.ToLower() == "y")
-            {
+            
+            if (answer.ToLower() == "y") {
                 string petName = myPet.GetName();
                 Console.WriteLine($"What colour is {petName}? ");
                 string newColour = Console.ReadLine();
                 myPet.SetColour(newColour);
             }
+
             Console.WriteLine("\n");
             myPet.Describe();
-        }    
+        }
+
+
     }
-    
 }
