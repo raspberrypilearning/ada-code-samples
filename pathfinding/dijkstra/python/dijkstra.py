@@ -138,8 +138,8 @@ def main():
     # Use a dictionary to represent the graph as an adjacency list
     # and the cost of each neighbour
     test_graph = {"A": {"B":8, "C":5},
-             "C": {"A":5, "D":6, "E":9},
              "B": {"A":8, "D":1},
+             "C": {"A":5, "D":6, "E":9},
              "D": {"C":6, "B":1, "E":2},
              "E": {"C":9, "D":2}
              }

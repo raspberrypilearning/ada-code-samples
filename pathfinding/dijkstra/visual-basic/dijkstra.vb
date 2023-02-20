@@ -21,8 +21,8 @@ Module program
         ' and the cost of each neighbour
         Dim testGraph = New Dictionary(Of String, Dictionary(Of String, Integer)) From {
             {"A", New Dictionary(Of String, Integer) From {{"B", 8}, {"C", 5}}},
-            {"C", New Dictionary(Of String, Integer) From {{"A", 5}, {"D", 6}, {"E", 9}}},
             {"B", New Dictionary(Of String, Integer) From {{"A", 8}, {"D", 1}}},
+            {"C", New Dictionary(Of String, Integer) From {{"A", 5}, {"D", 6}, {"E", 9}}},
             {"D", New Dictionary(Of String, Integer) From {{"C", 6}, {"B", 1}, {"E", 2}}},
             {"E", New Dictionary(Of String, Integer) From {{"C", 9}, {"D", 2}}}
         }

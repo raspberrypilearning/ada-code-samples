@@ -33,8 +33,8 @@ namespace IsaacCodeSamples
             var testGraph = new Dictionary<string, Dictionary<string, int>>
             {
                 {"A", new Dictionary<string, int> { {"B", 8}, {"C", 5} } },
-                {"C", new Dictionary<string, int> { {"A", 5}, {"D", 6}, {"E", 9} } },
                 {"B", new Dictionary<string, int> { {"A", 8}, {"D", 1} } },
+                {"C", new Dictionary<string, int> { {"A", 5}, {"D", 6}, {"E", 9} } },
                 {"D", new Dictionary<string, int> { {"C", 6}, {"B", 1}, {"E", 2} } },
                 {"E", new Dictionary<string, int> { {"C", 9}, {"D", 2} } }
             };
