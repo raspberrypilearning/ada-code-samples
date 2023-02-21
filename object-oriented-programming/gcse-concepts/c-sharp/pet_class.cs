@@ -129,7 +129,7 @@ namespace AdaCodeSamples
         }
 
         
-        // A method for trying to put the pet to sleep
+        // A method for trying to put the pet to bed
         public void Sleep()
         {
             if (mood == "playful") {
