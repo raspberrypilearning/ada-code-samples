@@ -1,5 +1,5 @@
 ' Raspberry Pi Foundation
-' Usage licensed under CC BY-SA 4
+' Usage licensed under CC BY-NC-SA 4.0
 ' To run this file you need to:
 ' 1. Copy the contents
 ' 2. Paste them into the Visual Basic IDE of your choice (Visual Studio, for example)

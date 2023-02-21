@@ -1,7 +1,7 @@
 /*
 Raspberry Pi Foundation
-Developed to be used alongside Isaac Computer Science, part of the National Centre for Computing Education
-Usage licensed under CC BY-SA 4
+Developed as part of Ada Computer Science 
+Usage licensed under CC BY-NC-SA 4.0
 
 Note: This file is designed to be copied out and compiled on your machine.
 In order for it to compile properly you need to ensure that the project name is the same as the "namespace" in this file.
@@ -15,7 +15,7 @@ To run this file you need to:
 
 using System;
 
-namespace IsaacCodeSamples
+namespace AdaCodeSamples
 {
     class Substrings
     {
@@ -29,7 +29,7 @@ namespace IsaacCodeSamples
         // Demonstrates stripping whitespace from the start and end of a string
         public static void StripWhitespace()
         {
-            string myString = "     Isaac Computer Science  \n";
+            string myString = "     Ada Computer Science  \n";
             string strippedString = myString.Trim();
             Console.WriteLine(strippedString);
         }

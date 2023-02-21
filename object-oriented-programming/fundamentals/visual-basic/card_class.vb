@@ -1,5 +1,5 @@
 ' Raspberry Pi Foundation
-' Usage licensed under CC BY-SA 4
+' Usage licensed under CC BY-NC-SA 4.0
 ' Note: This file is designed to be copied out and compiled on your machine.
 ' To run this file you need to:
 ' 1. Copy the contents

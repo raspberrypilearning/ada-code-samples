@@ -1,7 +1,7 @@
 # Raspberry Pi Foundation
-# Developed to be used alongside Isaac Computer Science,
-# part of the National Centre for Computing Education
-# Usage licensed under CC BY-SA 4
+# Developed as part of Ada Computer Science
+# 
+# Usage licensed under CC BY-NC-SA 4.0
 
 import pickle  # Module for working with binary files
 

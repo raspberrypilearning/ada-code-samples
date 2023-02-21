@@ -1,8 +1,8 @@
 /*
 Raspberry Pi Foundation
-Developed to be used alongside Isaac Computer Science,
-part of the National Centre for Computing Education
-Usage licensed under CC BY-SA 4
+Developed as part of Ada Computer Science
+
+Usage licensed under CC BY-NC-SA 4.0
 
 Note: This file is designed to be copied out and compiled on your machine.
 In order for the program to compile properly in some IDEs, you need to ensure that the

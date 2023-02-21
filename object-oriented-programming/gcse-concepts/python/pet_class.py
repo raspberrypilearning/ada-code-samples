@@ -1,8 +1,8 @@
 # Raspberry Pi Foundation
-# Developed to be used alongside Isaac Computer Science,
-# part of the National Centre for Computing Education
-# Usage licensed under CC BY-SA 4
-# https://isaaccomputerscience.org/concepts/prog_oop_concepts
+# Developed as part of Ada Computer Science
+# 
+# Usage licensed under CC BY-NC-SA 4.0
+# https://adacomputerscience.org/concepts/prog_oop_concepts
 
 import random
 
