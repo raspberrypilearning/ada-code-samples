@@ -57,6 +57,9 @@ Module Program
     Sub Main()
         ' Instantiate a new deck object
         Dim myDeck As Deck = New Deck()
+            
+        ' Show that the deck object has been created
+        Console.WriteLine(myDeck);
     End Sub
 
 End Module

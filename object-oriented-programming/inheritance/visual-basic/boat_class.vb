@@ -37,7 +37,12 @@ Module Program
         Dim capacity = 88
         Dim berths = 90
         Dim cost = 2.0E+8F
-        Dim boaty As Boat = New Boat(name, length, capacity, berths, cost)  ' Instantiate a new boat object
+
+        ' Instantiate a new boat object
+        Dim boaty As Boat = New Boat(name, length, capacity, berths, cost)
+            
+        ' Show that the boat object has been created
+        Console.WriteLine(boaty);
     End Sub
 
 

@@ -3,9 +3,9 @@
 # 
 # Usage licensed under CC BY-NC-SA 4.0
 
-from Boat import Boat
+from boat_class import Boat
 
-# Specify that the Yacht class inherits from the Boat class
+# Yacht class inherits from the Boat class
 class Yacht(Boat):
 
     def __init__(self, given_name, given_length, given_capacity, given_berths, given_unit_cost, given_masts):
@@ -19,6 +19,9 @@ class Yacht(Boat):
 
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
-
 if __name__ == '__main__':
-    my_boat = Yacht("Mary Sue", 15.7, 300, 6, 54.50, 2)
+    # Instantiate a new yacht object
+    my_yacht = Yacht("Mary Sue", 15.7, 300, 6, 54.50, 2)
+
+    # Show that the yacht object has been created
+    print(my_yacht)

@@ -14,16 +14,11 @@ To run this file you need to:
 */
 
 using System;
-using System.IO;
-
 
 namespace AdaCodeSamples
 {
-
-
     class Boat
     {
-
         private string name;
         private float length;
         private int capacity;
@@ -31,29 +26,36 @@ namespace AdaCodeSamples
         protected float unitCost;
 
         // Constructor method
-        public Boat(string givenName, float givenLength, int givenCapacity, int givenBerths, float givenUnitCost) {
+        public Boat(string givenName, float givenLength, int givenCapacity,
+            int givenBerths, float givenUnitCost)
+        {
             name = givenName;
             length = givenLength;
             capacity = givenCapacity;
             berths = givenBerths;
             unitCost = givenUnitCost;
         }
-        
     }
 
 
     class Testing
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             string name = "Sir David Attenborough";
             float length = 128.9F;
             int capacity = 88;
             int berths = 90;
             float cost = 200000000F;
-            Boat boaty = new Boat(name, length, capacity, berths, cost);  // Instantiate a new boat object
+
+            // Instantiate a new boat object
+            Boat boaty = new Boat(name, length, capacity, berths, cost);
+            
+            // Show that the boat object has been created
+            Console.WriteLine(boaty);
         }
         
-    }
-    
+
+    } 
 }

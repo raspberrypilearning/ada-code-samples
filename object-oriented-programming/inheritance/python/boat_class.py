@@ -22,4 +22,9 @@ if __name__ == '__main__':
     capacity = 88
     berths = 90
     cost = 200000000
+    
+    # Instantiate a new boat object
     boaty = Boat(name, length, capacity, berths, cost)
+
+    # Show that the boat object has been created
+    print(boaty)

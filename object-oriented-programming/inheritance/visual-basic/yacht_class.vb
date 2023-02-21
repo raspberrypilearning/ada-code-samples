@@ -28,8 +28,9 @@ Class Boat
 End Class
 
 
+' Yacht class inherits from the Boat class
 Class Yacht
-    Inherits Boat  ' Inherits from Boat
+    Inherits Boat
 
     Private masts As Integer
 
@@ -46,7 +47,11 @@ Module Program
 
     ' The Main method is the default entry point for all VB programs
     Sub Main()
+        ' Instantiate a new yacht object
         Dim myYacht As Yacht = New Yacht("Mary Sue", 15.7F, 300, 6, 54.5F, 2)
+            
+        ' Show that the yacht object has been created
+        Console.WriteLine(myYacht);
     End Sub
 
 

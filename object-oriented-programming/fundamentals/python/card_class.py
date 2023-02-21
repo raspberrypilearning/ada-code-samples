@@ -16,3 +16,6 @@ class PlayingCard:
 if __name__ == '__main__':    
     # Instantiate an example Card object
     my_card = PlayingCard("clubs", "2", 2)
+    
+    # Show that the card object has been created
+    print(my_card);

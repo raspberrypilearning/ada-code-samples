@@ -14,34 +14,35 @@ To run this file you need to:
 */
 
 using System;
-using System.IO;
 
 namespace AdaCodeSamples
 {
     class Player
     {
-
         private string name;
         private int score;
 
         // Constructor method
-        public Player(string givenName) {
+        public Player(string givenName)
+        {
             name = givenName;
             score = 0;
         }
         
-        public getName() {
+        public string GetName()
+        {
             return name;
         }
         
-        public getScore() {
+        public int GetScore()
+        {
             return score;
         }
         
-        public setScore(int newScore) {
+        public void SetScore(int newScore)
+        {
             score = newScore;
         }
-        
     }
     
     
@@ -54,10 +55,10 @@ namespace AdaCodeSamples
             Player gamePlayer = new Player("Leona");
             Console.WriteLine($"The player's name is: {gamePlayer.GetName()}");
             Console.WriteLine($"The player's score is: {gamePlayer.GetScore()}");
-            gamePlayer.setScore(20);
+            gamePlayer.SetScore(20);
             Console.WriteLine($"The player's score is now: {gamePlayer.GetScore()}");
         }
+
+        
     }
-    
-    
 }

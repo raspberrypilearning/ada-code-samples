@@ -37,4 +37,7 @@ class Deck:
 # (i.e. not called by another program)
 if __name__ == '__main__':   
     # Instantiate an example Deck object
-    my_deck = Deck() 
+    my_deck = Deck()
+    
+    # Show that the deck object has been created
+    print(my_deck);

@@ -44,6 +44,9 @@ Module Program
         Console.WriteLine("Enter your name: ")
         Dim playerName As String = Console.ReadLine()
         Dim gamePlayer As Player = New Player(playerName)
+            
+        ' Show that the player object has been created
+        Console.WriteLine(gamePlayer);
     End Sub
 
 

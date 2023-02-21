@@ -14,14 +14,11 @@ To run this file you need to:
 */
 
 using System;
-using System.IO;
-
 
 namespace AdaCodeSamples
 {
     class Boat
     {
-
         private string name;
         private float length;
         private int capacity;
@@ -29,7 +26,8 @@ namespace AdaCodeSamples
         protected float unitCost;
 
         // Constructor method
-        public Boat(string givenName, float givenLength, int givenCapacity, int givenBerths, float givenUnitCost)
+        public Boat(string givenName, float givenLength, int givenCapacity,
+            int givenBerths, float givenUnitCost)
         {
             name = givenName;
             length = givenLength;
@@ -37,12 +35,12 @@ namespace AdaCodeSamples
             berths = givenBerths;
             unitCost = givenUnitCost;
         }
-
     }
 
-    class Yacht : Boat  // Inherits from Boat
+
+    // Yacht class inherits from the Boat class
+    class Yacht : Boat  
     {
-        
         private int masts;
 
         // Constructor method
@@ -50,19 +48,21 @@ namespace AdaCodeSamples
         {
             masts = givenMasts;
         }
-
     }
 
 
     class Testing
     {
-        
         // The Main method is the entry point for all C# programs
         public static void Main()
         {
+            // Instantiate a new yacht object
             Yacht myYacht = new Yacht("Mary Sue", 15.7F, 300, 6, 54.5F, 2);
+            
+            // Show that the yacht object has been created
+            Console.WriteLine(myYacht);
         }
 
-    }
 
+    }
 }

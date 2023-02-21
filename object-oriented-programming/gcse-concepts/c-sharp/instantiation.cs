@@ -35,7 +35,7 @@ namespace AdaCodeSamples
             // Make a new pet object
             Pet myPet = new Pet(petName, petType, petColour);
             
-            // Show the pet object has been created
+            // Show that the pet object has been created
             Console.WriteLine(myPet);
         }
 

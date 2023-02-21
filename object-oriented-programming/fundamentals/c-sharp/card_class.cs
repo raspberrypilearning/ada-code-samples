@@ -14,7 +14,6 @@ To run this file you need to:
 */
 
 using System;
-using System.IO;
 
 namespace AdaCodeSamples
 {
@@ -25,23 +24,27 @@ namespace AdaCodeSamples
         private int value;
 
         // Constructor method
-        public PlayingCard(string givenSuit, string givenRank, int givenValue) {
+        public PlayingCard(string givenSuit, string givenRank, int givenValue)
+        {
             suit = givenSuit;
             rank = givenRank;
             value = givenValue;
         }
-
     }
 
     
     class Testing
     {
         // The Main method is the entry point for all C# programs
-        public static void Main() {
+        public static void Main()
+        {
             // Instantiate a new card object
             PlayingCard myCard = new PlayingCard("clubs", "2", 2);
+            
+            // Show that the card object has been created
+            Console.WriteLine(myCard);
         }
+
         
     }
-
 }
