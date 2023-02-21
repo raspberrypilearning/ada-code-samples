@@ -20,23 +20,24 @@ namespace IsaacCodeSamples
     class Pet
     {
         private string name;
-        private string type;
+        private string petType;
         private string colour;
         private string mood;
         private bool sleeping;
         
-        
-        // Constructor
+        // Constructor method
         public Pet(string givenName, string givenType, string givenColour)
         {
             name = givenName;
-            type = givenType;
+            petType = givenType;
             colour = givenColour;
+            sleeping = false;
+
+            // Randomly choose a starting mood
             string[] allMoods = { "playful", "hungry", "sleepy" };
             Random rnd = new Random();
             int index = rnd.Next(allMoods.Length);
             mood = allMoods[index];
-            sleeping = false;
         }
         
         public string GetName()
@@ -44,9 +45,19 @@ namespace IsaacCodeSamples
             return name;
         }
         
-        public new string GetType()
+        public void SetName(string newName)
         {
-            return type;
+            name = newName;
+        }
+        
+        public string GetPetType()
+        {
+            return petType;
+        }
+        
+        public void SetPetType(string newType)
+        {
+            petType = newType;
         }
         
         public string GetColour()
@@ -54,37 +65,28 @@ namespace IsaacCodeSamples
             return colour;
         }
         
+        public void SetColour(string newColour)
+        {
+            colour = newColour;
+        }
+        
         public string GetMood()
         {
             return mood;
         }
         
-        public Boolean IsSleeping()
+        public bool IsSleeping()
         {
             return sleeping;
         }
         
         public void Describe()
         {
-            Console.WriteLine($"I am a {mood}, {colour} {type} called {name}");
-        }
-        
-        public void SetName(string newName)
-        {
-            name = newName;
-        }
-        
-        public void SetType(string newType)
-        {
-            type = newType;
-        }
-        
-        public void SetColour(string newColour)
-        {
-            colour = newColour;
+            Console.WriteLine($"I am a {mood}, {colour} {petType} called {name}");
         }
         
 
+        // A method for trying to play with the pet
         public void Play()
         {
             if (sleeping == true) {
@@ -97,7 +99,9 @@ namespace IsaacCodeSamples
                 Console.WriteLine("I am too tired to play");
             }
             else {
-                Console.WriteLine("This is fun, I love playing");            
+                Console.WriteLine("This is fun, I love playing");  
+
+                // Randomly choose a new mood
                 string[] allMoods = { "playful", "hungry", "sleepy" };
                 Random rnd = new Random();
                 int index = rnd.Next(allMoods.Length);
@@ -105,7 +109,8 @@ namespace IsaacCodeSamples
             }
         }
         
-        
+
+        // A method for trying to feed the pet
         public void Feed()
         {
             if (sleeping == true) {
@@ -122,8 +127,9 @@ namespace IsaacCodeSamples
                 mood = "playful";
             }
         }
+
         
-        
+        // A method for trying to put the pet to sleep
         public void Sleep()
         {
             if (mood == "playful") {
@@ -138,7 +144,8 @@ namespace IsaacCodeSamples
             }
         }
         
-        
+
+        // A method for trying to wake the pet up
         public void Wake()
         {
             if (sleeping == false) {

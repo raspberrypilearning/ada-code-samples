@@ -17,26 +17,31 @@ using System;
 
 namespace IsaacCodeSamples
 {
-    class Program
+    class TestingPetGame
     {
         // The Main method is the entry point for all C# programs
         public static void Main()
         {
-            Console.WriteLine("Enter a name for your pet ");
+            // Ask the user to input the pet's information
+            Console.WriteLine("Enter a name for your pet:");
             string petName = Console.ReadLine();
 
-            Console.WriteLine($"What type of animal is {petName}? ");
+            Console.WriteLine($"What type of animal is {petName}?");
             string petType = Console.ReadLine();
 
-            Console.WriteLine($"What colour is {petName}? ");
+            Console.WriteLine($"What colour is {petName}?");
             string petColour = Console.ReadLine();
 
-            Pet myPet = new Pet(petName, petType, petColour); // Makes a pet object
+            // Make a new pet object
+            Pet myPet = new Pet(petName, petType, petColour);
             
+            // Game loop for playing the game
             bool finished = false;
             while (finished == false) {
+                // Output the game options
                 ShowGameOptions();
 
+                // Run a method depending on the user choice
                 Console.WriteLine("What do you want to do? ");
                 string choice = Console.ReadLine();
                 
@@ -56,7 +61,8 @@ namespace IsaacCodeSamples
                     ChangePet(myPet);
                 }
                 else if (choice == "9") {
-                    finished = true; // This will cause game to end
+                    // This will cause game to end
+                    finished = true;
                     Console.WriteLine("Thanks for playing the pet game");
                 }
                 else {
@@ -82,6 +88,7 @@ namespace IsaacCodeSamples
         // Allows pet to be changed
         public static void ChangePet(Pet myPet)
         {
+            // Ask the user to change the pet's name
             Console.WriteLine("\nDo you want to change the name of your pet(y/n)? ");
             string answer = Console.ReadLine();
 
@@ -91,6 +98,7 @@ namespace IsaacCodeSamples
                 myPet.SetName(newName);
             }
 
+            // Ask the user to change the pet's type
             Console.WriteLine("\nDo you want to change the type of pet you have(y/n)? ");
             answer = Console.ReadLine();
 
@@ -98,9 +106,10 @@ namespace IsaacCodeSamples
                 string petName = myPet.GetName();
                 Console.WriteLine($"What type of animal is {petName}? ");
                 string newType = Console.ReadLine();
-                myPet.SetType(newType);
+                myPet.SetPetType(newType);
             }
 
+            // Ask the user to change the pet's colour
             Console.WriteLine("\nDo you want to change the colour of your pet(y/n)? ");
             answer = Console.ReadLine();
             
