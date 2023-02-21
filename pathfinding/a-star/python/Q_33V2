@@ -1,7 +1,7 @@
 # Raspberry Pi Foundation
-# Developed to be used alongside Isaac Computer Science,
-# part of the National Centre for Computing Education
-# Usage licensed under CC BY-SA 4
+# Developed as part of Ada Computer Science
+# 
+# Usage licensed under CC BY-NC-SA 4.0
 # Code to solve question 33_v2
 
 # Use sys.maxsize to represent infinity
@@ -64,7 +64,7 @@ def display_shortest_path(visited, start_node, target_node):
 
     
 def get_heuristic(node):
-    """Returns heuristic values for the graph as used on the Isaac CS platform"""
+    """Returns heuristic values for the graph as used on the Ada CS platform"""
 
     if node == "A":
         estimated_distance_to_target = 30

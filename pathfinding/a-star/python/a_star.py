@@ -64,7 +64,7 @@ def display_shortest_path(visited, start_node, target_node):
 
     
 def get_heuristic(node):
-    """Returns heuristic values for the graph as used on the Isaac CS platform"""
+    """Returns heuristic values for the graph as used on the Ada CS platform"""
 
     if node == "A":
         estimated_distance_to_target = 10

@@ -114,7 +114,7 @@ namespace AdaCodeSamples
             Console.WriteLine($"Cost: {cost}");
         }
 
-        // Returns heuristic values for the graph as used on the Isaac CS platform
+        // Returns heuristic values for the graph as used on the Ada CS platform
         public static int GetHeuristic(string node)
         {
             int estimatedDistanceToTarget;

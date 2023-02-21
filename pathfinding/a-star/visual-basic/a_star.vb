@@ -100,7 +100,7 @@ Module program
         Console.WriteLine($"Cost: {cost}")
     End Sub
 
-    ' Returns heuristic values for the graph as used on the Isaac CS platform
+    ' Returns heuristic values for the graph as used on the Ada CS platform
     Function GetHeuristic(ByVal node As String) As Integer
         Dim estimatedDistanceToTarget As Integer
 
