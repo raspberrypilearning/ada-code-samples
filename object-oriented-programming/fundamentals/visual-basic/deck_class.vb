@@ -31,21 +31,20 @@ Class Deck
 
     ' Constructor method
     Public Sub New()
-        Dim cardNumber = 0
-        Dim i = 0
+        Dim cardNumber As Integer = 0
 
-        While i = 4
-            Dim j = 0
-
-            While j = 13
+        ' Repeat for all 4 suits
+        For i As Integer = 0 To suits.Length - 1
+            ' Repeat for all 13 ranks of a suit
+            For j As Integer = 0 To ranks.Length - 1
                 Dim newCard As PlayingCard = New PlayingCard(suits(i), ranks(j), values(j))
                 cards(cardNumber) = newCard
                 cardNumber += 1
-                j += 1  ' For each rank
-            End While
+            Next
+        Next
 
-            i += 1  ' For each suit
-        End While
+        ' Show that all 52 playing cards have been initialised
+        Console.WriteLine($"Initialised {cardNumber} playing cards")
     End Sub
 
 End Class
@@ -57,9 +56,6 @@ Module Program
     Sub Main()
         ' Instantiate a new deck object
         Dim myDeck As Deck = New Deck()
-            
-        ' Show that the deck object has been created
-        Console.WriteLine(myDeck);
     End Sub
 
 End Module

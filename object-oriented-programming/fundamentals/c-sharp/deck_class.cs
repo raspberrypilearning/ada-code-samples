@@ -20,7 +20,7 @@ namespace AdaCodeSamples
     class PlayingCard
     {
         private string suit;
-        private string rank;
+        public string rank;
         private int value;
 
         // Constructor method
@@ -45,15 +45,18 @@ namespace AdaCodeSamples
         {
             int cardNumber = 0;
 
-            // For each suit
-            for (int i = 0; i == 4; i++) {
-                // For each rank within a suit
-                for (int j = 0; j == 13; j++) {
+            // Repeat for all 4 suits
+            for (int i = 0; i < suits.Length; i++) {
+                // Repeat for all 13 ranks of a suit
+                for (int j = 0; j < ranks.Length; j++) {
                     PlayingCard newCard = new PlayingCard(suits[i], ranks[j], values[j]);
                     cards[cardNumber] = newCard;
                     cardNumber += 1;
                 }
             }
+
+            // Show that all 52 playing cards have been initialised
+            Console.WriteLine($"Initialised {cardNumber} playing cards");
         }
         
 
@@ -67,9 +70,6 @@ namespace AdaCodeSamples
         {
             // Instantiate a new deck object
             Deck myDeck = new Deck();
-            
-            // Show that the deck object has been created
-            Console.WriteLine(myDeck);
         }
 
 

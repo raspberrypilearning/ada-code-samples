@@ -31,7 +31,7 @@ Module Program
         Dim myCard As PlayingCard = New PlayingCard("clubs", "2", 2)
             
         ' Show that the card object has been created
-        Console.WriteLine(myCard);
+        Console.WriteLine(myCard)
     End Sub
 
 

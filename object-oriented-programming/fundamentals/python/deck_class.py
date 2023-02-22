@@ -15,12 +15,20 @@ class Deck:
         suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
         ranks = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
         values = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+
+        card_number = 0
         
-            
-        for i in range(4):
-            for j in range(13):
+        # Repeat for all 4 suits
+        for i in range(len(suits)):
+            # Repeat for all 13 ranks of a suit
+            for j in range(len(ranks)):
                 new_card = PlayingCard(suits[i], ranks[j], values[j])
                 self.__cards.append(new_card)
+                card_number += 1
+
+        # Show that all 52 playing cards have been initialised
+        print(f"Initialised {card_number} playing cards")
+        
         
     
     def shuffle(self):
@@ -38,6 +46,3 @@ class Deck:
 if __name__ == '__main__':   
     # Instantiate an example Deck object
     my_deck = Deck()
-    
-    # Show that the deck object has been created
-    print(my_deck);
