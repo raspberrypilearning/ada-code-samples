@@ -42,7 +42,7 @@ Module Program
         Dim boaty As Boat = New Boat(name, length, capacity, berths, cost)
             
         ' Show that the boat object has been created
-        Console.WriteLine(boaty);
+        Console.WriteLine(boaty)
     End Sub
 
 

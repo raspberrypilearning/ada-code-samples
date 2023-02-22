@@ -51,7 +51,7 @@ Module Program
         Dim myYacht As Yacht = New Yacht("Mary Sue", 15.7F, 300, 6, 54.5F, 2)
             
         ' Show that the yacht object has been created
-        Console.WriteLine(myYacht);
+        Console.WriteLine(myYacht)
     End Sub
 
 
