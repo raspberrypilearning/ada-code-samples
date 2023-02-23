@@ -44,7 +44,9 @@ namespace AdaCodeSamples
         private int masts;
 
         // Constructor method
-        public Yacht(string givenName, float givenLength, int givenCapacity, int givenBerths, float givenUnitCost, int givenMasts) : base(givenName, givenLength, givenCapacity, givenBerths, givenUnitCost)
+        public Yacht(string givenName, float givenLength, int givenCapacity,
+            int givenBerths, float givenUnitCost, int givenMasts)
+             : base(givenName, givenLength, givenCapacity, givenBerths, givenUnitCost)
         {
             masts = givenMasts;
         }
