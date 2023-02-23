@@ -7,26 +7,92 @@
 ' 3. Compile the program
 ' 4. Run the program
 
+Class Pet
+
+    Private name As String
+    Private petType As String
+    Private colour As String
+    Private mood As String
+    Private sleeping As Boolean
+
+    ' Constructor method
+    Public Sub New(ByVal givenName As String, ByVal givenType As String, ByVal givenColour As String)
+        name = givenName
+        petType = givenType
+        colour = givenColour
+        sleeping = False
+
+        ' Randomly choose a starting mood
+        Dim allMoods = {"playful", "hungry", "tired"}
+        Dim rnd As Random = New Random()
+        Dim index = rnd.[Next](allMoods.Length)
+        mood = allMoods(index)
+    End Sub
+
+    Public Function GetName() As String
+        Return name
+    End Function
+
+    Public Sub SetName(ByVal newName As String)
+        name = newName
+    End Sub
+
+    Public Function GetPetType() As String
+        Return petType
+    End Function
+
+    Public Sub SetPetType(ByVal newType As String)
+        petType = newType
+    End Sub
+
+    Public Function GetColour() As String
+        Return colour
+    End Function
+
+    Public Sub SetColour(ByVal newColour As String)
+        colour = newColour
+    End Sub
+
+    Public Function GetMood() As String
+        Return mood
+    End Function
+
+    Public Function IsSleeping() As Boolean
+        Return sleeping
+    End Function
+
+    Public Sub Describe()
+        Console.WriteLine($"I am a {mood}, {colour} {petType} called {name}")
+    End Sub
+
+End Class
+
 
 Module Program
 
-
     ' The Main method is the default entry point for all VB programs
     Sub Main()
+        ' Ask the user to input the pet's information
         Console.WriteLine("Enter a name for your pet ")
         Dim petName As String = Console.ReadLine()
+
         Console.WriteLine($"What type of animal is {petName}? ")
         Dim petType As String = Console.ReadLine()
+
         Console.WriteLine($"What colour is {petName}? ")
         Dim petColour As String = Console.ReadLine()
-        Dim myPet = New Pet(petName, petType, petColour) ' Makes a pet object
 
+        ' Make a new pet object
+        Dim myPet = New Pet(petName, petType, petColour)
+
+        ' Demonstrate how to change the colour using a setter method
         Console.WriteLine("Let's change the colour.....")
 
         Console.WriteLine("What colour do you want your pet to be? ")
         Dim newColour As String = Console.ReadLine()
         myPet.SetColour(newColour)
 
+        ' Output the new colour using a getter method
         Dim name As String = myPet.GetName()
         Dim colour As String = myPet.GetColour()
         Console.WriteLine($"{name} is now {colour}")

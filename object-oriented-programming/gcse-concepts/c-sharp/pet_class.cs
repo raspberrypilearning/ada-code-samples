@@ -34,7 +34,7 @@ namespace AdaCodeSamples
             sleeping = false;
 
             // Randomly choose a starting mood
-            string[] allMoods = { "playful", "hungry", "sleepy" };
+            string[] allMoods = { "playful", "hungry", "tired" };
             Random rnd = new Random();
             int index = rnd.Next(allMoods.Length);
             mood = allMoods[index];
@@ -102,7 +102,7 @@ namespace AdaCodeSamples
                 Console.WriteLine("This is fun, I love playing");  
 
                 // Randomly choose a new mood
-                string[] allMoods = { "playful", "hungry", "sleepy" };
+                string[] allMoods = { "playful", "hungry", "tired" };
                 Random rnd = new Random();
                 int index = rnd.Next(allMoods.Length);
                 mood = allMoods[index];

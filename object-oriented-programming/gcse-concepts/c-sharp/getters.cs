@@ -17,7 +17,77 @@ using System;
 
 namespace AdaCodeSamples
 {
-    class Program
+    class Pet
+    {
+        private string name;
+        private string petType;
+        private string colour;
+        private string mood;
+        private bool sleeping;
+        
+        // Constructor method
+        public Pet(string givenName, string givenType, string givenColour)
+        {
+            name = givenName;
+            petType = givenType;
+            colour = givenColour;
+            sleeping = false;
+
+            // Randomly choose a starting mood
+            string[] allMoods = { "playful", "hungry", "sleepy" };
+            Random rnd = new Random();
+            int index = rnd.Next(allMoods.Length);
+            mood = allMoods[index];
+        }
+        
+        public string GetName()
+        {
+            return name;
+        }
+        
+        public void SetName(string newName)
+        {
+            name = newName;
+        }
+        
+        public string GetPetType()
+        {
+            return petType;
+        }
+        
+        public void SetPetType(string newType)
+        {
+            petType = newType;
+        }
+        
+        public string GetColour()
+        {
+            return colour;
+        }
+        
+        public void SetColour(string newColour)
+        {
+            colour = newColour;
+        }
+        
+        public string GetMood()
+        {
+            return mood;
+        }
+        
+        public bool IsSleeping()
+        {
+            return sleeping;
+        }
+        
+        public void Describe()
+        {
+            Console.WriteLine($"I am a {mood}, {colour} {petType} called {name}");
+        }
+    }
+
+
+    class Testing
     {
         // The Main method is the entry point for all C# programs
         public static void Main()

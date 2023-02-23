@@ -16,65 +16,58 @@ Class Pet
     Private mood As String
     Private sleeping As Boolean
 
-
-    ' Constructor
+    ' Constructor method
     Public Sub New(ByVal givenName As String, ByVal givenType As String, ByVal givenColour As String)
         name = givenName
         petType = givenType
         colour = givenColour
-        Dim allMoods = {"playful", "hungry", "sleepy"}
+        sleeping = False
+
+        ' Randomly choose a starting mood
+        Dim allMoods = {"playful", "hungry", "tired"}
         Dim rnd As Random = New Random()
         Dim index = rnd.[Next](allMoods.Length)
         mood = allMoods(index)
-        sleeping = False
     End Sub
-
 
     Public Function GetName() As String
         Return name
     End Function
 
+    Public Sub SetName(ByVal newName As String)
+        name = newName
+    End Sub
 
     Public Function GetPetType() As String
         Return petType
     End Function
 
+    Public Sub SetPetType(ByVal newType As String)
+        petType = newType
+    End Sub
 
     Public Function GetColour() As String
         Return colour
     End Function
 
+    Public Sub SetColour(ByVal newColour As String)
+        colour = newColour
+    End Sub
 
     Public Function GetMood() As String
         Return mood
     End Function
 
-
     Public Function IsSleeping() As Boolean
         Return sleeping
     End Function
-
 
     Public Sub Describe()
         Console.WriteLine($"I am a {mood}, {colour} {petType} called {name}")
     End Sub
 
 
-    Public Sub SetName(ByVal newName As String)
-        name = newName
-    End Sub
-
-
-    Public Sub SetType(ByVal newType As String)
-        petType = newType
-    End Sub
-
-
-    Public Sub SetColour(ByVal newColour As String)
-        colour = newColour
-    End Sub
-
-
+    ' A method for trying to play with the pet
     Public Sub Play()
         If sleeping = True Then
             Console.WriteLine("Zzzzzzz. I am sleeping")
@@ -84,7 +77,9 @@ Class Pet
             Console.WriteLine("I am too tired to play")
         Else
             Console.WriteLine("This is fun, I love playing")
-            Dim allMoods = {"playful", "hungry", "sleepy"}
+
+            ' Randomly choose a new mood
+            Dim allMoods = {"playful", "hungry", "tired"}
             Dim rnd As Random = New Random()
             Dim index = rnd.[Next](allMoods.Length)
             mood = allMoods(index)
@@ -92,11 +87,11 @@ Class Pet
     End Sub
 
 
+    ' A method for trying to feed the pet
     Public Sub Feed()
         If sleeping = True Then
             Console.WriteLine("Zzzzzzz. I am sleeping")
-        End If
-        If mood = "tired" Then
+        ElseIf mood = "tired" Then
             Console.WriteLine("I am too sleepy to eat anything now")
         ElseIf mood = "playful" Then
             Console.WriteLine("I am not hungry - I want to play")
@@ -107,6 +102,7 @@ Class Pet
     End Sub
 
 
+    ' A method for trying to put the pet to bed
     Public Sub Sleep()
         If mood = "playful" Then
             Console.WriteLine("I am too playful to sleep")
@@ -119,6 +115,7 @@ Class Pet
     End Sub
 
 
+    ' A method for trying to wake the pet up
     Public Sub Wake()
         If sleeping = False Then
             Console.WriteLine("I wasn't even asleep!")
