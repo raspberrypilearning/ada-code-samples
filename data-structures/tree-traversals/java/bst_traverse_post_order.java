@@ -113,7 +113,7 @@ class BST
 }
 
 
-class DataStructures
+class Testing
 {
     // The main method is the entry point for all Java programs
     public static void main(String[] args)

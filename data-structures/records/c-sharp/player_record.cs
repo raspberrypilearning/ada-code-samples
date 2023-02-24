@@ -29,7 +29,7 @@ namespace AdaCodeSamples
     }
 
 
-    class DataStructures
+    class Testing
     {
         // The Main method is the entry point for all C# programs
         public static void Main()

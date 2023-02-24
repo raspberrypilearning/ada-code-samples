@@ -19,7 +19,7 @@ def display_graph(graph):
     # Repeat for each node in the graph
     for node, neighbours in graph.items():
         print(f"Node: {node}")
-        print("Neighbours:", end=" ")
+        print("Neighbours:", end = " ")
 
         # Repeat for each neighbour node (n_node) in the neighbours list
         for n_node in neighbours:
@@ -137,11 +137,11 @@ def main():
 
     # Use a dictionary to represent the graph as an adjacency list
     # and the cost of each neighbour
-    test_graph = {"A": {"B":8, "C":5},
-             "B": {"A":8, "D":1},
-             "C": {"A":5, "D":6, "E":9},
-             "D": {"C":6, "B":1, "E":2},
-             "E": {"C":9, "D":2}
+    test_graph = {"A": {"B": 8, "C": 5},
+             "B": {"A": 8, "D": 1},
+             "C": {"A": 5, "D": 6, "E": 9},
+             "D": {"C": 6, "B": 1, "E": 2},
+             "E": {"C": 9, "D": 2}
              }
     
     print("### Dijkstra's shortest path algorithm ###")
