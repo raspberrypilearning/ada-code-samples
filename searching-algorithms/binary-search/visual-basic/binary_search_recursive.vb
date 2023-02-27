@@ -40,7 +40,7 @@ Module Program
         If first > last Then
             Return -1
         Else
-            Dim midpoint As Integer = (first + last) / 2
+            Dim midpoint As Integer = (first + last) \ 2
 
             If items(midpoint) = searchItem Then
                 Return midpoint
