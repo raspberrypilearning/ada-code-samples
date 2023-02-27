@@ -12,18 +12,19 @@ Module Program
     ' The Main subroutine is the default entry point for a VB program
     Sub Main()
         Dim index As Integer
-        Dim searchItem As Integer = 3 ' Search for a specific value
+        Dim itemToFind As Integer = 3 ' Search for a specific value
         Dim testItems As Integer() = {11, 25, 10, 29, 15, 13, 18} ' Test data
 
         Console.WriteLine("### Linear search version 1 (for loop) ###")
         Console.WriteLine("[{0}]", String.Join(", ", testItems))
 
-        index = LinearSearchVersion1(testItems, searchItem)
+        Console.WriteLine($"The search item is {itemToFind}")
+        index = LinearSearchVersion1(testItems, itemToFind)
 
         If index = -1 Then
-            Console.WriteLine($"{searchItem} was not found in the array")
+            Console.WriteLine($"{itemToFind} was not found in the array")
         Else
-            Console.WriteLine($"{searchItem} was found at index {index}")
+            Console.WriteLine($"{itemToFind} was found at index {index}")
         End If
         Console.ReadLine()
     End Sub

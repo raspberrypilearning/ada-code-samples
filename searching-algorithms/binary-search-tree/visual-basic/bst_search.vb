@@ -93,8 +93,8 @@ Module Program
         End If
 
         itemToFind = 11  ' Test data - value is not in tree
-        found = bst.Search(root, itemToFind)
         Console.WriteLine($"The search item is {itemToFind}")
+        found = bst.Search(root, itemToFind)
 
         If found = True Then
             Console.WriteLine($"{itemToFind} was found in the binary search tree")
