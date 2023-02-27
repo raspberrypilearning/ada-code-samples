@@ -9,7 +9,7 @@ class NodeRecord():
     
     def __init__ (self):
         self.data = None
-        self.next = None
+        self.next_item = None
 
 
 class LinkedList():
@@ -31,7 +31,7 @@ def insert_at_front(my_list, data):
         my_list.head = new_node
     else:
         # Update the pointers so the new node is the head
-        new_node.next = my_list.head           
+        new_node.next_item = my_list.head           
         my_list.head = new_node
 
 
@@ -52,20 +52,20 @@ def insert_in_order(my_list, data):
     # Check if the new node data is before the head data
     elif new_node.data < current.data:
         # Set the new node as the head of the list
-        new_node.next = my_list.head
+        new_node.next_item = my_list.head
         my_list.head = new_node
 
     # Otherwise find where the new node should be positioned
     else:
         # Repeat until the point of insertion is found
-        while (current.next is not None
-              and current.next.data < new_node.data):
+        while (current.next_item is not None
+              and current.next_item.data < new_node.data):
             # Get the next node
-            current = current.next
+            current = current.next_item
             
         # Update the pointers of the new and current nodes
-        new_node.next = current.next
-        current.next = new_node
+        new_node.next_item = current.next_item
+        current.next_item = new_node
 
 def traverse(my_list):
     """Traverse the list and output the data from each node"""
@@ -76,7 +76,7 @@ def traverse(my_list):
     # Repeat until there are no more linked nodes
     while current is not None:
         print(current.data)
-        current = current.next
+        current = current.next_item
 
 def delete(my_list, data):
     """Delete a node. This assumes that the node does exist in the list"""
@@ -87,15 +87,15 @@ def delete(my_list, data):
     # Check if the head node is to be deleted
     if current.data == data:
         # Update the head pointer
-        my_list.head = current.next
+        my_list.head = current.next_item
     else:
         # Repeat until the node has been found
-        while current.next.data != data:
+        while current.next_item.data != data:
             # Change the current node to be the next node
-            current = current.next
+            current = current.next_item
 
         # Set the pointer to be the next node's pointer
-        current.next = current.next.next
+        current.next_item = current.next_item.next_item
 
 
 def insert_test_data(my_list):

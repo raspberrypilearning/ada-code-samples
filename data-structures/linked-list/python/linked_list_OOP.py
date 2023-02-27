@@ -9,16 +9,16 @@ class Node():
     
     def __init__(self, given_data):
         self.data = given_data
-        self.next = None
+        self.next_item = None
 
     def get_data(self):
         return self.data
 
     def get_next(self):
-        return self.next
+        return self.next_item
 
     def set_next(self, new_next):
-        self.next = new_next
+        self.next_item = new_next
 
 
 class LinkedList():
