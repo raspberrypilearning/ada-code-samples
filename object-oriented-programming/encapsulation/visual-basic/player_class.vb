@@ -42,10 +42,16 @@ Module Program
     Sub Main()
         ' Instantiate a new player object
         Dim gamePlayer As Player = New Player("Leona")
-        Console.WriteLine($"The player's name is: {gamePlayer.GetName()}")
-        Console.WriteLine($"The player's score is: {gamePlayer.GetScore()}")
+        
+        Dim playerName As String = gamePlayer.GetName()
+        Console.WriteLine($"The player's name is: {playerName}")
+
+        Dim playerScore As Integer = gamePlayer.GetScore()
+        Console.WriteLine($"The player's score is: {playerScore}")
+        
         gamePlayer.setScore(20)
-        Console.WriteLine($"The player's score is now: {gamePlayer.GetScore()}")
+        playerScore = gamePlayer.GetScore()
+        Console.WriteLine($"The player's score is now: {playerScore}")
     End Sub
 
 

@@ -53,10 +53,16 @@ namespace AdaCodeSamples
         {
             // Instantiate a new player object
             Player gamePlayer = new Player("Leona");
-            Console.WriteLine($"The player's name is: {gamePlayer.GetName()}");
-            Console.WriteLine($"The player's score is: {gamePlayer.GetScore()}");
-            gamePlayer.SetScore(20);
-            Console.WriteLine($"The player's score is now: {gamePlayer.GetScore()}");
+            
+            string playerName = gamePlayer.GetName();
+            Console.WriteLine($"The player's name is: {playerName}");
+
+            int playerScore = gamePlayer.GetScore();
+            Console.WriteLine($"The player's score is: {playerScore}");
+
+            gamePlayer.setScore(20);
+            playerScore = gamePlayer.GetScore();
+            Console.WriteLine($"The player's score is now: {playerScore}");
         }
 
         

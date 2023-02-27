@@ -23,9 +23,15 @@ class Player:
 # (i.e. not called by another program)
 
 if __name__ == '__main__':
-    # Instantiate an example Player object
-    game_player = Player("Leona") 
-    print(f"The player's name is: {game_player.get_name()}")
-    print(f"The player's score is: {game_player.get_score()}")
+    # Instantiate a new player object
+    game_player = Player("Leona")
+
+    player_name = game_player.get_name()
+    print(f"The player's name is: {player_name}")
+
+    player_score = game_player.get_score()
+    print(f"The player's score is: {player_score}")
+
     game_player.set_score(20)
-    print(f"The player's score is now: {game_player.get_score()}")
+    player_score = game_player.get_score()
+    print(f"The player's score is now: {player_score}")
