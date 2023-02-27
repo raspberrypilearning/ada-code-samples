@@ -40,6 +40,7 @@ class GoodProgrammingPractice
 
 
     // Second example
+    // Convert a weight on Earth to the weight on Mars based on gravity
     public static double calculateWeightOnMars(double weightOnEarth)
     {
         double weightOnMars = weightOnEarth / GRAVITY_ON_EARTH * GRAVITY_ON_MARS;

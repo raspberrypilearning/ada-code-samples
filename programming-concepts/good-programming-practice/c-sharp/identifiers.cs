@@ -41,6 +41,7 @@ namespace AdaCodeSamples
 
 
         // Second example
+        // Convert a weight on Earth to the weight on Mars based on gravity
         public static double CalculateWeightOnMars(double weightOnEarth)
         {
             double weightOnMars = weightOnEarth / GravityOnEarth * GravityOnMars;

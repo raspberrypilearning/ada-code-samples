@@ -19,11 +19,14 @@ Module Program
         Console.WriteLine(CalculateWeightOnMars(weight))
     End Sub
 
+    ' First example
     Function Conv(ByVal a As Double) As Double
         Dim b As Double = a / 9.81 * 3.711
         Return b
     End Function
 
+    ' Second example
+    ' Convert a weight on Earth to the weight on Mars based on gravity
     Function CalculateWeightOnMars(ByVal weightOnEarth As Double) As Double
         Dim weightOnMars As Double = weightOnEarth / GravityOnEarth * GravityOnMars
         Return weightOnMars
