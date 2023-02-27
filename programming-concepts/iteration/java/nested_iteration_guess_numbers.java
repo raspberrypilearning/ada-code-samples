@@ -30,11 +30,13 @@ class Iteration
 
         System.out.println("Guess my numbers, each number is between 1 and 10");
 
+        // Repeat for each number in the array
         for (int number : numbersToGuess) {
             System.out.println("Enter a number to guess: ");
             String userInput = scanner.nextLine();
             int guess = Integer.parseInt(userInput);
 
+            // Repeat while the user has not guessed the correct number
             while (guess != number) {
                 System.out.println("Incorrect number. Try again: ");
                 userInput = scanner.nextLine();

@@ -26,11 +26,13 @@ namespace AdaCodeSamples
             
             Console.WriteLine("Guess my numbers, each number is between 1 and 10");
 
+            // Repeat for each number in the array
             foreach (int number in numbersToGuess) {
                 Console.WriteLine("Enter a number to guess: ");
                 string userInput = Console.ReadLine();
                 int guess = Int32.Parse(userInput);
 
+                // Repeat while the user has not guessed the correct number
                 while (guess != number) {
                     Console.WriteLine("Incorrect number. Try again: ");
                     userInput = Console.ReadLine();

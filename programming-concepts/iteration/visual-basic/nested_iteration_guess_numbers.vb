@@ -14,11 +14,13 @@ Module Program
         Dim numbersToGuess As Integer() = {1, 4, 8, 3, 10}
         Console.WriteLine("Guess my numbers, each number is between 1 and 10")
 
+        ' Repeat for each number in the array
         For Each number As Integer In numbersToGuess
             Console.WriteLine("Enter a number to guess: ")
             Dim userInput As String = Console.ReadLine()
             Dim guess As Integer = Int32.Parse(userInput)
 
+            ' Repeat while the user has not guessed the correct number
             While guess <> number
                 Console.WriteLine("Incorrect number. Try again: ")
                 userInput = Console.ReadLine()

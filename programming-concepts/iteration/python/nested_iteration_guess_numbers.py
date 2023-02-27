@@ -8,10 +8,12 @@ def main():
 
     print("Guess my numbers, each number is between 1 and 10")
 
+    # Repeat for each number in the list
     for number in numbers_to_guess:
         user_input = input("Enter a number to guess: ")
         guess = int(user_input)
 
+        # Repeat while the user has not guessed the correct number
         while guess != number:
             user_input = input("Incorrect number. Try again: ")
             guess = int(user_input)
