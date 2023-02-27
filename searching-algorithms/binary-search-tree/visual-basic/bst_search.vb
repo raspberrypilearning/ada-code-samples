@@ -62,8 +62,10 @@ Class BST
         If searchItem = node.data Then
             Return True
         ElseIf searchItem > node.data AndAlso node.right IsNot Nothing Then
+            Console.WriteLine($"Checking right branch of node {node.data}");
             Return Search(node.right, searchItem)
         ElseIf searchItem < node.data AndAlso node.left IsNot Nothing Then
+            Console.WriteLine($"Checking left branch of node {node.data}");
             Return Search(node.left, searchItem)
         Else
             Return False
