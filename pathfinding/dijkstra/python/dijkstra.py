@@ -104,12 +104,12 @@ def dijkstras_shortest_path(graph, start_node):
                 # Check if the neighbour node has already been visited
                 if node not in visited:
                     # Calculate the new cost
-                    cost = unvisited[current_node][COST] + neighbours[node]
+                    new_cost = unvisited[current_node][COST] + neighbours[node]
 
                     # Check if the new cost is less
-                    if cost < unvisited[node][COST]:
+                    if new_cost < unvisited[node][COST]:
                         # Update cost and previous node
-                        unvisited[node][COST] = cost
+                        unvisited[node][COST] = new_cost
                         unvisited[node][PREVIOUS] = current_node
 
                         # Testing
