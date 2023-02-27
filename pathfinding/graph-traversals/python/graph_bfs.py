@@ -27,7 +27,8 @@ def breadth_first_search(graph, start_node, target_node):
         neighbours = graph[current_node]
 
         # Testing
-        print(f"\nQueue: {queue}")
+        print(f"\n>>> Current Node: {current_node}")
+        print(f"Queue: {queue}")
         print(f"Discovered: {discovered}")
         print(f"Neighbours: {neighbours}")
 
@@ -45,7 +46,8 @@ def breadth_first_search(graph, start_node, target_node):
                     discovered.append(node)
 
                     # Testing
-                    print(f"\nQueue: {queue}")
+                    print(f"\nDiscovered neighbour: {node}")
+                    print(f"Queue: {queue}")
                     print(f"Discovered: {discovered}")
                     print(f"Neighbours: {neighbours}")
                     
@@ -77,15 +79,14 @@ def main():
     # Search for a value and return True if it has been found
     item_to_find = "4"
     start = "1"
+    print(f"\nStarting at {start}: The target node is {item_to_find}")
     found = breadth_first_search(test_graph, start, item_to_find)
 
     # Output the search result
-    print(f"\nThe target node is {item_to_find}")
-    
-    if found == True:
-        print(f"{item_to_find} was found in the graph")
+    if found:
+        print(f"\n{item_to_find} was found in the graph")
     else:
-        print(f"{item_to_find} was NOT found in the graph")
+        print(f"\n{item_to_find} was NOT found in the graph")
 
 
 # This code will run if this file is executed directly

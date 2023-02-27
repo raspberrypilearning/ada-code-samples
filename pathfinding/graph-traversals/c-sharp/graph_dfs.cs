@@ -43,15 +43,15 @@ namespace AdaCodeSamples
             // Search for a value and return true if it has been found
             string itemToFind = "4";
             string start = "1";
+            Console.WriteLine($"\nStarting at {start}: The target node is {itemToFind}");
             bool found = DepthFirstSearch(testGraph, start, itemToFind);
 
             // Output the search result
-            Console.WriteLine($"\nThe target node is {itemToFind}");
-            if (found == true) {
-                Console.WriteLine($"{itemToFind} was found in the graph");
+            if (found) {
+                Console.WriteLine($"\n{itemToFind} was found in the graph");
             }
             else {
-                Console.WriteLine($"{itemToFind} was NOT found in the graph");
+                Console.WriteLine($"\n{itemToFind} was NOT found in the graph");
             }
         }
 
@@ -79,7 +79,8 @@ namespace AdaCodeSamples
                 neighbours = graph[currentNode];
 
                 // Testing
-                Console.Write("\nStack: ");
+                Console.WriteLine($"\n>>> Current Node: {currentNode}");
+                Console.Write("Stack: ");
                 Console.WriteLine("[{0}]", string.Join(", ", stack));
                 Console.Write("Discovered: ");
                 Console.WriteLine("[{0}]", string.Join(", ", discovered));
@@ -101,7 +102,8 @@ namespace AdaCodeSamples
                             discovered.Add(node);
 
                             // Testing
-                            Console.Write("\nStack: ");
+                            Console.WriteLine($"\nDiscovered neighbour: {node}");
+                            Console.Write("Stack: ");
                             Console.WriteLine("[{0}]", string.Join(", ", stack));
                             Console.Write("Discovered: ");
                             Console.WriteLine("[{0}]", string.Join(", ", discovered));

@@ -33,13 +33,16 @@ Module program
         ' Search for a value and return true if it has been found
         Dim itemToFind = "4"
         Dim start = "1"
+        Console.WriteLine()
+        Console.WriteLine($"Starting at {start}: The target node is {itemToFind}")
         Dim found = DepthFirstSearch(testGraph, start, itemToFind)
 
         ' Output the search result
-        Console.WriteLine($"The target node is {itemToFind}")
         If found = True Then
+            Console.WriteLine()
             Console.WriteLine($"{itemToFind} was found in the graph")
         Else
+            Console.WriteLine()
             Console.WriteLine($"{itemToFind} was NOT found in the graph")
         End If
     End Sub
@@ -66,6 +69,8 @@ Module program
             neighbours = graph(currentNode)
 
             ' Testing
+            Console.WriteLine();
+            Console.WriteLine($">>> Current Node: {currentNode}")
             Console.Write(vbLf & "Stack: ")
             Console.WriteLine("[{0}]", String.Join(", ", stack))
             Console.Write("Discovered: ")
@@ -87,7 +92,9 @@ Module program
                         discovered.Add(node)
 
                         ' Testing
-                        Console.Write(vbLf & "Stack: ")
+                        Console.WriteLine();
+                        Console.WriteLine($"Discovered neighbour: {node}")
+                        Console.Write("Stack: ")
                         Console.WriteLine("[{0}]", String.Join(", ", stack))
                         Console.Write("Discovered: ")
                         Console.WriteLine("[{0}]", String.Join(", ", discovered))
