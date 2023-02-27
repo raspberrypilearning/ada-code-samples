@@ -43,7 +43,7 @@ Module Program
         Dim midpoint As Integer = 0
 
         While first <= last AndAlso found = False
-            midpoint = (first + last) / 2
+            midpoint = (first + last) \ 2
 
             If items(midpoint) = searchItem Then
                 foundIndex = midpoint
