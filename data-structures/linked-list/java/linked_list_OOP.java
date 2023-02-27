@@ -19,7 +19,7 @@ To run this file you need to:
 class Node
 {
     private String data;
-    private Node next;
+    private Node nextItem;
 
     // Constructor method
     public Node(String givenData)
@@ -34,12 +34,12 @@ class Node
 
     public Node getNext()
     {
-        return next;
+        return nextItem;
     }
 
     public void setNext(Node newNext)
     {
-        next = newNext;
+        nextItem = newNext;
     }
 }
 

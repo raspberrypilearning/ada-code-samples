@@ -21,7 +21,7 @@ namespace AdaCodeSamples
     class Node
     {
         private string data;
-        private Node next;
+        private Node nextItem;
 
         // Constructor method
         public Node(string givenData)
@@ -36,12 +36,12 @@ namespace AdaCodeSamples
 
         public Node GetNext()
         {
-            return next;
+            return nextItem;
         }
 
         public void SetNext(Node newNext)
         {
-            next = newNext;
+            nextItem = newNext;
         }
     }
 

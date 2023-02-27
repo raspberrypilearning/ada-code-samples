@@ -21,7 +21,7 @@ namespace AdaCodeSamples
     class NodeRecord
     {
         public string data;
-        public NodeRecord next;
+        public NodeRecord nextItem;
     }
 
 
@@ -77,7 +77,7 @@ namespace AdaCodeSamples
             }
             else {
                 // Update the pointers so the new node is the head
-                newNode.next = myList.head;
+                newNode.nextItem = myList.head;
                 myList.head = newNode;
             }
         }
@@ -101,21 +101,21 @@ namespace AdaCodeSamples
             // Check if the new node data is before the head data
             else if (String.Compare(newNode.data, current.data) < 0) {
                 // Set the new node as the head of the list
-                newNode.next = myList.head;
+                newNode.nextItem = myList.head;
                 myList.head = newNode;
             }
 
             // Otherwise find where the new node should be positioned
             else {
                 // Repeat until the point of insertion is found
-                while (current.next != null 
-                    && String.Compare(current.next.data, newNode.data) < 0) {
+                while (current.nextItem != null 
+                    && String.Compare(current.nextItem.data, newNode.data) < 0) {
                     // Get the next node
-                    current = current.next;
+                    current = current.nextItem;
                 }
                 // Update the pointers of the new and current nodes
-                newNode.next = current.next;
-                current.next = newNode;
+                newNode.nextItem = current.nextItem;
+                current.nextItem = newNode;
             }
         }
 
@@ -129,7 +129,7 @@ namespace AdaCodeSamples
             // Repeat until there are no more linked nodes
             while (current != null) {
                 Console.WriteLine(current.data);
-                current = current.next;
+                current = current.nextItem;
             }
         }
 
@@ -143,16 +143,16 @@ namespace AdaCodeSamples
             // Check if the head node is to be deleted
             if (current.data == data) {
                 // Update the head pointer
-                myList.head = current.next;
+                myList.head = current.nextItem;
             }
             else {
                 // Repeat until the node has been found
-                while (current.next.data != data) {
+                while (current.nextItem.data != data) {
                     // Change the current node to be the next node
-                    current = current.next;
+                    current = current.nextItem;
                 }
                 // Set the pointer to be the next node's pointer
-                current.next = current.next.next;
+                current.nextItem = current.nextItem.nextItem;
             }
         }
 
