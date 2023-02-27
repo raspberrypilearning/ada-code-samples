@@ -141,8 +141,17 @@ Module program
                 finished = True
             Else
                 ' Get the unvisited node with the lowest cost
-                Dim min = unvisited.Min(Function(item) CInt(item.Value(COST)))
-                Dim currentNode As String = Enumerable.FirstOrDefault(Of KeyValuePair(Of String, List(Of Object)))(Enumerable.Where(Of KeyValuePair(Of String, List(Of Object)))(unvisited, CType(Function(pair) CBool(pair.Value.Contains(CObj(min))), Func(Of KeyValuePair(Of String, List(Of Object)), Boolean)))).Key
+                Dim currentNode As String = Nothing
+                Dim min As Integer = Int32.MaxValue
+                For Each kvp In unvisited
+                    Dim key As String = kvp.Key
+                    Dim value As Integer = CInt(unvisited(key)(COST))
+                    If value < min Then
+                        min = value
+                        currentNode = key
+                    End If
+                Next
+                
                 Console.WriteLine($"Current node >>> {currentNode}") ' Testing
 
                 ' Get the current node's list of neighbours

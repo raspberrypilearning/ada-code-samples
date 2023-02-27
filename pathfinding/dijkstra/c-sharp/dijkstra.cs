@@ -1,4 +1,4 @@
-/*
+﻿/*
 Raspberry Pi Foundation
 Developed as part of Ada Computer Science 
 Usage licensed under CC BY-NC-SA 4.0
@@ -15,7 +15,6 @@ To run this file you need to:
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace AdaCodeSamples
 {
@@ -152,8 +151,17 @@ namespace AdaCodeSamples
                     finished = true;
                 else {
                     // Get the unvisited node with the lowest cost
-                    int min = unvisited.Min(item => (int)item.Value[Cost]);
-                    string currentNode = unvisited.Where(pair => pair.Value.Contains(min)).FirstOrDefault().Key;
+                    string currentNode = null;
+                    int min = Int32.MaxValue;
+                    foreach (KeyValuePair<string, List<object>> kvp in unvisited) {
+                        string key = kvp.Key;
+                        int value = (int)unvisited[key][Cost];
+                        if (value < min) {
+                            min = value;
+                            currentNode = key;
+                        }
+                    }
+                    
                     Console.WriteLine($"\nCurrent node >>> {currentNode}"); // Testing
 
                     // Get the current node's list of neighbours
@@ -167,12 +175,12 @@ namespace AdaCodeSamples
                         // Check if the neighbour node has already been visited
                         if (visited.ContainsKey(node) == false) {
                             // Calculate the new cost
-                            int cost = (int)unvisited[currentNode][Cost] + neighbours[node];
+                            int newCost = (int)unvisited[currentNode][Cost] + neighbours[node];
 
                             // Check if the new cost is less
-                            if (cost < (int)unvisited[node][Cost]) {
+                            if (newCost < (int)unvisited[node][Cost]) {
                                 // Update cost and previous node
-                                unvisited[node][Cost] = cost;
+                                unvisited[node][Cost] = newCost;
                                 unvisited[node][Previous] = currentNode;
 
                                 // Testing
