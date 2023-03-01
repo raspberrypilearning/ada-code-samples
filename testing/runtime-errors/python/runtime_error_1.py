@@ -6,8 +6,8 @@
 
 def main():
     # Demonstrates a runtime error when entering a string value
-    number = input("Please enter a number: ")
-    number = int(number)
+    number_string = input("Please enter a number: ")
+    number = int(number_string)
     print(number)
 
 

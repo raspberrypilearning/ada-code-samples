@@ -14,7 +14,8 @@ Module Program
     Sub Main()
         ' Demonstrates a runtime error when entering a string value
         Console.WriteLine("Please enter a number:")
-        Dim number As Integer = Int32.Parse(Console.ReadLine())
+        Dim numberString As String = Console.ReadLine()
+        Dim number As Integer = Int32.Parse(numberString)
         Console.WriteLine(number)
     End Sub
 
