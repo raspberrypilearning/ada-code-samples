@@ -20,7 +20,7 @@ Module Program
         emotions(4) = "lively"
         emotions(5) = "happy"
 
-        For i As Integer = 0 To 5
+        For i As Integer = 0 To emotions.Length - 1
             Console.WriteLine(emotions(i))
         Next
     End Sub

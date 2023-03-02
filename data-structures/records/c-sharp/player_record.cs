@@ -34,7 +34,7 @@ namespace AdaCodeSamples
         // The Main method is the entry point for all C# programs
         public static void Main()
         {
-            // Create a player record and store the player details
+            // Create a new player record
             PlayerRecord player1 = new PlayerRecord();
 
             // Store the details of the player

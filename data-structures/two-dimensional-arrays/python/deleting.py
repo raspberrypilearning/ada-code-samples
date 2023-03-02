@@ -8,7 +8,8 @@ def main():
         ["school", "pull", "where"],
         ["path", "floor", "sugar"],
         ["accident", "eight", ""]]
-  
+
+    # Deletes a value from the array
     spelling_words[0][0] = "" 
     print(spelling_words)
 

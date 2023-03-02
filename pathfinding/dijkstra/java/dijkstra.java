@@ -29,7 +29,7 @@ class Pathfinding
     // The main method is the entry point for all Java programs
     public static void main(String[] args)
     {
-        // Use a dictionary to represent the graph as an adjacency list
+        // Use a hashmap to represent the graph as an adjacency list
         // and the cost of each neighbour
         var testGraph = new HashMap<String, HashMap<String, Integer>>();
 
@@ -138,7 +138,7 @@ class Pathfinding
         }
     }
 
-    // Apply Dijkstra's shortest path algorithm on a graph stored as a dictionary
+    // Apply Dijkstra's shortest path algorithm on a graph stored as a hashmap
     public static HashMap<String, ArrayList<Object>> dijkstrasShortestPath(
             HashMap<String, HashMap<String, Integer>> graph, String startNode)
     {

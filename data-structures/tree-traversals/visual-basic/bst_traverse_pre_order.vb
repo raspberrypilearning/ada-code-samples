@@ -79,11 +79,10 @@ Class BST
 
     ' A Pre-order traversal of the binary search tree
     Public Sub PreOrderTraversal(ByVal node As Node)
-        ' Check any nodes to the left of the current node
-
         ' Output the data of the current node
         Console.WriteLine(node.data)
 
+        ' Check any nodes to the left of the current node
         If node.left IsNot Nothing Then
             PreOrderTraversal(node.left)
         End If

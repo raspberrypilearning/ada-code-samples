@@ -37,6 +37,7 @@ namespace AdaCodeSamples
             spellingWords[2, 1] = "answer";
             spellingWords[2, 2] = "eight";
 
+            // Display all of the level 2 words
             for (int word = 0; word < spellingWords.GetLength(1); word++) {
                 Console.WriteLine(spellingWords[LEVEL2, word]);
             }

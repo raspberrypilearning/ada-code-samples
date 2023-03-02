@@ -33,7 +33,7 @@ namespace AdaCodeSamples
             
             emotions[5] = "happy";  // Adds a new item to the array
             
-            emotions[1] = "";  // Deletes the item in the second element of the array
+            emotions[1] = "";  // Sets the value to an empty string
         }
 
 

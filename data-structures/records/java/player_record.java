@@ -35,7 +35,7 @@ class Testing
     // The main method is the entry point for all Java programs
     public static void main(String[] args)
     {
-        // Create a player record and store the player details
+        // Create a new player record
         PlayerRecord player1 = new PlayerRecord();
 
         // Store the details of the player

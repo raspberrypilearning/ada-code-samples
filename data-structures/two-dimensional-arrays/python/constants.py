@@ -12,8 +12,9 @@ def main():
         ["school", "pull", "where"],
         ["path", "floor", "sugar"],
         ["accident", "answer", "eight"]]
-  
-    for word in range (3):
+
+    # Display all of the level 2 words
+    for word in range(len(spelling_words[LEVEL2])):
         print(spelling_words[LEVEL2][word])
 
 

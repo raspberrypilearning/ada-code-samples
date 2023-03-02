@@ -31,8 +31,9 @@ Module program
         spellingWords(2, 1) = "answer"
         spellingWords(2, 2) = "eight"
 
+        ' Display all of the level 2 words
         For word = 0 To 2
-            Console.WriteLine(spellingWords(LEVEL2, word)) ' Display level 2 words
+            Console.WriteLine(spellingWords(LEVEL2, word))
         Next
 
     End Sub

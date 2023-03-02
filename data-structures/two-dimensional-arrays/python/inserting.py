@@ -8,8 +8,9 @@ def main():
         ["school", "pull", "where"],
         ["path", "floor", "sugar"],
         ["accident", "eight", ""]]
-  
-    spelling_words[2][2] = "answer"
+
+    # Inserts a value into the array
+    spelling_words[2][1] = "answer"
     print(spelling_words)
 
 

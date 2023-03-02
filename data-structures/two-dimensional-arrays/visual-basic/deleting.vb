@@ -26,7 +26,8 @@ Module program
         spellingWords(2, 1) = "answer"
         spellingWords(2, 2) = "eight"
 
-        spellingWords(0, 0) = Nothing  ' Deletes a value from the array
+        ' Deletes a value from the array
+        spellingWords(0, 0) = Nothing
 
     End Sub
 

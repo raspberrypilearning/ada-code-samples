@@ -20,6 +20,6 @@ Module Program
         emotions(4) = "lively"
         emotions(5) = "happy"
 
-        emotions(2) = ""  'Deletes the item in the third slot Of the array
+        emotions(2) = ""  ' Sets the value to an empty string
     End Sub
 End Module

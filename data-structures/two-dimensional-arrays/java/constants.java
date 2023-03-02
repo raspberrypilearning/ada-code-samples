@@ -37,6 +37,7 @@ class TwoDimensionalArrays
         spellingWords[2][1] = "answer";
         spellingWords[2][2] = "eight";
 
+        // Display all of the level 2 words
         for (int word = 0; word < spellingWords[LEVEL2].length; word++) {
             System.out.println(spellingWords[LEVEL2][word]);
         }

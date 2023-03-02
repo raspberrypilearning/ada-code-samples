@@ -25,7 +25,7 @@ class GraphTraversals
     // The main method is the entry point for all Java programs
     public static void main(String[] args)
     {
-        // Use a dictionary to represent the graph as an adjacency list.
+        // Use a hashmap to represent the graph as an adjacency list.
         // Each key is a node in the graph.
         // Each value is a list of the node's neighbours
         var testGraph = new HashMap<String, List<String>>();
@@ -56,7 +56,7 @@ class GraphTraversals
         }
     }
 
-    // A depth-first search performed on a graph stored as a dictionary
+    // A depth-first search performed on a graph stored as a hashmap
     public static boolean depthFirstSearch(HashMap<String, List<String>> graph,
                                            String startNode, String targetNode)
     {

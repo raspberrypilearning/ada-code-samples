@@ -30,7 +30,7 @@ class Pathfinding
     // The main method is the entry point for all Java programs
     public static void main(String[] args)
     {
-        // Use a dictionary to represent the graph as an adjacency list
+        // Use a hashmap to represent the graph as an adjacency list
         // and the g-score and f-score of each neighbour
         var testGraph = new HashMap<String, HashMap<String, Integer>>();
 
@@ -193,11 +193,11 @@ class Pathfinding
         return lowestKey;
     }
 
-    // Apply the A* algorithm on a graph stored as a dictionary
+    // Apply the A* algorithm on a graph stored as a hashmap
     public static HashMap<String, ArrayList<Object>> aStar(
             HashMap<String, HashMap<String, Integer>> graph, String startNode, String targetNode)
     {
-        // Declare the visited and unvisited lists as dictionaries
+        // Declare the visited and unvisited lists as hashmaps
         HashMap<String, ArrayList<Object>> unvisited = new HashMap<String, ArrayList<Object>>();
         HashMap<String, ArrayList<Object>> visited = new HashMap<String, ArrayList<Object>>();
 

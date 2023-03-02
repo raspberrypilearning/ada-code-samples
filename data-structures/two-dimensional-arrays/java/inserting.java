@@ -33,7 +33,8 @@ class TwoDimensionalArrays
         spellingWords[2][1] = "";
         spellingWords[2][2] = "eight";
 
-        spellingWords[2][1] = "answer";  // Inserts a value into the array
+        // Inserts a value into the array
+        spellingWords[2][1] = "answer";
     }
 
 

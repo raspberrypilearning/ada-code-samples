@@ -33,7 +33,8 @@ namespace AdaCodeSamples
             spellingWords[2, 1] = "";
             spellingWords[2, 2] = "eight";
 
-            spellingWords[0, 0] = "";  // Deletes a value from the array
+            // Deletes a value from the array
+            spellingWords[0, 0] = ""; 
         }
     }
 
