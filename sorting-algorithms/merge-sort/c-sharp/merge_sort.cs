@@ -48,34 +48,36 @@ namespace AdaCodeSamples
 
             // Base case for recursion:
             // The recursion will stop when the array has been divided into single items
-            if (items.Length <= 1)
+            if (items.Length <= 1) {
                 return items;
-            else
-                {
-                 Console.Write("Splitting ");
-                 Console.WriteLine("[{0}]", string.Join(", ", items));
+            }
+            else {
+                Console.Write("Splitting ");
+                Console.WriteLine("[{0}]", string.Join(", ", items));
             
                 int midpoint = (items.Length - 1) / 2; // Calculate the midpoint index
                 int leftSize = midpoint + 1; // Size of the left half array
                 int rightSize; // Size of the right half array
 
                 // Check if the total number of items is even
-                if (items.Length % 2 == 0)
+                if (items.Length % 2 == 0) {
                     rightSize = midpoint + 1; // Left and right arrays are equal in size
-                else
+                }
+                else {
                     rightSize = midpoint; // Right array will have one less item than left array
+                }
 
                 leftHalf = new int[leftSize]; // Create left half array
                 rightHalf = new int[rightSize]; // Create right half array
 
                 // Populate left half array with the items up to and including the midpoint
-                for (int i = 0; i < leftSize; i++)
+                for (int i = 0; i < leftSize; i++) {
                     leftHalf[i] = items[i];
+                }
 
                 // Populate right half array with the items after the midpoint
                 int indexItems = midpoint + 1;
-                for (int i = 0; i < rightSize; i++)
-                {
+                for (int i = 0; i < rightSize; i++) {
                     rightHalf[i] = items[indexItems];
                     indexItems++;
                 }
@@ -107,17 +109,14 @@ namespace AdaCodeSamples
             int indexMerged = 0; // merged current position
 
             // While there are still items to merge
-            while (indexLeft < left.Length && indexRight < right.Length)
-            {
+            while (indexLeft < left.Length && indexRight < right.Length) {
                 // Find the lowest of the two items being compared and add it to the new array 
-                if (left[indexLeft] < right[indexRight])
-                {
+                if (left[indexLeft] < right[indexRight]) {
                     merged[indexMerged] = left[indexLeft];
                     indexLeft++;
                     indexMerged++;
                 }
-                else
-                {
+                else {
                     merged[indexMerged] = right[indexRight];
                     indexRight++;
                     indexMerged++;
@@ -125,16 +124,14 @@ namespace AdaCodeSamples
             }
 
             // Add to the merged array any remaining data from left array
-            while (indexLeft < left.Length)
-            {
+            while (indexLeft < left.Length) {
                 merged[indexMerged] = left[indexLeft];
                 indexLeft++;
                 indexMerged++;
             }
 
             // Add to the merged array any remaining data from right array
-            while (indexRight < right.Length)
-            {
+            while (indexRight < right.Length) {
                 merged[indexMerged] = right[indexRight];
                 indexRight++;
                 indexMerged++;

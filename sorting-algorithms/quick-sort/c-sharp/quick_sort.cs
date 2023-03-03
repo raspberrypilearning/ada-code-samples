@@ -46,9 +46,9 @@ namespace AdaCodeSamples
         {
             // Base case for recursion:
             // The recursion will stop when the partition contains a single item
-            if (start >= end)
+            if (start >= end) {
                 return new int[0];
-                
+            }
             // Otherwise recursively call the function
             else {
                 int pivotValue = items[start]; // Set to first item in the partition
