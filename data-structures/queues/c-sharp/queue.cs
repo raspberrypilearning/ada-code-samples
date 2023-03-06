@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class QueuesExample
-    {
+namespace AdaCodeSamples {
+    class QueuesExample {
         public const int MaxSize = 4;
 
         // The Main method is the entry point for all C# programs

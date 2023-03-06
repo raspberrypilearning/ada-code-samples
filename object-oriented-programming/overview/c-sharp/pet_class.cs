@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Pet
-    {
+namespace AdaCodeSamples {
+    class Pet {
         private string name;
         private string petType;
         private string colour;

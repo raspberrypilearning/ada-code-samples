@@ -15,8 +15,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class Player
-{
+class Player {
     private String name;
     private int score;
 
@@ -40,8 +39,7 @@ class Player
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Instantiate a new player object

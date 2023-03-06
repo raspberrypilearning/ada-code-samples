@@ -15,11 +15,9 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // Use a class to represent a player as a record
-    class PlayerRecord
-    {
+    class PlayerRecord {
         public int playerNumber;
         public string firstName;
         public string lastName;
@@ -29,8 +27,7 @@ namespace AdaCodeSamples
     }
 
 
-    class Testing
-    {
+    class Testing {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Declare an array to store 11 player records

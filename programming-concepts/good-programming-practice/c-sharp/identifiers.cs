@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class GoodProgrammingPractice
-    {
+namespace AdaCodeSamples {
+    class GoodProgrammingPractice {
         const double GravityOnEarth = 9.81;
         const double GravityOnMars = 3.711;
 

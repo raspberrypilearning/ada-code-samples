@@ -14,10 +14,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class CompressionTechniques
-    {
+namespace AdaCodeSamples {
+    class CompressionTechniques {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Test data - normal data

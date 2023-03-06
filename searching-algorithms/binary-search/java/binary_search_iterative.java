@@ -18,8 +18,7 @@ To run this file you need to:
 
 import java.util.Arrays;
 
-class SearchingAlgorithms
-{
+class SearchingAlgorithms {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Perform a binary search on the test data

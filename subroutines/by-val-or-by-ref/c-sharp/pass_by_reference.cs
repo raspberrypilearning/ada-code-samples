@@ -16,10 +16,8 @@ To run this file you need to:
 using System;
 using System.Collections.Generic;
 
-namespace AdaCodeSamples
-{
-    class ByValOrRef
-    {
+namespace AdaCodeSamples {
+    class ByValOrRef {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             List<string> shoppingList = new List<string>();  // Empty list

@@ -20,8 +20,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-class Pathfinding
-{
+class Pathfinding {
     // Index values for g-score, f-score and previous node
     public static final int G_SCORE = 0;
     public static final int F_SCORE = 1;

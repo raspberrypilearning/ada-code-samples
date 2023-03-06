@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Player
-    {
+namespace AdaCodeSamples {
+    class Player {
         private string name;
         private int score;
 
@@ -30,8 +28,7 @@ namespace AdaCodeSamples
     }
     
     
-    class Testing
-    {
+    class Testing {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Instantiate a new player object

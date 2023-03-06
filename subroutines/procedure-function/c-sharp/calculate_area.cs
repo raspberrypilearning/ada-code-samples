@@ -17,8 +17,7 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class ProceduresFunctions
-    {
+    class ProceduresFunctions {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             float length = 12;

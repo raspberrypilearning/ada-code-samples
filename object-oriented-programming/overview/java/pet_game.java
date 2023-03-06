@@ -18,8 +18,7 @@ To run this file you need to:
 import java.util.Random;
 import java.util.Scanner;
 
-class Pet
-{
+class Pet {
     private String name;
     private String petType;
     private String colour;
@@ -149,8 +148,7 @@ class Pet
 }
 
 
-class TestingPetGame
-{
+class TestingPetGame {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Use Scanner for reading user input from the console

@@ -14,10 +14,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class TwoDimensionalArrays
-    {
+namespace AdaCodeSamples {
+    class TwoDimensionalArrays {
         public const int LEVEL1 = 0;
         public const int LEVEL2 = 1;
         public const int LEVEL3 = 2;

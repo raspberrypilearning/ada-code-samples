@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class LogicalOperators
-    {
+namespace AdaCodeSamples {
+    class LogicalOperators {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             bool cold = true;

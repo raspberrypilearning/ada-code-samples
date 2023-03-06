@@ -16,8 +16,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class TwoDimensionalArrays
-{
+class TwoDimensionalArrays {
     public static final int LEVEL1 = 0;
     public static final int LEVEL2 = 1;
     public static final int LEVEL3 = 2;

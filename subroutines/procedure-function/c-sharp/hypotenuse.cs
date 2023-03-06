@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class ProceduresFunctions
-    {
+namespace AdaCodeSamples {
+    class ProceduresFunctions {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             double side1 = 3;

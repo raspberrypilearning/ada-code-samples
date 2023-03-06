@@ -20,8 +20,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-class HandlingTextFiles
-{
+class HandlingTextFiles {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         readAll();

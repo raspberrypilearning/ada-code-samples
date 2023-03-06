@@ -16,10 +16,8 @@ To run this file you need to:
 using System;
 using System.Collections.Generic;
 
-namespace AdaCodeSamples
-{
-    class GraphTraversals
-    {
+namespace AdaCodeSamples {
+    class GraphTraversals {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Use a dictionary to represent the graph as an adjacency list.

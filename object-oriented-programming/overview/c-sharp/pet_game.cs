@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Pet
-    {
+namespace AdaCodeSamples {
+    class Pet {
         private string name;
         private string petType;
         private string colour;
@@ -146,8 +144,7 @@ namespace AdaCodeSamples
     }
 
 
-    class TestingPetGame
-    {
+    class TestingPetGame {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Ask the user to input the pet's information

@@ -16,8 +16,7 @@ To run this file you need to:
 */
 
 // A class for a node in a linked list
-class Node
-{
+class Node {
     private String data;
     private int priority;
     private Node next;
@@ -55,8 +54,7 @@ class Node
 
 
 // A priority queue stored as a linked list
-class PriorityQueue
-{
+class PriorityQueue {
     private Node front;
     private Node rear;
 
@@ -154,8 +152,7 @@ class PriorityQueue
 }
 
 
-class Queues
-{
+class Queues {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         System.out.println("### Priority queue (OOP) ###\n");

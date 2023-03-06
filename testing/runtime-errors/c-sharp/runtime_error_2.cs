@@ -16,10 +16,8 @@ In order for it to compile properly you need to ensure that the project name is 
 using System;
 using System.IO;
 
-namespace AdaCodeSamples
-{
-    class RuntimeErrors
-    {
+namespace AdaCodeSamples {
+    class RuntimeErrors {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Demonstrates a runtime error

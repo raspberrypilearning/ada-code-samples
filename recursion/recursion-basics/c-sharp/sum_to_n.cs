@@ -17,8 +17,7 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class RecursionBasics
-    {
+    class RecursionBasics {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             int n = 6;

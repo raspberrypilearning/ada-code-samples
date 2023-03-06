@@ -18,8 +18,7 @@ To run this file you need to:
 
 import java.util.Random;
 
-class RandomNumbers
-{
+class RandomNumbers {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         Random rnd = new Random();

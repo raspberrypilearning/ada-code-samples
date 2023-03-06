@@ -20,8 +20,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-class GraphTraversals
-{
+class GraphTraversals {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Use a hashmap to represent the graph as an adjacency list.

@@ -16,8 +16,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class WhatIsASubroutine
-{
+class WhatIsASubroutine {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         float length = 12;

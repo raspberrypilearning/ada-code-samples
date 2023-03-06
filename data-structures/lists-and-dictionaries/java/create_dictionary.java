@@ -19,8 +19,7 @@ To run this file you need to:
 import java.util.HashMap;
 import java.util.Map;
 
-class Dictionaries
-{
+class Dictionaries {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         Map<String, Integer> results = new HashMap<String, Integer>();

@@ -17,8 +17,7 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class Parameters
-    {
+    class Parameters {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             Console.WriteLine("What is your name? ");

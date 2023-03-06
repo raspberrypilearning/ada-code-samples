@@ -16,10 +16,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Tuples
-    {
+namespace AdaCodeSamples {
+    class Tuples {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             Console.WriteLine("### Tuple ###");

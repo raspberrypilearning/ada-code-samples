@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Complexity
-    {
+namespace AdaCodeSamples {
+    class Complexity {
         // The Main method is the entry point for all C# programs
         public static void Main() {   
             // Test the SumTo method

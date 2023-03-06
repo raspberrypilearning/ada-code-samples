@@ -17,8 +17,7 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class Player
-{
+class Player {
     private String name;
     private int score;
 
@@ -30,8 +29,7 @@ class Player
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Use Scanner for reading user input from the console

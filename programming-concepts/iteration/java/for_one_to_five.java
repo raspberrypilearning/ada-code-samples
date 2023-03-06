@@ -16,8 +16,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class Iteration
-{
+class Iteration {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         for (int count = 1; count <= 5; count++) {

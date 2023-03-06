@@ -16,10 +16,8 @@ To run this file you need to:
 using System;
 using System.Collections.Generic;
 
-namespace AdaCodeSamples
-{
-    class Dictionaries
-    {
+namespace AdaCodeSamples {
+    class Dictionaries {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Initialise a new dictionary of students and results

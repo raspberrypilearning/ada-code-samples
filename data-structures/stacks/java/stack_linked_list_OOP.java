@@ -16,8 +16,7 @@ To run this file you need to:
 */
 
 // A class for a node in a linked list
-class Node
-{
+class Node {
     private String data;
     private Node next;
 
@@ -50,8 +49,7 @@ class Node
 
 
 // A stack implemented as a linked list
-class Stack
-{
+class Stack {
     private Node top;
 
     // Check if the stack is empty
@@ -126,8 +124,7 @@ class Stack
 }
 
 
-class StacksExample
-{
+class StacksExample {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         System.out.println("### Stack (OOP) ###\n");

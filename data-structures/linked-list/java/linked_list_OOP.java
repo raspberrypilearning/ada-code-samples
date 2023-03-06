@@ -16,8 +16,7 @@ To run this file you need to:
 */
 
 // A class for a node in the linked list
-class Node
-{
+class Node {
     private String data;
     private Node nextItem;
 
@@ -41,8 +40,7 @@ class Node
 
 
 // A class for the linked list
-class LinkedList
-{
+class LinkedList {
     private Node head; // Do not initialise yet as the linked list is empty
 
     public Node getHead() {
@@ -143,8 +141,7 @@ class LinkedList
 }
 
 
-class DataStructures
-{
+class DataStructures {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         System.out.println("### Linked list (OOP) ###");

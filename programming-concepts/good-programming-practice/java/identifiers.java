@@ -16,8 +16,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class GoodProgrammingPractice
-{
+class GoodProgrammingPractice {
     static final double GRAVITY_ON_EARTH = 9.81;
     static final double GRAVITY_ON_MARS = 3.711;
 

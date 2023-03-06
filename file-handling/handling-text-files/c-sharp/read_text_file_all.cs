@@ -16,10 +16,8 @@ To run this file you need to:
 using System;
 using System.IO;
 
-namespace AdaCodeSamples
-{
-    class HandlingTextFiles
-    {
+namespace AdaCodeSamples {
+    class HandlingTextFiles {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             ReadAll();

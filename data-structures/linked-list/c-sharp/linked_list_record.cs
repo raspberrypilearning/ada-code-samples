@@ -15,25 +15,21 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // Use a class to represent a node as a record in the linked list
-    class NodeRecord
-    {
+    class NodeRecord {
         public string data;
         public NodeRecord nextItem;
     }
 
 
     // A class for the linked list
-    class LinkedList
-    {
+    class LinkedList {
         public NodeRecord head; // Do not initialise yet as the linked list is empty
     }
 
 
-    class DataStructures
-    {
+    class DataStructures {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             Console.WriteLine("### Linked list (Record) ###");

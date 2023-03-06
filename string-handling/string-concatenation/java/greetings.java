@@ -18,8 +18,7 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class StringConcatenation
-{
+class StringConcatenation {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         greetUser();

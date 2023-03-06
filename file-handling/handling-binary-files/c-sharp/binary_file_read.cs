@@ -19,8 +19,7 @@ using System.IO;
 
 namespace MyApplication
 {
-    class Program
-    {
+    class Program {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             ReadBinaryFile();

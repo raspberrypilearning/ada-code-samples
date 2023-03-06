@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class PlayingCard
-    {
+namespace AdaCodeSamples {
+    class PlayingCard {
         private string suit;
         public string rank;
         private int value;
@@ -32,8 +30,7 @@ namespace AdaCodeSamples
     }
     
 
-    class Deck
-    {
+    class Deck {
         private PlayingCard[] cards = new PlayingCard[52]; // Declare an array of 52 elements
         private string[] suits = { "Clubs", "Diamonds", "Hearts", "Spades" };
         private string[] ranks = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
@@ -61,8 +58,7 @@ namespace AdaCodeSamples
     }
 
 
-    class Testing
-    {
+    class Testing {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Instantiate a new deck object

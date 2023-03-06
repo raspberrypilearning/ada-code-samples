@@ -15,8 +15,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class PlayingCard
-{
+class PlayingCard {
     private String suit;
     private String rank;
     private int value;
@@ -30,8 +29,7 @@ class PlayingCard
 }
 
 
-class Deck
-{
+class Deck {
     private PlayingCard[] cards = new PlayingCard[52]; // Declare an array of 52 elements
     private String[] suits = { "Clubs", "Diamonds", "Hearts", "Spades" };
     private String[] ranks = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
@@ -59,8 +57,7 @@ class Deck
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Instantiate a new deck object

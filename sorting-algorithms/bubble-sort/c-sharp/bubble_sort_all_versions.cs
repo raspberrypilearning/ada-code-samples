@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class SortingAlgorithms
-    {
+namespace AdaCodeSamples {
+    class SortingAlgorithms {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Execute all three versions of the bubble sort algorithms

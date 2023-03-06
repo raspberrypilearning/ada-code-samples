@@ -15,11 +15,9 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // A class for a node in a linked list
-    class Node
-    {
+    class Node {
         private string data;
         private int priority;
         private Node next;
@@ -57,8 +55,7 @@ namespace AdaCodeSamples
 
 
     // A priority queue stored as a linked list
-    class PriorityQueue
-    {
+    class PriorityQueue {
         private Node front;
         private Node rear;
 
@@ -156,8 +153,7 @@ namespace AdaCodeSamples
     }
 
 
-    class Queues
-    {
+    class Queues {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             Console.WriteLine("### Priority queue (OOP) ###\n");

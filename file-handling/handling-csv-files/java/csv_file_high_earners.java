@@ -20,8 +20,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-class HandlingCSVFiles
-{
+class HandlingCSVFiles {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         selectHighEarners();

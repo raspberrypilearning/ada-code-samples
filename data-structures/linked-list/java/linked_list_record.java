@@ -16,22 +16,19 @@ To run this file you need to:
 */
 
 // Use a class to represent a node as a record in the linked list
-class NodeRecord
-{
+class NodeRecord {
     public String data;
     public NodeRecord nextItem;
 }
 
 
 // A class for the linked list
-class LinkedList
-{
+class LinkedList {
     public NodeRecord head; // Do not initialise yet as the linked list is empty
 }
 
 
-class DataStructures
-{
+class DataStructures {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         System.out.println("### Linked list (Record) ###");

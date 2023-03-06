@@ -16,8 +16,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class OneDimensionalArrays
-{
+class OneDimensionalArrays {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         String[] emotions = new String[6]; // Declare an array of 6 elements

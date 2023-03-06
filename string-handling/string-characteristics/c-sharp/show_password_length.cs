@@ -17,8 +17,7 @@ using System;
 
 namespace AdaCodeSamples    
 {
-    class StringCharacteristics
-    {               
+    class StringCharacteristics {               
         // The Main method is the entry point for all C# programs
         public static void Main() {
             ShowPasswordLength();

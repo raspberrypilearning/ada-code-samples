@@ -15,8 +15,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class PlayingCard
-{
+class PlayingCard {
     private String suit;
     private String rank;
     private int value;
@@ -30,8 +29,7 @@ class PlayingCard
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Instantiate a new card object

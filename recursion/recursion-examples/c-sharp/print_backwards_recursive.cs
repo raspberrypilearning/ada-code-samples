@@ -17,8 +17,7 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class RecursionExamples
-    {
+    class RecursionExamples {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             PrintBackwards("I am a computer scientist");

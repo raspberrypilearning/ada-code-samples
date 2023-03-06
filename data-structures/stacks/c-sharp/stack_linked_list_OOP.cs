@@ -15,11 +15,9 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // A class for a node in a linked list
-    class Node
-    {
+    class Node {
         private string data;
         private Node next;
 
@@ -52,8 +50,7 @@ namespace AdaCodeSamples
 
 
     // A stack implemented as a linked list
-    class Stack
-    {
+    class Stack {
         private Node top;
 
         // Check if the stack is empty
@@ -128,8 +125,7 @@ namespace AdaCodeSamples
     }
 
 
-    class StacksExample
-    {
+    class StacksExample {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             Console.WriteLine("### Stack (OOP) ###\n");

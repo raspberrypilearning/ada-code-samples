@@ -20,8 +20,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-class Pathfinding
-{
+class Pathfinding {
     // Index values for cost and previous node
     public static final int COST = 0;
     public static final int PREVIOUS = 1;

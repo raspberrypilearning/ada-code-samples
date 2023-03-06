@@ -19,8 +19,7 @@ To run this file you need to:
 import java.io.File;
 import java.io.IOException;
 
-class HandlingTextFiles
-{
+class HandlingTextFiles {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         createFile();

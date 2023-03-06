@@ -18,8 +18,7 @@ To run this file you need to:
 
 import java.util.Arrays;
 
-class SortingAlgorithms
-{
+class SortingAlgorithms {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Compare a bubble sort with an insertion sort algorithm

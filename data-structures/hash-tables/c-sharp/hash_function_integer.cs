@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class HashTables
-    {
+namespace AdaCodeSamples {
+    class HashTables {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Generate a hash value from an integer hash key

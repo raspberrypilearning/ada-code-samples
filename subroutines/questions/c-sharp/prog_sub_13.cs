@@ -17,8 +17,7 @@ using System;
 namespace AdaCodeSamples 
 {
     
-    class SubQuestion13
-    {
+    class SubQuestion13 {
         
         static void Main() {
             song();

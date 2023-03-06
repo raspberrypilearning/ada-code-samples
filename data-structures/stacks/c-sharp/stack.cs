@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class StacksExample
-    {
+namespace AdaCodeSamples {
+    class StacksExample {
         public const int MaxSize = 4;
 
         // The Main method is the entry point for all C# programs

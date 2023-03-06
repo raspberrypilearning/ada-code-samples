@@ -17,8 +17,7 @@ To run this file you need to:
 */
 
 // A node in a binary search tree
-class Node
-{
+class Node {
     public int data;
     public Node left;
     public Node right;
@@ -30,8 +29,7 @@ class Node
 }
 
 // A class for constructing a binary search tree (BST)
-class BST
-{
+class BST {
     private Node root; // Do not initialise the root yet as the tree is empty
 
     // Return the root node
@@ -118,8 +116,7 @@ class BST
     }
 }
 
-class SearchingAlgorithms
-{
+class SearchingAlgorithms {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Instantiate a new tree object

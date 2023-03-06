@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class TestData
-    {
+namespace AdaCodeSamples {
+    class TestData {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             string passwordToCheck = "test";

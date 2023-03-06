@@ -16,8 +16,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class TwoDimensionalArrays
-{
+class TwoDimensionalArrays {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         String[][] spellingWords = new String[3][3]; // Declare a two-dimensional array

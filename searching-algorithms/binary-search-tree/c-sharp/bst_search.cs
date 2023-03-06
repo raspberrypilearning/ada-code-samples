@@ -15,11 +15,9 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // A node in a binary search tree
-    class Node
-    {
+    class Node {
         public int data;
         public Node left;
         public Node right;
@@ -31,8 +29,7 @@ namespace AdaCodeSamples
     }
 
     // A class for constructing a binary search tree (BST)
-    class BST
-    {
+    class BST {
         private Node root; // Do not initialise the root yet as the tree is empty
 
         // Return the root node
@@ -121,8 +118,7 @@ namespace AdaCodeSamples
 
     }
 
-    class SearchingAlgorithms
-    {
+    class SearchingAlgorithms {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Instantiate a new tree object

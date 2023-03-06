@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class SearchingAlgorithms
-    {
+namespace AdaCodeSamples {
+    class SearchingAlgorithms {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Perform a linear search on the test data

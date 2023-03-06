@@ -17,8 +17,7 @@ To run this file you need to:
 
 // A class to represent the data and pointer of a single item. The class is
 // used to store multiple return values with different data types
-class Item
-{
+class Item {
     private String data;
     private int topPointer;
 
@@ -37,8 +36,7 @@ class Item
 }
 
 
-class StacksExample
-{
+class StacksExample {
     public static final int MAX_SIZE = 4;
 
     // The main method is the entry point for all Java programs

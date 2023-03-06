@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Selection
-    {
+namespace AdaCodeSamples {
+    class Selection {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             ShowError();

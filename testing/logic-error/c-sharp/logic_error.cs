@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class LogicErrors
-    {
+namespace AdaCodeSamples {
+    class LogicErrors {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             double amount = 130.40;

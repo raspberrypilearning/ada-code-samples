@@ -21,8 +21,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-class HandlingCSVFiles
-{
+class HandlingCSVFiles {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Use Scanner for reading user input from the console

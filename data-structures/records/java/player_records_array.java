@@ -19,8 +19,7 @@ To run this file you need to:
 import java.time.LocalDate;
 
 // Use a class to represent a player as a record
-class PlayerRecord
-{
+class PlayerRecord {
     public int playerNumber;
     public String firstName;
     public String lastName;
@@ -30,8 +29,7 @@ class PlayerRecord
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Declare an array to store 11 player records

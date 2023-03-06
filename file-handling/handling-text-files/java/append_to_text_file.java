@@ -21,8 +21,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class HandlingTextFiles
-{
+class HandlingTextFiles {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         appendToFile();

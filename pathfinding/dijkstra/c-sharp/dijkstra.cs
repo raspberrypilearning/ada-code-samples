@@ -16,10 +16,8 @@ To run this file you need to:
 using System;
 using System.Collections.Generic;
 
-namespace AdaCodeSamples
-{
-    class Pathfinding
-    {
+namespace AdaCodeSamples {
+    class Pathfinding {
         // Index values for cost and previous node
         public const int Cost = 0;
         public const int Previous = 1;

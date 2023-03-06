@@ -15,11 +15,9 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // A class for a node in the linked list
-    class Node
-    {
+    class Node {
         private string data;
         private Node nextItem;
 
@@ -43,8 +41,7 @@ namespace AdaCodeSamples
 
 
     // A class for the linked list
-    class LinkedList
-    {
+    class LinkedList {
         private Node head; // Do not initialise yet as the linked list is empty
 
         public Node GetHead() {
@@ -145,8 +142,7 @@ namespace AdaCodeSamples
     }
 
 
-    class DataStructures
-    {
+    class DataStructures {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             Console.WriteLine("### Linked list (OOP) ###");

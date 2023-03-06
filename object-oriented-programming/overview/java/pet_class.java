@@ -17,8 +17,7 @@ To run this file you need to:
 
 import java.util.Random;
 
-class Pet
-{
+class Pet {
     private String name;
     private String petType;
     private String colour;

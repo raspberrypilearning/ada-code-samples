@@ -24,8 +24,7 @@ import java.io.EOFException;
 import java.util.HashMap;
 import java.util.Map;
 
-class HandlingBinaryFiles
-{
+class HandlingBinaryFiles {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         readBinaryFile();
