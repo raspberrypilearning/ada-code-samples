@@ -19,7 +19,3 @@ Please note that sometimes things are done for pedagogical reasons so changes wh
 ## Derivatives
 
 See [LICENCE.md](LICENCE.md) for content licence. The licence must remain in all derivatives of this work.
-
-## Translation
-
-You can help us make this project available to more people around the world by translating it. For more information, please go to [rpf.io/translate](http://rpf.io/translate).
