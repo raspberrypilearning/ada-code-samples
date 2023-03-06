@@ -44,10 +44,16 @@ class Testing {
     public static void main(String[] args) {
         // Instantiate a new player object
         Player gamePlayer = new Player("Leona");
-        System.out.println("The player's name is: " + gamePlayer.getName());
-        System.out.println("The player's score is: " + gamePlayer.getScore());
+
+        String playerName = gamePlayer.getName();
+        System.out.println("The player's name is: " + playerName);
+
+        int playerScore = gamePlayer.getScore();
+        System.out.println("The player's score is: " + playerScore);
+
         gamePlayer.setScore(20);
-        System.out.println("The player's score is now: " + gamePlayer.getScore());
+        playerScore = gamePlayer.getScore();
+        System.out.println("The player's score is now: " + playerScore);
     }
 
 
