@@ -1,6 +1,6 @@
 ---
 name: Custom issue template
-about: Describe this issue template's purpose here.
+about: Raise issues with the Ada code repository here.
 title: ''
 labels: ''
 assignees: ''
