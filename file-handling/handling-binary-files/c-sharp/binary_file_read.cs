@@ -30,7 +30,7 @@ namespace MyApplication
         // Read data from a binary file
         public static void ReadBinaryFile() {
             // Declare an empty dictionary for adding the data to
-            Dictionary<string, double> player_stats = new Dictionary<string, double>();
+            Dictionary<string, double> playerStats = new Dictionary<string, double>();
 
             string filename = "treasure.game";
 
@@ -42,13 +42,13 @@ namespace MyApplication
                     var key = binaryReader.ReadString();
                     var value = binaryReader.ReadDouble();
 
-                    player_stats.Add(key, value);
+                    playerStats.Add(key, value);
                 }
             }
 
             // Testing the dictionary has been populated from the binary file
             Console.WriteLine("Output dictionary read from binary file");
-            foreach(var kvp in player_stats)
+            foreach(var kvp in playerStats)
                 Console.WriteLine("Key: {0}, Value: {1}", kvp.Key, kvp.Value);
         }
 

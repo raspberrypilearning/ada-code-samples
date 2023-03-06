@@ -23,25 +23,25 @@ namespace MyApplication
     {
         // The Main method is the entry point for all C# programs
         public static void Main() {
-            var player_stats = new Dictionary<string, double>() {
+            Dictionary<string, double> playerStats = new Dictionary<string, double>() {
                 {"health", 100},
                 {"hunger", 10},
                 {"money", 20.00},
                 {"lives", 3}
             };
-            WriteBinaryFile(player_stats);
+            WriteBinaryFile(playerStats);
         }
         
 
         // Write data to a binary file
-        public static void WriteBinaryFile(Dictionary<string, double> player_stats) {
+        public static void WriteBinaryFile(Dictionary<string, double> playerStats) {
             string filename = "treasure.game";
 
             // Write to a new file using File and BinaryWriter
             using (var stream = File.Open(filename, FileMode.Create))
             using (var binaryWriter = new BinaryWriter(stream)) {
                 // Write each key and value pair to the file
-                foreach (var item in player_stats) {
+                foreach (var item in playerStats) {
                     binaryWriter.Write(item.Key);
                     binaryWriter.Write(item.Value);
                 }
