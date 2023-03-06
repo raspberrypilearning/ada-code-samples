@@ -18,11 +18,9 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class SyntaxErrors
-{
+class SyntaxErrors {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 

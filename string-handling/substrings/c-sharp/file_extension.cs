@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Substrings
-    {
+namespace AdaCodeSamples {
+    class Substrings {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string fileName = "monster.csv";
             string extension = GetExtension(fileName);
             Console.WriteLine(extension);
@@ -29,8 +26,7 @@ namespace AdaCodeSamples
 
 
         // Extracts everything after dot in file name
-        public static string GetExtension(string fileName)
-        {
+        public static string GetExtension(string fileName) {
             int position = fileName.IndexOf('.');
             int index = position + 1;
             string extension = fileName.Substring(index);

@@ -17,11 +17,9 @@ using System;
 
 namespace AdaCodeSamples  
 {
-    class DefineAndCall
-    {
+    class DefineAndCall {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             double SquareRoot = Math.Sqrt(9);
             Console.WriteLine(SquareRoot);
         }

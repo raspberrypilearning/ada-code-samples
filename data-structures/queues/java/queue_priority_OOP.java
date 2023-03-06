@@ -16,42 +16,35 @@ To run this file you need to:
 */
 
 // A class for a node in a linked list
-class Node
-{
+class Node {
     private String data;
     private int priority;
     private Node next;
 
     // Constructor method
-    public Node(String itemData, int itemPriority)
-    {
+    public Node(String itemData, int itemPriority) {
         data = itemData;
         priority = itemPriority;
     }
 
-    public String getData()
-    {
+    public String getData() {
         return data;
     }
 
-    public int getPriority()
-    {
+    public int getPriority() {
         return priority;
     }
 
-    public Node getNext()
-    {
+    public Node getNext() {
         return next;
     }
 
-    public void setNext(Node newNext)
-    {
+    public void setNext(Node newNext) {
         next = newNext;
     }
 
     // Testing
-    public void outputNode()
-    {
+    public void outputNode() {
         String nextData = "null";
         if (next != null)
             nextData = next.data;
@@ -61,34 +54,28 @@ class Node
 
 
 // A priority queue stored as a linked list
-class PriorityQueue
-{
+class PriorityQueue {
     private Node front;
     private Node rear;
 
-    public Node getFront()
-    {
+    public Node getFront() {
         return front;
     }
 
-    public void setFront(Node newFront)
-    {
+    public void setFront(Node newFront) {
         front = newFront;
     }
 
-    public Node getRear()
-    {
+    public Node getRear() {
         return rear;
     }
 
-    public void setRear(Node newRear)
-    {
+    public void setRear(Node newRear) {
         rear = newRear;
     }
 
     // Check if the queue is empty
-    public boolean isEmpty()
-    {
+    public boolean isEmpty() {
         if (front == null)
             return true;
         else
@@ -96,8 +83,7 @@ class PriorityQueue
     }
 
     // Enqueue an item based on the priority
-    public void enqueue(String data, int itemPriority)
-    {
+    public void enqueue(String data, int itemPriority) {
         Node newNode = new Node(data, itemPriority);
 
         // Check if the queue is empty
@@ -132,8 +118,7 @@ class PriorityQueue
     }
 
     // Dequeue an item
-    public String dequeue()
-    {
+    public String dequeue() {
         String dequeuedItem;
 
         if (isEmpty()) {
@@ -150,8 +135,7 @@ class PriorityQueue
     }
 
     // Output the state of the queue
-    public void outputQueue()
-    {
+    public void outputQueue() {
         // Testing
         if (front != null) {
             System.out.println("------ State of the queue ------");
@@ -168,11 +152,9 @@ class PriorityQueue
 }
 
 
-class Queues
-{
+class Queues {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("### Priority queue (OOP) ###\n");
 
         // Initialise the queue
@@ -185,8 +167,7 @@ class Queues
         testDequeue(myQueue);
     }
 
-    public static void testEnqueue(PriorityQueue myQueue)
-    {
+    public static void testEnqueue(PriorityQueue myQueue) {
         System.out.println("Adding A with priority 3");
         myQueue.enqueue("A", 3);
         myQueue.outputQueue();
@@ -224,8 +205,7 @@ class Queues
         myQueue.outputQueue();
     }
 
-    public static void testDequeue(PriorityQueue myQueue)
-    {
+    public static void testDequeue(PriorityQueue myQueue) {
         System.out.println("\n------ Dequeuing 10 items ------\n");
 
         for (int i = 0; i < 10; i++) {

@@ -15,20 +15,16 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Substrings
-    {
+namespace AdaCodeSamples {
+    class Substrings {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             CheckInString();
         }
 
 
         // Demonstrates checking if a substring occurs within a string
-        public static void CheckInString()
-        {
+        public static void CheckInString() {
             string myString = "Hello World!";
             bool isInString = myString.Contains("World");
             Console.WriteLine(isInString);

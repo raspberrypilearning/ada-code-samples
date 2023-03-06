@@ -16,20 +16,16 @@ To run this file you need to:
 using System;
 using System.IO;
 
-namespace AdaCodeSamples
-{
-    class HandlingTextFiles
-    {
+namespace AdaCodeSamples {
+    class HandlingTextFiles {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             ReadAll();
         }
 
 
         // Read all the text of a file
-        public static void ReadAll()
-        {
+        public static void ReadAll() {
             string rhyme;
             
             using (StreamReader reader = new StreamReader("bridge.txt")) {

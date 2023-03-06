@@ -16,18 +16,15 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class Substrings
-{
+class Substrings {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         stripStartAndEnd();
     }
 
 
     // Demonstrates stripping characters from the start and end of a string
-    public static void stripStartAndEnd()
-    {
+    public static void stripStartAndEnd() {
         String myString = "UAda Computer Science?";
         String strippedString = myString.replace("U", "");
         strippedString = strippedString.replace("?", "");

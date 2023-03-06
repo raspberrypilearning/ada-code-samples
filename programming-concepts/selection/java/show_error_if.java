@@ -18,18 +18,15 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class Selection
-{
+class Selection {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         showError();
     }
 
 
     // Example of a switch/case statement to match the error code
-    public static void showError()
-    {
+    public static void showError() {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 

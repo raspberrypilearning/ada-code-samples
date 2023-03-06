@@ -18,11 +18,9 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class LogicalOperators
-{
+class LogicalOperators {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String difficulty = "Hard";
         int score = 55;
         boolean gameOver = false;

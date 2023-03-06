@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Complexity
-    {
+namespace AdaCodeSamples {
+    class Complexity {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {   
+        public static void Main() {   
             // Test the SumTo method
             int num = 5;
             int result = SumTo(num);
@@ -30,8 +27,7 @@ namespace AdaCodeSamples
 
 
         // Calculates the sum of all integers from 1 to the given number
-        public static int SumTo(int givenNumber) 
-        {
+        public static int SumTo(int givenNumber) {
             int total = 0;
             for (int i = 1; i <= givenNumber; i++) {
                 total = total + i;

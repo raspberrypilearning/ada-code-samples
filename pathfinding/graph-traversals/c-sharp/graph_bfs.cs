@@ -16,13 +16,10 @@ To run this file you need to:
 using System;
 using System.Collections.Generic;
 
-namespace AdaCodeSamples
-{
-    class GraphTraversals
-    {
+namespace AdaCodeSamples {
+    class GraphTraversals {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Use a dictionary to represent the graph as an adjacency list.
             // Each key is a node in the graph.
             // Each value is a list of the node's neighbours
@@ -57,8 +54,7 @@ namespace AdaCodeSamples
 
         // A breadth-first search performed on a graph stored as a dictionary
         public static bool BreadthFirstSearch(Dictionary<string, List<string>> graph, 
-            string startNode, string targetNode)
-        {
+            string startNode, string targetNode) {
             // Initialisation
             List<string> queue = new List<string>() {startNode};
             List<string> discovered = new List<string>() {startNode};

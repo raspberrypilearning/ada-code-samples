@@ -18,11 +18,9 @@ To run this file you need to:
 
 import java.util.Arrays;
 
-class SortingAlgorithms
-{
+class SortingAlgorithms {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Perform a quick sort on the test data
         //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
         //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
@@ -43,8 +41,7 @@ class SortingAlgorithms
 
 
     // A recursive quick sort algorithm
-    public static int[] quickSort(int[] items, int start, int end)
-    {
+    public static int[] quickSort(int[] items, int start, int end) {
         // Base case for recursion:
         // The recursion will stop when the partition contains a single item
         if (start >= end) {

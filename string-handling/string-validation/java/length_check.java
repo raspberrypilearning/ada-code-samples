@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class StringValidation
-{
+class StringValidation {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // normal test data
         String password = "elephant1234";
         boolean result = checkPassword(password);
@@ -39,8 +37,7 @@ class StringValidation
 
 
     // Checks password length
-    public static boolean checkPassword(String password)
-    {
+    public static boolean checkPassword(String password) {
         boolean isValid = true;
 
         if (password.length() < 8) {

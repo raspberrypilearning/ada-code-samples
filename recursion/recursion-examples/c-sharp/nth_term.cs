@@ -17,11 +17,9 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class RecursionExamples
-    {
+    class RecursionExamples {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             int n = 6;
             int increment = 3;
             int result = NthTerm(n, increment);
@@ -30,8 +28,7 @@ namespace AdaCodeSamples
         
 
         // Returns the nth term of a numerical sequence
-        public static int NthTerm(int n, int increment)
-        {
+        public static int NthTerm(int n, int increment) {
             if (n == 1) {
                 return 1;
             }

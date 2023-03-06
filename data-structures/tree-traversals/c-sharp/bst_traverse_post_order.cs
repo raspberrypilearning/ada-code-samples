@@ -15,38 +15,32 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // A node in a binary search tree
-    class Node
-    {
+    class Node {
         public int data;
         public Node left;
         public Node right;
 
         // Constructor method
-        public Node(int data)
-        {
+        public Node(int data) {
             this.data = data;
         }
     }
 
 
     // A class for constructing a binary search tree (BST)
-    class BST
-    {
+    class BST {
         private Node root; // Do not initialise the root yet as the tree is empty
 
         // Return the root node
-        public Node GetRoot()
-        {
+        public Node GetRoot() {
             return root;
         }
 
 
         // Insert a new node
-        public void Insert(int item)
-        {
+        public void Insert(int item) {
             // Create a new node
             Node newNode = new Node(item);
 
@@ -95,8 +89,7 @@ namespace AdaCodeSamples
 
 
         // A post-order traversal of the binary search tree
-        public void PostOrderTraversal(Node node)
-        {
+        public void PostOrderTraversal(Node node) {
             // Check any nodes to the left of the current node
             if (node.left != null) {
                 PostOrderTraversal(node.left);
@@ -115,11 +108,9 @@ namespace AdaCodeSamples
     }
 
 
-    class Testing
-    {
+    class Testing {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Instantiate a new tree object
             BST bst = new BST();
 
@@ -141,8 +132,7 @@ namespace AdaCodeSamples
 
 
         // Insert test data into the binary search tree
-        public static void InsertTestData(BST bst)
-        {
+        public static void InsertTestData(BST bst) {
             bst.Insert(8);  // This will be the root node
             bst.Insert(3);
             bst.Insert(6);
@@ -156,8 +146,7 @@ namespace AdaCodeSamples
 
 
         // Output the tree with the root to the left and children to the right
-        public static void OutputTree(Node node, int level = 0)
-        {
+        public static void OutputTree(Node node, int level = 0) {
             if (node != null) {
                 OutputTree(node.right, level + 1);
                 

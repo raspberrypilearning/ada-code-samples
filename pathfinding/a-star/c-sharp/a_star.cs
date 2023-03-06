@@ -16,18 +16,15 @@ To run this file you need to:
 using System;
 using System.Collections.Generic;
 
-namespace AdaCodeSamples
-{
-    class Pathfinding
-    {
+namespace AdaCodeSamples {
+    class Pathfinding {
         // Index values for g-score, f-score and previous node
         public const int GScore = 0;
         public const int FScore = 1;
         public const int Previous = 2;
 
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Use a dictionary to represent the graph as an adjacency list
             // and the g-score and f-score of each neighbour
             var testGraph = new Dictionary<string, Dictionary<string, int>>
@@ -52,8 +49,7 @@ namespace AdaCodeSamples
         }
 
         // Display each node with it's neighbours and costs
-        public static void DisplayGraph(Dictionary<string, Dictionary<string, int>> graph)
-        {
+        public static void DisplayGraph(Dictionary<string, Dictionary<string, int>> graph) {
             // Repeat for each node in the graph
             foreach (KeyValuePair<string, Dictionary<string, int>> kvp in graph) {
                 string node = kvp.Key;
@@ -71,8 +67,7 @@ namespace AdaCodeSamples
         }
 
         // Display a list of nodes with their closest neighbour and scores
-        public static void DisplayList(Dictionary<string, List<object>> adjacencyList)
-        {
+        public static void DisplayList(Dictionary<string, List<object>> adjacencyList) {
             Console.WriteLine("   (g-score, f-score, previous)");
 
             // Repeat for each node in the given adjacency list
@@ -90,8 +85,7 @@ namespace AdaCodeSamples
 
         // Display the shortest path from start node to target node
         public static void DisplayShortestPath(Dictionary<string, List<object>> visited, 
-            string startNode, string targetNode)
-        {
+            string startNode, string targetNode) {
             // Set the current node and the path as the key node
             string currentNode = targetNode;
             string path = targetNode;
@@ -114,8 +108,7 @@ namespace AdaCodeSamples
         }
 
         // Returns heuristic values for the graph as used on the Ada CS platform
-        public static int GetHeuristic(string node)
-        {
+        public static int GetHeuristic(string node) {
             int estimatedDistanceToTarget;
 
             if (node == "A") {
@@ -144,8 +137,7 @@ namespace AdaCodeSamples
         }
 
         // Returns the node with the lowest f-score
-        public static string GetMinimum(Dictionary<string, List<object>> unvisited)
-        {
+        public static string GetMinimum(Dictionary<string, List<object>> unvisited) {
             // Set the lowest value to Int32.MaxValue for infinity
             int lowestValueNode = Int32.MaxValue;
             string lowestKey = "";
@@ -169,8 +161,7 @@ namespace AdaCodeSamples
 
         // Apply the A* algorithm on a graph stored as a dictionary
         public static Dictionary<string, List<object>> AStar(
-            Dictionary<string, Dictionary<string, int>> graph, string startNode, string targetNode)
-        {
+            Dictionary<string, Dictionary<string, int>> graph, string startNode, string targetNode) {
             // Declare the visited and unvisited lists as dictionaries
             Dictionary<string, List<object>> unvisited = new Dictionary<string, List<object>>();
             Dictionary<string, List<object>> visited = new Dictionary<string, List<object>>();

@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class DefineAndCall
-{
+class DefineAndCall {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int minutes = 90;
         int seconds = minutes * 60;
         int milliseconds = seconds * 1000;

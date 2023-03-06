@@ -15,16 +15,13 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class GoodProgrammingPractice
-    {
+namespace AdaCodeSamples {
+    class GoodProgrammingPractice {
         const double GravityOnEarth = 9.81;
         const double GravityOnMars = 3.711;
 
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Execute both subroutines and output the results
             double weight = 35.7;
             Console.WriteLine(Conv(weight));
@@ -33,8 +30,7 @@ namespace AdaCodeSamples
 
 
         // First example
-        public static double Conv(double a)
-        {
+        public static double Conv(double a) {
             double b = a / 9.81 * 3.711;
             return b;
         }
@@ -42,8 +38,7 @@ namespace AdaCodeSamples
 
         // Second example
         // Convert a weight on Earth to the weight on Mars based on gravity
-        public static double CalculateWeightOnMars(double weightOnEarth)
-        {
+        public static double CalculateWeightOnMars(double weightOnEarth) {
             double weightOnMars = weightOnEarth / GravityOnEarth * GravityOnMars;
             return weightOnMars;
         }

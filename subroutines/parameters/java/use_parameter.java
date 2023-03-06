@@ -18,11 +18,9 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class Parameters
-{
+class Parameters {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
@@ -33,8 +31,7 @@ class Parameters
 
 
     // A welcome message that uses value from parameter
-    public static void welcomeUser(String user)
-    {
+    public static void welcomeUser(String user) {
         System.out.println("Greetings " + user);
     }
 

@@ -17,11 +17,9 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class Parameters
-    {
+    class Parameters {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("Enter height: ");
             string inputHeight = Console.ReadLine();
             float height = float.Parse(inputHeight);
@@ -40,8 +38,7 @@ namespace AdaCodeSamples
 
 
         // Calculates the volume of a cuboid
-        public static float CalculateVolume(float height, float width, float depth)
-        {
+        public static float CalculateVolume(float height, float width, float depth) {
             float volume = height * width * depth;
             return volume;
         }

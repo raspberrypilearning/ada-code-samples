@@ -16,17 +16,14 @@ To run this file you need to:
 using System;
 using System.Collections.Generic;
 
-namespace AdaCodeSamples
-{
-    class Pathfinding
-    {
+namespace AdaCodeSamples {
+    class Pathfinding {
         // Index values for cost and previous node
         public const int Cost = 0;
         public const int Previous = 1;
 
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        { 
+        public static void Main() { 
             // Use a dictionary to represent the graph as an adjacency list
             // and the cost of each neighbour
             var testGraph = new Dictionary<string, Dictionary<string, int>>
@@ -50,8 +47,7 @@ namespace AdaCodeSamples
         }
 
         // Display each node with it's neighbours and costs
-        public static void DisplayGraph(Dictionary<string, Dictionary<string, int>> graph)
-        {
+        public static void DisplayGraph(Dictionary<string, Dictionary<string, int>> graph) {
             // Repeat for each node in the graph
             foreach (KeyValuePair<string, Dictionary<string, int>> kvp in graph) {
                 string node = kvp.Key;
@@ -69,8 +65,7 @@ namespace AdaCodeSamples
         }
 
         // Display a list of nodes with their closest neighbour and cost
-        public static void DisplayList(Dictionary<string, List<object>> adjacencyList)
-        {
+        public static void DisplayList(Dictionary<string, List<object>> adjacencyList) {
             Console.WriteLine("   (cost, previous)");
 
             // Repeat for each node in the given adjacency list
@@ -88,8 +83,7 @@ namespace AdaCodeSamples
 
         // Display the shortest path from the start node to other nodes
         public static void DisplayShortestPaths(Dictionary<string, List<object>> visited, 
-            string startNode)
-        {
+            string startNode) {
             Console.WriteLine("\nShortest paths:");
 
             // Repeat for each node in the visited list
@@ -120,8 +114,7 @@ namespace AdaCodeSamples
 
         // Apply Dijkstra's shortest path algorithm on a graph stored as a dictionary
         public static Dictionary<string, List<object>> DijkstrasShortestPath(
-            Dictionary<string, Dictionary<string, int>> graph, string startNode)
-        {
+            Dictionary<string, Dictionary<string, int>> graph, string startNode) {
             // Declare the visited and unvisited lists as dictionaries
             Dictionary<string, List<object>> unvisited = new Dictionary<string, List<object>>();
             Dictionary<string, List<object>> visited = new Dictionary<string, List<object>>();

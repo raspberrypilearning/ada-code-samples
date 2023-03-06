@@ -17,8 +17,7 @@ using System;
 namespace AdaCodeSamples 
 {
     
-    class SubQuestion12
-    {
+    class SubQuestion12 {
         
         static void Main() {
             display_menu();

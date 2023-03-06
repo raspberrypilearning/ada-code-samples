@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class Selection
-{
+class Selection {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int testScore = 71;
 
         if (testScore >= 60) {

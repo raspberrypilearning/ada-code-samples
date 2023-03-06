@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class RecursionExamples
-{
+class RecursionExamples {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int x = 259;
         int y = 111;
         int answer = gcd(x, y);
@@ -29,8 +27,7 @@ class RecursionExamples
 
 
     // Euclidian algorithm to find greatest common denominator
-    public static int gcd(int x, int y)
-    {
+    public static int gcd(int x, int y) {
         if (y == 0) {
             return x;
         }

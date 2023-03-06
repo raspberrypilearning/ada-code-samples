@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class ProceduresFunctions
-    {
+namespace AdaCodeSamples {
+    class ProceduresFunctions {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             double side1 = 3;
             double side2 = 4;
             double hypotenuse = GetHypotenuse(side1, side2);
@@ -30,16 +27,14 @@ namespace AdaCodeSamples
         
 
         // Calculates the length of the hypotenuse of a right angled triangle
-        public static double GetHypotenuse(double a, double b)
-        {
+        public static double GetHypotenuse(double a, double b) {
             double h = Math.Sqrt(CalculateArea(a) + CalculateArea(b));
             return h;
         }
 
 
         // Calculates the area of a square with sides of a given length
-        public static double CalculateArea(double length)
-        {
+        public static double CalculateArea(double length) {
             double area = length * length;
             return area;
         }

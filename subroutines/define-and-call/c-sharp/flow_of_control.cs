@@ -17,11 +17,9 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class DefineAndCall
-    {
+    class DefineAndCall {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             int minutes = 90;
             int seconds = minutes * 60;
             int milliseconds = seconds * 1000;

@@ -17,33 +17,28 @@ To run this file you need to:
 */
 
 // A node in a binary search tree
-class Node
-{
+class Node {
     public int data;
     public Node left;
     public Node right;
 
     // Constructor method
-    public Node(int data)
-    {
+    public Node(int data) {
         this.data = data;
     }
 }
 
 // A class for constructing a binary search tree (BST)
-class BST
-{
+class BST {
     private Node root; // Do not initialise the root yet as the tree is empty
 
     // Return the root node
-    public Node getRoot()
-    {
+    public Node getRoot() {
         return root;
     }
 
     // Insert a new node
-    public void insert(int item)
-    {
+    public void insert(int item) {
         // Create a new node
         Node newNode = new Node(item);
 
@@ -92,8 +87,7 @@ class BST
 
 
     // Recursively searches for an item in a binary search tree
-    public boolean search(Node node, int searchItem)
-    {
+    public boolean search(Node node, int searchItem) {
         // Base case for recursion:
         // The recursion will stop if the search item has been found
         if (searchItem == node.data) {
@@ -122,11 +116,9 @@ class BST
     }
 }
 
-class SearchingAlgorithms
-{
+class SearchingAlgorithms {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Instantiate a new tree object
         BST bst = new BST();
 
@@ -157,8 +149,7 @@ class SearchingAlgorithms
 
 
     // Insert test data into the binary search tree
-    public static void insertTestData(BST bst)
-    {
+    public static void insertTestData(BST bst) {
         bst.insert(8);  // This will be the root node
         bst.insert(3);
         bst.insert(6);
@@ -172,8 +163,7 @@ class SearchingAlgorithms
 
 
     // Output the tree with the root to the left and children to the right
-    public static void outputTree(Node node, int level)
-    {
+    public static void outputTree(Node node, int level) {
         if (node != null) {
             outputTree(node.right, level + 1);
 

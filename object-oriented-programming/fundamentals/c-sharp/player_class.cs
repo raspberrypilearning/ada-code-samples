@@ -15,27 +15,22 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Player
-    {
+namespace AdaCodeSamples {
+    class Player {
         private string name;
         private int score;
 
         // Constructor method
-        public Player(string givenName)
-        {
+        public Player(string givenName) {
             name = givenName;
             score = 0;
         }
     }
     
     
-    class Testing
-    {
+    class Testing {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Instantiate a new player object
             Console.WriteLine("Enter your name: ");
             string playerName = Console.ReadLine();

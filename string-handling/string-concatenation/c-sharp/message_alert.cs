@@ -15,21 +15,17 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class StringConcatenation
-    {
+namespace AdaCodeSamples {
+    class StringConcatenation {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             int newMessages = 5;
             MessageAlert(newMessages);           
         }
 
         
         // Example of type conversion for string concatenation
-        public static void MessageAlert(int newMessages)
-        {            
+        public static void MessageAlert(int newMessages) {            
             Console.WriteLine("You have " + newMessages.ToString() + " new messages");
         }
         

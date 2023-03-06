@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Iteration
-    {
+namespace AdaCodeSamples {
+    class Iteration {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             int result;
             for (int num = 1; num <=3; num++) {
                 for (int multiplier = 1; multiplier <= 10; multiplier++) {

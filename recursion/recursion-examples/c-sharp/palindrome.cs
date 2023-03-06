@@ -17,11 +17,9 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class RecursionExamples
-    {
+    class RecursionExamples {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string testWord = "kayak"; // Test data
             bool isPalindrome = Palindrome(testWord);
             Console.WriteLine($"{testWord}: {isPalindrome}");
@@ -33,8 +31,7 @@ namespace AdaCodeSamples
         
 
         // Returns True if string is a palindrome
-        public static bool Palindrome(string word)
-        {
+        public static bool Palindrome(string word) {
             int length = word.Length;
             if (length == 0 || length == 1) {
                 return true;

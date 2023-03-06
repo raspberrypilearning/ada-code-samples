@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class StringPosition
-    {
+namespace AdaCodeSamples {
+    class StringPosition {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string subject = "Computer Science";
             string letterSought = "m";
             int position = subject.IndexOf(letterSought);

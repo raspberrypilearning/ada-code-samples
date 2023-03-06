@@ -15,15 +15,13 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class PlayingCard
-{
+class PlayingCard {
     private String suit;
     private String rank;
     private int value;
 
     // Constructor method
-    public PlayingCard(String givenSuit, String givenRank, int givenValue)
-    {
+    public PlayingCard(String givenSuit, String givenRank, int givenValue) {
         suit = givenSuit;
         rank = givenRank;
         value = givenValue;
@@ -31,16 +29,14 @@ class PlayingCard
 }
 
 
-class Deck
-{
+class Deck {
     private PlayingCard[] cards = new PlayingCard[52]; // Declare an array of 52 elements
     private String[] suits = { "Clubs", "Diamonds", "Hearts", "Spades" };
     private String[] ranks = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
     private int[] values = { 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10 };
 
     // Constructor method
-    public Deck()
-    {
+    public Deck() {
         int cardNumber = 0;
 
         // Repeat for all 4 suits
@@ -61,11 +57,9 @@ class Deck
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Instantiate a new deck object
         Deck myDeck = new Deck();
     }

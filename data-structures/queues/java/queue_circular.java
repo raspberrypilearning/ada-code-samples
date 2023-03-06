@@ -19,43 +19,36 @@ import java.util.Arrays;
 
 // A class to represent the data and pointer of a single item. The class is
 // used to store multiple return values with different data types
-class Item
-{
+class Item {
     private String data;
     private int frontPointer;
     private int rearPointer;
 
-    public Item(String data, int frontPointer, int rearPointer)
-    {
+    public Item(String data, int frontPointer, int rearPointer) {
         this.data = data;
         this.frontPointer = frontPointer;
         this.rearPointer = rearPointer;
     }
 
-    public String getData()
-    {
+    public String getData() {
         return data;
     }
 
-    public int getFrontPointer()
-    {
+    public int getFrontPointer() {
         return frontPointer;
     }
 
-    public int getRearPointer()
-    {
+    public int getRearPointer() {
         return rearPointer;
     }
 }
 
 
-class QueuesCircularExample
-{
+class QueuesCircularExample {
     public static final int MAX_SIZE = 4;
 
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("### Circular queue ###");
 
         // Initialise the queue and pointers
@@ -128,8 +121,7 @@ class QueuesCircularExample
     }
 
     // Check if the queue is empty
-    public static boolean isEmpty(int front)
-    {
+    public static boolean isEmpty(int front) {
         if (front == -1)
             return true;
         else
@@ -137,8 +129,7 @@ class QueuesCircularExample
     }
 
     // Check if the queue is full
-    public static boolean isFull(int front, int rear)
-    {
+    public static boolean isFull(int front, int rear) {
         if ((rear + 1) % MAX_SIZE == front)
             return true;
         else
@@ -146,8 +137,7 @@ class QueuesCircularExample
     }
 
     // Enqueue an item
-    public static int[] enqueue(String[] queue, int front, int rear, String data)
-    {
+    public static int[] enqueue(String[] queue, int front, int rear, String data) {
         if (isFull(front, rear))
             System.out.println("\nQueue is full - " + data + " not added");
         else {
@@ -160,8 +150,7 @@ class QueuesCircularExample
     }
 
     // Dequeue an item
-    public static Item dequeue(String[] queue, int front, int rear)
-    {
+    public static Item dequeue(String[] queue, int front, int rear) {
         String dequeuedItem;
 
         if (isEmpty(front)) {
@@ -184,8 +173,7 @@ class QueuesCircularExample
     }
 
     // Output the state of the queue
-    public static void outputQueue(String[] queue, int front, int rear)
-    {
+    public static void outputQueue(String[] queue, int front, int rear) {
         // Testing
         System.out.print("\nQueue: ");
         System.out.println(Arrays.toString(queue));

@@ -20,11 +20,9 @@ using System.IO;
 using CsvHelper;
 using CsvHelper.Configuration;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // The Movie class holds information about a movie
-    class Movie
-    {
+    class Movie {
         public string Title { get; set; }
         public string Year { get; set; }
         public string Duration { get; set; }
@@ -35,8 +33,7 @@ namespace AdaCodeSamples
     }
 
     
-    class Program
-    {
+    class Program {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Create a list of Movie objects for appending to the CSV file

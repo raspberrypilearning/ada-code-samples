@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class SortingAlgorithms
-    {
+namespace AdaCodeSamples {
+    class SortingAlgorithms {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Perform an insertion sort on the test data
             //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
             //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
@@ -40,8 +37,7 @@ namespace AdaCodeSamples
 
 
         // An insertion sort algorithm
-        public static int[] InsertionSort(int[] items)
-        {
+        public static int[] InsertionSort(int[] items) {
             // Initialise the variables
             int numItems = items.Length;
 

@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class SortingAlgorithms
-    {
+namespace AdaCodeSamples {
+    class SortingAlgorithms {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Execute all three versions of the bubble sort algorithms
             Console.WriteLine("\n### Bubble sort version 1 (for loops) ###");
             BubbleSortVersion1(GetTestData());
@@ -35,8 +32,7 @@ namespace AdaCodeSamples
 
 
         // Returns the test data for the algorithm
-        public static int[] GetTestData()
-        {
+        public static int[] GetTestData() {
             //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
             //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
             //int[] testItems = new int[] {2, 3, 7, 21, 35, 43, 50, 64, 80}; // Sorted
@@ -50,8 +46,7 @@ namespace AdaCodeSamples
 
 
         // An inefficient bubble sort that uses nested for loops
-        public static void BubbleSortVersion1(int[] items)
-        {
+        public static void BubbleSortVersion1(int[] items) {
             int numItems = items.Length;
             int passNum; // Declared outside of the for loop for testing below
 
@@ -73,8 +68,7 @@ namespace AdaCodeSamples
 
 
         // A quite efficient bubble sort that stops if the items are sorted
-        public static void BubbleSortVersion2(int[] items)
-        {
+        public static void BubbleSortVersion2(int[] items) {
             int numItems = items.Length;
             bool swapped = true;
             int passNum = 1; // Testing
@@ -101,8 +95,7 @@ namespace AdaCodeSamples
 
 
         // A more efficient bubble sort that reduces the number of comparisons per pass
-        public static void BubbleSortVersion3(int[] items)
-        {
+        public static void BubbleSortVersion3(int[] items) {
             int numItems = items.Length;
             bool swapped = true;
             int passNum = 1;

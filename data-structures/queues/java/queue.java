@@ -19,36 +19,30 @@ import java.util.Arrays;
 
 // A class to represent the data and pointer of a single item. The class is
 // used to store multiple return values with different data types
-class Item
-{
+class Item {
     private String data;
     private int frontPointer;
 
-    public Item(String data, int frontPointer)
-    {
+    public Item(String data, int frontPointer) {
         this.data = data;
         this.frontPointer = frontPointer;
     }
 
-    public String getData()
-    {
+    public String getData() {
         return data;
     }
 
-    public int getFrontPointer()
-    {
+    public int getFrontPointer() {
         return frontPointer;
     }
 }
 
 
-class QueuesExample
-{
+class QueuesExample {
     public static final int MAX_SIZE = 4;
 
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("### Queue ###");
 
         // Initialise the queue and pointers
@@ -90,8 +84,7 @@ class QueuesExample
     }
 
     // Check if the queue is empty
-    public static boolean isEmpty(int front, int rear)
-    {
+    public static boolean isEmpty(int front, int rear) {
         if (front > rear)
             return true;
         else
@@ -99,8 +92,7 @@ class QueuesExample
     }
 
     // Check if the queue is full
-    public static boolean isFull(int rear)
-    {
+    public static boolean isFull(int rear) {
         if (rear + 1 == MAX_SIZE)
             return true;
         else
@@ -108,8 +100,7 @@ class QueuesExample
     }
 
     // Enqueue an item
-    public static int enqueue(String[] queue, int rear, String data)
-    {
+    public static int enqueue(String[] queue, int rear, String data) {
         if (isFull(rear)) {
             System.out.println("\nQueue is full - " + data + " not added");
         }
@@ -121,8 +112,7 @@ class QueuesExample
     }
 
     // Dequeue an item
-    public static Item dequeue(String[] queue, int front, int rear)
-    {
+    public static Item dequeue(String[] queue, int front, int rear) {
         String dequeuedItem;
 
         if (isEmpty(front, rear)) {
@@ -138,8 +128,7 @@ class QueuesExample
     }
 
     // Output the state of the queue
-    public static void outputQueue(String[] queue, int front, int rear)
-    {
+    public static void outputQueue(String[] queue, int front, int rear) {
         // Testing
         System.out.print("\nQueue: ");
         System.out.println(Arrays.toString(queue));

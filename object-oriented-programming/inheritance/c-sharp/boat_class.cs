@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Boat
-    {
+namespace AdaCodeSamples {
+    class Boat {
         private string name;
         private float length;
         private int capacity;
@@ -27,8 +25,7 @@ namespace AdaCodeSamples
 
         // Constructor method
         public Boat(string givenName, float givenLength, int givenCapacity,
-            int givenBerths, float givenUnitCost)
-        {
+            int givenBerths, float givenUnitCost) {
             name = givenName;
             length = givenLength;
             capacity = givenCapacity;
@@ -38,11 +35,9 @@ namespace AdaCodeSamples
     }
 
 
-    class Testing
-    {
+    class Testing {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string name = "Sir David Attenborough";
             float length = 128.9F;
             int capacity = 88;

@@ -15,20 +15,16 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class StringPosition
-    {
+namespace AdaCodeSamples {
+    class StringPosition {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             DisplayEachCharacter();
         }
 
 
         // Demonstrates how to output each character from a string
-        public static void DisplayEachCharacter()
-        {
+        public static void DisplayEachCharacter() {
             string password = "ItIsAsecReT";
 
             for (int index = 0; index <= 10; index++) {

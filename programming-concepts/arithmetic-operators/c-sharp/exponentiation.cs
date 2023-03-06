@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class ArithmeticOperators
-    {
+namespace AdaCodeSamples {
+    class ArithmeticOperators {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Calculate the power using 4 as the base and 3 as the exponent
             double result = Math.Pow(4, 3);
             Console.WriteLine(result);

@@ -17,11 +17,9 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class RecursionExamples
-    {
+    class RecursionExamples {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             int x = 259;
             int y = 111;
             int answer = GCD(x, y);
@@ -30,8 +28,7 @@ namespace AdaCodeSamples
         
 
         // Euclidian algorithm to find greatest common denominator
-        public static int GCD(int x, int y)
-        {
+        public static int GCD(int x, int y) {
             if (y == 0) {
                 return x;
             }

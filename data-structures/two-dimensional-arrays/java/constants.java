@@ -16,15 +16,13 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class TwoDimensionalArrays
-{
+class TwoDimensionalArrays {
     public static final int LEVEL1 = 0;
     public static final int LEVEL2 = 1;
     public static final int LEVEL3 = 2;
 
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String[][] spellingWords = new String[3][3]; // Declare a two-dimensional array
 
         spellingWords[0][0] = "school";

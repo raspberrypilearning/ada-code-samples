@@ -15,45 +15,37 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
+namespace AdaCodeSamples {
     // A class for a node in a linked list
-    class Node
-    {
+    class Node {
         private string data;
         private int priority;
         private Node next;
 
         // Constructor method
-        public Node(string itemData, int itemPriority)
-        {
+        public Node(string itemData, int itemPriority) {
             data = itemData;
             priority = itemPriority;
         }
 
-        public string GetData()
-        {
+        public string GetData() {
             return data;
         }
 
-        public int GetPriority()
-        {
+        public int GetPriority() {
             return priority;
         }
 
-        public Node GetNext()
-        {
+        public Node GetNext() {
             return next;
         }
 
-        public void SetNext(Node newNext)
-        {
+        public void SetNext(Node newNext) {
             next = newNext;
         }
 
         // Testing
-        public void OutputNode()
-        {
+        public void OutputNode() {
             string nextData = "null";
             if (next != null)
                 nextData = next.data;
@@ -63,34 +55,28 @@ namespace AdaCodeSamples
 
 
     // A priority queue stored as a linked list
-    class PriorityQueue
-    {
+    class PriorityQueue {
         private Node front;
         private Node rear;
 
-        public Node GetFront()
-        {
+        public Node GetFront() {
             return front;
         }
 
-        public void SetFront(Node newFront)
-        {
+        public void SetFront(Node newFront) {
             front = newFront;
         }
 
-        public Node GetRear()
-        {
+        public Node GetRear() {
             return rear;
         }
 
-        public void SetRear(Node newRear)
-        {
+        public void SetRear(Node newRear) {
             rear = newRear;
         }
 
         // Check if the queue is empty
-        public bool IsEmpty()
-        {
+        public bool IsEmpty() {
             if (front == null)
                 return true;
             else
@@ -98,8 +84,7 @@ namespace AdaCodeSamples
         }
 
         // Enqueue an item based on the priority
-        public void Enqueue(string data, int itemPriority)
-        {
+        public void Enqueue(string data, int itemPriority) {
             Node newNode = new Node(data, itemPriority);
 
             // Check if the queue is empty
@@ -134,8 +119,7 @@ namespace AdaCodeSamples
         }
 
         // Dequeue an item
-        public string Dequeue()
-        {
+        public string Dequeue() {
             string dequeuedItem;
 
             if (IsEmpty()) {
@@ -152,8 +136,7 @@ namespace AdaCodeSamples
         }
 
         // Output the state of the queue
-        public void OutputQueue()
-        {
+        public void OutputQueue() {
             // Testing
             if (front != null) {
                 Console.WriteLine("------ State of the queue ------");
@@ -170,11 +153,9 @@ namespace AdaCodeSamples
     }
 
 
-    class Queues
-    {
+    class Queues {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("### Priority queue (OOP) ###\n");
 
             // Initialise the queue
@@ -187,8 +168,7 @@ namespace AdaCodeSamples
             TestDequeue(myQueue);
         }
 
-        public static void TestEnqueue(PriorityQueue myQueue)
-        {
+        public static void TestEnqueue(PriorityQueue myQueue) {
             Console.WriteLine("Adding A with priority 3");
             myQueue.Enqueue("A", 3);
             myQueue.OutputQueue();
@@ -226,8 +206,7 @@ namespace AdaCodeSamples
             myQueue.OutputQueue();
         }
 
-        public static void TestDequeue(PriorityQueue myQueue)
-        {
+        public static void TestDequeue(PriorityQueue myQueue) {
             Console.WriteLine("\n------ Dequeuing 10 items ------\n");
 
             for (int i = 0; i < 10; i++) {

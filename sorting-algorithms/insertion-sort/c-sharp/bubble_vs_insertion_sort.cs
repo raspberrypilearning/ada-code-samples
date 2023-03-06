@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class SortingAlgorithms
-    {
+namespace AdaCodeSamples {
+    class SortingAlgorithms {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Compare a bubble sort with an insertion sort algorithm
             Console.WriteLine("\n### Bubble sort (while and for loops improved) ###");
             BubbleSort(GetTestData());
@@ -32,8 +29,7 @@ namespace AdaCodeSamples
 
 
         // Returns the test data for the algorithm
-        public static int[] GetTestData()
-        {
+        public static int[] GetTestData() {
             //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
             //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
             //int[] testItems = new int[] {2, 3, 7, 21, 35, 43, 50, 64, 80}; // Sorted
@@ -47,8 +43,7 @@ namespace AdaCodeSamples
 
 
         // A bubble sort algorithm (while and for loops improved)
-        public static void BubbleSort(int[] items)
-        {
+        public static void BubbleSort(int[] items) {
             // Initialise the variables
             int numItems = items.Length;
             bool swapped = true;
@@ -84,8 +79,7 @@ namespace AdaCodeSamples
 
 
         // An insertion sort algorithm
-        public static void InsertionSort(int[] items)
-        {
+        public static void InsertionSort(int[] items) {
             // Initialise the variables
             int numItems = items.Length;
             int totalComparisons = 0; // Testing

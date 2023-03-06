@@ -21,11 +21,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-class HandlingCSVFiles
-{
+class HandlingCSVFiles {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
@@ -52,8 +50,7 @@ class HandlingCSVFiles
 
 
     // Optimised version to append a new record to the CSV file
-    public static void appendMovieOptimised(String title, String year, String duration, String director, String rating, String takings)
-    {
+    public static void appendMovieOptimised(String title, String year, String duration, String director, String rating, String takings) {
         String newMovie = title + "," + year + "," + duration + "," + director + "," + rating + "," + takings;
 
         // Uses try-with-resources to automatically close the writers after execution

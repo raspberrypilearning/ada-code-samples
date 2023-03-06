@@ -17,8 +17,7 @@ using System;
 namespace AdaCodeSamples 
 {
     
-    class SubQuestion14
-    {
+    class SubQuestion14 {
         
         static void Main() {
             find_y(5, 2, 3);

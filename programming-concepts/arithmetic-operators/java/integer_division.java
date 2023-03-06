@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class ArithmeticOperators
-{
+class ArithmeticOperators {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Perform an integer division on two numbers
         int result = 9 / 2;
         System.out.println(result);

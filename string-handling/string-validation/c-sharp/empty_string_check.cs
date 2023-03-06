@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class StringValidation
-    {
+namespace AdaCodeSamples {
+    class StringValidation {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("Enter a string to check if it is empty:");
             string userInput = Console.ReadLine();
             bool isEmpty = CheckEmptyString(userInput);
@@ -36,8 +33,7 @@ namespace AdaCodeSamples
 
 
         // Checks if a string is empty
-        public static bool CheckEmptyString(string myString)
-        {
+        public static bool CheckEmptyString(string myString) {
             bool empty = false;
 
             if (String.IsNullOrEmpty(myString)) {

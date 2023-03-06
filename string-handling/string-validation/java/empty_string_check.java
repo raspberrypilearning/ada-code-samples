@@ -18,11 +18,9 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class StringValidation
-{
+class StringValidation {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
@@ -40,8 +38,7 @@ class StringValidation
 
 
     // Checks if a string is empty
-    public static boolean checkEmptyString(String myString)
-    {
+    public static boolean checkEmptyString(String myString) {
         boolean empty = false;
 
         if (myString.isEmpty()) {

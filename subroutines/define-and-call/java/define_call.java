@@ -16,18 +16,15 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class DefineAndCall
-{
+class DefineAndCall {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         greetMe();
     }
 
 
     // Displays a brief greeting message
-    public static void greetMe()
-    {
+    public static void greetMe() {
         System.out.println("Hello there!");
     }
 

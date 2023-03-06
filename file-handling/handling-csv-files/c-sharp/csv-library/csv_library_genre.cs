@@ -21,8 +21,7 @@ using CsvHelper;
 namespace MyApplication
 {
     // The Movie class holds information about a movie
-    class Movie
-    {
+    class Movie {
         public string Title { get; set; }
         public string Year { get; set; }
         public string Duration { get; set; }
@@ -33,8 +32,7 @@ namespace MyApplication
     }
 
     
-    class Program
-    {
+    class Program {
         // The Main method is the entry point for all C# programs
         public static void Main() {  
             Console.WriteLine("Enter a genre of movie to find:");

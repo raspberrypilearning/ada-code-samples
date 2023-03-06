@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class TestData
-{
+class TestData {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String passwordToCheck = "test";
         boolean result = checkPassword(passwordToCheck);
         System.out.println("Valid password? " + result);
@@ -28,8 +26,7 @@ class TestData
 
 
     // Checks that a password length is between 8 and 14 characters. Returns True if valid
-    public static boolean checkPassword(String password)
-    {
+    public static boolean checkPassword(String password) {
         boolean isValid = true;
 
         if (password.length() < 8 || password.length() > 14) {

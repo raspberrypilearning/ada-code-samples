@@ -15,40 +15,33 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class Player
-{
+class Player {
     private String name;
     private int score;
 
     // Constructor method
-    public Player(String givenName)
-    {
+    public Player(String givenName) {
         name = givenName;
         score = 0;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public int getScore()
-    {
+    public int getScore() {
         return score;
     }
 
-    public void setScore(int newScore)
-    {
+    public void setScore(int newScore) {
         score = newScore;
     }
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Instantiate a new player object
         Player gamePlayer = new Player("Leona");
         System.out.println("The player's name is: " + gamePlayer.getName());

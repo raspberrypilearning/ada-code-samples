@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class LogicErrors
-    {
+namespace AdaCodeSamples {
+    class LogicErrors {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             double amount = 130.40;
             double result = AddVat(amount);
             Console.WriteLine(result);
@@ -29,8 +26,7 @@ namespace AdaCodeSamples
 
 
         // Calculates and applies VAT at standard rate
-        public static double AddVat(double amount)
-        {
+        public static double AddVat(double amount) {
             // Demonstrates a logic error
             int RATE = 20;
             double vat = amount * RATE;

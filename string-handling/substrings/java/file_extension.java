@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class Substrings
-{
+class Substrings {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String fileName = "monster.csv";
         String extension = getExtension(fileName);
         System.out.println(extension);
@@ -28,8 +26,7 @@ class Substrings
 
 
     // Extracts everything after dot in file name
-    public static String getExtension(String fileName)
-    {
+    public static String getExtension(String fileName) {
         int position = fileName.indexOf('.');
         int index = position + 1;
         String extension = fileName.substring(index);

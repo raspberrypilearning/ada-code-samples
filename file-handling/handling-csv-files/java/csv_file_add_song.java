@@ -20,18 +20,15 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-class HandlingCSVFiles
-{
+class HandlingCSVFiles {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         addSong("Happy", "Pharrell Williams", "03:55");
     }
 
 
     // Append a new song to the playlist
-    public static void addSong(String title, String artist, String duration)
-    {
+    public static void addSong(String title, String artist, String duration) {
         String newSong = title + "," + artist + "," + duration;
 
         // Uses try-with-resources to automatically close the writers after execution

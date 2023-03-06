@@ -14,13 +14,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class OneDimensionalArrays
-    {
+namespace AdaCodeSamples {
+    class OneDimensionalArrays {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string[] emotions = new string[6]; // Declare an array of 6 elements
 
             emotions[0] = "amazed";  // Assign a value into a position of the array

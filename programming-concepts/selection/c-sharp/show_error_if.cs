@@ -15,20 +15,16 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Selection
-    {
+namespace AdaCodeSamples {
+    class Selection {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             ShowError();
         }
 
 
         // Example of an if/else if statement to match the error code
-        public static void ShowError()
-        {
+        public static void ShowError() {
             Console.WriteLine("Enter the error code: ");
             string errorCode = Console.ReadLine();
 

@@ -14,13 +14,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class CompressionTechniques
-    {
+namespace AdaCodeSamples {
+    class CompressionTechniques {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Test data - normal data
             string text = "aaaabbbccdddeee";
             Console.WriteLine(text);
@@ -50,8 +47,7 @@ namespace AdaCodeSamples
 
 
         // A simple version of Run Length Encoding for text strings
-        public static string RLE(string textString)
-        {
+        public static string RLE(string textString) {
             char currentToken = textString[0];
             string compressed = currentToken.ToString();
             int counter = 1;

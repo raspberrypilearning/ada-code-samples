@@ -18,11 +18,9 @@ To run this file you need to:
 
 import java.util.Arrays;
 
-class SortingAlgorithms
-{
+class SortingAlgorithms {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Perform a bubble sort on the test data
         //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
         //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
@@ -37,8 +35,7 @@ class SortingAlgorithms
 
 
     // A more efficient bubble sort that reduces the number of comparisons per pass
-    public static void bubbleSortVersion3(int[] items)
-    {
+    public static void bubbleSortVersion3(int[] items) {
         // Initialise the variables
         int numItems = items.length;
         boolean swapped = true;

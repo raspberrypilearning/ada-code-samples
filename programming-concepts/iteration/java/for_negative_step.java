@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class Iteration
-{
+class Iteration {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         for (int i = 10; i >= 1; i -= 2) {
             System.out.println(i);
         }

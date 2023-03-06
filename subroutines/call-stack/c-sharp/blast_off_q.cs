@@ -17,17 +17,14 @@ using System;
 
 namespace AdaCodeSamples   
 {
-    class CallStack
-    {
+    class CallStack {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             BlastOff(5);
         }
 
 
-        public static void BlastOff(int n)
-        {
+        public static void BlastOff(int n) {
             if (n == 0) {
                 Console.WriteLine("Blast Off!");
             }

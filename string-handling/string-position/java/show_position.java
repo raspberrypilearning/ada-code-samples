@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class StringPosition
-{
+class StringPosition {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String subject = "Computer Science";
         String letterSought = "m";
         int position = subject.indexOf(letterSought);

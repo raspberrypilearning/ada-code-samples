@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class CompressionTechniques
-{
+class CompressionTechniques {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Test data - normal data
         String text = "aaaabbbccdddeee";
         System.out.println(text);
@@ -50,8 +48,7 @@ class CompressionTechniques
 
 
     // A simple version of Run Length Encoding for text strings
-    public static String rle(String textString)
-    {
+    public static String rle(String textString) {
         char currentToken = textString.charAt(0);
         String compressed = Character.toString(currentToken);
         int counter = 1;

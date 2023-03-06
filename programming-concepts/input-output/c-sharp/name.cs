@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class InputOutput
-    {
+namespace AdaCodeSamples {
+    class InputOutput {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
             Console.WriteLine($"Hello {name}");

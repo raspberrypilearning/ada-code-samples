@@ -21,18 +21,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class HandlingTextFiles
-{
+class HandlingTextFiles {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         appendToFile();
     }
 
 
     // Example of appending to a text file
-    public static void appendToFile()
-    {
+    public static void appendToFile() {
         // Uses try-with-resources to automatically close the writers after execution
         try (FileWriter fw = new FileWriter("twinkle.txt", true);
              BufferedWriter bw = new BufferedWriter(fw);

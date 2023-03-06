@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class HashTables
-{
+class HashTables {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Generate a hash value from an integer hash key
         int key = 12345;
         int slots = 97;
@@ -29,8 +27,7 @@ class HashTables
     }
 
     // Produce a hash value from an integer
-    public static int hashInteger(int hashKey, int numberOfSlots)
-    {
+    public static int hashInteger(int hashKey, int numberOfSlots) {
         // Generate the hash value using the modulo operator
         int hashValue = hashKey % numberOfSlots;
 

@@ -16,18 +16,15 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class StringCharacteristics
-{
+class StringCharacteristics {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         demonstrateEmptyStrings();
     }
 
     
     // Demonstrates the difference between a null and a space 
-    public static void demonstrateEmptyStrings()
-    {
+    public static void demonstrateEmptyStrings() {
         String emptyString = "";
         System.out.println(emptyString.length());
 

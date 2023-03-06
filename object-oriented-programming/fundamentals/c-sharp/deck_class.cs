@@ -15,17 +15,14 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class PlayingCard
-    {
+namespace AdaCodeSamples {
+    class PlayingCard {
         private string suit;
         public string rank;
         private int value;
 
         // Constructor method
-        public PlayingCard(string givenSuit, string givenRank, int givenValue)
-        {
+        public PlayingCard(string givenSuit, string givenRank, int givenValue) {
             suit = givenSuit;
             rank = givenRank;
             value = givenValue;
@@ -33,16 +30,14 @@ namespace AdaCodeSamples
     }
     
 
-    class Deck
-    {
+    class Deck {
         private PlayingCard[] cards = new PlayingCard[52]; // Declare an array of 52 elements
         private string[] suits = { "Clubs", "Diamonds", "Hearts", "Spades" };
         private string[] ranks = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
         private int[] values = { 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10 };
 
         // Constructor method
-        public Deck()
-        {
+        public Deck() {
             int cardNumber = 0;
 
             // Repeat for all 4 suits
@@ -63,11 +58,9 @@ namespace AdaCodeSamples
     }
 
 
-    class Testing
-    {
+    class Testing {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Instantiate a new deck object
             Deck myDeck = new Deck();
         }

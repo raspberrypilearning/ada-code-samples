@@ -18,11 +18,9 @@ To run this file you need to:
 
 import java.util.Random;
 
-class RandomNumbers
-{
+class RandomNumbers {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Random rnd = new Random();
         int random_number = rnd.nextInt(1, 101);
         System.out.println(random_number);

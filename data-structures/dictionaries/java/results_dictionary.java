@@ -19,11 +19,9 @@ To run this file you need to:
 import java.util.HashMap;
 import java.util.Map;
 
-class Dictionaries
-{
+class Dictionaries {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Initialise a new dictionary of students and results
         Map<String, Integer> results = new HashMap<String, Integer>();
         results.put("Detra", 17);

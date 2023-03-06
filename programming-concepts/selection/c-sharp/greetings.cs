@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Selection
-    {
+namespace AdaCodeSamples {
+    class Selection {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("What hour is it?");
             string user_input = Console.ReadLine();
             int hour = Int32.Parse(user_input);

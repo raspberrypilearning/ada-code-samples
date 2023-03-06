@@ -15,10 +15,8 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class Pet
-    {
+namespace AdaCodeSamples {
+    class Pet {
         private string name;
         private string petType;
         private string colour;
@@ -26,8 +24,7 @@ namespace AdaCodeSamples
         private bool sleeping;
         
         // Constructor method
-        public Pet(string givenName, string givenType, string givenColour)
-        {
+        public Pet(string givenName, string givenType, string givenColour) {
             name = givenName;
             petType = givenType;
             colour = givenColour;
@@ -40,58 +37,47 @@ namespace AdaCodeSamples
             mood = allMoods[index];
         }
         
-        public string GetName()
-        {
+        public string GetName() {
             return name;
         }
         
-        public void SetName(string newName)
-        {
+        public void SetName(string newName) {
             name = newName;
         }
         
-        public string GetPetType()
-        {
+        public string GetPetType() {
             return petType;
         }
         
-        public void SetPetType(string newType)
-        {
+        public void SetPetType(string newType) {
             petType = newType;
         }
         
-        public string GetColour()
-        {
+        public string GetColour() {
             return colour;
         }
         
-        public void SetColour(string newColour)
-        {
+        public void SetColour(string newColour) {
             colour = newColour;
         }
         
-        public string GetMood()
-        {
+        public string GetMood() {
             return mood;
         }
         
-        public bool IsSleeping()
-        {
+        public bool IsSleeping() {
             return sleeping;
         }
         
-        public void Describe()
-        {
+        public void Describe() {
             Console.WriteLine($"I am a {mood}, {colour} {petType} called {name}");
         }
     }
 
     
-    class Testing
-    {
+    class Testing {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Ask the user to input the pet's information
             Console.WriteLine("Enter a name for your pet:");
             string petName = Console.ReadLine();

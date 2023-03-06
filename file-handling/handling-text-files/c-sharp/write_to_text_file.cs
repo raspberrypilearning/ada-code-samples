@@ -16,20 +16,16 @@ To run this file you need to:
 using System;
 using System.IO;
 
-namespace AdaCodeSamples
-{
-    class HandlingTextFiles
-    {
+namespace AdaCodeSamples {
+    class HandlingTextFiles {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             WriteToFile();
         }
 
 
         // Example of writing to a text file
-        public static void WriteToFile()
-        {
+        public static void WriteToFile() {
             using (StreamWriter writer = new StreamWriter("twinkle.txt", false)) {
                 writer.WriteLine("Twinkle, twinkle, little star,");
                 writer.WriteLine("How I wonder what you are!");

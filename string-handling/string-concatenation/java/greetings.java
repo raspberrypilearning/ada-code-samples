@@ -18,18 +18,15 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class StringConcatenation
-{
+class StringConcatenation {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         greetUser();
     }
 
 
     // Demonstration of string concatenation
-    public static void greetUser()
-    {
+    public static void greetUser() {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 

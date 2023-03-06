@@ -16,13 +16,10 @@ To run this file you need to:
 using System;
 using System.Collections.Generic;
 
-namespace AdaCodeSamples
-{
-    class ByValOrRef
-    {
+namespace AdaCodeSamples {
+    class ByValOrRef {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             List<string> shoppingList = new List<string>();  // Empty list
             AddNewItem(ref shoppingList, "milk");
             AddNewItem(ref shoppingList, "bread");
@@ -32,8 +29,7 @@ namespace AdaCodeSamples
 
 
         // Demonstrates passing by reference
-        public static void AddNewItem(ref List<string> aList, string newItem)
-        {
+        public static void AddNewItem(ref List<string> aList, string newItem) {
             aList.Add(newItem);  // Uses built in method Add
         }
 

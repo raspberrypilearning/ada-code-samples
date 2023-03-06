@@ -17,18 +17,15 @@ using System;
 
 namespace AdaCodeSamples    
 {
-    class StringCharacteristics
-    {               
+    class StringCharacteristics {               
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             ShowPasswordLength();
         }
 
         
         // Prompts for a password and displays its length
-        public static void ShowPasswordLength()
-        {
+        public static void ShowPasswordLength() {
             Console.WriteLine("Please enter a password ");
             string password = Console.ReadLine();
             Console.WriteLine(password.Length);

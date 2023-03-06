@@ -15,8 +15,7 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class Boat
-{
+class Boat {
     private String name;
     private float length;
     private int capacity;
@@ -25,8 +24,7 @@ class Boat
 
     // Constructor method
     public Boat(String givenName, float givenLength, int givenCapacity,
-                int givenBerths, float givenUnitCost)
-    {
+                int givenBerths, float givenUnitCost) {
         name = givenName;
         length = givenLength;
         capacity = givenCapacity;
@@ -36,11 +34,9 @@ class Boat
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String name = "Sir David Attenborough";
         float length = 128.9F;
         int capacity = 88;

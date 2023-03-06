@@ -18,8 +18,7 @@ To run this file you need to:
 import java.util.Random;
 import java.util.Scanner;
 
-class Pet
-{
+class Pet {
     private String name;
     private String petType;
     private String colour;
@@ -27,8 +26,7 @@ class Pet
     private boolean sleeping;
 
     // Constructor method
-    public Pet(String givenName, String givenType, String givenColour)
-    {
+    public Pet(String givenName, String givenType, String givenColour) {
         name = givenName;
         petType = givenType;
         colour = givenColour;
@@ -41,58 +39,47 @@ class Pet
         mood = allMoods[index];
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public void setName(String newName)
-    {
+    public void setName(String newName) {
         name = newName;
     }
 
-    public String getPetType()
-    {
+    public String getPetType() {
         return petType;
     }
 
-    public void setPetType(String newType)
-    {
+    public void setPetType(String newType) {
         petType = newType;
     }
 
-    public String getColour()
-    {
+    public String getColour() {
         return colour;
     }
 
-    public void setColour(String newColour)
-    {
+    public void setColour(String newColour) {
         colour = newColour;
     }
 
-    public String getMood()
-    {
+    public String getMood() {
         return mood;
     }
 
-    public boolean isSleeping()
-    {
+    public boolean isSleeping() {
         return sleeping;
     }
 
-    public void describe()
-    {
+    public void describe() {
         System.out.println("I am a " + mood + ", " + colour + " " + petType + " called " + name);
     }
 }
 
 
-class Testing
-{
+class Testing {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
         

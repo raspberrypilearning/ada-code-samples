@@ -20,18 +20,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-class HandlingCSVFiles
-{
+class HandlingCSVFiles {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         readCsv();
     }
 
 
     // Read and display the records from a CSV file
-    public static void readCsv()
-    {
+    public static void readCsv() {
         // Uses try-with-resources to automatically close the readers after execution
         try (FileReader fr = new FileReader("movies.csv");
              BufferedReader reader = new BufferedReader(fr)) {

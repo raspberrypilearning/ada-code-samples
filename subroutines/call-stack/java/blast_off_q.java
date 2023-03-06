@@ -16,17 +16,14 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class CallStack
-{
+class CallStack {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         blastOff(5);
     }
 
 
-    public static void blastOff(int n)
-    {
+    public static void blastOff(int n) {
         if (n == 0) {
             System.out.println("Blast Off!");
         }

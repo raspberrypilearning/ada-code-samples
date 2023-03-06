@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class ProceduresFunctions
-{
+class ProceduresFunctions {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         float length = 12;
         float result = calculateArea(length);
         System.out.println(result);
@@ -28,8 +26,7 @@ class ProceduresFunctions
 
 
     // Calculates the area of a square with sides of a given length
-    public static float calculateArea(float length)
-    {
+    public static float calculateArea(float length) {
         float area = length * length;
         return area;
     }

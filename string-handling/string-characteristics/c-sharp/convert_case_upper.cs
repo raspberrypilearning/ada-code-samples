@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class StringCharacteristics
-    {
+namespace AdaCodeSamples {
+    class StringCharacteristics {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("Enter your full name:");
             string userName = Console.ReadLine();
             string upperCaseName = ToUpper(userName);

@@ -18,18 +18,15 @@ To run this file you need to:
 
 import java.util.Scanner;
 
-class Selection
-{
+class Selection {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         rentCheck();
     }
 
 
     // Example of nested selection to check user can rent a flat
-    public static void rentCheck()
-    {
+    public static void rentCheck() {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 

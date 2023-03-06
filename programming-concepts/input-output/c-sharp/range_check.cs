@@ -15,13 +15,10 @@ To run this file you need to:
 
 using System;
 
-namespace AdaCodeSamples
-{
-    class InputOutput
-    {
+namespace AdaCodeSamples {
+    class InputOutput {
         // The Main method is the entry point for all C# programs
-        public static void Main() 
-        {
+        public static void Main() {
             Console.WriteLine("Enter a week of the year: ");
             string userInput = Console.ReadLine();
             int week = Int32.Parse(userInput);

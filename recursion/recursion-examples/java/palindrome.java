@@ -16,11 +16,9 @@ To run this file you need to:
 5. Save and run the program
 */
 
-class RecursionExamples
-{
+class RecursionExamples {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String testWord = "kayak"; // Test data
         boolean isPalindrome = palindrome(testWord);
         System.out.println(testWord + ": " + isPalindrome);
@@ -32,8 +30,7 @@ class RecursionExamples
 
 
     // Returns True if string is a palindrome
-    public static boolean palindrome(String word)
-    {
+    public static boolean palindrome(String word) {
         int length = word.length();
         if (length == 0 || length == 1) {
             return true;

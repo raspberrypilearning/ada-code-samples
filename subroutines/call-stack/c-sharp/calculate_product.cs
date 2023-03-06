@@ -17,11 +17,9 @@ using System;
 
 namespace AdaCodeSamples 
 {
-    class CallStack
-    {
+    class CallStack {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Demonstrates the use of call stacks
             Console.WriteLine("Please enter a number");
             string num1String = Console.ReadLine();
@@ -36,8 +34,7 @@ namespace AdaCodeSamples
         
 
         // Calculates the product of two numbers
-        public static void CalculateProduct(int n1, int n2)
-        {
+        public static void CalculateProduct(int n1, int n2) {
             int product = n1 * n2;
             Console.WriteLine(product);
         }

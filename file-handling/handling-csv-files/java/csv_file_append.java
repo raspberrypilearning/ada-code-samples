@@ -20,18 +20,15 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-class HandlingCSVFiles
-{
+class HandlingCSVFiles {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         appendMovie();
     }
 
 
     // Append a new record to the CSV file
-    public static void appendMovie()
-    {
+    public static void appendMovie() {
         String newMovie = "CODA,2021,111,Sian Heder,8.1,1.5";
 
         // Uses try-with-resources to automatically close the writers after execution

@@ -20,11 +20,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-class GraphTraversals
-{
+class GraphTraversals {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use a hashmap to represent the graph as an adjacency list.
         // Each key is a node in the graph.
         // Each value is a list of the node's neighbours
@@ -58,8 +56,7 @@ class GraphTraversals
 
     // A depth-first search performed on a graph stored as a hashmap
     public static boolean depthFirstSearch(HashMap<String, List<String>> graph,
-                                           String startNode, String targetNode)
-    {
+                                           String startNode, String targetNode) {
         // Initialisation
         List<String> stack = new ArrayList<String>();
         stack.add(startNode);
