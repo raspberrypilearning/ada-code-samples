@@ -6,7 +6,7 @@ Please note that sometimes things are done for pedagogical reasons so changes wh
 
 ## Issues
 
-If you find a mistake, bug, or other problem, please [open an issue](https://github.com/raspberrypilearning/repo-name/issues) in this repository.
+If you find a mistake, bug, or other problem, please [open an issue]([https://github.com/raspberrypilearning/repo-name/issues](https://github.com/raspberrypilearning/ada-code-samples/issues/new?assignees=&labels=&template=custom.md&title=)) in this repository.
 
 ## Pull requests
 
