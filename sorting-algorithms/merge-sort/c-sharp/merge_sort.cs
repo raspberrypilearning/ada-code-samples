@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class SortingAlgorithms
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Perform a merge sort on the test data
             //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
             //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
@@ -40,8 +39,7 @@ namespace AdaCodeSamples
 
 
         // A recursive merge sort algorithm
-        public static int[] MergeSort(int[] items)
-        {
+        public static int[] MergeSort(int[] items) {
             int[] leftHalf; // Stores items in the left half of the items array
             int[] rightHalf; // Stores items in the right half of the items array
             int[] mergedItems = new int[items.Length]; // Stores the merged items in each recursive call
@@ -99,8 +97,7 @@ namespace AdaCodeSamples
         }
 
         // Merges the items in left and right into a new ordered list called merged
-        public static int[] Merge(int[] left, int[] right)
-        {
+        public static int[] Merge(int[] left, int[] right) {
             int mergedSize = left.Length + right.Length; // Size of the new array
             int[] merged = new int[mergedSize]; // New array for merging the items
 

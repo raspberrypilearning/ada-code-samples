@@ -19,15 +19,13 @@ To run this file you need to:
 class ProceduresFunctions
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         displayMenu();
     }
 
 
     // Displays a simple menu
-    public static void displayMenu()
-    {
+    public static void displayMenu() {
         System.out.println("1: Log in");
         System.out.println("2: Sign up");
         System.out.println("9: Quit");

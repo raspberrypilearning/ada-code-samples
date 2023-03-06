@@ -22,23 +22,19 @@ class Node
     private Node nextItem;
 
     // Constructor method
-    public Node(String givenData)
-    {
+    public Node(String givenData) {
         data = givenData;
     }
 
-    public String getData()
-    {
+    public String getData() {
         return data;
     }
 
-    public Node getNext()
-    {
+    public Node getNext() {
         return nextItem;
     }
 
-    public void setNext(Node newNext)
-    {
+    public void setNext(Node newNext) {
         nextItem = newNext;
     }
 }
@@ -49,19 +45,16 @@ class LinkedList
 {
     private Node head; // Do not initialise yet as the linked list is empty
 
-    public Node getHead()
-    {
+    public Node getHead() {
         return head;
     }
 
-    public void setHead(Node newHead)
-    {
+    public void setHead(Node newHead) {
         head = newHead;
     }
 
     // Insert a node to the front of the list
-    public void insertAtFront(String data)
-    {
+    public void insertAtFront(String data) {
         // Create a new node
         Node newNode = new Node(data);
 
@@ -78,8 +71,7 @@ class LinkedList
 
 
     // Insert a node into the correct position in an ordered list
-    public void insertInOrder(String data)
-    {
+    public void insertInOrder(String data) {
         // Create a new node
         Node newNode = new Node(data);
 
@@ -114,8 +106,7 @@ class LinkedList
 
 
     // Traverse the list and output the data from each node
-    public void traverse()
-    {
+    public void traverse() {
         // Set the current node as the head
         Node current = getHead();
 
@@ -128,8 +119,7 @@ class LinkedList
 
 
     // Delete a node. This assumes that the node does exist in the list
-    public void delete(String data)
-    {
+    public void delete(String data) {
         // Start at the head of the list
         Node current = getHead();
 
@@ -156,8 +146,7 @@ class LinkedList
 class DataStructures
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("### Linked list (OOP) ###");
 
         // Instantiate an empty linked list object
@@ -186,8 +175,7 @@ class DataStructures
 
 
     // Insert test data into the linked list
-    public static void insertTestData(LinkedList myList)
-    {
+    public static void insertTestData(LinkedList myList) {
         myList.insertInOrder("Julie");
         myList.insertInOrder("Rey");
         myList.insertInOrder("Habib");

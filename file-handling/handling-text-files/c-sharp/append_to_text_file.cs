@@ -21,15 +21,13 @@ namespace AdaCodeSamples
     class HandlingTextFiles
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             AppendToFile();
         }
 
 
         // Example of appending to a text file
-        public static void AppendToFile()
-        {
+        public static void AppendToFile() {
             using (StreamWriter writer = new StreamWriter("twinkle.txt", true)) {
                 writer.WriteLine("");
                 writer.WriteLine("When the blazing sun is gone");

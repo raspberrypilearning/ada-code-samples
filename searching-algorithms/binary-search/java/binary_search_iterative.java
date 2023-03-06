@@ -21,8 +21,7 @@ import java.util.Arrays;
 class SearchingAlgorithms
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Perform a binary search on the test data
         int[] testItems = new int[] {10, 11, 13, 15, 18, 25, 29};
 
@@ -44,8 +43,7 @@ class SearchingAlgorithms
 
 
     // An iterative binary search algorithm
-    public static int binarySearch(int[] items, int searchItem)
-    {
+    public static int binarySearch(int[] items, int searchItem) {
         // Initialise the variables
         boolean found = false;
         int foundIndex = -1;

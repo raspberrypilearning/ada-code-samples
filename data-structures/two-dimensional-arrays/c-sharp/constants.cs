@@ -23,8 +23,7 @@ namespace AdaCodeSamples
         public const int LEVEL3 = 2;
 
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string[,] spellingWords = new string[3, 3]; // Declare a two dimensional array
 
             spellingWords[0, 0] = "school";

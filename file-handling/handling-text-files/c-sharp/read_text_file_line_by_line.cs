@@ -21,15 +21,13 @@ namespace AdaCodeSamples
     class HandlingTextFiles
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             ReadLineByLine();
         }
 
 
         // Read and display each record from a file line by line
-        public static void ReadLineByLine()
-        {
+        public static void ReadLineByLine() {
             using (StreamReader reader = new StreamReader("bridge.txt")) {
                 string line;
                 while ((line = reader.ReadLine()) != null) {

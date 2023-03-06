@@ -19,8 +19,7 @@ To run this file you need to:
 class ArithmeticOperators
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Perform the modulo operation on two numbers
         int result = 12 % 7;
         System.out.println(result);

@@ -19,8 +19,7 @@ To run this file you need to:
 class RecursionBasics
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int n = 6;
         int result = sumToN(n);
         System.out.println("The sum of 1 to " + n + " is: " + result);
@@ -28,8 +27,7 @@ class RecursionBasics
 
 
     // Returns the sum of all natural numbers from 1 to n inclusive
-    public static int sumToN(int n)
-    {
+    public static int sumToN(int n) {
         if (n == 1) {
             return 1;
         }

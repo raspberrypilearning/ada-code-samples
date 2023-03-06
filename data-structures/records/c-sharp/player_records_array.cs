@@ -32,8 +32,7 @@ namespace AdaCodeSamples
     class Testing
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Declare an array to store 11 player records
             PlayerRecord[] firstTeam = new PlayerRecord[11];
 
@@ -61,8 +60,7 @@ namespace AdaCodeSamples
 
         // Create a new player record with the given data
         public static PlayerRecord CreatePlayer(int pId, string fName, 
-            string lName, int day, int month, int year, string pos, bool inj)
-        {
+            string lName, int day, int month, int year, string pos, bool inj) {
             // Create a new player record
             PlayerRecord player = new PlayerRecord();
 
@@ -80,8 +78,7 @@ namespace AdaCodeSamples
 
 
         // Display some of the player details from each player record
-        public static void DisplayPlayers(PlayerRecord[] playersArray)
-        {
+        public static void DisplayPlayers(PlayerRecord[] playersArray) {
             Console.WriteLine("### Array of player records ###");
 
             // Repeat for each player in the players array of records

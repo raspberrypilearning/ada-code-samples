@@ -23,8 +23,7 @@ namespace AdaCodeSamples
         private int score;
 
         // Constructor method
-        public Player(string givenName)
-        {
+        public Player(string givenName) {
             name = givenName;
             score = 0;
         }
@@ -34,8 +33,7 @@ namespace AdaCodeSamples
     class Testing
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Instantiate a new player object
             Console.WriteLine("Enter your name: ");
             string playerName = Console.ReadLine();

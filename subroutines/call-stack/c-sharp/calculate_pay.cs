@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class CallStack
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Demonstrates the use of call stacks
             Console.WriteLine("Enter hours worked ");
             string hoursInput = Console.ReadLine();
@@ -37,8 +36,7 @@ namespace AdaCodeSamples
 
 
         // A simple pay calculation program
-        public static double CalculatePay(double h, double r)
-        {
+        public static double CalculatePay(double h, double r) {
             double pay = h * r;
             return pay;
         }

@@ -19,8 +19,7 @@ To run this file you need to:
 class Iteration
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int count = 1;
         do {
             System.out.println(count);

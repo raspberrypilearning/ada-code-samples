@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class Iteration
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string[] rainbow = { "red", "orange", "yellow", "green", "blue", "indigo", "violet" };
 
             foreach (string colour in rainbow) {

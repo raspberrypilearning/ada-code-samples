@@ -19,8 +19,7 @@ To run this file you need to:
 class LogicErrors
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         double amount = 130.40;
         double result = addVat(amount);
         System.out.println(result);
@@ -28,8 +27,7 @@ class LogicErrors
 
 
     // Calculates and applies VAT at standard rate
-    public static double addVat(double amount)
-    {
+    public static double addVat(double amount) {
         // Demonstrates a logic error
         int RATE = 20;
         double vat = amount * RATE;

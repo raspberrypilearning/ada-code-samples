@@ -20,15 +20,13 @@ namespace AdaCodeSamples
     class ProceduresFunctions
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             DisplayMenu();
         }
 
 
         // Displays a simple menu
-        public static void DisplayMenu()
-        {
+        public static void DisplayMenu() {
             Console.WriteLine("1: Log in");
             Console.WriteLine("2: Sign up");
             Console.WriteLine("9: Quit");

@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class SortingAlgorithms
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Perform a quick sort on the test data
             //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
             //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
@@ -42,8 +41,7 @@ namespace AdaCodeSamples
 
 
         // A recursive quick sort algorithm
-        public static int[] QuickSort(int[] items, int start, int end)
-        {
+        public static int[] QuickSort(int[] items, int start, int end) {
             // Base case for recursion:
             // The recursion will stop when the partition contains a single item
             if (start >= end) {

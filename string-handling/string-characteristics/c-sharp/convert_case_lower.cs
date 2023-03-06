@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class StringCharacteristics
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string letter = "B";
             char character = letter[0]; // Extracts single character from string
             char lowerCase = ConvertToLower(character);
@@ -30,8 +29,7 @@ namespace AdaCodeSamples
 
 
         // Demonstrates how to use ASCII codes to convert letter case
-        public static char ConvertToLower(char letter)
-        {
+        public static char ConvertToLower(char letter) {
             int letterCode = (int)letter;  // Gets denary ASCII code for letter
             int newLetterCode = letterCode + 32;
             char lowerCase = Convert.ToChar(newLetterCode);  // Convert new code to a character

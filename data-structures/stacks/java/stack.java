@@ -22,19 +22,16 @@ class Item
     private String data;
     private int topPointer;
 
-    public Item(String data, int topPointer)
-    {
+    public Item(String data, int topPointer) {
         this.data = data;
         this.topPointer = topPointer;
     }
 
-    public String getData()
-    {
+    public String getData() {
         return data;
     }
 
-    public int getTopPointer()
-    {
+    public int getTopPointer() {
         return topPointer;
     }
 }
@@ -45,8 +42,7 @@ class StacksExample
     public static final int MAX_SIZE = 4;
 
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("### Stack ###");
 
         // Initialise the stack and pointers
@@ -94,8 +90,7 @@ class StacksExample
     }
 
     // Check if the stack is empty
-    public static boolean isEmpty(int top)
-    {
+    public static boolean isEmpty(int top) {
         if (top == -1)
             return true;
         else
@@ -103,8 +98,7 @@ class StacksExample
     }
 
     // Check if the stack is full
-    public static boolean isFull(int top)
-    {
+    public static boolean isFull(int top) {
         if (top == MAX_SIZE - 1)
             return true;
         else
@@ -112,8 +106,7 @@ class StacksExample
     }
 
     // Push data onto the top of the stack
-    public static int push(String[] stack, int top, String data)
-    {
+    public static int push(String[] stack, int top, String data) {
         if (isFull(top))
             System.out.println("\nStack is full - " + data + " not added");
         else {
@@ -124,8 +117,7 @@ class StacksExample
     }
 
     // Return a copy of the item from the top of stack without removing it
-    public static String peek(String[] stack, int top)
-    {
+    public static String peek(String[] stack, int top) {
         String peekedItem;
 
         if (isEmpty(top)) {
@@ -140,8 +132,7 @@ class StacksExample
     }
 
     // Return the item from the top of stack and remove it from the stack
-    public static Item pop(String[] stack, int top)
-    {
+    public static Item pop(String[] stack, int top) {
         String poppedItem;
 
         if (isEmpty(top)) {
@@ -158,8 +149,7 @@ class StacksExample
     }
 
     // Output the state of the stack
-    public static void outputStack(String[] stack, int top)
-    {
+    public static void outputStack(String[] stack, int top) {
         // Testing
         System.out.println("\n------ State of the stack (first item is the top) ------");
 

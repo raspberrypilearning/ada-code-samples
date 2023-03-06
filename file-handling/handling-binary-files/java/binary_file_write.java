@@ -26,8 +26,7 @@ import java.util.Map;
 class HandlingBinaryFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Map<String, Double> playerStats = new HashMap<String, Double>();
         playerStats.put("health", 100.0);
         playerStats.put("hunger", 10.0);
@@ -39,8 +38,7 @@ class HandlingBinaryFiles
 
 
     // Write data to a binary file
-    public static void writeBinaryFile(Map<String, Double> stats)
-    {
+    public static void writeBinaryFile(Map<String, Double> stats) {
         String filename = "treasure.game";
 
         // Uses try-with-resources to automatically close the writers after execution

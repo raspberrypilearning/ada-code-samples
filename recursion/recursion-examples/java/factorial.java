@@ -19,8 +19,7 @@ To run this file you need to:
 class RecursionExamples
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int n = 5;
         int result = factorial(n);
         System.out.println(n + "! is: " + result);
@@ -28,8 +27,7 @@ class RecursionExamples
 
 
     // Returns the value of n!
-    public static int factorial(int n)
-    {
+    public static int factorial(int n) {
         if (n == 1) {
             return 1;
         }

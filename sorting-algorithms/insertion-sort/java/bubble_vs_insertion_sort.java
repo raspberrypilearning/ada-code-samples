@@ -21,8 +21,7 @@ import java.util.Arrays;
 class SortingAlgorithms
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Compare a bubble sort with an insertion sort algorithm
         System.out.println("\n### Bubble sort (while and for loops improved) ###");
         bubbleSort(getTestData());
@@ -33,8 +32,7 @@ class SortingAlgorithms
 
 
     // Returns the test data for the algorithm
-    public static int[] getTestData()
-    {
+    public static int[] getTestData() {
         //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
         //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
         //int[] testItems = new int[] {2, 3, 7, 21, 35, 43, 50, 64, 80}; // Sorted
@@ -48,8 +46,7 @@ class SortingAlgorithms
 
 
     // A bubble sort algorithm (while and for loops improved)
-    public static void bubbleSort(int[] items)
-    {
+    public static void bubbleSort(int[] items) {
         // Initialise the variables
         int numItems = items.length;
         boolean swapped = true;
@@ -85,8 +82,7 @@ class SortingAlgorithms
 
 
     // An insertion sort algorithm
-    public static void insertionSort(int[] items)
-    {
+    public static void insertionSort(int[] items) {
         // Initialise the variables
         int numItems = items.length;
         int totalComparisons = 0; // Testing

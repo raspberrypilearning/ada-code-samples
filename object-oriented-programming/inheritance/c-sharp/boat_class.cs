@@ -27,8 +27,7 @@ namespace AdaCodeSamples
 
         // Constructor method
         public Boat(string givenName, float givenLength, int givenCapacity,
-            int givenBerths, float givenUnitCost)
-        {
+            int givenBerths, float givenUnitCost) {
             name = givenName;
             length = givenLength;
             capacity = givenCapacity;
@@ -41,8 +40,7 @@ namespace AdaCodeSamples
     class Testing
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string name = "Sir David Attenborough";
             float length = 128.9F;
             int capacity = 88;

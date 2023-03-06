@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class Parameters
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("What is your name? ");
             string userName = Console.ReadLine();
             WelcomeUser(userName);
@@ -29,8 +28,7 @@ namespace AdaCodeSamples
 
 
         // A welcome message that uses value from parameter
-        public static void WelcomeUser(string user)
-        {
+        public static void WelcomeUser(string user) {
             Console.WriteLine("Greetings " + user);
         }
 

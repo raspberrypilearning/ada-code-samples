@@ -20,15 +20,13 @@ namespace AdaCodeSamples
     class DefineAndCall
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             GreetMe();
         }
 
         
         // Displays a brief greeting message
-        public static void GreetMe()
-        {
+        public static void GreetMe() {
             Console.WriteLine("Hello there!");
         }
         

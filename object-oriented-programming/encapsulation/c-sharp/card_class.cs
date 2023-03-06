@@ -24,25 +24,21 @@ namespace AdaCodeSamples
         private int value;
 
         // Constructor method
-        public PlayingCard(string givenSuit, string givenRank, int givenValue)
-        {
+        public PlayingCard(string givenSuit, string givenRank, int givenValue) {
             suit = givenSuit;
             rank = givenRank;
             value = givenValue;
         }
 
-        public string GetSuit()
-        {
+        public string GetSuit() {
             return suit;
         }
 
-        public string GetRank()
-        {
+        public string GetRank() {
             return rank;
         }
 
-        public int GetValue()
-        {
+        public int GetValue() {
             return value;
         }
     }
@@ -51,8 +47,7 @@ namespace AdaCodeSamples
     class Testing
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Instantiate a new card object
             PlayingCard myCard = new PlayingCard("clubs", "2", 2);
             Console.WriteLine($"Suit is: {myCard.GetSuit()}");

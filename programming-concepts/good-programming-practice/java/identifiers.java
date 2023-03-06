@@ -22,8 +22,7 @@ class GoodProgrammingPractice
     static final double GRAVITY_ON_MARS = 3.711;
 
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Execute both subroutines and output the results
         double weight = 35.7;
         System.out.println(conv(weight));
@@ -32,8 +31,7 @@ class GoodProgrammingPractice
 
 
     // First example
-    public static double conv(double a)
-    {
+    public static double conv(double a) {
         double b = a / 9.81 * 3.711;
         return b;
     }
@@ -41,8 +39,7 @@ class GoodProgrammingPractice
 
     // Second example
     // Convert a weight on Earth to the weight on Mars based on gravity
-    public static double calculateWeightOnMars(double weightOnEarth)
-    {
+    public static double calculateWeightOnMars(double weightOnEarth) {
         double weightOnMars = weightOnEarth / GRAVITY_ON_EARTH * GRAVITY_ON_MARS;
         return weightOnMars;
     }

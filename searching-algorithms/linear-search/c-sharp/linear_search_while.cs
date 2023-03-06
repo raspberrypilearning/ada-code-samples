@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class SearchingAlgorithms
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Perform a linear search on the test data
             int[] testItems = new int[] {11, 25, 10, 29, 15, 13, 18};
 
@@ -43,8 +42,7 @@ namespace AdaCodeSamples
 
 
         // A linear search algorithm that stops iterating if the item is found
-        public static int LinearSearchVersion2(int[] items, int searchItem) 
-        {
+        public static int LinearSearchVersion2(int[] items, int searchItem) {
             // Initialise the variables
             int found_index = -1;
             int current = 0;

@@ -20,15 +20,13 @@ namespace AdaCodeSamples
     class StringMutability
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             ChangeCharacter();
         }
 
 
         // Demonstrates changing a character in a string
-        public static void ChangeCharacter()
-        {
+        public static void ChangeCharacter() {
             string welcome = "Hello Wirld";
             string temp = welcome.Substring(0, 7) + 'o' + welcome.Substring(8, 3);
             welcome = temp;

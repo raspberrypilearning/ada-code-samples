@@ -27,8 +27,7 @@ class Pathfinding
     public static final int PREVIOUS = 1;
 
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use a hashmap to represent the graph as an adjacency list
         // and the cost of each neighbour
         var testGraph = new HashMap<String, HashMap<String, Integer>>();
@@ -72,8 +71,7 @@ class Pathfinding
     }
 
     // Display each node with it's neighbours and costs
-    public static void displayGraph(HashMap<String, HashMap<String, Integer>> graph)
-    {
+    public static void displayGraph(HashMap<String, HashMap<String, Integer>> graph) {
         // Repeat for each node in the graph
         for (String node : graph.keySet()) {
             HashMap<String, Integer> neighbours = graph.get(node);
@@ -90,8 +88,7 @@ class Pathfinding
     }
 
     // Display a list of nodes with their closest neighbour and cost
-    public static void displayList(HashMap<String, ArrayList<Object>> adjacencyList)
-    {
+    public static void displayList(HashMap<String, ArrayList<Object>> adjacencyList) {
         System.out.println("   (cost, previous)");
 
         // Repeat for each node in the given adjacency list
@@ -108,8 +105,7 @@ class Pathfinding
 
     // Display the shortest path from the start node to other nodes
     public static void displayShortestPaths(HashMap<String, ArrayList<Object>> visited,
-                                            String startNode)
-    {
+                                            String startNode) {
         System.out.println("\nShortest paths:");
 
         // Repeat for each node in the visited list
@@ -140,8 +136,7 @@ class Pathfinding
 
     // Apply Dijkstra's shortest path algorithm on a graph stored as a hashmap
     public static HashMap<String, ArrayList<Object>> dijkstrasShortestPath(
-            HashMap<String, HashMap<String, Integer>> graph, String startNode)
-    {
+            HashMap<String, HashMap<String, Integer>> graph, String startNode) {
         // Declare the visited and unvisited lists as dictionaries
         HashMap<String, ArrayList<Object>> unvisited = new HashMap<String, ArrayList<Object>>();
         HashMap<String, ArrayList<Object>> visited = new HashMap<String, ArrayList<Object>>();

@@ -20,15 +20,13 @@ namespace AdaCodeSamples
     class Substrings
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             StripWhitespace();
         }
 
 
         // Demonstrates stripping whitespace from the start and end of a string
-        public static void StripWhitespace()
-        {
+        public static void StripWhitespace() {
             string myString = "     Ada Computer Science  \n";
             string strippedString = myString.Trim();
             Console.WriteLine(strippedString);

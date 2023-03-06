@@ -19,15 +19,13 @@ To run this file you need to:
 class Substrings
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         stripWhitespace();
     }
 
 
     // Demonstrates stripping whitespace from the start and end of a string
-    public static void stripWhitespace()
-    {
+    public static void stripWhitespace() {
         String myString = "     Ada Computer Science  \n";
         String strippedString = myString.trim();
         System.out.println(strippedString);

@@ -21,8 +21,7 @@ import java.util.Arrays;
 class SearchingAlgorithms
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Perform a binary search on the test data
         int[] testItems = new int[] {10, 11, 13, 15, 18, 25, 29};
 
@@ -47,8 +46,7 @@ class SearchingAlgorithms
 
 
     // Performs a binary search recursively
-    public static int binarySearchRecursive(int[] items, int searchItem, int first, int last)
-    {
+    public static int binarySearchRecursive(int[] items, int searchItem, int first, int last) {
         // Base case for recursion: The recursion will stop when the
         // index of the first item is greater than the index of last
         if (first > last) {

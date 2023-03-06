@@ -23,8 +23,7 @@ class Player
     private int score;
 
     // Constructor method
-    public Player(String givenName)
-    {
+    public Player(String givenName) {
         name = givenName;
         score = 0;
     }
@@ -34,8 +33,7 @@ class Player
 class Testing
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 

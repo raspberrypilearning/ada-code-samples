@@ -21,15 +21,13 @@ import java.util.Scanner;
 class StringCharacteristics
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         showPasswordLength();
     }
 
 
     // Prompts for a password and displays its length
-    public static void showPasswordLength()
-    {
+    public static void showPasswordLength() {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 

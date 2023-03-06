@@ -27,8 +27,7 @@ namespace AdaCodeSamples
 
         // Constructor method
         public Boat(string givenName, float givenLength, int givenCapacity,
-            int givenBerths, float givenUnitCost)
-        {
+            int givenBerths, float givenUnitCost) {
             name = givenName;
             length = givenLength;
             capacity = givenCapacity;
@@ -46,8 +45,7 @@ namespace AdaCodeSamples
         // Constructor method
         public Yacht(string givenName, float givenLength, int givenCapacity,
             int givenBerths, float givenUnitCost, int givenMasts)
-             : base(givenName, givenLength, givenCapacity, givenBerths, givenUnitCost)
-        {
+             : base(givenName, givenLength, givenCapacity, givenBerths, givenUnitCost) {
             masts = givenMasts;
         }
     }
@@ -56,8 +54,7 @@ namespace AdaCodeSamples
     class Testing
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Instantiate a new yacht object
             Yacht myYacht = new Yacht("Mary Sue", 15.7F, 300, 6, 54.5F, 2);
             

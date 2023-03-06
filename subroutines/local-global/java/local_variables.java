@@ -19,8 +19,7 @@ To run this file you need to:
 class LocalGlobal
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int amount = 100;
         System.out.println(amount);
         triple(amount);
@@ -30,16 +29,14 @@ class LocalGlobal
 
 
     // Triple number and display result
-    public static void triple(int n)
-    {
+    public static void triple(int n) {
         int amount = n * 3;
         System.out.println(amount);
     }
 
 
     // Quadruple number and display result
-    public static void quadruple(int n)
-    {
+    public static void quadruple(int n) {
         int amount = n * 4;
         System.out.println(amount);
     }

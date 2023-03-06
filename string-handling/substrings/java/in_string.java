@@ -19,15 +19,13 @@ To run this file you need to:
 class Substrings
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         checkInString();
     }
 
 
     // Demonstrates checking if a substring occurs within a string
-    public static void checkInString()
-    {
+    public static void checkInString() {
         String myString = "Hello World!";
         boolean isInString = myString.contains("World");
         System.out.println(isInString);

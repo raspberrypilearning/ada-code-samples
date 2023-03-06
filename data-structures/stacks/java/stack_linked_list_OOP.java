@@ -22,29 +22,24 @@ class Node
     private Node next;
 
     // Constructor method
-    public Node(String itemData)
-    {
+    public Node(String itemData) {
         data = itemData;
     }
 
-    public String getData()
-    {
+    public String getData() {
         return data;
     }
 
-    public Node getNext()
-    {
+    public Node getNext() {
         return next;
     }
 
-    public void setNext(Node newNext)
-    {
+    public void setNext(Node newNext) {
         next = newNext;
     }
 
     // Testing
-    public void outputNode()
-    {
+    public void outputNode() {
         String nextData = "null";
         if (next != null) {
             nextData = next.data;
@@ -60,8 +55,7 @@ class Stack
     private Node top;
 
     // Check if the stack is empty
-    public boolean isEmpty()
-    {
+    public boolean isEmpty() {
         if (top == null)
             return true;
         else
@@ -69,8 +63,7 @@ class Stack
     }
 
     // Push a new item onto the stack
-    public void push(String data)
-    {
+    public void push(String data) {
         Node newNode = new Node(data);
 
         // Check if the stack is NOT empty
@@ -84,8 +77,7 @@ class Stack
     }
 
     // Pop the item from the top of the stack
-    public String pop()
-    {
+    public String pop() {
         String poppedItem;
 
         if (isEmpty()) {
@@ -102,8 +94,7 @@ class Stack
     }
 
     // Peek the item at the top of the stack
-    public String peek()
-    {
+    public String peek() {
         String peekedItem;
 
         if (isEmpty()) {
@@ -119,8 +110,7 @@ class Stack
     }
 
     // Output the state of the stack
-    public void outputStack()
-    {
+    public void outputStack() {
         // Testing
         if (top != null) {
             System.out.println("------ State of the stack ------");
@@ -139,8 +129,7 @@ class Stack
 class StacksExample
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("### Stack (OOP) ###\n");
 
         // Initialise the stack

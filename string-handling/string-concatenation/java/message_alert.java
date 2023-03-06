@@ -19,16 +19,14 @@ To run this file you need to:
 class StringConcatenation
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int newMessages = 5;
         messageAlert(newMessages);
     }
 
 
     // Example of type conversion for string concatenation
-    public static void messageAlert(int newMessages)
-    {
+    public static void messageAlert(int newMessages) {
         System.out.println("You have " + Integer.toString(newMessages) + " new messages");
     }
 

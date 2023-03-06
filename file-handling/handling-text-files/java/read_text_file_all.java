@@ -23,15 +23,13 @@ import java.nio.file.Path;
 class HandlingTextFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         readAll();
     }
 
     
     // Read all the text of a file
-    public static void readAll()
-    {
+    public static void readAll() {
         try {
             Path filePath = Path.of("bridge.txt");
             String rhyme = Files.readString(filePath);

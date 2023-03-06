@@ -19,8 +19,7 @@ To run this file you need to:
 class Iteration
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String[] rainbow = { "red", "orange", "yellow", "green", "blue", "indigo", "violet" };
 
         for (String colour : rainbow) {

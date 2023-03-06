@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class LogicalOperators
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             string difficulty = "Hard";
             int score = 55;
             bool gameOver = false;

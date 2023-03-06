@@ -25,8 +25,7 @@ namespace AdaCodeSamples
         public Node right;
 
         // Constructor method
-        public Node(int data)
-        {
+        public Node(int data) {
             this.data = data;
         }
     }
@@ -38,15 +37,13 @@ namespace AdaCodeSamples
         private Node root; // Do not initialise the root yet as the tree is empty
 
         // Return the root node
-        public Node GetRoot()
-        {
+        public Node GetRoot() {
             return root;
         }
 
 
         // Insert a new node
-        public void Insert(int item)
-        {
+        public void Insert(int item) {
             // Create a new node
             Node newNode = new Node(item);
 
@@ -95,8 +92,7 @@ namespace AdaCodeSamples
 
 
         // A pre-order traversal of the binary search tree
-        public void PreOrderTraversal(Node node)
-        {
+        public void PreOrderTraversal(Node node) {
             // Output the data of the current node
             Console.WriteLine(node.data);
 
@@ -118,8 +114,7 @@ namespace AdaCodeSamples
     class Testing
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Instantiate a new tree object
             BST bst = new BST();
 
@@ -141,8 +136,7 @@ namespace AdaCodeSamples
 
 
         // Insert test data into the binary search tree
-        public static void InsertTestData(BST bst)
-        {
+        public static void InsertTestData(BST bst) {
             bst.Insert(8);  // This will be the root node
             bst.Insert(3);
             bst.Insert(6);
@@ -156,8 +150,7 @@ namespace AdaCodeSamples
 
 
         // Output the tree with the root to the left and children to the right
-        public static void OutputTree(Node node, int level = 0)
-        {
+        public static void OutputTree(Node node, int level = 0) {
             if (node != null) {
                 OutputTree(node.right, level + 1);
                 

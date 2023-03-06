@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class Iteration
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             int[] numbersToGuess = { 1, 4, 8, 3, 10 };
             
             Console.WriteLine("Guess my numbers, each number is between 1 and 10");

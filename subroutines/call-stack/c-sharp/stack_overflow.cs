@@ -20,15 +20,13 @@ namespace AdaCodeSamples
     class CallStack               
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             StackOverflow();
         }
 
         
         // This will force a stack overflow
-        public static void StackOverflow()
-        {
+        public static void StackOverflow() {
             StackOverflow();           
         }
         

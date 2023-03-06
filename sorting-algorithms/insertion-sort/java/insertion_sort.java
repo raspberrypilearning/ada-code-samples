@@ -21,8 +21,7 @@ import java.util.Arrays;
 class SortingAlgorithms
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Perform an insertion sort on the test data
         //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
         //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
@@ -41,8 +40,7 @@ class SortingAlgorithms
 
 
     // An insertion sort algorithm
-    public static int[] insertionSort(int[] items)
-    {
+    public static int[] insertionSort(int[] items) {
         // Initialise the variables
         int numItems = items.length;
 

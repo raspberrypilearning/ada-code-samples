@@ -21,8 +21,7 @@ import java.util.Scanner;
 class Parameters
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
@@ -44,8 +43,7 @@ class Parameters
 
 
     // Calculates the volume of a cuboid
-    public static float calculateVolume(float height, float width, float depth)
-    {
+    public static float calculateVolume(float height, float width, float depth) {
         float volume = height * width * depth;
         return volume;
     }

@@ -25,8 +25,7 @@ class Boat
 
     // Constructor method
     public Boat(String givenName, float givenLength, int givenCapacity,
-                int givenBerths, float givenUnitCost)
-    {
+                int givenBerths, float givenUnitCost) {
         name = givenName;
         length = givenLength;
         capacity = givenCapacity;
@@ -43,8 +42,7 @@ class Yacht extends Boat
 
     // Constructor method
     public Yacht(String givenName, float givenLength, int givenCapacity,
-                 int givenBerths, float givenUnitCost, int givenMasts)
-    {
+                 int givenBerths, float givenUnitCost, int givenMasts) {
         // Invoke the constructor of the base-class (Boat)
         super(givenName, givenLength, givenCapacity, givenBerths, givenUnitCost);
 
@@ -56,8 +54,7 @@ class Yacht extends Boat
 class Testing
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Instantiate a new yacht object
         Yacht myYacht = new Yacht("Mary Sue", 15.7F, 300, 6, 54.5F, 2);
 

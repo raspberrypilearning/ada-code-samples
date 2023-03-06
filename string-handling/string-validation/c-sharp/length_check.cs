@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class StringValidation
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // normal test data
             string password = "elephant1234";
             bool result = CheckPassword(password);
@@ -40,8 +39,7 @@ namespace AdaCodeSamples
 
 
         // Checks password length
-        public static bool CheckPassword(string password)
-        {
+        public static bool CheckPassword(string password) {
             bool isValid = true;
 
             if (password.Length < 8) {

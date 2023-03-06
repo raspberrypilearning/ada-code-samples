@@ -23,15 +23,13 @@ import java.io.IOException;
 class HandlingTextFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         readLineOfFile();
     }
 
 
     // Read and display a single line of the file
-    public static void readLineOfFile()
-    {
+    public static void readLineOfFile() {
         String rhymeLine = "";
 
         // Uses try-with-resources to automatically close the readers after execution

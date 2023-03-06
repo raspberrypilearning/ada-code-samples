@@ -19,8 +19,7 @@ To run this file you need to:
 class ArithmeticOperators
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Calculate the power using 4 as the base and 3 as the exponent
         double result = Math.pow(4, 3);
         System.out.println(result);

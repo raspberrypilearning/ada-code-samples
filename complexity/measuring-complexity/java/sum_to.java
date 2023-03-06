@@ -19,8 +19,7 @@ To run this file you need to:
 class Complexity
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Test the sumTo method
         int num = 5;
         int result = sumTo(num);
@@ -29,8 +28,7 @@ class Complexity
 
 
     // Calculates the sum of all integers from 1 to the given number
-    public static int sumTo(int givenNumber)
-    {
+    public static int sumTo(int givenNumber) {
         int total = 0;
         for (int i = 1; i <= givenNumber; i++) {
             total = total + i;

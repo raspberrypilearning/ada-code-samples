@@ -22,8 +22,7 @@ namespace AdaCodeSamples
         public const int MaxSize = 4;
 
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("### Circular queue ###");
 
             // Initialise the queue and pointers
@@ -94,8 +93,7 @@ namespace AdaCodeSamples
         }
 
         // Check if the queue is empty
-        public static bool IsEmpty(int front)
-        {
+        public static bool IsEmpty(int front) {
             if (front == -1)
                 return true;
             else
@@ -103,8 +101,7 @@ namespace AdaCodeSamples
         }
 
         // Check if the queue is full
-        public static bool IsFull(int front, int rear)
-        {
+        public static bool IsFull(int front, int rear) {
             if ((rear + 1) % MaxSize == front)
                 return true;
             else
@@ -112,8 +109,7 @@ namespace AdaCodeSamples
         }
 
         // Enqueue an item
-        public static Tuple<int, int> Enqueue(string[] queue, int front, int rear, string data)
-        {
+        public static Tuple<int, int> Enqueue(string[] queue, int front, int rear, string data) {
             if (IsFull(front, rear))
                 Console.WriteLine($"\nQueue is full - {data} not added");
             else {
@@ -126,8 +122,7 @@ namespace AdaCodeSamples
         }
 
         // Dequeue an item
-        public static Tuple<string, int, int> Dequeue(string[] queue, int front, int rear)
-        {
+        public static Tuple<string, int, int> Dequeue(string[] queue, int front, int rear) {
             string dequeuedItem;
 
             if (IsEmpty(front)) {
@@ -150,8 +145,7 @@ namespace AdaCodeSamples
         }
 
         // Output the state of the queue
-        public static void OutputQueue(string[] queue, int front, int rear)
-        {
+        public static void OutputQueue(string[] queue, int front, int rear) {
             // Testing
             Console.Write("\nQueue: ");
             Console.WriteLine("[{0}]", string.Join(", ", queue));

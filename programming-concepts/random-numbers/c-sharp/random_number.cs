@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class RandomNumbers
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Random rnd = new Random();
             int random_number = rnd.Next(1, 101);
             Console.WriteLine(random_number);

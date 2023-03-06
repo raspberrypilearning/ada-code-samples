@@ -21,8 +21,7 @@ import java.util.Scanner;
 class DefineAndCall
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
@@ -36,8 +35,7 @@ class DefineAndCall
 
 
     // Simulates a quiz
-    public static void runQuiz()
-    {
+    public static void runQuiz() {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 

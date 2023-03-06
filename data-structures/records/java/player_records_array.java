@@ -33,8 +33,7 @@ class PlayerRecord
 class Testing
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Declare an array to store 11 player records
         PlayerRecord[] firstTeam = new PlayerRecord[11];
 
@@ -63,8 +62,7 @@ class Testing
     // Create a new player record with the given data
     public static PlayerRecord createPlayer(int pId, String fName, String lName,
                                             int day, int month, int year,
-                                            String pos, boolean inj)
-    {
+                                            String pos, boolean inj) {
         // Create a new player record
         PlayerRecord player = new PlayerRecord();
 
@@ -82,8 +80,7 @@ class Testing
 
 
     // Display some of the player details from each player record
-    public static void displayPlayers(PlayerRecord[] playersArray)
-    {
+    public static void displayPlayers(PlayerRecord[] playersArray) {
         System.out.println("### Array of player records ###");
 
         // Repeat for each player in the players array of records

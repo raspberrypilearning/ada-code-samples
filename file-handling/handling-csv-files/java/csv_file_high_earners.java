@@ -23,15 +23,13 @@ import java.io.IOException;
 class HandlingCSVFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         selectHighEarners();
     }
 
 
     // Select and display high earning movies over $200 million
-    public static void selectHighEarners()
-    {
+    public static void selectHighEarners() {
         int highEarners = 0;
 
         // Uses try-with-resources to automatically close the readers after execution

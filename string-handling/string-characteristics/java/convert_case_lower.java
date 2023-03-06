@@ -19,8 +19,7 @@ To run this file you need to:
 class StringCharacteristics
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String letter = "B";
         char character = letter.charAt(0); // Extracts single character from string
         char lowerCase = convertToLower(character);
@@ -29,8 +28,7 @@ class StringCharacteristics
 
 
     // Demonstrates how to use ASCII codes to convert letter case
-    public static char convertToLower(char letter)
-    {
+    public static char convertToLower(char letter) {
         int letterCode = (int) letter;  // Gets denary ASCII code for letter
         int newLetterCode = letterCode + 32;
         char lowerCase = (char) newLetterCode;  // Convert new code to a character

@@ -21,8 +21,7 @@ import java.util.Arrays;
 class SortingAlgorithms
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Execute all three versions of the bubble sort algorithms
         System.out.println("\n### Bubble sort version 1 (for loops) ###");
         bubbleSortVersion1(getTestData());
@@ -36,8 +35,7 @@ class SortingAlgorithms
 
 
     // Returns the test data for the algorithm
-    public static int[] getTestData()
-    {
+    public static int[] getTestData() {
         //int[] testItems = new int[] {80, 64, 50, 43, 35, 21, 7, 3, 2}; // Least sorted
         //int[] testItems = new int[] {2, 3, 7, 35, 43, 21, 50, 64, 80}; // Nearly sorted
         //int[] testItems = new int[] {2, 3, 7, 21, 35, 43, 50, 64, 80}; // Sorted
@@ -51,8 +49,7 @@ class SortingAlgorithms
 
 
     // An inefficient bubble sort that uses nested for loops
-    public static void bubbleSortVersion1(int[] items)
-    {
+    public static void bubbleSortVersion1(int[] items) {
         int numItems = items.length;
         int passNum; // Declared outside of the for loop for testing below
 
@@ -75,8 +72,7 @@ class SortingAlgorithms
 
 
     // A quite efficient bubble sort that stops if the items are sorted
-    public static void bubbleSortVersion2(int[] items)
-    {
+    public static void bubbleSortVersion2(int[] items) {
         int numItems = items.length;
         boolean swapped = true;
         int passNum = 1; // Testing
@@ -104,8 +100,7 @@ class SortingAlgorithms
 
 
     // A more efficient bubble sort that reduces the number of comparisons per pass
-    public static void bubbleSortVersion3(int[] items)
-    {
+    public static void bubbleSortVersion3(int[] items) {
         int numItems = items.length;
         boolean swapped = true;
         int passNum = 1;

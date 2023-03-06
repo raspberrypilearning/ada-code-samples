@@ -28,8 +28,7 @@ class Pathfinding
     public static final int PREVIOUS = 2;
 
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use a hashmap to represent the graph as an adjacency list
         // and the g-score and f-score of each neighbour
         var testGraph = new HashMap<String, HashMap<String, Integer>>();
@@ -80,8 +79,7 @@ class Pathfinding
     }
 
     // Display each node with it's neighbours and costs
-    public static void displayGraph(HashMap<String, HashMap<String, Integer>> graph)
-    {
+    public static void displayGraph(HashMap<String, HashMap<String, Integer>> graph) {
         // Repeat for each node in the graph
         for (String node : graph.keySet()) {
             HashMap<String, Integer> neighbours = graph.get(node);
@@ -98,8 +96,7 @@ class Pathfinding
     }
 
     // Display a list of nodes with their closest neighbour and scores
-    public static void displayList(HashMap<String, ArrayList<Object>> adjacencyList)
-    {
+    public static void displayList(HashMap<String, ArrayList<Object>> adjacencyList) {
         System.out.println("   (g-score, f-score, previous)");
 
         // Repeat for each node in the given adjacency list
@@ -116,8 +113,7 @@ class Pathfinding
 
     // Display the shortest path from start node to target node
     public static void displayShortestPath(HashMap<String, ArrayList<Object>> visited,
-                                           String startNode, String targetNode)
-    {
+                                           String startNode, String targetNode) {
         // Set the current node and the path as the key node
         String currentNode = targetNode;
         String path = targetNode;
@@ -140,8 +136,7 @@ class Pathfinding
     }
 
     // Returns heuristic values for the graph as used on the Ada CS platform
-    public static int getHeuristic(String node)
-    {
+    public static int getHeuristic(String node) {
         int estimatedDistanceToTarget;
 
         if ("A".equals(node)) {
@@ -170,8 +165,7 @@ class Pathfinding
     }
 
     // Returns the node with the lowest f-score
-    public static String getMinimum(HashMap<String, ArrayList<Object>> unvisited)
-    {
+    public static String getMinimum(HashMap<String, ArrayList<Object>> unvisited) {
         // Set the lowest value to Integer.MAX_VALUE for infinity
         int lowestValueNode = Integer.MAX_VALUE;
         String lowestKey = "";
@@ -195,8 +189,7 @@ class Pathfinding
 
     // Apply the A* algorithm on a graph stored as a hashmap
     public static HashMap<String, ArrayList<Object>> aStar(
-            HashMap<String, HashMap<String, Integer>> graph, String startNode, String targetNode)
-    {
+            HashMap<String, HashMap<String, Integer>> graph, String startNode, String targetNode) {
         // Declare the visited and unvisited lists as hashmaps
         HashMap<String, ArrayList<Object>> unvisited = new HashMap<String, ArrayList<Object>>();
         HashMap<String, ArrayList<Object>> visited = new HashMap<String, ArrayList<Object>>();

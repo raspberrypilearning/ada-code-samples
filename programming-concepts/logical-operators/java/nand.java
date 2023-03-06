@@ -21,8 +21,7 @@ import java.util.Scanner;
 class LogicalOperators
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         boolean cold = true;
         boolean wet = false;
 

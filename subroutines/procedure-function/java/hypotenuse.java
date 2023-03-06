@@ -19,8 +19,7 @@ To run this file you need to:
 class ProceduresFunctions
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         double side1 = 3;
         double side2 = 4;
         double hypotenuse = getHypotenuse(side1, side2);
@@ -29,16 +28,14 @@ class ProceduresFunctions
 
 
     // Calculates the length of the hypotenuse of a right angled triangle
-    public static double getHypotenuse(double a, double b)
-    {
+    public static double getHypotenuse(double a, double b) {
         double h = Math.sqrt(calculateArea(a) + calculateArea(b));
         return h;
     }
 
 
     // Calculates the area of a square with sides of a given length
-    public static double calculateArea(double length)
-    {
+    public static double calculateArea(double length) {
         double area = length * length;
         return area;
     }

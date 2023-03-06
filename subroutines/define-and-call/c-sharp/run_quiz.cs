@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class DefineAndCall
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("What is your name? ");
             string name = Console.ReadLine();
             Console.WriteLine("Greetings " + name);
@@ -32,8 +31,7 @@ namespace AdaCodeSamples
         
 
         // Simulates a quiz
-        public static void RunQuiz()
-        {
+        public static void RunQuiz() {
             Console.WriteLine("What is the capital city of Botswana?");
             string answer = Console.ReadLine();
 

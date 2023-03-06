@@ -19,8 +19,7 @@ To run this file you need to:
 class Iteration
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int result;
         for (int num = 1; num <=3; num++) {
             for (int multiplier = 1; multiplier <= 10; multiplier++) {

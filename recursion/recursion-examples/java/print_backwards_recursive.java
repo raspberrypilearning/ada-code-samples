@@ -19,15 +19,13 @@ To run this file you need to:
 class RecursionExamples
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         printBackwards("I am a computer scientist");
     }
 
 
     // Prints a given string backwards
-    public static void printBackwards(String phrase)
-    {
+    public static void printBackwards(String phrase) {
         if (phrase.length() == 1) {
             System.out.print(phrase);
         }

@@ -33,8 +33,7 @@ class PlayerRecord
 class Testing
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Create a new player record
         PlayerRecord player1 = new PlayerRecord();
 

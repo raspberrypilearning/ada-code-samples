@@ -19,15 +19,13 @@ To run this file you need to:
 class StringPosition
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         displayEachCharacter();
     }
 
 
     // Demonstrates how to output each character from a string
-    public static void displayEachCharacter()
-    {
+    public static void displayEachCharacter() {
         String password = "ItIsAsecReT";
 
         for (int index = 0; index <= 10; index++) {

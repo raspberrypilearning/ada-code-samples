@@ -24,15 +24,13 @@ import java.io.PrintWriter;
 class HandlingTextFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         writeToFile();
     }
 
 
     // Example of writing to a text file
-    public static void writeToFile()
-    {
+    public static void writeToFile() {
         // Uses try-with-resources to automatically close the writers after execution
         try (FileWriter fw = new FileWriter("twinkle.txt", false);
              BufferedWriter bw = new BufferedWriter(fw);

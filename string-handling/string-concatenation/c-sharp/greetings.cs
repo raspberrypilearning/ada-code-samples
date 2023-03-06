@@ -20,15 +20,13 @@ namespace AdaCodeSamples
     class StringConcatenation
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             GreetUser();           
         }
 
         
         // Demonstration of string concatenation
-        public static void GreetUser()
-        {
+        public static void GreetUser() {
             Console.WriteLine("Please enter your first name ");
             string firstName = Console.ReadLine();
             Console.WriteLine("Greetings " + firstName);

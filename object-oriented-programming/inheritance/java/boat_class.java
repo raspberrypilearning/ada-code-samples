@@ -25,8 +25,7 @@ class Boat
 
     // Constructor method
     public Boat(String givenName, float givenLength, int givenCapacity,
-                int givenBerths, float givenUnitCost)
-    {
+                int givenBerths, float givenUnitCost) {
         name = givenName;
         length = givenLength;
         capacity = givenCapacity;
@@ -39,8 +38,7 @@ class Boat
 class Testing
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String name = "Sir David Attenborough";
         float length = 128.9F;
         int capacity = 88;

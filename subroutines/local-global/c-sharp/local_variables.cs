@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class LocalGlobal
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             int amount = 100;
             Console.WriteLine(amount);
             Triple(amount);
@@ -31,16 +30,14 @@ namespace AdaCodeSamples
 
 
         // Triple number and display result
-        public static void Triple(int n)
-        { 
+        public static void Triple(int n) { 
             int amount = n * 3;
             Console.WriteLine(amount);
         }
 
 
         // Quadruple number and display result
-        public static void Quadruple(int n)
-        {
+        public static void Quadruple(int n) {
             int amount = n * 4;
             Console.WriteLine(amount);
         }

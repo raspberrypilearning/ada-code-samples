@@ -33,8 +33,7 @@ class LinkedList
 class DataStructures
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("### Linked list (Record) ###");
 
         // Instantiate an empty linked list object
@@ -63,8 +62,7 @@ class DataStructures
 
 
     // Insert a node to the front of the list
-    public static void insertAtFront(LinkedList myList, String data)
-    {
+    public static void insertAtFront(LinkedList myList, String data) {
         // Create a new node
         NodeRecord newNode = new NodeRecord();
         newNode.data = data;
@@ -82,8 +80,7 @@ class DataStructures
 
 
     // Insert a node into the correct position in an ordered list
-    public static void insertInOrder(LinkedList myList, String data)
-    {
+    public static void insertInOrder(LinkedList myList, String data) {
         // Create a new node
         NodeRecord newNode = new NodeRecord();
         newNode.data = data;
@@ -119,8 +116,7 @@ class DataStructures
 
 
     // Traverse the list and output the data from each node
-    public static void traverse(LinkedList myList)
-    {
+    public static void traverse(LinkedList myList) {
         // Set the current node as the head
         NodeRecord current = myList.head;
 
@@ -133,8 +129,7 @@ class DataStructures
 
 
     // Delete a node. This assumes that the node does exist in the list
-    public static void delete(LinkedList myList, String data)
-    {
+    public static void delete(LinkedList myList, String data) {
         // Start at the head of the list
         NodeRecord current = myList.head;
 
@@ -156,8 +151,7 @@ class DataStructures
 
 
     // Insert test data into the linked list
-    public static void insertTestData(LinkedList myList)
-    {
+    public static void insertTestData(LinkedList myList) {
         insertInOrder(myList, "Julie");
         insertInOrder(myList, "Rey");
         insertInOrder(myList, "Habib");

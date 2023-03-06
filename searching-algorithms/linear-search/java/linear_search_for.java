@@ -21,8 +21,7 @@ import java.util.Arrays;
 class SearchingAlgorithms
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Perform a linear search on the test data
         int[] testItems = new int[] {11, 25, 10, 29, 15, 13, 18};
 
@@ -44,8 +43,7 @@ class SearchingAlgorithms
 
 
     // A linear search algorithm that iterates through every item in the array
-    public static int linearSearchVersion1(int[] items, int searchItem)
-    {
+    public static int linearSearchVersion1(int[] items, int searchItem) {
         // Initialise the variable
         int found_index = -1;
 

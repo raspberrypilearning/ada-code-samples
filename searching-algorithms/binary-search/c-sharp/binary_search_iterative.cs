@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class SearchingAlgorithms
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Perform a binary search on the test data
             int[] testItems = new int[] {10, 11, 13, 15, 18, 25, 29};
 
@@ -43,8 +42,7 @@ namespace AdaCodeSamples
 
 
         // An iterative binary search algorithm
-        public static int BinarySearch(int[] items, int searchItem)
-        {
+        public static int BinarySearch(int[] items, int searchItem) {
             // Initialise the variables
             bool found = false;
             int foundIndex = -1;

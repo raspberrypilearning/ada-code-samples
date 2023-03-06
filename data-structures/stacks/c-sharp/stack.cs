@@ -22,8 +22,7 @@ namespace AdaCodeSamples
         public const int MaxSize = 4;
 
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("### Stack ###");
 
             // Initialise the stack and pointers
@@ -70,8 +69,7 @@ namespace AdaCodeSamples
         }
 
         // Check if the stack is empty
-        public static bool IsEmpty(int top)
-        {
+        public static bool IsEmpty(int top) {
             if (top == -1)
                 return true;
             else
@@ -79,8 +77,7 @@ namespace AdaCodeSamples
         }
 
         // Check if the stack is full
-        public static bool IsFull(int top)
-        {
+        public static bool IsFull(int top) {
             if (top == MaxSize - 1)
                 return true;
             else
@@ -88,8 +85,7 @@ namespace AdaCodeSamples
         }
 
         // Push data onto the top of the stack
-        public static int Push(string[] stack, int top, string data)
-        {
+        public static int Push(string[] stack, int top, string data) {
             if (IsFull(top))
                 Console.WriteLine($"\nStack is full - {data} not added");
             else {
@@ -100,8 +96,7 @@ namespace AdaCodeSamples
         }
 
         // Return a copy of the item from the top of stack without removing it
-        public static string Peek(string[] stack, int top)
-        {
+        public static string Peek(string[] stack, int top) {
             string peekedItem;
 
             if (IsEmpty(top) == true) {
@@ -116,8 +111,7 @@ namespace AdaCodeSamples
         }
 
         // Return the item from the top of stack and remove it from the stack
-        public static Tuple<string, int> Pop(string[] stack, int top)
-        {
+        public static Tuple<string, int> Pop(string[] stack, int top) {
             string poppedItem;
 
             if (IsEmpty(top)) {
@@ -134,8 +128,7 @@ namespace AdaCodeSamples
         }
 
         // Output the state of the stack
-        public static void OutputStack(string[] stack, int top)
-        {
+        public static void OutputStack(string[] stack, int top) {
             // Testing
             Console.WriteLine("\n------ State of the stack (first item is the top) ------");
 

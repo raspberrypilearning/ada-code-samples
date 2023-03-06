@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class SyntaxErrors
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Demonstrates a syntax error
             Console.WriteLin("Please enter your name: "); 
             string name = Console.ReadLine();

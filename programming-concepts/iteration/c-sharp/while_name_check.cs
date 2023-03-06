@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class Iteration
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("Please enter your name: ");
             string name = Console.ReadLine();
 

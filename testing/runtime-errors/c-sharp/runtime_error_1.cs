@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class RuntimeErrors
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Demonstrates a runtime error when entering a string value
             Console.WriteLine("Please enter a number:");
             string numberString = Console.ReadLine();

@@ -24,29 +24,24 @@ namespace AdaCodeSamples
         private Node next;
 
         // Constructor method
-        public Node(string itemData)
-        {
+        public Node(string itemData) {
             data = itemData;
         }
 
-        public string GetData()
-        {
+        public string GetData() {
             return data;
         }
 
-        public Node GetNext()
-        {
+        public Node GetNext() {
             return next;
         }
 
-        public void SetNext(Node newNext)
-        {
+        public void SetNext(Node newNext) {
             next = newNext;
         }
 
         // Testing
-        public void OutputNode()
-        {
+        public void OutputNode() {
             string nextData = "null";
             if (next != null) {
                 nextData = next.data;
@@ -62,8 +57,7 @@ namespace AdaCodeSamples
         private Node top;
 
         // Check if the stack is empty
-        public bool IsEmpty()
-        {
+        public bool IsEmpty() {
             if (top == null)
                 return true;
             else
@@ -71,8 +65,7 @@ namespace AdaCodeSamples
         }
 
         // Push a new item onto the stack
-        public void Push(string data)
-        {
+        public void Push(string data) {
             Node newNode = new Node(data);
 
             // Check if the stack is NOT empty
@@ -86,8 +79,7 @@ namespace AdaCodeSamples
         }
 
         // Pop the item from the top of the stack
-        public string Pop()
-        {
+        public string Pop() {
             string poppedItem;
 
             if (IsEmpty()) {
@@ -104,8 +96,7 @@ namespace AdaCodeSamples
         }
 
         // Peek the item at the top of the stack
-        public string Peek()
-        {
+        public string Peek() {
             string peekedItem;
 
             if (IsEmpty()) {
@@ -121,8 +112,7 @@ namespace AdaCodeSamples
         }
 
         // Output the state of the stack
-        public void OutputStack()
-        {
+        public void OutputStack() {
             // Testing
             if (top != null) {
                 Console.WriteLine("------ State of the stack ------");
@@ -141,8 +131,7 @@ namespace AdaCodeSamples
     class StacksExample
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("### Stack (OOP) ###\n");
 
             // Initialise the stack

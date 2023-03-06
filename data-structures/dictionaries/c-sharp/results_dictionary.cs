@@ -21,8 +21,7 @@ namespace AdaCodeSamples
     class Dictionaries
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Initialise a new dictionary of students and results
             Dictionary<string, int> results = new Dictionary<string, int>() {
                 { "Detra", 17 },	

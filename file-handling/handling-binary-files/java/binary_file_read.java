@@ -27,15 +27,13 @@ import java.util.Map;
 class HandlingBinaryFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         readBinaryFile();
     }
 
 
     // Read data from a binary file
-    public static void readBinaryFile()
-    {
+    public static void readBinaryFile() {
         Map<String, Double> playerStats = new HashMap<String, Double>();
 
         String filename = "treasure.game";

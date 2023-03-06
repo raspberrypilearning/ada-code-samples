@@ -20,15 +20,13 @@ namespace AdaCodeSamples
     class RecursionExamples
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             PrintBackwards("I am a computer scientist");
         }
 
         
         // Prints a given string backwards
-        public static void PrintBackwards(string phrase)
-        {
+        public static void PrintBackwards(string phrase) {
             if (phrase.Length == 1) {
                 Console.Write(phrase);
             }

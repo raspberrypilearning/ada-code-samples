@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class RecursionBasics
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             int n = 6;
             int result = SumToN(n);
             Console.WriteLine($"The sum of 1 to {n} is: {result}");
@@ -29,8 +28,7 @@ namespace AdaCodeSamples
         
 
         // Returns the sum of all natural numbers from 1 to n inclusive
-        public static int SumToN(int n)
-        {
+        public static int SumToN(int n) {
             int total = 0;
             for (int i = 1; i < n + 1; i++) {
                 total = total + i;

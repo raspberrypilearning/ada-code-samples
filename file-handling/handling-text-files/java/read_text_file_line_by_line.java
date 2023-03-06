@@ -23,15 +23,13 @@ import java.io.IOException;
 class HandlingTextFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         readLineByLine();
     }
 
 
     // Read and display each record from a file line by line
-    public static void readLineByLine()
-    {
+    public static void readLineByLine() {
         // Uses try-with-resources to automatically close the readers after execution
         try (FileReader fr = new FileReader("bridge.txt");
              BufferedReader reader = new BufferedReader(fr)) {

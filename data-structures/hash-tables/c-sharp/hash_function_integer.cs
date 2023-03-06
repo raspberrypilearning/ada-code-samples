@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class HashTables
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             // Generate a hash value from an integer hash key
             int key = 12345;
             int slots = 97;
@@ -30,8 +29,7 @@ namespace AdaCodeSamples
         }
 
         // Produce a hash value from an integer
-        public static int HashInteger(int hashKey, int numberOfSlots)
-        {
+        public static int HashInteger(int hashKey, int numberOfSlots) {
             // Generate the hash value using the modulo operator
             int hashValue = hashKey % numberOfSlots;
 

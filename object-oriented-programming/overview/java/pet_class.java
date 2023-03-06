@@ -26,8 +26,7 @@ class Pet
     private boolean sleeping;
 
     // Constructor method
-    public Pet(String givenName, String givenType, String givenColour)
-    {
+    public Pet(String givenName, String givenType, String givenColour) {
         name = givenName;
         petType = givenType;
         colour = givenColour;
@@ -40,55 +39,45 @@ class Pet
         mood = allMoods[index];
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public void setName(String newName)
-    {
+    public void setName(String newName) {
         name = newName;
     }
 
-    public String getPetType()
-    {
+    public String getPetType() {
         return petType;
     }
 
-    public void setPetType(String newType)
-    {
+    public void setPetType(String newType) {
         petType = newType;
     }
 
-    public String getColour()
-    {
+    public String getColour() {
         return colour;
     }
 
-    public void setColour(String newColour)
-    {
+    public void setColour(String newColour) {
         colour = newColour;
     }
 
-    public String getMood()
-    {
+    public String getMood() {
         return mood;
     }
 
-    public boolean isSleeping()
-    {
+    public boolean isSleeping() {
         return sleeping;
     }
 
-    public void describe()
-    {
+    public void describe() {
         System.out.println("I am a " + mood + ", " + colour + " " + petType + " called " + name);
     }
 
 
     // A method for trying to play with the pet
-    public void play()
-    {
+    public void play() {
         if (sleeping == true) {
             System.out.println("Zzzzzzz. I am sleeping");
         }
@@ -111,8 +100,7 @@ class Pet
 
 
     // A method for trying to feed the pet
-    public void feed()
-    {
+    public void feed() {
         if (sleeping == true) {
             System.out.println("Zzzzzzz. I am sleeping");
         }
@@ -130,8 +118,7 @@ class Pet
 
 
     // A method for trying to put the pet to bed
-    public void sleep()
-    {
+    public void sleep() {
         if ("playful".equals(mood)) {
             System.out.println("I am too playful to sleep");
         }
@@ -146,8 +133,7 @@ class Pet
 
 
     // A method for trying to wake the pet up
-    public void wake()
-    {
+    public void wake() {
         if (sleeping == false) {
             System.out.println("I wasn't even asleep!");
         }

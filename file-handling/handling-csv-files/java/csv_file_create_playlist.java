@@ -23,15 +23,13 @@ import java.io.IOException;
 class HandlingCSVFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         createPlaylist();
     }
 
 
     // Create a new playlist CSV file with a header record
-    public static void createPlaylist()
-    {
+    public static void createPlaylist() {
         String header = "Title,Artist,Duration";
 
         // Uses try-with-resources to automatically close the writers after execution

@@ -22,25 +22,21 @@ class PlayingCard
     private int value;
 
     // Constructor method
-    public PlayingCard(String givenSuit, String givenRank, int givenValue)
-    {
+    public PlayingCard(String givenSuit, String givenRank, int givenValue) {
         suit = givenSuit;
         rank = givenRank;
         value = givenValue;
     }
 
-    public String getSuit()
-    {
+    public String getSuit() {
         return suit;
     }
 
-    public String getRank()
-    {
+    public String getRank() {
         return rank;
     }
 
-    public int getValue()
-    {
+    public int getValue() {
         return value;
     }
 }
@@ -49,8 +45,7 @@ class PlayingCard
 class Testing
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Instantiate a new card object
         PlayingCard myCard = new PlayingCard("clubs", "2", 2);
         System.out.println("Suit is: " + myCard.getSuit());

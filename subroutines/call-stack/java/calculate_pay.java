@@ -21,8 +21,7 @@ import java.util.Scanner;
 class CallStack
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
@@ -41,8 +40,7 @@ class CallStack
 
 
     // A simple pay calculation program
-    public static double calculatePay(double h, double r)
-    {
+    public static double calculatePay(double h, double r) {
         double pay = h * r;
         return pay;
     }

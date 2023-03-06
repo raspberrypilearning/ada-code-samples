@@ -22,8 +22,7 @@ class PlayingCard
     private int value;
 
     // Constructor method
-    public PlayingCard(String givenSuit, String givenRank, int givenValue)
-    {
+    public PlayingCard(String givenSuit, String givenRank, int givenValue) {
         suit = givenSuit;
         rank = givenRank;
         value = givenValue;
@@ -39,8 +38,7 @@ class Deck
     private int[] values = { 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10 };
 
     // Constructor method
-    public Deck()
-    {
+    public Deck() {
         int cardNumber = 0;
 
         // Repeat for all 4 suits
@@ -64,8 +62,7 @@ class Deck
 class Testing
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Instantiate a new deck object
         Deck myDeck = new Deck();
     }

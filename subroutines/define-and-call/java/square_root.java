@@ -19,8 +19,7 @@ To run this file you need to:
 class DefineAndCall
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         double SquareRoot = Math.sqrt(9);
         System.out.println(SquareRoot);
     }

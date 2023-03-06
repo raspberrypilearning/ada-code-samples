@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class WhatIsASubroutine
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             float length = 12;
             float result = CalculateArea(length);
             Console.WriteLine(result);
@@ -29,8 +28,7 @@ namespace AdaCodeSamples
 
 
         // Calculates area of a square
-        public static float CalculateArea(float length)
-        {
+        public static float CalculateArea(float length) {
             float area = length * length;
             return area;
         }

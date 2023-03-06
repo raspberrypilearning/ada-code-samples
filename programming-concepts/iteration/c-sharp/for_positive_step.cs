@@ -20,8 +20,7 @@ namespace AdaCodeSamples
     class Iteration
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             for (int i = 3; i <= 30; i += 3) {
                 Console.WriteLine(i);
             }

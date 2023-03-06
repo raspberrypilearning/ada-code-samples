@@ -23,8 +23,7 @@ class Node
     public Node right;
 
     // Constructor method
-    public Node(int data)
-    {
+    public Node(int data) {
         this.data = data;
     }
 }
@@ -36,15 +35,13 @@ class BST
     private Node root; // Do not initialise the root yet as the tree is empty
 
     // Return the root node
-    public Node getRoot()
-    {
+    public Node getRoot() {
         return root;
     }
 
 
     // Insert a new node
-    public void insert(int item)
-    {
+    public void insert(int item) {
         // Create a new node
         Node newNode = new Node(item);
 
@@ -93,8 +90,7 @@ class BST
 
 
     // An in-order traversal of the binary search tree
-    public void inOrderTraversal(Node node)
-    {
+    public void inOrderTraversal(Node node) {
         // Check any nodes to the left of the current node
         if (node.left != null) {
             inOrderTraversal(node.left);
@@ -116,8 +112,7 @@ class BST
 class Testing
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Instantiate a new tree object
         BST bst = new BST();
 
@@ -139,8 +134,7 @@ class Testing
 
 
     // Insert test data into the binary search tree
-    public static void insertTestData(BST bst)
-    {
+    public static void insertTestData(BST bst) {
         bst.insert(8);  // This will be the root node
         bst.insert(3);
         bst.insert(6);
@@ -154,8 +148,7 @@ class Testing
 
 
     // Output the tree with the root to the left and children to the right
-    public static void outputTree(Node node, int level)
-    {
+    public static void outputTree(Node node, int level) {
         if (node != null) {
             outputTree(node.right, level + 1);
 

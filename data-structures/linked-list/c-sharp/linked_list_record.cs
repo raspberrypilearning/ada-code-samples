@@ -35,8 +35,7 @@ namespace AdaCodeSamples
     class DataStructures
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("### Linked list (Record) ###");
 
             // Instantiate an empty linked list object
@@ -65,8 +64,7 @@ namespace AdaCodeSamples
 
 
         // Insert a node to the front of the list
-        public static void InsertAtFront(LinkedList myList, string data)
-        {
+        public static void InsertAtFront(LinkedList myList, string data) {
             // Create a new node
             NodeRecord newNode = new NodeRecord();
             newNode.data = data;
@@ -84,8 +82,7 @@ namespace AdaCodeSamples
 
 
         // Insert a node into the correct position in an ordered list
-        public static void InsertInOrder(LinkedList myList, string data)
-        {
+        public static void InsertInOrder(LinkedList myList, string data) {
             // Create a new node
             NodeRecord newNode = new NodeRecord();
             newNode.data = data;
@@ -121,8 +118,7 @@ namespace AdaCodeSamples
 
 
         // Traverse the list and output the data from each node
-        public static void Traverse(LinkedList myList) 
-        {
+        public static void Traverse(LinkedList myList) {
             // Set the current node as the head
             NodeRecord current = myList.head;
 
@@ -135,8 +131,7 @@ namespace AdaCodeSamples
 
 
         // Delete a node. This assumes that the node does exist in the list
-        public static void Delete(LinkedList myList, string data)
-        {
+        public static void Delete(LinkedList myList, string data) {
             // Start at the head of the list
             NodeRecord current = myList.head;
 
@@ -158,8 +153,7 @@ namespace AdaCodeSamples
 
 
         // Insert test data into the linked list
-        public static void InsertTestData(LinkedList myList)
-        {
+        public static void InsertTestData(LinkedList myList) {
                 InsertInOrder(myList, "Julie");
                 InsertInOrder(myList, "Rey");
                 InsertInOrder(myList, "Habib");

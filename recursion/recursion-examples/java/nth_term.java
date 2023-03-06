@@ -19,8 +19,7 @@ To run this file you need to:
 class RecursionExamples
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int n = 6;
         int increment = 3;
         int result = nthTerm(n, increment);
@@ -29,8 +28,7 @@ class RecursionExamples
 
 
     // Returns the nth term of a numerical sequence
-    public static int nthTerm(int n, int increment)
-    {
+    public static int nthTerm(int n, int increment) {
         if (n == 1) {
             return 1;
         }

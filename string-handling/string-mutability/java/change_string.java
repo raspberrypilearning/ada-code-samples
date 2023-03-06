@@ -19,8 +19,7 @@ To run this file you need to:
 class StringMutability
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String myString = "An aardvark is an animal";
         String newString = changeString(myString);
         System.out.println(newString);
@@ -28,8 +27,7 @@ class StringMutability
 
 
     // Demonstrates how to use ASCII codes to convert letter case
-    public static String changeString(String myString)
-    {
+    public static String changeString(String myString) {
         String newString = "";  // New empty string
 
         for (char character : myString.toCharArray()) {

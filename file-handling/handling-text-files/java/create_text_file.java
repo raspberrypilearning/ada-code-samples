@@ -22,15 +22,13 @@ import java.io.IOException;
 class HandlingTextFiles
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         createFile();
     }
 
 
     // Create an empty text file
-    public static void createFile()
-    {
+    public static void createFile() {
         try {
             File newFile = new File("playlist.txt");
             boolean success = newFile.createNewFile();

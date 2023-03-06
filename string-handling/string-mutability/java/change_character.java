@@ -19,15 +19,13 @@ To run this file you need to:
 class StringMutability
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         changeCharacter();
     }
 
 
     // Demonstrates changing a character in a string
-    public static void changeCharacter()
-    {
+    public static void changeCharacter() {
         String welcome = "Hello Wirld";
         String temp = welcome.substring(0, 7) + 'o' + welcome.substring(8, welcome.length());
         welcome = temp;

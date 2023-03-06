@@ -21,8 +21,7 @@ namespace AdaCodeSamples
     class Tuples
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("### Tuple ###");
 
             // Use a tuple of 3 elements to store data about a game:
@@ -37,8 +36,7 @@ namespace AdaCodeSamples
 
 
         // Demonstrates returning a tuple of multiple data types
-        public static Tuple<string, int, float> LoadGameData()
-        {
+        public static Tuple<string, int, float> LoadGameData() {
             string playerName = "TopGamer99";
             int level = 5;
             float time = 764.312f;

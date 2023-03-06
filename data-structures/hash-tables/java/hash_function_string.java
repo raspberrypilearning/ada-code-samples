@@ -19,8 +19,7 @@ To run this file you need to:
 class HashTables
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Generate a hash value from an integer hash key
         String key = "A5RD";
         int slots = 97;
@@ -29,8 +28,7 @@ class HashTables
     }
 
     // Produce a hash value from a string
-    public static int hashString(String hashKey, int numberOfSlots)
-    {
+    public static int hashString(String hashKey, int numberOfSlots) {
         // Initialise total
         int total = 0;
 

@@ -20,15 +20,13 @@ namespace AdaCodeSamples
     class Substrings
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             StripStartAndEnd();
         }
 
 
         // Demonstrates stripping characters from the start and end of a string
-        public static void StripStartAndEnd()
-        {
+        public static void StripStartAndEnd() {
             string myString = "UAda Computer Science?";
             string strippedString = myString.Trim('U', '?');
             Console.WriteLine(strippedString);

@@ -21,8 +21,7 @@ import java.util.Scanner;
 class CallStack
 {
     // The main method is the entry point for all Java programs
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
@@ -40,8 +39,7 @@ class CallStack
 
 
     // Calculates the product of two numbers
-    public static void calculateProduct(int n1, int n2)
-    {
+    public static void calculateProduct(int n1, int n2) {
         int product = n1 * n2;
         System.out.println(product);
     }

@@ -26,8 +26,7 @@ namespace AdaCodeSamples
         private bool sleeping;
         
         // Constructor method
-        public Pet(string givenName, string givenType, string givenColour)
-        {
+        public Pet(string givenName, string givenType, string givenColour) {
             name = givenName;
             petType = givenType;
             colour = givenColour;
@@ -40,55 +39,45 @@ namespace AdaCodeSamples
             mood = allMoods[index];
         }
         
-        public string GetName()
-        {
+        public string GetName() {
             return name;
         }
         
-        public void SetName(string newName)
-        {
+        public void SetName(string newName) {
             name = newName;
         }
         
-        public string GetPetType()
-        {
+        public string GetPetType() {
             return petType;
         }
         
-        public void SetPetType(string newType)
-        {
+        public void SetPetType(string newType) {
             petType = newType;
         }
         
-        public string GetColour()
-        {
+        public string GetColour() {
             return colour;
         }
         
-        public void SetColour(string newColour)
-        {
+        public void SetColour(string newColour) {
             colour = newColour;
         }
         
-        public string GetMood()
-        {
+        public string GetMood() {
             return mood;
         }
         
-        public bool IsSleeping()
-        {
+        public bool IsSleeping() {
             return sleeping;
         }
         
-        public void Describe()
-        {
+        public void Describe() {
             Console.WriteLine($"I am a {mood}, {colour} {petType} called {name}");
         }
         
 
         // A method for trying to play with the pet
-        public void Play()
-        {
+        public void Play() {
             if (sleeping == true) {
                 Console.WriteLine("Zzzzzzz. I am sleeping");
             }
@@ -111,8 +100,7 @@ namespace AdaCodeSamples
         
 
         // A method for trying to feed the pet
-        public void Feed()
-        {
+        public void Feed() {
             if (sleeping == true) {
                 Console.WriteLine("Zzzzzzz. I am sleeping");
             }
@@ -130,8 +118,7 @@ namespace AdaCodeSamples
 
         
         // A method for trying to put the pet to bed
-        public void Sleep()
-        {
+        public void Sleep() {
             if (mood == "playful") {
                 Console.WriteLine("I am too playful to sleep");
             }
@@ -146,8 +133,7 @@ namespace AdaCodeSamples
         
 
         // A method for trying to wake the pet up
-        public void Wake()
-        {
+        public void Wake() {
             if (sleeping == false) {
                 Console.WriteLine("I wasn't even asleep!");
             }

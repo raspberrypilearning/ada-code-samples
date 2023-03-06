@@ -24,23 +24,19 @@ namespace AdaCodeSamples
         private Node nextItem;
 
         // Constructor method
-        public Node(string givenData)
-        {
+        public Node(string givenData) {
             data = givenData;
         }
 
-        public string GetData()
-        {
+        public string GetData() {
             return data;
         }
 
-        public Node GetNext()
-        {
+        public Node GetNext() {
             return nextItem;
         }
 
-        public void SetNext(Node newNext)
-        {
+        public void SetNext(Node newNext) {
             nextItem = newNext;
         }
     }
@@ -51,19 +47,16 @@ namespace AdaCodeSamples
     {
         private Node head; // Do not initialise yet as the linked list is empty
 
-        public Node GetHead()
-        {
+        public Node GetHead() {
             return head;
         }
 
-        public void SetHead(Node newHead)
-        {
+        public void SetHead(Node newHead) {
             head = newHead;
         }
 
         // Insert a node to the front of the list
-        public void InsertAtFront(string data)
-        {
+        public void InsertAtFront(string data) {
             // Create a new node
             Node newNode = new Node(data);
 
@@ -80,8 +73,7 @@ namespace AdaCodeSamples
 
 
         // Insert a node into the correct position in an ordered list
-        public void InsertInOrder(string data)
-        {
+        public void InsertInOrder(string data) {
             // Create a new node
             Node newNode = new Node(data);
 
@@ -116,8 +108,7 @@ namespace AdaCodeSamples
 
 
         // Traverse the list and output the data from each node
-        public void Traverse() 
-        {
+        public void Traverse() {
             // Set the current node as the head
             Node current = GetHead();
 
@@ -130,8 +121,7 @@ namespace AdaCodeSamples
 
 
         // Delete a node. This assumes that the node does exist in the list
-        public void Delete(string data)
-        {
+        public void Delete(string data) {
             // Start at the head of the list
             Node current = GetHead();
 
@@ -158,8 +148,7 @@ namespace AdaCodeSamples
     class DataStructures
     {
         // The Main method is the entry point for all C# programs
-        public static void Main()
-        {
+        public static void Main() {
             Console.WriteLine("### Linked list (OOP) ###");
 
             // Instantiate an empty linked list object
@@ -188,8 +177,7 @@ namespace AdaCodeSamples
 
 
         // Insert test data into the linked list
-        public static void InsertTestData(LinkedList myList)
-        {
+        public static void InsertTestData(LinkedList myList) {
                 myList.InsertInOrder("Julie");
                 myList.InsertInOrder("Rey");
                 myList.InsertInOrder("Habib");
