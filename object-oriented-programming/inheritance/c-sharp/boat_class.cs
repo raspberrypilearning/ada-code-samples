@@ -25,7 +25,7 @@ namespace AdaCodeSamples {
 
         // Constructor method
         public Boat(string givenName, float givenLength, int givenCapacity,
-            int givenBerths, float givenUnitCost) {
+                    int givenBerths, float givenUnitCost) {
             name = givenName;
             length = givenLength;
             capacity = givenCapacity;

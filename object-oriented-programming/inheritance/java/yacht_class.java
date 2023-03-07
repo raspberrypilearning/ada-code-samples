@@ -45,6 +45,7 @@ class Yacht extends Boat
         // Invoke the constructor of the base-class (Boat)
         super(givenName, givenLength, givenCapacity, givenBerths, givenUnitCost);
 
+        // Set the additional attribute which is unique to Yacht
         masts = givenMasts;
     }
 }

@@ -24,7 +24,7 @@ class Iteration {
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
-        int[] numbersToGuess = { 1, 4, 8, 3, 10 };
+        int[] numbersToGuess = {1, 4, 8, 3, 10};
 
         System.out.println("Guess my numbers, each number is between 1 and 10");
 

@@ -27,7 +27,7 @@ class Iteration {
         String password = "1234";
         String passwordGuess = "";
 
-        while (!passwordGuess.equals(password)) {
+        while (!password.equals(passwordGuess)) {
             System.out.println("Please enter your password: ");
             passwordGuess = scanner.nextLine();
         }
