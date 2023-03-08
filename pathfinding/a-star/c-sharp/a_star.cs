@@ -85,7 +85,7 @@ namespace AdaCodeSamples {
 
         // Display the shortest path from start node to target node
         public static void DisplayShortestPath(Dictionary<string, List<object>> visited, 
-            string startNode, string targetNode) {
+                                               string startNode, string targetNode) {
             // Set the current node and the path as the key node
             string currentNode = targetNode;
             string path = targetNode;
@@ -161,7 +161,8 @@ namespace AdaCodeSamples {
 
         // Apply the A* algorithm on a graph stored as a dictionary
         public static Dictionary<string, List<object>> AStar(
-            Dictionary<string, Dictionary<string, int>> graph, string startNode, string targetNode) {
+            Dictionary<string, Dictionary<string, int>> graph,
+            string startNode, string targetNode) {
             // Declare the visited and unvisited lists as dictionaries
             Dictionary<string, List<object>> unvisited = new Dictionary<string, List<object>>();
             Dictionary<string, List<object>> visited = new Dictionary<string, List<object>>();

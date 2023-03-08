@@ -54,7 +54,7 @@ namespace AdaCodeSamples {
 
         // A depth-first search performed on a graph stored as a dictionary
         public static bool DepthFirstSearch(Dictionary<string, List<string>> graph, 
-            string startNode, string targetNode) {
+                                            string startNode, string targetNode) {
             // Initialisation
             List<string> stack = new List<string>() {startNode};
             List<string> discovered = new List<string>() {startNode};

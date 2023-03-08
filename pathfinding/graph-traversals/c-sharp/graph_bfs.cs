@@ -54,7 +54,7 @@ namespace AdaCodeSamples {
 
         // A breadth-first search performed on a graph stored as a dictionary
         public static bool BreadthFirstSearch(Dictionary<string, List<string>> graph, 
-            string startNode, string targetNode) {
+                                              string startNode, string targetNode) {
             // Initialisation
             List<string> queue = new List<string>() {startNode};
             List<string> discovered = new List<string>() {startNode};
