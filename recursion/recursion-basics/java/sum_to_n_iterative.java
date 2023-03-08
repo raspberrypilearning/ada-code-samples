@@ -28,7 +28,7 @@ class RecursionBasics {
     // Returns the sum of all natural numbers from 1 to n inclusive
     public static int sumToN(int n) {
         int total = 0;
-        for (int i = 1; i < n + 1; i++) {
+        for (int i = 1; i <= n; i++) {
             total = total + i;
         }
         return total;
