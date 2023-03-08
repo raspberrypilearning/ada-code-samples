@@ -1,6 +1,6 @@
 # Contributing
 
-All contributions are assumed to be licensed under the same licence as the source, i.e. [CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/). This licence must remain in all derivatives of this work.
+All contributions are assumed to be licensed under the same licence as the source, i.e. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). This licence must remain in all derivatives of this work. 
 
 Please note that sometimes things are done for pedagogical reasons so changes which make sense from a software engineering perspective (reducing duplication or making use of more advanced programming language features) may not be suitable to maintain the intended educational value.
 
