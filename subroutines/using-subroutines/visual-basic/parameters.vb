@@ -14,11 +14,13 @@ Module Program
     Sub Main()
         Console.WriteLine("Enter a number: ")
         Dim userResponse As String = Console.ReadLine()
-        Dim number1 As Integer = Int32.Parse(userResponse)  // Convert input value to integer
+        Dim firstNum As Integer = Int32.Parse(userResponse)  // Convert input value to integer
+        
         Console.WriteLine("Enter another number: ")
         userResponse = Console.ReadLine()
-        Dim number2 As Integer = Int32.Parse(userResponse)
-        CalculateSum(number1, number2)  // Calls CalculateSum
+        Dim secondNum As Integer = Int32.Parse(userResponse)
+        
+        CalculateSum(firstNum, secondNum)  // Calls CalculateSum
     End Sub
 
     Sub CalculateSum(ByVal number1 As Integer, ByVal number2 As Integer)

@@ -16,10 +16,23 @@ To run this file you need to:
 5. Save and run the program
 */
 
+import java.util.Scanner;
+
 class UsingSubroutines {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
-        calculateSum(5, 10);
+        // Use Scanner for reading user input from the console
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a number:");
+        String userResponse = scanner.nextLine();
+        int firstNum = Integer.parseInt(userResponse);  // Convert input value to integer
+
+        System.out.println("Enter another number:");
+        userResponse = scanner.nextLine();
+        int secondNum = Integer.parseInt(userResponse);
+
+        calculateSum(firstNum, secondNum);  // Calls calculateSum
     }
 
 

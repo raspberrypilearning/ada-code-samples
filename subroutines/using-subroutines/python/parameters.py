@@ -6,17 +6,19 @@
 
 def calculate_sum(number1, number2):
     answer = number1 + number2
-    return answer
+    print(answer)
 
 
 def main():
     print("Enter a number:")
     user_response = input()
-    number1 = int(user_response)  # Convert input value to integer
+    first_num = int(user_response)  # Convert input value to integer
+    
     print("Enter another number:")
     user_response = input()
-    number2 = int(user_response)  # Convert input value to integer
-    calculate_sum(number1, number2)  # Calls calculate_sum
+    second_num = int(user_response)  # Convert input value to integer
+    
+    calculate_sum(first_num, second_num)  # Calls calculate_sum
     
     
 # This code will run if this file is executed directly

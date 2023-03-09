@@ -22,11 +22,13 @@ namespace AdaCodeSamples
         public static void Main() {
             Console.WriteLine("Enter a number:");
             string userResponse = Console.ReadLine();
-            int number1 = Int32.Parse(userResponse);  // Convert input value to integer
+            int firstNum = Int32.Parse(userResponse);  // Convert input value to integer
+            
             Console.WriteLine("Enter another number:");
             userResponse = Console.ReadLine();
-            int number2 = Int32.Parse(userResponse);
-            CalculateSum(number1, number2);  // Calls CalculateSum
+            int secondNum = Int32.Parse(userResponse);
+            
+            CalculateSum(firstNum, secondNum);  // Calls CalculateSum
         }   
 
         public static void CalculateSum(int number1, int number2) {
