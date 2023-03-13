@@ -15,5 +15,5 @@ def print_backwards(phrase):
 
 # This code will run if this file is executed directly
 # (i.e. not called by another program) 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print_backwards("I am a computer scientist")

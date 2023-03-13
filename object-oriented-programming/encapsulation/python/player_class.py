@@ -22,7 +22,7 @@ class Player:
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Instantiate a new player object
     game_player = Player("Leona")
 

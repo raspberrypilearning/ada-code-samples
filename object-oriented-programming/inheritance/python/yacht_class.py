@@ -19,7 +19,7 @@ class Yacht(Boat):
 
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Instantiate a new yacht object
     my_yacht = Yacht("Mary Sue", 15.7, 300, 6, 54.50, 2)
 

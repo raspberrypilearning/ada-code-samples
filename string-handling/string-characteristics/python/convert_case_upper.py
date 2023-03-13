@@ -11,5 +11,5 @@ def convert_to_upper():
 
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
-if __name__ == '__main__':
+if __name__ == "__main__":
     convert_to_upper()

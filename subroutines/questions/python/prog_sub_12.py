@@ -5,5 +5,5 @@ def display_menu():
     print("3 - Exit")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     display_menu()

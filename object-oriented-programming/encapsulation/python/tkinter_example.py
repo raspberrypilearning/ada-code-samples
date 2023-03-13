@@ -30,7 +30,7 @@ class tkinter_example():
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     master = Tk() # Create an instance of a tkinter window
     master.title("BlackJack")
     master.geometry("500x500") # Make the window big enough to see

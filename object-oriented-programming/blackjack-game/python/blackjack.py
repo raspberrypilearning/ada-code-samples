@@ -200,7 +200,7 @@ class BlackJack:
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     player_name = input("Enter name of player ")
     match = BlackJack(player_name) # Instantiate a new match
     see_rules = input(f"Welcome {player_name} do you want to see the rules (Y/N)? ")

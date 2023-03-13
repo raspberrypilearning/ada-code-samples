@@ -32,7 +32,7 @@ class PlayingCard:
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
 
-if __name__ == '__main__':        
+if __name__ == "__main__":        
     my_card = PlayingCard("clubs", "2", 2)  # Test instantiation
     description = my_card.get_description()  # Test method
     print(description)

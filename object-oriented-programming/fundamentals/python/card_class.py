@@ -13,7 +13,7 @@ class PlayingCard:
 
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
-if __name__ == '__main__':    
+if __name__ == "__main__":    
     # Instantiate an example Card object
     my_card = PlayingCard("clubs", "2", 2)
     

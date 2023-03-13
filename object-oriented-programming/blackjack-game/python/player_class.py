@@ -32,7 +32,7 @@ class Player:
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
 
-if __name__ == '__main__':    
+if __name__ == "__main__":    
     game_player = Player("Leona")  # Test instantiation
     name = game_player.get_name()  # Test method
     print(name)
