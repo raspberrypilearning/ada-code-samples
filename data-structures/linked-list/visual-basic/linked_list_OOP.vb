@@ -14,7 +14,6 @@ Class Node
     Private data As String
     Private nextItem As Node
 
-
     Public Sub New(ByVal givenData As String)
         data = givenData
     End Sub
@@ -23,11 +22,9 @@ Class Node
         Return data
     End Function
 
-
     Public Function GetNext() As Node
         Return nextItem
     End Function
-
 
     Public Sub SetNext(ByVal newNext As Node)
         nextItem = newNext
