@@ -4,37 +4,27 @@
 # Usage licensed under CC BY-NC-SA 4.0
 
 
-
 # Index values for each level
 LEVEL1 = 0 
 LEVEL2 = 1
 LEVEL3 = 2
 
 
-def create_2D_list():
-    """Create a two-dimensional list of words and levels"""
-
-    # Declare and initialise a two-dimensional list
-    spelling_words = [["any", "poor", "gold", "wild", "kind"],
-                      ["both", "break", "pretty", "floor", "water"],
-                      ["sugar", "clothes", "again", "money", "children"]]
-
-    # Return the list
-    return spelling_words
-
-
 def main():
     """Create a list and output every element"""
 
-    # Create a two-dimensional list
-    my_list = create_2D_list()
+    # Create a two-dimensional list of words
+    spelling_list = [["any", "poor", "gold", "wild", "kind"],
+                      ["both", "break", "pretty", "floor", "water"],
+                      ["sugar", "clothes", "again", "money", "children"]]
+    
 
-    # Output a single element from the list
-    print("### Output a single element from the 2D list ###")
-    print(my_list[LEVEL2][3])
+    # Display every word at level 1
+    print(f"*** Displaying a single word from level 2 ***")
+    print(spelling_list[LEVEL2][3]
 
 
 # This code will run if this file is executed directly
 # (i.e. not called by another program)
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
