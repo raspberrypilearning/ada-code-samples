@@ -4,10 +4,10 @@
 # Usage licensed under CC BY-NC-SA 4.0
 
 
-def output_each_word(spelling_words):
-    """Output every word in the list"""
+def display_each_word(spelling_words):
+    """Display every word in the list"""
 
-    print("### Output each word in the list ###")
+    print("*** Output each word in the list***")
     
     for word in spelling_words: 
         print(word)
@@ -20,8 +20,8 @@ def main():
                       "whole", "behind", "move", "busy"]
 
 
-    # Output every word in the list    
-    output_each_word(spelling_words)
+    # Display every word in the list    
+    display_each_word(spelling_words)
 
 
 # This code will run if this file is executed directly
