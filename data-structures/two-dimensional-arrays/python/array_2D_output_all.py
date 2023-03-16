@@ -4,45 +4,53 @@
 # Usage licensed under CC BY-NC-SA 4.0
 
 
-
 # Index values for each level
 LEVEL1 = 0 
 LEVEL2 = 1
 LEVEL3 = 2
 
 
-def add_words(spelling_list):
-    """Add words to create a two-dimensional list or words by level"""
-
-    # Declare and initialise a two-dimensional list
-    spelling_list = [["any", "poor", "gold", "wild", "kind"],
-                      ["both", "break", "pretty", "floor", "water"],
-                      ["sugar", "clothes", "again", "money", "children"]]
-
-
-def output_each_word(spelling_list):
-    """Output every element in a two-dimensional list"""
+def display_each_word(spelling_list):
+    """Display every word in the two-dimensional list"""
     
-    print("### Output each element in the 2D list ###")
+    print("### Displaying each word in the 2D list ###")
 
-    # Repeat for each level
-    for level in range(len(spelling_list)):
-        # Output each word for the current level
-        for word in level:
-             print(spelling_list[level][word])
+    # For each row
+    for row in spelling_list:
+        # Output each word in the row
+        for word in row:
+             print(word)
+
+
+def display_each_word_by_level(spelling_list):
+    """Display every word by level in the two-dimensional list"""
+    
+    print("### Displaying each word by level ###")
+
+    # For each row
+    for row in spelling_list:
+        print("\n")
+        print("New level")
+        # Output each word in the row
+        for word in row:
+             print(word)
+        
 
 
 def main():
     """Create a list and output every element"""
 
-    # Create an empty list
-    spelling_list = []
+    # Create a two-dimensional list of words
+    spelling_list = [["any", "poor", "gold", "wild", "kind"],
+                      ["both", "break", "pretty", "floor", "water"],
+                      ["sugar", "clothes", "again", "money", "children"]]
     
-    # Add words to list
-    add_words(spelling_list)
 
-    # Output every element in the list    
-    output_each_word(spelling_list)
+    # Display every word in the list    
+    display_each_word(spelling_list)
+
+    # Display every word in the list by level
+    display_each_word_by_level(spelling_list)
 
 
 # This code will run if this file is executed directly
