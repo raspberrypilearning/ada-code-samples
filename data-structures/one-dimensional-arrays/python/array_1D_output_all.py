@@ -5,25 +5,12 @@
 
 
 def add_words(spelling_words):
-    """Add the spelling words to the list""" 
-
-    # Append 10 words to the list
-    spelling_words.append("path")
-    spelling_words.append("floor")
-    spelling_words.append("sugar")
-    spelling_words.append("because")
-    spelling_words.append("beautiful")
-    spelling_words.append("clothes")
-    spelling_words.append("whole")
-    spelling_words.append("behind")
-    spelling_words.append("move")
-    spelling_words.append("busy")
-
+    """Add the words to the list""" 
+    spelling_words=["path", "floor", "sugar", "because", "beautiful", "clothes", "whole", "behind", "move", "busy"]
 
 
 def output_each_word(spelling_words):
     """Output every word in the list"""
-
     for word in spelling_words: 
         print(word)
 
