@@ -4,15 +4,6 @@
 # Usage licensed under CC BY-NC-SA 4.0
 
 
-def output_each_word(spelling_words):
-    """Output every word in the list"""
-
-    print("### Output each word in the list ###")
-    
-    for word in spelling_words: 
-        print(word)
-
-
 def main():
     # Create a list of words
     spelling_words = ["path", "floor", "sugar",
@@ -20,7 +11,7 @@ def main():
                       "whole", "behind", "move", "busy"]
 
 
-    # Output a single word from the list
+    # Display a single word from the list
     print("*** Displaying a single word from the list ***")
     print(spelling_words[2])
 
