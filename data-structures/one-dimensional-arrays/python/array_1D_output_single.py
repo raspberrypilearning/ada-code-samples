@@ -4,20 +4,24 @@
 # Usage licensed under CC BY-NC-SA 4.0
 
 
-def add_words(spelling_words):
-    """Add the words to the list""" 
-    spelling_words=["path", "floor", "sugar", "because", "beautiful", "clothes", "whole", "behind", "move", "busy"]
+def output_each_word(spelling_words):
+    """Output every word in the list"""
+
+    print("### Output each word in the list ###")
+    
+    for word in spelling_words: 
+        print(word)
 
 
-def main():    
-    # Create a list    
-    spelling_words = []  # Declare an empty list
+def main():
+    # Create a list of words
+    spelling_words = ["path", "floor", "sugar",
+                      "because", "beautiful", "clothes",
+                      "whole", "behind", "move", "busy"]
 
-    # Add words to the list
-    add_words(spelling_words)
 
     # Output a single word from the list
-    print("### Output a single word from the list ###")
+    print("*** Displaying a single word from the list ***")
     print(spelling_words[2])
 
 
