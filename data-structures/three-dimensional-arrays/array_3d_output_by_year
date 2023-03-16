@@ -19,8 +19,7 @@ def display_first_word(spelling_words, year, level):
     display_year = year + 1
     display_level = level + 1
     print(f"*** Displaying the first word for Year{display_year}, Level{display_level} ***")
-    print(spelling_words[year][level][0])
-    
+    print(spelling_words[year][level][0])    
 
 
 def main():
