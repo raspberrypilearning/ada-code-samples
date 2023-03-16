@@ -7,7 +7,7 @@
 def display_each_word(spelling_words):
     """Display every word in the list"""
 
-    print("*** Output each word in the list***")
+    print("*** Displaying each word in the list***")
     
     for word in spelling_words: 
         print(word)
