@@ -18,13 +18,33 @@ using System;
 namespace AdaCodeSamples {
     // A node in a binary search tree
     class Node {
-        public int data;
-        public Node left;
-        public Node right;
+        private int data;
+        private Node left;
+        private Node right;
 
         // Constructor method
         public Node(int data) {
             this.data = data;
+        }
+
+        public int GetData() {
+            return data;
+        }
+
+        public Node GetLeft() {
+            return left;
+        }
+
+        public void SetLeft(Node newLeft) {
+            left = newLeft;
+        }
+
+        public Node GetRight() {
+            return right;
+        }
+
+        public void SetRight(Node newRight) {
+            right = newRight;
         }
     }
 
@@ -55,30 +75,30 @@ namespace AdaCodeSamples {
                 // Repeat while the data has not been inserted
                 while (placed == false) {
                     // Check if the new item is greater than the current node data
-                    if (item > current.data) {
+                    if (item > current.GetData()) {
                         // Check if the current node does not have a right child node
-                        if (current.right == null) {
+                        if (current.GetRight() == null) {
                             // Insert the new node to the right of the current node
-                            current.right = newNode;
+                            current.SetRight(newNode);
                             placed = true;
                         }
                         // Otherwise repeat with the current right node
                         else {
-                            current = current.right;
+                            current = current.GetRight();
                         }
                     }
 
                     // Otherwise the new item is less than or equal to the current node
                     else {
                         // Check if the current node does not have a left child node
-                        if (current.left == null) {
+                        if (current.GetLeft() == null) {
                             // Insert the new node to the left of the current node
-                            current.left = newNode;
+                            current.SetLeft(newNode);
                             placed = true;
                         }
                         // Otherwise repeat with the current left node
                         else {
-                            current = current.left;
+                            current = current.GetLeft();
                         }
                     }
                 }
@@ -90,22 +110,22 @@ namespace AdaCodeSamples {
         public bool Search(Node node, int searchItem) {
             // Base case for recursion:
             // The recursion will stop if the search item has been found
-            if (searchItem == node.data) {
+            if (searchItem == node.GetData()) {
                 return true;
             }
 
             // Check if the search item is greater than the node data
             // and there is another node to the right to check
-            else if (searchItem > node.data && node.right != null) {
-                Console.WriteLine($"Checking right branch of node {node.data}");
-                return Search(node.right, searchItem);
+            else if (searchItem > node.GetData() && node.GetRight() != null) {
+                Console.WriteLine($"Checking right branch of node {node.GetData()}");
+                return Search(node.GetRight(), searchItem);
             }
 
             // Check if the search item is less than the node data
             // and there is another node to the left to check
-            else if (searchItem < node.data && node.left != null) {
-                Console.WriteLine($"Checking left branch of node {node.data}");
-                return Search(node.left, searchItem);
+            else if (searchItem < node.GetData() && node.GetLeft() != null) {
+                Console.WriteLine($"Checking left branch of node {node.GetData()}");
+                return Search(node.GetLeft(), searchItem);
             }
 
             // Base case for recursion:
@@ -167,12 +187,12 @@ namespace AdaCodeSamples {
         // Output the tree with the root to the left and children to the right
         public static void OutputTree(Node node, int level = 0) {
             if (node != null) {
-                OutputTree(node.right, level + 1);
+                OutputTree(node.GetRight(), level + 1);
                 
                 string spaces = new String(' ', 4 * level); // String of spaces
-                Console.WriteLine($"{spaces}-> {node.data}");
+                Console.WriteLine($"{spaces}-> {node.GetData()}");
 
-                OutputTree(node.left, level + 1);
+                OutputTree(node.GetLeft(), level + 1);
             }
         }
 

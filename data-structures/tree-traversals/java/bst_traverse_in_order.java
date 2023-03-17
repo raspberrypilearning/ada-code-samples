@@ -17,13 +17,33 @@ To run this file you need to:
 
 // A node in a binary search tree
 class Node {
-    public int data;
-    public Node left;
-    public Node right;
+    private int data;
+    private Node left;
+    private Node right;
 
     // Constructor method
     public Node(int data) {
         this.data = data;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public Node getLeft() {
+        return left;
+    }
+
+    public void setLeft(Node newLeft) {
+        left = newLeft;
+    }
+
+    public Node getRight() {
+        return right;
+    }
+
+    public void setRight(Node newRight) {
+        right = newRight;
     }
 }
 
@@ -56,30 +76,30 @@ class BST {
             // Repeat while the data has not been inserted
             while (placed == false) {
                 // Check if the new item is greater than the current node data
-                if (item > current.data) {
+                if (item > current.getData()) {
                     // Check if the current node does not have a right child node
-                    if (current.right == null) {
+                    if (current.getRight() == null) {
                         // Insert the new node to the right of the current node
-                        current.right = newNode;
+                        current.setRight(newNode);
                         placed = true;
                     }
                     // Otherwise repeat with the current right node
                     else {
-                        current = current.right;
+                        current = current.getRight();
                     }
                 }
 
                 // Otherwise the new item is less than or equal to the current node
                 else {
                     // Check if the current node does not have a left child node
-                    if (current.left == null) {
+                    if (current.getLeft() == null) {
                         // Insert the new node to the left of the current node
-                        current.left = newNode;
+                        current.setLeft(newNode);
                         placed = true;
                     }
                     // Otherwise repeat with the current left node
                     else {
-                        current = current.left;
+                        current = current.getLeft();
                     }
                 }
             }
@@ -90,16 +110,16 @@ class BST {
     // An in-order traversal of the binary search tree
     public void inOrderTraversal(Node node) {
         // Check any nodes to the left of the current node
-        if (node.left != null) {
-            inOrderTraversal(node.left);
+        if (node.getLeft() != null) {
+            inOrderTraversal(node.getLeft());
         }
 
         // Output the data of the current node
-        System.out.println(node.data);
+        System.out.println(node.getData());
 
         // Check any nodes to the right of the current node
-        if (node.right != null) {
-            inOrderTraversal(node.right);
+        if (node.getRight() != null) {
+            inOrderTraversal(node.getRight());
         }
     }
 
@@ -147,16 +167,16 @@ class Testing {
     // Output the tree with the root to the left and children to the right
     public static void outputTree(Node node, int level) {
         if (node != null) {
-            outputTree(node.right, level + 1);
+            outputTree(node.getRight(), level + 1);
 
             String spaces = ""; // String of spaces
             if (level > 0) {
                 int numSpaces = 4 * level;
                 spaces = String.format("%-" + numSpaces + "s", "");
             }
-            System.out.println(spaces + "-> " + node.data);
+            System.out.println(spaces + "-> " + node.getData());
 
-            outputTree(node.left, level + 1);
+            outputTree(node.getLeft(), level + 1);
         }
     }
 

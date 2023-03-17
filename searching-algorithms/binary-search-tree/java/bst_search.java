@@ -18,13 +18,33 @@ To run this file you need to:
 
 // A node in a binary search tree
 class Node {
-    public int data;
-    public Node left;
-    public Node right;
+    private int data;
+    private Node left;
+    private Node right;
 
     // Constructor method
     public Node(int data) {
         this.data = data;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public Node getLeft() {
+        return left;
+    }
+
+    public void setLeft(Node newLeft) {
+        left = newLeft;
+    }
+
+    public Node getRight() {
+        return right;
+    }
+
+    public void setRight(Node newRight) {
+        right = newRight;
     }
 }
 
@@ -55,30 +75,30 @@ class BST {
             // Repeat while the data has not been inserted
             while (placed == false) {
                 // Check if the new item is greater than the current node data
-                if (item > current.data) {
+                if (item > current.getData()) {
                     // Check if the current node does not have a right child node
-                    if (current.right == null) {
+                    if (current.getRight() == null) {
                         // Insert the new node to the right of the current node
-                        current.right = newNode;
+                        current.setRight(newNode);
                         placed = true;
                     }
                     // Otherwise repeat with the current right node
                     else {
-                        current = current.right;
+                        current = current.getRight();
                     }
                 }
 
                 // Otherwise the new item is less than or equal to the current node
                 else {
                     // Check if the current node does not have a left child node
-                    if (current.left == null) {
+                    if (current.getLeft() == null) {
                         // Insert the new node to the left of the current node
-                        current.left = newNode;
+                        current.setLeft(newNode);
                         placed = true;
                     }
                     // Otherwise repeat with the current left node
                     else {
-                        current = current.left;
+                        current = current.getLeft();
                     }
                 }
             }
@@ -90,22 +110,22 @@ class BST {
     public boolean search(Node node, int searchItem) {
         // Base case for recursion:
         // The recursion will stop if the search item has been found
-        if (searchItem == node.data) {
+        if (searchItem == node.getData()) {
             return true;
         }
 
         // Check if the search item is greater than the node data
         // and there is another node to the right to check
-        else if (searchItem > node.data && node.right != null) {
-            System.out.println("Checking right branch of node " + node.data);
-            return search(node.right, searchItem);
+        else if (searchItem > node.getData() && node.getRight() != null) {
+            System.out.println("Checking right branch of node " + node.getData());
+            return search(node.getRight(), searchItem);
         }
 
         // Check if the search item is less than the node data
         // and there is another node to the left to check
-        else if (searchItem < node.data && node.left != null) {
-            System.out.println("Checking left branch of node " + node.data);
-            return search(node.left, searchItem);
+        else if (searchItem < node.getData() && node.getLeft() != null) {
+            System.out.println("Checking left branch of node " + node.getData());
+            return search(node.getLeft(), searchItem);
         }
 
         // Base case for recursion:
@@ -165,16 +185,16 @@ class SearchingAlgorithms {
     // Output the tree with the root to the left and children to the right
     public static void outputTree(Node node, int level) {
         if (node != null) {
-            outputTree(node.right, level + 1);
+            outputTree(node.getRight(), level + 1);
 
             String spaces = ""; // String of spaces
             if (level > 0) {
                 int numSpaces = 4 * level;
                 spaces = String.format("%-" + numSpaces + "s", "");
             }
-            System.out.println(spaces + "-> " + node.data);
+            System.out.println(spaces + "-> " + node.getData());
 
-            outputTree(node.left, level + 1);
+            outputTree(node.getLeft(), level + 1);
         }
     }
 

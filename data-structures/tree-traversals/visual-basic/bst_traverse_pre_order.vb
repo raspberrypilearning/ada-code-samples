@@ -11,19 +11,38 @@
 
 ' A class to represent a node in a binary search tree
 Class Node
-    Public data As Integer ' Tree is storing integer values
-    Public left As Node
-    Public right As Node
+    Private data As Integer ' Tree is storing integer values
+    Private left As Node
+    Private right As Node
 
     ' Constructor method
-    Public Sub New(ByVal itemData As Integer)
-        data = itemData
+    Public Sub New(ByVal data As Integer)
+        Me.data = data
     End Sub
 
+    Public Function GetData() As Integer
+        Return data
+    End Function
+
+    Public Function GetLeft() As Node
+        Return left
+    End Function
+
+    Public Sub SetLeft(ByVal newLeft As Node)
+        left = newLeft
+    End Sub
+
+    Public Function GetRight() As Node
+        Return right
+    End Function
+
+    Public Sub SetRight(ByVal newRight As Node)
+        right = newRight
+    End Sub
 End Class
 
 
-' A class to represent a binary search tree (BST)
+' A class for constructing a binary search tree (BST)
 Class BST
     Private root As Node ' Do not intialise the root yet as the tree is empty
 
@@ -43,33 +62,33 @@ Class BST
             ' Find the correct place to insert the new node
             root = newNode
         Else
-            Dim current = root
-            Dim placed = False
+            Dim current As Node = root
+            Dim placed As Boolean = False
 
             ' Repeat while the data has not been inserted
             While placed = False
                 ' Check if the new item is greater than the current node data
-                If item > current.data Then
+                If item > current.GetData() Then
                     ' Check if the current node does not have a right child node
-                    If current.right Is Nothing Then
+                    If current.GetRight() Is Nothing Then
                         ' Insert the new node to the right of the current node
-                        current.right = newNode
-                        ' Otherwise repeat with the current right node
+                        current.SetRight(newNode)
                         placed = True
+                    ' Otherwise repeat with the current right node
                     Else
-                        current = current.right
-
-                        ' Otherwise the new item is less than or equal to the current node
+                        current = current.GetRight()
                     End If
+                
+                ' Otherwise the new item is less than or equal to the current node
                 Else
                     ' Check if the current node does not have a left child node
-                    If current.left Is Nothing Then
+                    If current.GetLeft() Is Nothing Then
                         ' Insert the new node to the left of the current node
-                        current.left = newNode
-                        ' Otherwise repeat with the current left node
+                        current.SetLeft(newNode)
                         placed = True
+                    ' Otherwise repeat with the current left node
                     Else
-                        current = current.left
+                        current = current.GetLeft()
                     End If
                 End If
             End While
@@ -80,20 +99,18 @@ Class BST
     ' A Pre-order traversal of the binary search tree
     Public Sub PreOrderTraversal(ByVal node As Node)
         ' Output the data of the current node
-        Console.WriteLine(node.data)
+        Console.WriteLine(node.GetData())
 
         ' Check any nodes to the left of the current node
-        If node.left IsNot Nothing Then
-            PreOrderTraversal(node.left)
+        If node.GetLeft() IsNot Nothing Then
+            PreOrderTraversal(node.GetLeft())
         End If
 
         ' Check any nodes to the right of the current node
-        If node.right IsNot Nothing Then
-            PreOrderTraversal(node.right)
+        If node.GetRight() IsNot Nothing Then
+            PreOrderTraversal(node.GetRight())
         End If
     End Sub
-
-
 End Class
 
 
@@ -138,12 +155,12 @@ Module program
     ' Output the tree with the root to the left and children to the right
     Sub OutputTree(ByVal node As Node, ByVal Optional level As Integer = 0)
         If node IsNot Nothing Then
-            OutputTree(node.right, level + 1)
+            OutputTree(node.GetRight(), level + 1)
 
-            Dim spaces As String = (" " * 4 * level) ' Variable length string of spaces
-            Console.WriteLine($"{spaces}-> {node.data}")
-
-            OutputTree(node.left, level + 1)
+            Dim spaces As String = New String(" "c, 4 * level) ' String of spaces
+            
+            Console.WriteLine($"{spaces}-> {node.GetData()}")
+            OutputTree(node.GetLeft(), level + 1)
         End If
     End Sub
 

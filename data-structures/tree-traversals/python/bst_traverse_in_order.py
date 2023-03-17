@@ -11,6 +11,21 @@ class Node:
         self.left = None
         self.right = None
 
+    def get_data(self):
+        return self.data
+
+    def get_left(self):
+        return self.left
+
+    def set_left(self, new_left):
+        self.left = new_left
+
+    def get_right(self):
+        return self.right
+
+    def set_right(self, new_right):
+        self.right = new_right
+
 
 class BST:
     """A class for constructing a binary search tree (BST)"""
@@ -22,6 +37,7 @@ class BST:
     def get_root(self):
         """Return the root node"""
         return self.root
+
 
     def insert(self, item):
         """Insert a new node"""
@@ -43,41 +59,41 @@ class BST:
             while placed == False:
                 
                 # Check if the new item is greater than the current node data
-                if item > current.data:
+                if item > current.get_data():
                     # Check if the current node does not have a right child node
-                    if current.right == None:
+                    if current.get_right() is None:
                         # Insert the new node to the right of the current node
-                        current.right = new_node
+                        current.set_right(new_node)
                         placed = True
                     # Otherwise repeat with the current right node
                     else:
-                        current = current.right
+                        current = current.get_right()
 
                 # Otherwise the new item is less than or equal to the current node
                 else:
                     # Check if the current node does not have a left child node
-                    if current.left == None:
+                    if current.get_left() is None:
                         # Insert the new node to the left of the current node
-                        current.left = new_node
+                        current.set_left(new_node)
                         placed = True
                     # Otherwise repeat with the current left node
                     else:
-                        current = current.left
-
+                        current = current.get_left()
+                        
     
     def in_order_traversal(self, node):
         """An in-order traversal of the binary search tree"""
 
         # Check any nodes to the left of the current node
-        if node.left is not None:
-            self.in_order_traversal(node.left)
+        if node.get_left() is not None:
+            self.in_order_traversal(node.get_left())
 
         # Output the data of the current node
-        print(node.data)
+        print(node.get_data())
         
         # Check any nodes to the right of the current node
-        if node.right is not None:
-            self.in_order_traversal(node.right)
+        if node.get_right() is not None:
+            self.in_order_traversal(node.get_right())
             
 
 def insert_test_data(bst):
@@ -97,9 +113,9 @@ def output_tree(node, level = 0):
     """Print the tree with the root to the left and children to the right"""
 
     if node is not None:
-        output_tree(node.right, level + 1)
-        print(' ' * 4 * level + '-> ' + str(node.data))
-        output_tree(node.left, level + 1)
+        output_tree(node.get_right(), level + 1)
+        print(' ' * 4 * level + '-> ' + str(node.get_data()))
+        output_tree(node.get_left(), level + 1)
 
 
 def main():

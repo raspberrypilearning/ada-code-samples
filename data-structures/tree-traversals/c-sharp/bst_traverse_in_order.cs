@@ -18,13 +18,33 @@ using System;
 namespace AdaCodeSamples {
     // A node in a binary search tree
     class Node {
-        public int data;
-        public Node left;
-        public Node right;
+        private int data;
+        private Node left;
+        private Node right;
 
         // Constructor method
         public Node(int data) {
             this.data = data;
+        }
+
+        public int GetData() {
+            return data;
+        }
+
+        public Node GetLeft() {
+            return left;
+        }
+
+        public void SetLeft(Node newLeft) {
+            left = newLeft;
+        }
+
+        public Node GetRight() {
+            return right;
+        }
+
+        public void SetRight(Node newRight) {
+            right = newRight;
         }
     }
 
@@ -37,7 +57,6 @@ namespace AdaCodeSamples {
         public Node GetRoot() {
             return root;
         }
-
 
         // Insert a new node
         public void Insert(int item) {
@@ -57,30 +76,30 @@ namespace AdaCodeSamples {
                 // Repeat while the data has not been inserted
                 while (placed == false) {
                     // Check if the new item is greater than the current node data
-                    if (item > current.data) {
+                    if (item > current.GetData()) {
                         // Check if the current node does not have a right child node
-                        if (current.right == null) {
+                        if (current.GetRight() == null) {
                             // Insert the new node to the right of the current node
-                            current.right = newNode;
+                            current.SetRight(newNode);
                             placed = true;
                         }
                         // Otherwise repeat with the current right node
                         else {
-                            current = current.right;
+                            current = current.GetRight();
                         }
                     }
 
                     // Otherwise the new item is less than or equal to the current node
                     else {
                         // Check if the current node does not have a left child node
-                        if (current.left == null) {
+                        if (current.GetLeft() == null) {
                             // Insert the new node to the left of the current node
-                            current.left = newNode;
+                            current.SetLeft(newNode);
                             placed = true;
                         }
                         // Otherwise repeat with the current left node
                         else {
-                            current = current.left;
+                            current = current.GetLeft();
                         }
                     }
                 }
@@ -91,16 +110,16 @@ namespace AdaCodeSamples {
         // An in-order traversal of the binary search tree
         public void InOrderTraversal(Node node) {
             // Check any nodes to the left of the current node
-            if (node.left != null) {
-                InOrderTraversal(node.left);
+            if (node.GetLeft() != null) {
+                InOrderTraversal(node.GetLeft());
             }
 
             // Output the data of the current node
-            Console.WriteLine(node.data);
+            Console.WriteLine(node.GetData());
             
             // Check any nodes to the right of the current node
-            if (node.right != null) {
-                InOrderTraversal(node.right);
+            if (node.GetRight() != null) {
+                InOrderTraversal(node.GetRight());
             }
         }
 
@@ -148,12 +167,12 @@ namespace AdaCodeSamples {
         // Output the tree with the root to the left and children to the right
         public static void OutputTree(Node node, int level = 0) {
             if (node != null) {
-                OutputTree(node.right, level + 1);
+                OutputTree(node.GetRight(), level + 1);
                 
                 string spaces = new String(' ', 4 * level); // String of spaces
-                Console.WriteLine($"{spaces}-> {node.data}");
+                Console.WriteLine($"{spaces}-> {node.GetData()}");
 
-                OutputTree(node.left, level + 1);
+                OutputTree(node.GetLeft(), level + 1);
             }
         }
 

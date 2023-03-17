@@ -11,6 +11,21 @@ class Node:
         self.left = None
         self.right = None
 
+    def get_data(self):
+        return self.data
+
+    def get_left(self):
+        return self.left
+
+    def set_left(self, new_left):
+        self.left = new_left
+
+    def get_right(self):
+        return self.right
+
+    def set_right(self, new_right):
+        self.right = new_right
+
 
 class BST:
     """A class for constructing a binary search tree (BST)"""
@@ -43,26 +58,26 @@ class BST:
             while placed == False:
                 
                 # Check if the new item is greater than the current node data
-                if item > current.data:
+                if item > current.get_data():
                     # Check if the current node does not have a right child node
-                    if current.right is None:
+                    if current.get_right() is None:
                         # Insert the new node to the right of the current node
-                        current.right = new_node
+                        current.set_right(new_node)
                         placed = True
                     # Otherwise repeat with the current right node
                     else:
-                        current = current.right
+                        current = current.get_right()
 
                 # Otherwise the new item is less than or equal to the current node
                 else:
                     # Check if the current node does not have a left child node
-                    if current.left is None:
+                    if current.get_left() is None:
                         # Insert the new node to the left of the current node
-                        current.left = new_node
+                        current.set_left(new_node)
                         placed = True
                     # Otherwise repeat with the current left node
                     else:
-                        current = current.left
+                        current = current.get_left()
                         
     
     def search(self, node, search_item):
@@ -70,20 +85,20 @@ class BST:
 
         # Base case for recursion:
         # The recursion will stop if the search item has been found
-        if search_item == node.data:
+        if search_item == node.get_data():
             return True
 
         # Check if the search item is greater than the node data
         # and there is another node to the right to check
-        elif search_item > node.data and node.right is not None:
-            print(f"Checking right branch of node {node.data}")
-            return self.search(node.right, search_item)
+        elif search_item > node.get_data() and node.get_right() is not None:
+            print(f"Checking right branch of node {node.get_data()}")
+            return self.search(node.get_right(), search_item)
 
         # Check if the search item is less than the node data
         # and there is another node to the left to check
-        elif search_item < node.data and node.left is not None:
-            print(f"Checking left branch of node {node.data}")
-            return self.search(node.left, search_item)
+        elif search_item < node.get_data() and node.get_left() is not None:
+            print(f"Checking left branch of node {node.get_data()}")
+            return self.search(node.get_left(), search_item)
 
         # Base case for recursion:
         # Otherwise the search item does not exist
@@ -108,9 +123,9 @@ def output_tree(node, level = 0):
     """Print the tree with the root to the left and children to the right"""
 
     if node is not None:
-        output_tree(node.right, level + 1)
-        print(' ' * 4 * level + '-> ' + str(node.data))
-        output_tree(node.left, level + 1)
+        output_tree(node.get_right(), level + 1)
+        print(' ' * 4 * level + '-> ' + str(node.get_data()))
+        output_tree(node.get_left(), level + 1)
 
 
 def main():
