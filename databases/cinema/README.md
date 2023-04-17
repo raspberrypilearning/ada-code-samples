@@ -1,4 +1,4 @@
-These files are supplemntary files to support the Ada Computer Science databases and SQL topics
+These files are supplementary files to support the Ada Computer Science databases and SQL topics
 They are designed to be used with DB Browser (SQLite):
 https://sqlitebrowser.org/dl/
 
