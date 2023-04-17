@@ -1,0 +1,66 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Showing" (
+	"ShowingID"	INTEGER,
+	"FilmId"	INTEGER,
+	"ScreenId"	INTEGER,
+	"ShowingDate"	TEXT,
+	"ShowingTime"	TEXT,
+	PRIMARY KEY("ShowingID")
+);
+CREATE TABLE IF NOT EXISTS "Film" (
+	"FilmId"	INTEGER,
+	"Title"	TEXT,
+	"Genre"	TEXT,
+	"Rating"	TEXT,
+	"Duration"	INTEGER,
+	PRIMARY KEY("FilmId")
+);
+CREATE TABLE IF NOT EXISTS "Screen" (
+	"ScreenId"	INTEGER,
+	"ScreenName"	TEXT,
+	"Capacity"	INTEGER,
+	PRIMARY KEY("ScreenId")
+);
+CREATE TABLE IF NOT EXISTS "Booking" (
+	"CustomerId"	TEXT,
+	"ShowingId"	INTEGER,
+	"BookingDate"	TEXT,
+	"NumSeats"	INTEGER,
+	PRIMARY KEY("CustomerId","ShowingId")
+);
+CREATE TABLE IF NOT EXISTS "Customer" (
+	"CustomerId"	TEXT,
+	"FirstName"	TEXT,
+	"LastName"	TEXT,
+	"PhoneNumber"	TEXT,
+	PRIMARY KEY("CustomerId")
+);
+INSERT INTO "Showing" ("ShowingID","FilmId","ScreenId","ShowingDate","ShowingTime") VALUES (201,1235,2,'21/06/2023','17:45');
+INSERT INTO "Showing" ("ShowingID","FilmId","ScreenId","ShowingDate","ShowingTime") VALUES (202,1236,1,'21/06/2023','18:15');
+INSERT INTO "Showing" ("ShowingID","FilmId","ScreenId","ShowingDate","ShowingTime") VALUES (203,1235,3,'21/06/2023','18:45');
+INSERT INTO "Showing" ("ShowingID","FilmId","ScreenId","ShowingDate","ShowingTime") VALUES (204,1234,4,'21/06/2023','19:30');
+INSERT INTO "Showing" ("ShowingID","FilmId","ScreenId","ShowingDate","ShowingTime") VALUES (205,1236,1,'21/06/2023','20:15');
+INSERT INTO "Showing" ("ShowingID","FilmId","ScreenId","ShowingDate","ShowingTime") VALUES (206,1234,2,'21/06/2023','20:30');
+INSERT INTO "Film" ("FilmId","Title","Genre","Rating","Duration") VALUES (1234,'Thor','Fantasy/Action','12A',114);
+INSERT INTO "Film" ("FilmId","Title","Genre","Rating","Duration") VALUES (1235,'Minions','Animation','U',91);
+INSERT INTO "Film" ("FilmId","Title","Genre","Rating","Duration") VALUES (1236,'Jumanji','Adventure','PG',104);
+INSERT INTO "Screen" ("ScreenId","ScreenName","Capacity") VALUES (1,'Grand Theatre A',250);
+INSERT INTO "Screen" ("ScreenId","ScreenName","Capacity") VALUES (2,'Blue Room',75);
+INSERT INTO "Screen" ("ScreenId","ScreenName","Capacity") VALUES (3,'Green Room',100);
+INSERT INTO "Screen" ("ScreenId","ScreenName","Capacity") VALUES (4,'Grand Theatre B',200);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('145543',206,'21/05/2023',2);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('012010',205,'23/05/2023',1);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('132099',202,'28/05/2023',2);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('131092',206,'28/05/2023',2);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('132099',205,'05/06/2023',3);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('012010',301,'15/06/2023',2);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('132099',206,'16/06/2023',2);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('145543',370,'18/06/2023',4);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('148765',299,'18/06/2023',2);
+INSERT INTO "Booking" ("CustomerId","ShowingId","BookingDate","NumSeats") VALUES ('145543',204,'20/06/2023',2);
+INSERT INTO "Customer" ("CustomerId","FirstName","LastName","PhoneNumber") VALUES ('012010','Mo','Farrah','01632 961743');
+INSERT INTO "Customer" ("CustomerId","FirstName","LastName","PhoneNumber") VALUES ('131092','Usain','Bolt','01632 960007');
+INSERT INTO "Customer" ("CustomerId","FirstName","LastName","PhoneNumber") VALUES ('132099','Paula','Radcliffe','01632 967267');
+INSERT INTO "Customer" ("CustomerId","FirstName","LastName","PhoneNumber") VALUES ('145543','Asha','Philip','01632 962816');
+INSERT INTO "Customer" ("CustomerId","FirstName","LastName","PhoneNumber") VALUES ('148765','Dina','Asher-Smith','01632 961905');
+COMMIT;
