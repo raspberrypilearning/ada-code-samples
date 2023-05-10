@@ -51,7 +51,7 @@ namespace AdaCodeSamples {
             UpdateDaysInSpace(allAstronauts, position, newDays);
 
             // Output the updated number of days
-            Console.WriteLine($"The days has been updated to {allAstronauts[0][2]}");
+            Console.WriteLine($"The days has been updated to {allAstronauts[position][DaysIndex]}");
         }
 
         

@@ -9,7 +9,7 @@ def display_astronaut_details(astronaut):
 
     print("\nAstronaut details:")
     
-    # Repeat for all of the values in the list using the index i
+    # Repeat for all the values in the list using the index i
     for i in range(len(astronaut)):
         print(f"Index {i} contains the value {astronaut[i]}")
 

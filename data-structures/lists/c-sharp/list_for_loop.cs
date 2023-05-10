@@ -33,7 +33,7 @@ namespace AdaCodeSamples {
         public static void DisplayAstronautDetails(List<string> astronaut) {
             Console.WriteLine("\nAstronaut details:");
 
-            // Repeat for all of the values in the list using the index i
+            // Repeat for all the values in the list using the index i
             for (int i = 0; i < astronaut.Count; i++) {
                 Console.WriteLine($"Index {i} contains the value {astronaut[i]}");
             }
