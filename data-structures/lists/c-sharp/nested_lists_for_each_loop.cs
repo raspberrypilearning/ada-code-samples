@@ -35,7 +35,7 @@ namespace AdaCodeSamples {
             };
 
             // Ouput the details of each astronaut in the list
-            Console.WriteLine("\nDetails of each astronaut in the list:");
+            Console.WriteLine("Details of each astronaut in the list:");
             DisplayAllAstronauts(allAstronauts);
         }
 
