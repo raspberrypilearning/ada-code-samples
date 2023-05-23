@@ -17,12 +17,12 @@ using System;
 using System.Collections.Generic;
 
 namespace AdaCodeSamples {
-    class SimpleLists {
+    class SingleLists {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Declare and initialise the astronaut list
-            List<string> astronaut = new List<string>() {
-                "ISS", "Sergey Prokopyev", "176"
+            List<string> astronauts = new List<string>() {
+                "Frank Rubio", "Stephen Bowen",  "Sultan Al Neyadi"
             };
 
             // Ask the user for an astronaut's name
@@ -30,29 +30,31 @@ namespace AdaCodeSamples {
             string nameToFind = Console.ReadLine();
 
             // Check if the name matches a value in the astronaut list
-            bool found = CheckValueExists(astronaut, nameToFind);
+            bool found = CheckNameExists(astronauts, nameToFind);
 
             // Output the search results
-            if (found)
+            if (found) {
                 Console.WriteLine("Astronaut found!");
-            else
+            }
+            else {
                 Console.WriteLine("Astronaut not found in this data set");
+            }
         }
 
-        // Return true if the search value is found in the list
-        public static bool CheckValueExists(List<string> astronaut, string searchValue) {
+        // Display the values from the given astronaut list
+        public static bool CheckNameExists(List<string> astronauts, string searchName) {
             int i = 0;
             bool isFound = false;
 
-            // Repeat while the value has not been found
-            while (!isFound && i < astronaut.Count) {
-                // Check if the values match
-                if (astronaut[i].Equals(searchValue)) {
+            // Repeat while the search name has not been found
+            while (!isFound && i < astronauts.Count) {
+                // Check if the current name equals the search name
+                if (astronauts[i].Equals(searchName)) {
                     isFound = true;
                 }
                 i += 1; // Increment the counter
             }
-       
+
             return isFound;
         }
     }

@@ -17,18 +17,17 @@ using System;
 using System.Collections.Generic;
 
 namespace AdaCodeSamples {
-    class SimpleLists {
+    class SingleLists {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Declare and initialise the astronaut list
-            List<string> astronaut = new List<string>() {
-                "ISS", "Sergey Prokopyev", "176"
+            List<string> astronauts = new List<string>() {
+                "Sergey Prokopyev", "Frank Rubio", "Fei Junlong"
             };
 
-            // Output the astronaut's spacecraft and name
-            string spacecraft = astronaut[0];
-            string name = astronaut[1];
-            Console.WriteLine($"Astronaut {name} is on the {spacecraft}");
+            // Output the name of the first astronaut
+            string name = astronauts[0];
+            Console.WriteLine($"The first astronaut is {name}");
         }
     }
 }

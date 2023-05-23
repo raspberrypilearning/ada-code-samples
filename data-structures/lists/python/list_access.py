@@ -6,12 +6,11 @@
 
 def main():
     # Declare and initialise the astronaut list
-    astronaut = ["ISS", "Sergey Prokopyev", "176"]
+    astronauts = ["Sergey Prokopyev", "Frank Rubio", "Fei Junlong"]
 
-    # Output the astronaut's spacecraft and name
-    spacecraft = astronaut[0]
-    name = astronaut[1]
-    print(f"Astronaut {name} is on the {spacecraft}")
+    # Output the name of the first astronaut
+    name = astronauts[0]
+    print(f"The first astronaut is {name}")
 
 
 # This code will run if this file is executed directly

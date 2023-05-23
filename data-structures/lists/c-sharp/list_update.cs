@@ -17,23 +17,19 @@ using System;
 using System.Collections.Generic;
 
 namespace AdaCodeSamples {
-    class SimpleLists {
+    class SingleLists {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Declare and initialise the astronaut list
-            List<string> astronaut = new List<string>() {
-                "ISS", "Sergey Prokopyev", "176"
+            List<string> astronauts = new List<string>() {
+                "Sergey Prokopyev", "Frank Rubio", "Fei Junlong"
             };
 
-            // Ask the user for the new number of days in space
-            Console.WriteLine("Enter the new number of days:");
-            string newDays = Console.ReadLine();
+            // Update the name of the astronaut stored at index 2
+            astronauts[2] = "Stephen Bowen";
 
-            // Update the number of days value stored at index 2
-            astronaut[2] = newDays;
-
-            // Output the updated number of days
-            Console.WriteLine($"The days has been updated to {astronaut[2]}");
+            // Output the updated name
+            Console.WriteLine($"The astronaut name has been changed to {astronauts[2]}");
         }
     }
 }

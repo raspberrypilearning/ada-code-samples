@@ -18,41 +18,43 @@ To run this file you need to:
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class SimpleLists {
+class SingleLists {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Declare and initialise the astronaut list
-        ArrayList<String> astronaut = new ArrayList<String>();
-        astronaut.add("ISS");
-        astronaut.add("Sergey Prokopyev");
-        astronaut.add("176");
+        ArrayList<String> astronauts = new ArrayList<String>();
+        astronauts.add("Frank Rubio");
+        astronauts.add("Stephen Bowen");
+        astronauts.add("Sultan Al Neyadi");
 
         // Use Scanner for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
         // Ask the user for an astronaut's name
-        System.out.println("Enter the name of an astronaut to find:");
+        System.out.println("Enter the full name of an astronaut to find:");
         String nameToFind = scanner.nextLine();
 
         // Check if the name matches a value in the astronaut list
-        boolean found = checkValueExists(astronaut, nameToFind);
+        boolean found = checkNameExists(astronauts, nameToFind);
 
         // Output the search results
-        if (found)
+        if (found) {
             System.out.println("Astronaut found!");
-        else
+        }
+        else {
             System.out.println("Astronaut not found in this data set");
+        }
     }
 
     // Return true if the search value is found in the list
-    public static boolean checkValueExists(ArrayList<String> astronaut, String searchValue) {
+    public static boolean checkNameExists(ArrayList<String> astronauts, String searchName) {
         int i = 0;
         boolean isFound = false;
 
-        // Repeat while the value has not been found
-        while (!isFound && i < astronaut.size()) {
-            // Check if the values match
-            if (astronaut.get(i).equals(searchValue)) {
+        // Repeat while the search name has not been found
+        while (!isFound && i < astronauts.size()) {
+            // Check if the current name equals the search name
+            if (astronauts.get(i).equals(searchName)) {
                 isFound = true;
             }
             i += 1; // Increment the counter

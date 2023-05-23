@@ -34,7 +34,7 @@ namespace AdaCodeSamples {
                 new List<string>() { "ISS", "Andrey Fedyaev", "14" }
             };
 
-            // Output the details of each astronaut in the list
+            // Ouput the details of each astronaut in the list
             Console.WriteLine("\nDetails of each astronaut in the list:");
             DisplayAllAstronauts(allAstronauts);
         }

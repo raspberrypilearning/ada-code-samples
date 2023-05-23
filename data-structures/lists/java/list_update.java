@@ -16,28 +16,20 @@ To run this file you need to:
 */
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
-class SimpleLists {
+class SingleLists {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Declare and initialise the astronaut list
-        ArrayList<String> astronaut = new ArrayList<String>();
-        astronaut.add("ISS");
-        astronaut.add("Sergey Prokopyev");
-        astronaut.add("176");
+        ArrayList<String> astronauts = new ArrayList<String>();
+        astronauts.add("Sergey Prokopyev");
+        astronauts.add("Frank Rubio");
+        astronauts.add("Fei Junlong");
 
-        // Use Scanner for reading user input from the console
-        Scanner scanner = new Scanner(System.in);
+        // Update the name of the astronaut stored at index 2
+        astronauts.set(2, "Stephen Bowen");
 
-        // Ask the user for the new number of days in space
-        System.out.println("Enter the new number of days:");
-        String newDays = scanner.nextLine();
-
-        // Update the number of days value stored at index 2
-        astronaut.set(2, newDays);
-
-        // Output the updated number of days
-        System.out.println("The days has been updated to " + astronaut.get(2));
+        // Output the updated name
+        System.out.println("The astronaut name has been changed to " + astronauts.get(2));
     }
 }

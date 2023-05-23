@@ -6,16 +6,13 @@
 
 def main():
     # Declare and initialise the astronaut list
-    astronaut = ["ISS", "Sergey Prokopyev", "176"]
-    
-    # Ask the user for the new number of days in space
-    new_days = input("Enter the new number of days: ")
+    astronauts = ["Sergey Prokopyev", "Frank Rubio", "Fei Junlong"]
 
-    # Update the number of days value stored at index 2
-    astronaut[2] = new_days
+    # Update the name of the astronaut stored at index 2
+    astronauts[2] = "Stephen Bowen"
 
-    # Output the updated number of days
-    print(f"The days has been updated to {astronaut[2]}")
+    # Output the updated name
+    print(f"The astronaut name has been changed to {astronauts[2]}")
 
 
 # This code will run if this file is executed directly

@@ -16,30 +16,35 @@ To run this file you need to:
 */
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
-class SimpleLists {
+class SingleLists {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Declare and initialise the astronaut list
-        ArrayList<String> astronaut = new ArrayList<String>();
-        astronaut.add("ISS");
-        astronaut.add("Sergey Prokopyev");
-        astronaut.add("176");
+        ArrayList<String> astronauts = new ArrayList<String>();
+        astronauts.add("Sergey Prokopyev");
+        astronauts.add("Frank Rubio");
+        astronauts.add("Stephen Bowen");
+        astronauts.add("Sultan Al Neyadi");
 
-        // Delete the spacecraft stored at index 0
-        astronaut.remove(0);
+        // Use Scanner for reading user input from the console
+        Scanner scanner = new Scanner(System.in);
 
-        // Output the astronaut's details
-        displayAstronautDetails(astronaut);
+        // Delete the astronaut stored at index 0
+        astronauts.remove(0);
+
+        // Output the astronaut list
+        displayAstronauts(astronauts);
     }
 
     // Display the values from the given astronaut list
-    public static void displayAstronautDetails(ArrayList<String> astronaut) {
-        System.out.println("\nAstronaut details:");
+    public static void displayAstronauts(ArrayList<String> astronauts) {
+        System.out.println("Astronauts:");
 
         // Repeat for each value in the list
-        for (String value : astronaut) {
-            System.out.println(value);
+        for (String name : astronauts) {
+            System.out.println(name);
         }
     }
 }

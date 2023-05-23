@@ -17,18 +17,17 @@ To run this file you need to:
 
 import java.util.ArrayList;
 
-class SimpleLists {
+class SingleLists {
     // The main method is the entry point for all Java programs
     public static void main(String[] args) {
         // Declare and initialise the astronaut list
-        ArrayList<String> astronaut = new ArrayList<String>();
-        astronaut.add("ISS");
-        astronaut.add("Sergey Prokopyev");
-        astronaut.add("176");
+        ArrayList<String> astronauts = new ArrayList<String>();
+        astronauts.add("Sergey Prokopyev");
+        astronauts.add("Frank Rubio");
+        astronauts.add("Fei Junlong");
 
-        // Output the astronaut's spacecraft and name
-        String spacecraft = astronaut.get(0);
-        String name = astronaut.get(1);
-        System.out.println("Astronaut " + name + " is on the " + spacecraft);
+        // Output the name of the first astronaut
+        String name = astronauts.get(0);
+        System.out.println("The first astronaut is " + name);
     }
 }

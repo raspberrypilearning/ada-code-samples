@@ -17,32 +17,32 @@ using System;
 using System.Collections.Generic;
 
 namespace AdaCodeSamples {
-    class SimpleLists {
+    class SingleLists {
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Declare and initialise the astronaut list
-            List<string> astronaut = new List<string>() {
-                "ISS", "Sergey Prokopyev", "176"
+            List<string> astronauts = new List<string>() {
+                "Sergey Prokopyev", "Frank Rubio", "Stephen Bowen"
             };
 
-            // Ask the user to input the astronaut's country of origin
-            Console.WriteLine("Enter the astronaut's country of origin:");
-            string country = Console.ReadLine();
+            // Ask the user to input another astronaut
+            Console.WriteLine("Enter the name of another astronaut:");
+            string name = Console.ReadLine();
 
-            // Add the country to the end of the list
-            astronaut.Add(country);
+            // Add the name to the end of the list
+            astronauts.Add(name);
 
-            // Output the astronaut's details
-            DisplayAstronautDetails(astronaut);
+            // Output the astronaut list
+            DisplayAstronauts(astronauts);
         }
 
         // Display the values from the given astronaut list
-        public static void DisplayAstronautDetails(List<string> astronaut) {
-            Console.WriteLine("\nAstronaut details:");
+        public static void DisplayAstronauts(List<string> astronauts) {
+            Console.WriteLine("\nAstronauts:");
 
             // Repeat for each value in the list
-            foreach (string value in astronaut) {
-                Console.WriteLine(value);
+            foreach (string name in astronauts) {
+                Console.WriteLine(name);
             }
         }
     }

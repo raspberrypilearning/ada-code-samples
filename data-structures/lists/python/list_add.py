@@ -4,28 +4,28 @@
 # Usage licensed under CC BY-NC-SA 4.0
 
 
-def display_astronaut_details(astronaut):
+def display_astronauts(astronauts):
     """Display the values from the given astronaut list"""
 
-    print("\nAstronaut details:")
+    print("\nAstronauts:")
     
     # Repeat for each value in the list
-    for value in astronaut:
-        print(value)
+    for name in astronauts:
+        print(name)
 
 
 def main():
     # Declare and initialise the astronaut list
-    astronaut = ["ISS", "Sergey Prokopyev", "176"]
+    astronauts = ["Sergey Prokopyev", "Frank Rubio", "Stephen Bowen"]
 
-    # Ask the user to input the astronaut's country of origin
-    country = input("Enter the astronaut's country of origin: ")
+    # Ask the user to input another astronaut
+    name = input("Enter the name of another astronaut: ")
     
-    # Add the country to the end of the list
-    astronaut.append(country)
+    # Add the name to the end of the list
+    astronauts.append(name)
 
-    # Output the astronaut's details
-    display_astronaut_details(astronaut)
+    # Output the astronaut list
+    display_astronauts(astronauts)
 
 
 # This code will run if this file is executed directly
