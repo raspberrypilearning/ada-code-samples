@@ -19,12 +19,12 @@ Module Program
             "Stephen Bowen"
         })
 
-        ' Ask the user to input the astronaut's country of origin
-        Console.WriteLine("Enter the astronaut's country of origin:")
-        Dim country As String = Console.ReadLine
+        ' Ask the user to input another astronaut
+        Console.WriteLine("Enter the name of another astronaut:")
+        Dim name As String = Console.ReadLine
 
-        ' Add the country to the end of the list
-        astronauts.Add(country)
+        ' Add the name to the end of the list
+        astronauts.Add(name)
 
         ' Output the astronaut list
         DisplayAstronauts(astronauts)
@@ -35,8 +35,8 @@ Module Program
         Console.WriteLine(vbLf & "Astronauts:")
 
         ' Repeat for each value in the list
-        For Each value As String In astronauts
-            Console.WriteLine(value)
+        For Each name As String In astronauts
+            Console.WriteLine(name)
         Next
     End Sub
 End Module

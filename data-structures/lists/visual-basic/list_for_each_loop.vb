@@ -28,8 +28,8 @@ Module Program
         Console.WriteLine("Astronauts:")
 
         ' Repeat for each value in the list
-        For Each value As String In astronauts
-            Console.WriteLine(value)
+        For Each name As String In astronauts
+            Console.WriteLine(name)
         Next
     End Sub
 End Module
