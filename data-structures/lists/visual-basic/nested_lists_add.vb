@@ -46,7 +46,8 @@ Module Program
     End Sub
 
     ' Add a new astronaut list to the end of the nested list
-    Sub AddNewAstronaut(ByVal allAstronauts As List(Of List(Of String)), ByVal givenSpacecraft As String, ByVal givenName As String, ByVal givenDays As String)
+    Sub AddNewAstronaut(ByVal allAstronauts As List(Of List(Of String)),
+        ByVal givenSpacecraft As String, ByVal givenName As String, ByVal givenDays As String)
 
         ' Create a new list for the astronaut
         Dim newAstronaut As New List(Of String)({

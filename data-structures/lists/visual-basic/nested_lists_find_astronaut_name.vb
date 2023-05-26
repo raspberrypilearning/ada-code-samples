@@ -45,7 +45,9 @@ Module Program
     End Sub
 
     ' Return the index of the astronaut that contains the search name
-    Function FindPositionOfAstronaut(ByVal allAstronauts As List(Of List(Of String)), ByVal searchName As String) As Integer
+    Function FindPositionOfAstronaut(ByVal allAstronauts As List(Of List(Of String)),
+        ByVal searchName As String) As Integer
+        
         Dim i = 0
         Dim foundIndex = -1  ' Return -1 if no astronaut found
 

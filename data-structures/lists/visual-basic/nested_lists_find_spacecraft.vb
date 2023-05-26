@@ -46,7 +46,9 @@ Module Program
     End Sub
 
     ' Return a list of astronauts that are on a given spacecraft
-    Function GetAstronautsBySpacecraft(ByVal allAstronauts As List(Of List(Of String)), ByVal givenSpacecraft As String) As List(Of List(Of String))
+    Function GetAstronautsBySpacecraft(ByVal allAstronauts As List(Of List(Of String)),
+        ByVal givenSpacecraft As String) As List(Of List(Of String))
+        
         ' Declare a list to store the found astronauts in
         Dim foundList As New List(Of List(Of String))()
 

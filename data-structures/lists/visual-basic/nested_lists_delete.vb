@@ -41,7 +41,9 @@ Module Program
     End Sub
 
     ' Delete an astronaut list at the given index
-    Sub DeleteAstronaut(ByVal allAstronauts As List(Of List(Of String)), ByVal astronautIndex As Integer)
+    Sub DeleteAstronaut(ByVal allAstronauts As List(Of List(Of String)),
+        ByVal astronautIndex As Integer)
+        
         allAstronauts.RemoveAt(astronautIndex)
     End Sub
 

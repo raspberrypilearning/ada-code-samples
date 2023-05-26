@@ -45,7 +45,9 @@ Module Program
     End Sub
 
     ' Update the number of days in space for an astronaut
-    Sub UpdateDaysInSpace(ByVal allAstronauts As List(Of List(Of String)), ByVal astronautIndex As Integer, ByVal newDays As String)
+    Sub UpdateDaysInSpace(ByVal allAstronauts As List(Of List(Of String)),
+        ByVal astronautIndex As Integer, ByVal newDays As String)
+        
         allAstronauts(astronautIndex)(DaysIndex) = newDays
     End Sub
 End Module
