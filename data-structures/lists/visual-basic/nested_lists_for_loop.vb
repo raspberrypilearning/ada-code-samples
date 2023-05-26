@@ -34,10 +34,10 @@ Module Program
     ' Display the values of each astronaut in the given list
     Public Sub DisplayAllAstronauts(ByVal allAstronauts As List(Of List(Of String)))
         ' Repeat for each astronaut in the outer list
-        For astronaut = 0 To allAstronauts.Count - 1
+        For i = 0 To allAstronauts.Count - 1
             ' Repeat for each value in the inner list
-            For value = 0 To allAstronauts(astronaut).Count - 1
-                Console.WriteLine(allAstronauts(astronaut)(value))
+            For j = 0 To allAstronauts(i).Count - 1
+                Console.WriteLine(allAstronauts(i)(j))
             Next
             Console.WriteLine() ' Print a new line after each astronaut
         Next

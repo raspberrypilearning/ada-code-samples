@@ -32,10 +32,10 @@ class NestedLists  {
     // Display the values of each astronaut in the given list
     public static void displayAllAstronauts(ArrayList<ArrayList<String>> allAstronauts) {
         // Repeat for each astronaut in the outer list
-        for (int astronaut = 0; astronaut < allAstronauts.size(); astronaut++) {
+        for (int i = 0; i < allAstronauts.size(); i++) {
             // Repeat for each value in the inner list
-            for (int value = 0; value < allAstronauts.get(astronaut).size(); value++) {
-                System.out.println(allAstronauts.get(astronaut).get(value));
+            for (int j = 0; j < allAstronauts.get(i).size(); j++) {
+                System.out.println(allAstronauts.get(i).get(j));
             }
             System.out.println(); // Print a new line after each astronaut
         }

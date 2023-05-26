@@ -8,10 +8,10 @@ def display_all_astronauts(all_astronauts):
     """Display the values of each astronaut in the nested list"""
 
     # Repeat for each astronaut in the outer list
-    for astronaut in range(0, len(all_astronauts)):
+    for i in range(0, len(all_astronauts)):
         # Repeat for each value in the inner list
-        for value in range(0, len(all_astronauts[astronaut])):
-            print(all_astronauts[astronaut][value])
+        for j in range(0, len(all_astronauts[i])):
+            print(all_astronauts[i][j])
         print() # Print a new line after each astronaut
 
 

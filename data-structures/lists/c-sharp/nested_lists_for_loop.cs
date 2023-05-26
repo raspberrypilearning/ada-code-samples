@@ -41,12 +41,11 @@ namespace AdaCodeSamples {
 
         // Display the values of each astronaut in the given list
         public static void DisplayAllAstronauts(List<List<string>> allAstronauts) {
-
             // Repeat for each astronaut in the outer list
-            for (int astronaut = 0; astronaut < allAstronauts.Count; astronaut++) {
+            for (int i = 0; i < allAstronauts.Count; i++) {
                 // Repeat for each value in the inner list
-                for (int value = 0; value < allAstronauts[astronaut].Count; value++) {
-                    Console.WriteLine(allAstronauts[astronaut][value]);
+                for (int j = 0; j < allAstronauts[i].Count; j++) {
+                    Console.WriteLine(allAstronauts[i][j]);
                 }
                 Console.WriteLine(); // Print a new line after each astronaut
             }

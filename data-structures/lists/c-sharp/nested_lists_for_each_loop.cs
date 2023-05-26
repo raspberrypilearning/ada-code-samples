@@ -41,7 +41,6 @@ namespace AdaCodeSamples {
 
         // Display the values of each astronaut in the given list
         public static void DisplayAllAstronauts(List<List<string>> allAstronauts) {
-
             // Repeat for each astronaut in the outer list
             foreach (List<string> astronaut in allAstronauts) {
                 // Repeat for each value in the inner list
