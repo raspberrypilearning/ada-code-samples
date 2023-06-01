@@ -40,7 +40,7 @@ def main():
     ]
 
     # Ask the user to input the new astronaut's details
-    spacecraft = input("Enter the spacecraft's name: ")
+    spacecraft = input("Enter the name of the spacecraft: ")
     name = input("Enter the astronaut's full name: ")
     days = input("Enter the current number of days in space: ")
 

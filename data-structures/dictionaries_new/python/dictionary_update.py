@@ -11,7 +11,7 @@ def main():
     # Update the days in space of the astronaut
     astronaut["days"] = 18
 
-    # Output the updates days
+    # Output the updated number of days
     new_days = astronaut["days"]
     print(f"The days in space has been changed to {new_days}")
 
