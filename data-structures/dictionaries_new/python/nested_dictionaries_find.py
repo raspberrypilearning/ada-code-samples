@@ -20,11 +20,13 @@ def main():
     }
 
     # Ask the user for a key to find
-    input_key = input("Enter a key: ")
+    input_key = input("Enter a key (astronaut name): ")
 
     # Check if the key exists in the nested dictionary
     if input_key in astronauts_by_name:
         print("Key exists!")
+        value = astronauts_by_name[input_key]
+        print(f"Key: {input_key}, value: {value}")
     else:
         print("That key does not exist")
 

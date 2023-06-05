@@ -9,7 +9,7 @@ def main():
     astronaut = {"craft": "ISS", "name": "Sultan Al Neyadi", "days": "14"}
 
     # Update the days in space of the astronaut
-    astronaut["days"] = 18
+    astronaut["days"] = "18"
 
     # Output the updated number of days
     new_days = astronaut["days"]

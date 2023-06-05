@@ -6,15 +6,17 @@
 
 def main():
     # Declare and initialise the astronaut dictionary
-    astronaut = {"craft": "ISS", "name": "Sultan Al Neyadi",
+    astronaut = {"craft": "ISS", "name": "Sultan Al Neyadi", "days": "14",
                  "country": "United Arab Emirates"}
 
     # Ask the user for a key to find
-    input_key = input("Enter a key: ")
+    input_key = input("Enter a key to find: ")
 
     # Check if the key exists in the dictionary
     if input_key in astronaut:
         print("Key exists!")
+        value = astronaut[input_key]
+        print(f"Key: {input_key}, value: {value}")
     else:
         print("That key does not exist")
 

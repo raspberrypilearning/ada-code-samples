@@ -16,7 +16,7 @@ def display_key_value_pairs(astronaut):
 
 def main():
     # Declare and initialise the astronaut dictionary
-    astronaut = {"craft": "ISS", "name": "Sultan Al Neyadi", "days": "18",
+    astronaut = {"craft": "ISS", "name": "Sultan Al Neyadi", "days": "14",
                  "country": "United Arab Emirates"}
 
     # Delete the days key and it's value

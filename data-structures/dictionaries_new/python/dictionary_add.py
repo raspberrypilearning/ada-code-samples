@@ -6,7 +6,7 @@
 
 def main():
     # Declare and initialise the astronaut dictionary
-    astronaut = {"craft": "ISS", "name": "Sultan Al Neyadi", "days": "18"}
+    astronaut = {"craft": "ISS", "name": "Sultan Al Neyadi", "days": "14"}
 
     # Ask the user for the country of origin
     input_country = input("Enter the astronaut's country of origin: ")
