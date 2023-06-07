@@ -9,7 +9,7 @@ def main():
     astronaut = {"craft": "ISS", "name": "Sultan Al Neyadi", "days": "14"}
 
     # Ask the user for the country of origin
-    input_country = input("Enter the astronaut's country of origin: ")
+    input_country = input("Enter the astronaut's country: ")
 
     # Add the country key-value pair to the dictionary
     astronaut["country"] = input_country
