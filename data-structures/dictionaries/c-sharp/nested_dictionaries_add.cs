@@ -56,7 +56,7 @@ namespace AdaCodeSamples {
             AddNewAstronaut(astronautsByName, name, spacecraft, days);
 
             // Output the details of the new astronaut
-            Console.WriteLine(name);
+            Console.WriteLine($"\nAstronaut name: {name}");
             var astronaut = astronautsByName[name];
             DisplayKeyValuePairs(astronaut);
         }
@@ -78,6 +78,8 @@ namespace AdaCodeSamples {
 
         // Display the key-value pairs from the given astronaut dictionary
         public static void DisplayKeyValuePairs(Dictionary<string, string> astronaut) {
+            Console.WriteLine("Astronaut dictionary:");
+
             // Repeat for each key-value pair in the dictionary
             foreach (KeyValuePair<string, string> kvp in astronaut) {
                 string key = kvp.Key;
