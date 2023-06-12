@@ -8,10 +8,9 @@
 ' 3. Compile the program
 ' 4. Run the program
 
-Imports System.Collections.Generic
 
 Module Program
-    ' The Main method is the entry point for all C# programs
+    ' The Main subroutine is the entry point for all VB programs
     Sub Main()
         ' Declare and initialise the astronaut dictionary
         Dim astronaut As Dictionary(Of String, String) = New Dictionary(Of String, String)() From {
