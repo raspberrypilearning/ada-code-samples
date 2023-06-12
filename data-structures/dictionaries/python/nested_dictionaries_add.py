@@ -17,6 +17,8 @@ def add_new_astronaut(astronauts_by_name, given_name,
 
 def display_key_value_pairs(astronaut):
     """Display the key-value pairs from the given astronaut dictionary"""
+
+    print("Astronaut dictionary:")
     
     # Repeat for each key-value pair in the dictionary
     for key, value in astronaut.items():
@@ -47,7 +49,7 @@ def main():
     add_new_astronaut(astronauts_by_name, name, spacecraft, days)
 
     # Output the details of the new astronaut
-    print(name)
+    print(f"\nAstronaut name: {name}")
     astronaut = astronauts_by_name[name]
     display_key_value_pairs(astronaut)
 
