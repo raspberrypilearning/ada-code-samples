@@ -14,7 +14,7 @@ Module Program
 
     Sub Main()
         ' Declare and initialise the astronaut dictionary
-        Dim astronaut As Dictionary(Of String, String) = New Dictionary(Of String, String)() From {
+        Dim astronaut = New Dictionary(Of String, String)() From {
             {"craft", "ISS"},
             {"name", "Sultan Al Neyadi"},
             {"days", "14"}

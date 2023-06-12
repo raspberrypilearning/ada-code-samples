@@ -72,13 +72,16 @@ Module Program
     End Sub
 
     ' Delete an astronaut dictionary using the given key
-    Sub DeleteAstronaut(ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String)), ByVal astronautName As String)
+    Sub DeleteAstronaut(
+        ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String)),
+        ByVal astronautName As String)
 
         astronautsByName.Remove(astronautName)
     End Sub
 
     ' Display the key-value pairs of each astronaut in the nested dictionary
-    Sub DisplayAllAstronauts(ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String)))
+    Sub DisplayAllAstronauts(
+        ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String)))
 
         ' Repeat for each astronaut in the outer dictionary
         For Each kvp In astronautsByName

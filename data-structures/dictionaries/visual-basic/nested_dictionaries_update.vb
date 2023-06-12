@@ -11,7 +11,6 @@
 
 Module Program
 
-
     ' The Main subroutine is the entry point for all VB programs
     Sub Main()
         ' Declare and initialise the nested dictionary of astronauts

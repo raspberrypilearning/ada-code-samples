@@ -76,13 +76,15 @@ Module Program
 
 
     ' Add a new astronaut dictionary to the nested dictionary
-    Sub AddNewAstronaut(ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String)), ByVal givenName As String, ByVal givenSpacecraft As String, ByVal givenDays As String)
+    Sub AddNewAstronaut(
+        ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String)),
+        ByVal givenName As String, ByVal givenSpacecraft As String, ByVal givenDays As String)
 
         ' Create a new dictionary for the astronaut
         Dim newAstronaut = New Dictionary(Of String, String)() From {
-                {"craft", givenSpacecraft},
-                {"days", givenDays}
-            }
+            {"craft", givenSpacecraft},
+            {"days", givenDays}
+        }
 
         ' Add the new astronaut dictionary to the nested dictionary
         astronautsByName(givenName) = newAstronaut

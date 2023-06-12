@@ -64,7 +64,8 @@ Module Program
 
 
     ' Calculate and return the sum of all the astronauts' days in space
-    Function CalculateTotalDays(ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String))) As Integer
+    Function CalculateTotalDays(
+        ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String))) As Integer
 
         Dim totalDays = 0
 

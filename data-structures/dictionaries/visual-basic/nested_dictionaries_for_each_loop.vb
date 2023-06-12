@@ -63,7 +63,8 @@ Module Program
 
 
     ' Display the key-value pairs of each astronaut in the nested dictionary
-    Sub DisplayAllAstronauts(ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String)))
+    Sub DisplayAllAstronauts(
+        ByVal astronautsByName As Dictionary(Of String, Dictionary(Of String, String)))
 
         ' Repeat for each astronaut in the outer dictionary
         For Each kvp In astronautsByName
