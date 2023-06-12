@@ -48,17 +48,17 @@ class NestedDictionaries  {
         astronautsByName.put("Frank Rubio", third);
 
         var fourth = new HashMap<String, String>();
-        fourth.put("craft", "Shenzhou 15");
+        fourth.put("craft", "Tiangong");
         fourth.put("days", "112");
         astronautsByName.put("Fei Junlong", fourth);
 
         var fifth = new HashMap<String, String>();
-        fifth.put("craft", "Shenzhou 15");
+        fifth.put("craft", "Tiangong");
         fifth.put("days", "107");
         astronautsByName.put("Deng Qingming", fifth);
 
         var sixth = new HashMap<String, String>();
-        sixth.put("craft", "Shenzhou 15");
+        sixth.put("craft", "Tiangong");
         sixth.put("days", "107");
         astronautsByName.put("Zhang Lu", sixth);
 
