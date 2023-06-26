@@ -41,7 +41,7 @@ namespace AdaCodeSamples {
             }
         }
 
-        // Display the values from the given astronaut list
+        // Return true if the search value is found in the list
         public static bool CheckNameExists(List<string> astronauts, string searchName) {
             int i = 0;
             bool isFound = false;
