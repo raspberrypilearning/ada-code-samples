@@ -33,7 +33,7 @@ def main():
     new_word = input("Enter the new word: ")
 
     # Update the last word for Year 1, Level 3
-    word_index = len(spelling_words[YEAR1][LEVEL3]) - 1
+    word_index = 4
     spelling_words[YEAR1][LEVEL3][word_index] = new_word
     
     # Output the updated word

@@ -26,7 +26,8 @@ def main():
     spelling_words[0][2][4] = new_word
 
     # Output the updated word
-    print(f"The word has been updated to {spelling_words[0][2][4]}")
+    updated_word = spelling_words[0][2][4]
+    print(f"The word has been updated to {updated_word}")
 
 
 # This code will run if this file is executed directly
