@@ -34,7 +34,7 @@ Module Program
         End If
     End Sub
 
-    ' Display the values from the given astronaut list
+    ' Return true if the search value is found in the list
     Function CheckNameExists(ByVal astronauts As List(Of String), ByVal searchName As String) As Boolean
         Dim i As Integer = 0
         Dim isFound As Boolean = False
