@@ -24,7 +24,7 @@ namespace AdaCodeSamples {
                 "me", "do", "her", "it", "him"
             };
 
-            // Output the spelling words list
+            // Output the spelling words array
             DisplayWords(spellingWords);
         }
 
