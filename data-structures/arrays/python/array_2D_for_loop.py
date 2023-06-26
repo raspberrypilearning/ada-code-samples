@@ -9,7 +9,7 @@ def display_all_words(spelling_words):
         
     # Repeat for each level
     for i in range(0, len(spelling_words)):
-        level_num = i + 1 # Level index starts from 0
+        level_num = i + 1  # Level index starts from 0
         print(f"\nLevel {level_num}:")
         
         # Output each word for the current level

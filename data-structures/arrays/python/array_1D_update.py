@@ -12,7 +12,8 @@ def main():
     spelling_words[4] = "log"
 
     # Output the updated word
-    print(f"The last word has been changed to {spelling_words[4]}")
+    updated_word = spelling_words[4]
+    print(f"The last word has been changed to {updated_word}")
 
 
 # This code will run if this file is executed directly
