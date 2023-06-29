@@ -15,13 +15,14 @@ Module Program
     Sub Main()
         ' Declare and initialise the array of words
         Dim spellingWords = New String(4) {"me", "do", "her", "it", "him"}
+        oldWord = spellingWords(4)
 
         ' Update the word stored at index 4
         spellingWords(4) = "log"
 
         ' Output the updated word
         Dim updatedWord = spellingWords(4)
-        Console.WriteLine($"The last word has been changed to {updatedWord}")
+        Console.WriteLine($"The word {oldWord} has been changed to {updatedWord}")
     End Sub
 
 
