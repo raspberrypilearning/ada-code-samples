@@ -8,12 +8,14 @@ def display_all_words(spelling_words):
     """Display the words of each level in the 2D list"""
         
     # Repeat for each level
-    for i in range(0, len(spelling_words)):
+    num_levels = len(spelling_words)
+    for i in range(num_levels):
         level_num = i + 1  # Level index starts from 0
         print(f"\nLevel {level_num}:")
         
         # Output each word for the current level
-        for j in range(0, len(spelling_words[i])):
+        num_words = len(spelling_words[i])
+        for j in range(num_words):
              print(spelling_words[i][j])
 
 

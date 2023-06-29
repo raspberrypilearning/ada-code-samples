@@ -21,7 +21,7 @@ def main():
     # Ask the user for the new word
     new_word = input("Enter the new word: ")
 
-    # Update the last word for Level 3
+    # Update the word for Level 3 at index 4
     word_index = 4
     spelling_words[LEVEL3][word_index] = new_word
 

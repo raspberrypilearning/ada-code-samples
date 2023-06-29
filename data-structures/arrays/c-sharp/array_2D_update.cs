@@ -30,7 +30,7 @@ namespace AdaCodeSamples {
             Console.WriteLine("Enter the new word:");
             string newWord = Console.ReadLine();
 
-            // Update the last word for Level 3
+            // Update the word for Level 3 at index 4
             spellingWords[2, 4] = newWord;
 
             // Output the updated word

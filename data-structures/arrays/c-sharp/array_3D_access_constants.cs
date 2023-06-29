@@ -17,6 +17,16 @@ using System;
 
 namespace AdaCodeSamples {
     class Arrays3D {
+        // Index values of each year
+        public const int Year1 = 0;
+        public const int Year2 = 1;
+        
+        // Index values of each level
+        public const int Level1 = 0;
+        public const int Level2 = 1;
+        public const int Level3 = 2;
+
+
         // The Main method is the entry point for all C# programs
         public static void Main() {
             // Declare and initialise the three-dimensional array of words
@@ -33,16 +43,10 @@ namespace AdaCodeSamples {
                 } 
             };
 
-            // Ask the user for the new word
-            Console.WriteLine("Enter the new word:");
-            string newWord = Console.ReadLine();
-
-            // Update the word for Year 1, Level 3 at index 4
-            spellingWords[0, 2, 4] = newWord;
-
-            // Output the updated word
-            string updatedWord = spellingWords[0, 2, 4];
-            Console.WriteLine($"The word has been updated to {updatedWord}");
+            // Output the word for Year 1, Level 3 at index 4
+            int wordIndex = 4;
+            string wordConst = spellingWords[Year1, Level3, wordIndex];
+            Console.WriteLine($"The word for Year 1, Level 3 at index {wordIndex} is {wordConst}");
         }
     }
 }

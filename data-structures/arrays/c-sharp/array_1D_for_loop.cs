@@ -35,7 +35,8 @@ namespace AdaCodeSamples {
             // Repeat for all the values in the array using the index i
             int numWords = spellingWords.Length;
             for (int i = 0; i < numWords; i++) {
-                Console.WriteLine($"Index {i} contains the value {spellingWords[i]}");
+                string value = spellingWords[i];
+                Console.WriteLine($"The element at index {i} contains the value {value}");
             }
             Console.WriteLine($"There are {numWords} words in the array");
         }

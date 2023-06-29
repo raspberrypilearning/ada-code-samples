@@ -12,9 +12,9 @@ def main():
         ["they", "where", "friend", "fast", "class"]
     ]
 
-    # Output the last word for Level 3
+    # Output the word for Level 3 at index 4
     word = spelling_words[2][4]
-    print(f"The last word for Level 3 is {word}")
+    print(f"The word for Level 3 at index 4 is {word}")
 
 
 # This code will run if this file is executed directly

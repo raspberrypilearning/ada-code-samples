@@ -32,17 +32,10 @@ namespace AdaCodeSamples {
                 { "they", "where", "friend", "fast", "class" }
             };
 
-            // Ask the user for the new word
-            Console.WriteLine("Enter the new word:");
-            string newWord = Console.ReadLine();
-
-            // Update the word for Level 3 at index 4
-            int wordIndex = 4;
-            spellingWords[Level3, wordIndex] = newWord;
-
-            // Output the updated word
-            string updatedWord = spellingWords[Level3, wordIndex];
-            Console.WriteLine($"The word has been updated to {updatedWord}");
+            // Output the word for Level 3 at index 4
+            int index = 4;
+            string word = spellingWords[Level3, index];
+            Console.WriteLine($"The word for Level 3 at index {index} is {word}");
         }
     }
 }

@@ -5,7 +5,7 @@
 
 
 def check_word_exists(spelling_words, search_word):
-    """"Return true if the search word is found in the list"""
+    """"Return Boolean True if search word is found in the list"""
 
     i = 0
     is_found = False
@@ -34,7 +34,7 @@ def main():
     if found:
         print("Word found!")
     else:
-        print("Word not found in this data set")
+        print("Word not found in the array")
 
 
 # This code will run if this file is executed directly

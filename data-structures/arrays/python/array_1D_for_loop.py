@@ -12,7 +12,8 @@ def display_words(spelling_words):
     # Repeat for all the values in the list using the index i
     num_words = len(spelling_words)
     for i in range(num_words):
-        print(f"Index {i} contains the value {spelling_words[i]}")
+        value = spelling_words[i]
+        print(f"The element at index {i} contains the value {value}")
     print(f"There are {num_words} words in the list")
 
 

@@ -4,6 +4,12 @@
 # Usage licensed under CC BY-NC-SA 4.0
 
 
+# Index values of each level
+LEVEL1 = 0 
+LEVEL2 = 1
+LEVEL3 = 2
+
+
 def main():
     # Declare and initialise the two-dimensional list of words
     spelling_words = [
@@ -12,15 +18,10 @@ def main():
         ["they", "where", "friend", "fast", "class"]
     ]
 
-    # Ask the user for the new word
-    new_word = input("Enter the new word: ")
-
-    # Update the word for Level 3 at index 4
-    spelling_words[2][4] = new_word
-
-    # Output the updated word
-    updated_word = spelling_words[2][4]
-    print(f"The word has been updated to {updated_word}")
+    # Output the word for Level 3 at index 4
+    index = 4
+    word = spelling_words[LEVEL3][index]
+    print(f"The word for Level 3 at index {index} is {word}")
 
 
 # This code will run if this file is executed directly

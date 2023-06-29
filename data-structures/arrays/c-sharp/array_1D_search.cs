@@ -36,11 +36,11 @@ namespace AdaCodeSamples {
                 Console.WriteLine("Word found!");
             }
             else {
-                Console.WriteLine("Word not found in this data set");
+                Console.WriteLine("Word not found in the array");
             }
         }
 
-        // Return true if the search word is found in the array
+        // Return Boolean true if search word is found in the array
         public static bool CheckWordExists(string[] spellingWords, string searchWord) {
             int i = 0;
             bool isFound = false;

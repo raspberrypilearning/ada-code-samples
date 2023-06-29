@@ -8,17 +8,20 @@ def display_all_words(spelling_words):
     """Display the words of each year and level in the 3D list"""
 
     # Repeat for each year
-    for i in range(0, len(spelling_words)):
+    num_years = len(spelling_words)
+    for i in range(num_years):
         year_num = i + 1  # Year index starts from 0
         print(f"\n### Year {year_num} ###")
         
         # Repeat for each level
-        for j in range(0, len(spelling_words[i])):
+        num_levels = len(spelling_words[i])
+        for j in range(num_levels):
             level_num = j + 1  # Level index starts from 0
             print(f"\nLevel {level_num}:")
             
             # Output each word for the current year and level
-            for k in range(0, len(spelling_words[i][j])):
+            num_words = len(spelling_words[i][j])
+            for k in range(num_words):
                  print(spelling_words[i][j][k])
     
 

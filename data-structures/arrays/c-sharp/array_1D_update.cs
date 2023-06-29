@@ -24,7 +24,7 @@ namespace AdaCodeSamples {
                 "me", "do", "her", "it", "him"
             };
 
-            // Update the last word stored at index 4
+            // Update the word stored at index 4
             spellingWords[4] = "log";
 
             // Output the updated word

@@ -22,7 +22,7 @@ def main():
     # Ask the user for the new word
     new_word = input("Enter the new word: ")
 
-    # Update the last word for Year 1, Level 3
+    # Update the word for Year 1, Level 3 at index 4
     spelling_words[0][2][4] = new_word
 
     # Output the updated word

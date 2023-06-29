@@ -35,12 +35,14 @@ namespace AdaCodeSamples {
         public static void DisplayAllWords(string[,] spellingWords) {
 
             // Repeat for each level
-            for (int i = 0; i < spellingWords.GetLength(0); i++) {
+            int numLevels = spellingWords.GetLength(0);
+            for (int i = 0; i < numLevels; i++) {
                 int levelNum = i + 1;  // Level index starts from 0
                 Console.WriteLine($"\nLevel {levelNum}:");
 
                 // Output each word for the current level
-                for (int j = 0; j < spellingWords.GetLength(1); j++) {
+                int numWords = spellingWords.GetLength(1);
+                for (int j = 0; j < numWords; j++) {
                     Console.WriteLine(spellingWords[i, j]);
                 }
             }

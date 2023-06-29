@@ -8,7 +8,7 @@ def main():
     # Declare and initialise the list of words
     spelling_words = ["me", "do", "her", "it", "him"]
 
-    # Update the last word stored at index 4
+    # Update the word stored at index 4
     spelling_words[4] = "log"
 
     # Output the updated word

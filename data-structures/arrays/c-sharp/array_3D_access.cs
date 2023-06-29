@@ -33,9 +33,9 @@ namespace AdaCodeSamples {
                 } 
             };
 
-            // Output the last word for Year 1, Level 3
+            // Output the word for Year 1, Level 3 at index 4
             string word = spellingWords[0, 2, 4];
-            Console.WriteLine($"The last word for Year 1, Level 3 is {word}");
+            Console.WriteLine($"The word for Year 1, Level 3 at index 4 is {word}");
         }
     }
 }

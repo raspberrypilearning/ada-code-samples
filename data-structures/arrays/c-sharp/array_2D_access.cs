@@ -26,9 +26,9 @@ namespace AdaCodeSamples {
                 { "they", "where", "friend", "fast", "class" }
             };
 
-            // Output the last word for Level 3
+            // Output the word for Level 3 at index 4
             string word = spellingWords[2, 4];
-            Console.WriteLine($"The last word for Level 3 is {word}");
+            Console.WriteLine($"The word for Level 3 at index 4 is {word}");
         }
     }
 }

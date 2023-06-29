@@ -42,17 +42,20 @@ namespace AdaCodeSamples {
         public static void DisplayAllWords(string[,,] spellingWords) {
 
             // Repeat for each year
-            for (int i = 0; i < spellingWords.GetLength(0); i++) {
+            int numYears = spellingWords.GetLength(0);
+            for (int i = 0; i < numYears; i++) {
                 int yearNum = i + 1;  // Year index starts from 0
                 Console.WriteLine($"\n### Year {yearNum} ###");
 
                 // Repeat for each level
-                for (int j = 0; j < spellingWords.GetLength(1); j++) {
+                int numLevels = spellingWords.GetLength(1);
+                for (int j = 0; j < numLevels; j++) {
                     int levelNum = j + 1;  // Level index starts from 0
                     Console.WriteLine($"\nLevel {levelNum}:");
 
                     // Output each word for the current year and level
-                    for (int k = 0; k < spellingWords.GetLength(2); k++) {
+                    int numWords = spellingWords.GetLength(2);
+                    for (int k = 0; k < numWords; k++) {
                         Console.WriteLine(spellingWords[i, j, k]);
                     }
                 }
