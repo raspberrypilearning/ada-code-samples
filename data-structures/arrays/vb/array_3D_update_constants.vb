@@ -11,7 +11,6 @@
 
 Module Program
 
-
     ' Constants to store index values of each year
     Public Const Year1 As Integer = 0
     Public Const Year2 As Integer = 1
@@ -43,7 +42,7 @@ Module Program
         Console.WriteLine("Enter the new word:")
         Dim newWord As String = Console.ReadLine()
 
-        ' Store original word for Year 1, Level 3 at index 4
+        ' Store the original word for Year 1, Level 3 at index 4
         Dim wordIndex = 4
         Dim oldWord = spellingWords(Year1, Level3, wordIndex)
 

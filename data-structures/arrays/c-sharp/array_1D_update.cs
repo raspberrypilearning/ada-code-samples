@@ -24,12 +24,15 @@ namespace AdaCodeSamples {
                 "me", "do", "her", "it", "him"
             };
 
+            // Store the original word at index 4
+            string oldWord = spellingWords[4];
+
             // Update the word stored at index 4
             spellingWords[4] = "log";
 
             // Output the updated word
             string updatedWord = spellingWords[4];
-            Console.WriteLine($"The last word has been changed to {updatedWord}");
+            Console.WriteLine($"The word {oldWord} has been changed to {updatedWord}");
         }
     }
 }

@@ -21,13 +21,16 @@ def main():
     # Ask the user for the new word
     new_word = input("Enter the new word: ")
 
-    # Update the word for Level 3 at index 4
+    # Store the original word for Level 3 at index 4
     word_index = 4
+    old_word = spelling_words[LEVEL3][word_index]
+
+    # Update the word for Level 3 at index 4
     spelling_words[LEVEL3][word_index] = new_word
 
     # Output the updated word
     updated_word = spelling_words[LEVEL3][word_index]
-    print(f"The word has been updated to {updated_word}")
+    print(f"The word {old_word} has been updated to {updated_word}")
 
 
 # This code will run if this file is executed directly

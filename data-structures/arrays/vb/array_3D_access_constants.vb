@@ -16,7 +16,6 @@ Module Program
     Public Const Level2 As Integer = 1
     Public Const Level3 As Integer = 2
 
-
     ' Constants to store the index value of each year
     Public Const Year1 As Integer = 0
     Public Const Year2 As Integer = 1

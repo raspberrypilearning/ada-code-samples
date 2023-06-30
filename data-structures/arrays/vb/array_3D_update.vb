@@ -27,12 +27,11 @@ Module Program
             }
         }
 
-
         ' Ask the user for the new word
         Console.WriteLine("Enter the new word:")
         Dim newWord As String = Console.ReadLine()
 
-        ' Capture original word for Year 1, Level 3 at index 4
+        ' Store the original word for Year 1, Level 3 at index 4
         Dim oldWord = spellingWords(0, 2, 4)
 
         ' Update the word for Year 1, Level 3 at index 4

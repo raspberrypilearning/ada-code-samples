@@ -23,6 +23,8 @@ Module Program
         ' Ask the user for the new word
         Console.WriteLine("Enter the new word:")
         Dim newWord As String = Console.ReadLine()
+
+        ' Store the original word for Level 3 at index 4
         Dim oldWord = spellingWords(2, 4)
 
         ' Update the word for Level 3 at index 4

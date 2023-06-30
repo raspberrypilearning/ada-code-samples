@@ -15,6 +15,8 @@ Module Program
     Sub Main()
         ' Declare and initialise the array of words
         Dim spellingWords = New String(4) {"me", "do", "her", "it", "him"}
+        
+        ' Store the original word at index 4
         oldWord = spellingWords(4)
 
         ' Update the word stored at index 4

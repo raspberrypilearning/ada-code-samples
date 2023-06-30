@@ -11,7 +11,6 @@
 
 Module Program
 
-
     ' Constants to store the index value of each level
     Public Const Level1 As Integer = 0
     Public Const Level2 As Integer = 1
@@ -31,7 +30,7 @@ Module Program
         Console.WriteLine("Enter the new word:")
         Dim newWord As String = Console.ReadLine()
 
-        ' Capture original word for Level 3 at index 4
+        ' Store the original word for Level 3 at index 4
         Dim wordIndex = 4
         Dim oldWord = spellingWords(Level3, wordIndex)
 
