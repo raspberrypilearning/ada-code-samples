@@ -29,11 +29,11 @@ namespace AdaCodeSamples {
                 { "Frank Rubio", new Dictionary<string, string> {
                     { "craft", "ISS" }, { "days", "176" } } },
                 { "Fei Junlong", new Dictionary<string, string> {
-                    { "craft", "Shenzhou 15" }, { "days", "112" } } },
+                    { "craft", "Tiangong" }, { "days", "112" } } },
                 { "Deng Qingming", new Dictionary<string, string> {
-                    { "craft", "Shenzhou 15" }, { "days", "107" } } },
+                    { "craft", "Tiangong" }, { "days", "107" } } },
                 { "Zhang Lu", new Dictionary<string, string> {
-                    { "craft", "Shenzhou 15" }, { "days", "107" } } },
+                    { "craft", "Tiangong" }, { "days", "107" } } },
                 { "Stephen Bowen", new Dictionary<string, string> {
                     { "craft", "ISS" }, { "days", "54" } } },
                 { "Warren Hoburg", new Dictionary<string, string> {

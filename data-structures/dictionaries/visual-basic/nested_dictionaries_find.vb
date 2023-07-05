@@ -29,15 +29,15 @@ Module Program
                 {"days", "176"}}
             },
             {"Fei Junlong", New Dictionary(Of String, String) From {
-                {"craft", "Shenzhou 15"},
+                {"craft", "Tiangong"},
                 {"days", "112"}}
             },
             {"Deng Qingming", New Dictionary(Of String, String) From {
-                {"craft", "Shenzhou 15"},
+                {"craft", "Tiangong"},
                 {"days", "107"}}
             },
             {"Zhang Lu", New Dictionary(Of String, String) From {
-                {"craft", "Shenzhou 15"},
+                {"craft", "Tiangong"},
                 {"days", "107"}}
             },
             {"Stephen Bowen", New Dictionary(Of String, String) From {
