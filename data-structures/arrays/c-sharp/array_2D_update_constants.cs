@@ -36,13 +36,16 @@ namespace AdaCodeSamples {
             Console.WriteLine("Enter the new word:");
             string newWord = Console.ReadLine();
 
-            // Update the word for Level 3 at index 4
+            // Store the original word for Level 3 at index 4
             int wordIndex = 4;
+            string oldWord = spellingWords[Level3, wordIndex];
+
+            // Update the word for Level 3 at index 4
             spellingWords[Level3, wordIndex] = newWord;
 
             // Output the updated word
             string updatedWord = spellingWords[Level3, wordIndex];
-            Console.WriteLine($"The word has been updated to {updatedWord}");
+            Console.WriteLine($"The word {oldWord} has been updated to {updatedWord}");
         }
     }
 }
