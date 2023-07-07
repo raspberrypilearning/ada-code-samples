@@ -2,7 +2,12 @@
 
 void create_text_file(char* filename){
     FILE* fptr;
-    fptr = fopen(filename, "r"); // r is for read when opening a file
+    fptr = fopen(filename, "r");
+    if (fptr == NULL)
+    {
+        printf("Error!");
+        return;
+    }
     char c = fgetc(fptr);
     
     while (c != EOF)
