@@ -42,3 +42,5 @@ void main()
         printf("The number %d was found at index %d \n", value, index);
     }
 }
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker

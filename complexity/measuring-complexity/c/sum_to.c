@@ -18,3 +18,4 @@ int main(void)
     printf("Sum of 1 to 5 is %d\n", sum_to(5));
     printf("Sum of 1 to 10 is %d\n", sum_to(10));
 }
+// Credit: Michael Parker https://mastodon.social/@michaelparker

@@ -21,3 +21,5 @@ int main(void) {
     RLE(str);
     return 0;
 }
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker

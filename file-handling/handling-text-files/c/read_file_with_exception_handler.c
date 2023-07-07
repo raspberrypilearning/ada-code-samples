@@ -24,3 +24,5 @@ int main(void)
     create_text_file("playlist.txt");
     return 0;
 }
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker

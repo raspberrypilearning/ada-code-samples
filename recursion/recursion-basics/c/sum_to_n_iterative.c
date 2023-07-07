@@ -16,3 +16,5 @@ void main(void)
     int sum = sum_to_n_recursive(n);
     printf("Sum of 1 to %d is %d\n", n, sum);
 }
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker

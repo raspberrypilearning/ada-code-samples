@@ -21,3 +21,5 @@ int main(void)
     append_to_file("file.txt", "world");
     return 0;
 }
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker
