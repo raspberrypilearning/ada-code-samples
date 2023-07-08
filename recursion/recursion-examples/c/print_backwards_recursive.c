@@ -13,3 +13,5 @@ int main() { // Driver code
     print_backwards(str);
     return 0;
 }
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker

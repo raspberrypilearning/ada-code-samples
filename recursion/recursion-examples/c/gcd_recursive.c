@@ -13,3 +13,5 @@ void main(){ // Driver code
     printf("gcd(%d, %d) is %d\n", x, y, gcd(x, y));
 
 }
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker

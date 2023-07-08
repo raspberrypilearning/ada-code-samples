@@ -21,3 +21,5 @@ int main() { // Driver code test cases
     printf("racecar is %s\n" , is_palindrome("racecar", 0, strlen("racecar") - 1) ? "true" : "false");
     printf("hello is %s\n" , is_palindrome("hello", 0, strlen("hello") - 1) ? "true" : "false");
 }
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker

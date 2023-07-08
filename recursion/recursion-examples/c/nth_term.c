@@ -13,3 +13,6 @@ int main() {  // Driver code
     printf("The %dth term is %d\n", n, nth_term(n,increment));
     return 0;
 }
+
+
+// Credit: Michael Parker https://mastodon.social/@michaelparker
