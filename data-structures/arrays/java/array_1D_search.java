@@ -51,7 +51,7 @@ class Arrays1D  {
 
         // Repeat while the search word has not been found
         while (!isFound && i < spellingWords.length) {
-            // Check if the names match
+            // Check if the words match
             if (spellingWords[i].equals(searchWord)) {
                 isFound = true;
             }
