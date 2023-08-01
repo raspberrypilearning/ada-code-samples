@@ -12,7 +12,7 @@ def check_word_exists(spelling_words, search_word):
 
     # Repeat while the search word has not been found
     while not is_found and i < len(spelling_words):
-        # Check if the names match
+        # Check if the words match
         if search_word == spelling_words[i]:
             is_found = True
         i += 1 # Increment the counter
