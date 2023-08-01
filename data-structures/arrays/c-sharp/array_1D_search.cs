@@ -47,7 +47,7 @@ namespace AdaCodeSamples {
 
             // Repeat while the search word has not been found
             while (!isFound && i < spellingWords.Length) {
-                // Check if the names match
+                // Check if the words match
                 if (spellingWords[i].Equals(searchWord)) {
                     isFound = true;
                 }
