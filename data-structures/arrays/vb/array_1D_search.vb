@@ -39,7 +39,7 @@ Module Program
 
         ' Repeat while the search word has not been found
         While Not isFound AndAlso i < spellingWords.Length
-            ' Check if the names match
+            ' Check if the words match
             If spellingWords(i).Equals(searchWord) Then
                 isFound = True
             End If
