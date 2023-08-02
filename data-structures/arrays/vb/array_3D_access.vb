@@ -11,12 +11,6 @@
 
 Module Program
 
-    ' Constants to store the index value of each level
-    Public Const Level1 As Integer = 0
-    Public Const Level2 As Integer = 1
-    Public Const Level3 As Integer = 2
-
-
     ' The Main subroutine is the entry point for all VB programs
     Sub Main()
         ' Declare and initialise the three-dimensional array of words
