@@ -6,7 +6,7 @@
 
 def main():
     # Declare and initialise the list of words
-    spelling_words = ["me", "do", "her", "it", "him"]
+    spelling_words = ["me", "do", "it", "her", "him"]
 
     # Store the original word at index 4
     old_word = spelling_words[4]
