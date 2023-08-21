@@ -21,7 +21,7 @@ Module Program
     Sub Main()
         ' Declare and initialise the two-dimensional array of words
         Dim spellingWords = New String(2, 4) {
-                {"me", "do", "her", "it", "him"},
+                {"me", "do", "it", "her", "him"},
                 {"put", "ask", "says", "red", "any"},
                 {"they", "where", "friend", "fast", "class"}
         }
