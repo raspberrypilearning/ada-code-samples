@@ -22,7 +22,7 @@ class Arrays1D  {
     public static void main(String[] args) {
         // Declare and initialise the array of words
         String[] spellingWords = {
-            "me", "do", "her", "it", "him"
+            "me", "do", "it", "her", "him"
         };
 
         // Use Scanner for reading user input from the console

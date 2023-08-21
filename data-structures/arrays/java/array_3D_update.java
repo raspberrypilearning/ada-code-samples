@@ -23,7 +23,7 @@ class Arrays3D  {
         // Declare and initialise the three-dimensional array of words
         String[][][] spellingWords = {
             {
-                    { "me", "do", "her", "it", "him" },
+                    { "me", "do", "it", "her", "him" },
                     { "put", "ask", "says", "red", "any" },
                     { "they", "where", "friend", "fast", "class" }
             },
