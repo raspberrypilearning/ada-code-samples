@@ -21,7 +21,7 @@ namespace AdaCodeSamples {
         public static void Main() {
             // Declare and initialise the array of words
             string[] spellingWords = new string[5] { 
-                "me", "do", "her", "it", "him"
+                "me", "do", "it", "her", "him"
             };
 
             // Store the original word at index 4
