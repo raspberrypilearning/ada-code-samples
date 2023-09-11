@@ -14,7 +14,7 @@ Module Program
     ' The Main subroutine is the entry point for all VB programs
     Sub Main()
         ' Declare and initialise the array of words
-        Dim spellingWords = New String(4) {"me", "do", "her", "it", "him"}
+        Dim spellingWords = New String(4) {"me", "do", "it", "her", "him"}
 
         ' Ask the user for a word to find
         Console.WriteLine("Enter a word to find:")
@@ -39,7 +39,7 @@ Module Program
 
         ' Repeat while the search word has not been found
         While Not isFound AndAlso i < spellingWords.Length
-            ' Check if the names match
+            ' Check if the words match
             If spellingWords(i).Equals(searchWord) Then
                 isFound = True
             End If

@@ -21,7 +21,7 @@ namespace AdaCodeSamples {
         public static void Main() {
             // Declare and initialise the two-dimensional array of words
             string[,] spellingWords = new string[3, 5] { 
-                { "me", "do", "her", "it", "him" }, 
+                { "me", "do", "it", "her", "him" }, 
                 { "put", "ask", "says", "red", "any" }, 
                 { "they", "where", "friend", "fast", "class" }
             };

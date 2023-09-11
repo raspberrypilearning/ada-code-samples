@@ -6,7 +6,7 @@
 
 def main():
     # Declare and initialise the list of words
-    spelling_words = ["me", "do", "her", "it", "him"]
+    spelling_words = ["me", "do", "it", "her", "him"]
 
     # Output the first word
     word = spelling_words[0]

@@ -14,7 +14,7 @@ Module Program
     ' The Main subroutine is the entry point for all VB programs
     Sub Main()
         ' Declare and initialise the array of words
-        Dim spellingWords = New String(4) {"me", "do", "her", "it", "him"}
+        Dim spellingWords = New String(4) {"me", "do", "it", "her", "him"}
 
         ' Output the first word
         Dim word = spellingWords(0)

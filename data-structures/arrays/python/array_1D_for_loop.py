@@ -19,7 +19,7 @@ def display_words(spelling_words):
 
 def main():
     # Declare and initialise the list of words
-    spelling_words = ["me", "do", "her", "it", "him"]
+    spelling_words = ["me", "do", "it", "her", "him"]
 
     # Output the spelling words list
     display_words(spelling_words)

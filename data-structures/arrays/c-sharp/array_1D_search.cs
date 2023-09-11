@@ -21,7 +21,7 @@ namespace AdaCodeSamples {
         public static void Main() {
             // Declare and initialise the array of words
             string[] spellingWords = new string[5] { 
-                "me", "do", "her", "it", "him"
+                "me", "do", "it", "her", "him"
             };
 
             // Ask the user for a word to find
@@ -47,7 +47,7 @@ namespace AdaCodeSamples {
 
             // Repeat while the search word has not been found
             while (!isFound && i < spellingWords.Length) {
-                // Check if the names match
+                // Check if the words match
                 if (spellingWords[i].Equals(searchWord)) {
                     isFound = true;
                 }

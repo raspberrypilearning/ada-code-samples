@@ -20,7 +20,7 @@ def main():
     # Declare and initialise the three-dimensional list of words
     spelling_words = [
         [
-            ["me", "do", "her", "it", "him"],
+            ["me", "do", "it", "her", "him"],
             ["put", "ask", "says", "red", "any"],
             ["they", "where", "friend", "fast", "class"]
         ],

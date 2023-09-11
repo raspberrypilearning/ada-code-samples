@@ -17,7 +17,7 @@ def display_all_words(spelling_words):
 def main():
     # Declare and initialise the two-dimensional list of words
     spelling_words = [
-        ["me", "do", "her", "it", "him"],
+        ["me", "do", "it", "her", "him"],
         ["put", "ask", "says", "red", "any"],
         ["they", "where", "friend", "fast", "class"]
     ]
