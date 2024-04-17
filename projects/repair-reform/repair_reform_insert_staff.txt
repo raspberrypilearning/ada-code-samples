@@ -1,0 +1,8 @@
+
+-- Insert the staff test data --
+
+INSERT INTO staff (first_name, last_name, email, telephone, address1, address2, city, county, postcode) VALUES
+('Sondra', 'Jorginho', 'sondra656@example.edu', '07700900993', '84 Wingston Lane', '', 'Leeds', 'West Yorkshire', 'LS12 4HG'),
+('Deepti', 'Vesna', 'deepti273@example.edu', '07700900339', '12a Blingsten Drive', 'Tong', 'Bradford', '', 'BD4 0RP'),
+('Mariel', 'Vappu', 'mariel487@example.com', '07700900992', '209 Green Wing Way', 'Horsforth', 'Leeds', '', 'LS18 5RU'),
+('Narayan', 'Frank', 'narayan183@example.org', '07700900193', '54 Trinklette Road', 'Allerton Bywater', 'Castleford', 'West Yorkshire', 'WF10 2BZ');

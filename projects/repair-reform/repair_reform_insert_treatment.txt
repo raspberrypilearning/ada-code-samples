@@ -1,0 +1,16 @@
+
+-- Insert the treatment test data --
+
+INSERT INTO treatment (treatment_ref, treatment_name, type, description, duration, price) VALUES
+('C_first', 'First consultation', 'consultation', 'An initial consultation to check the issues you are having and plan the best course of treatment.', 60, 50),
+('LB_foot', 'Foot & ankle treatment', 'deep tissue', 'Treatment that can help with an ankle sprain and Achilles tendon pain.', 30, 30),
+('LB_lower', 'Lower leg treatment', 'deep tissue', 'Deep tissue therapy to treat calf strain and shin splints.', 45, 40),
+('LB_knee', 'Knee injury', 'deep tissue', 'Cross friction massage for patella tendonitis, also known as jumper''s knee.', 30, 30),
+('LB_thigh', 'Thigh treatment', 'deep tissue', 'Treatment for pulled hamstrings and thigh strains. The effleurage technique is used to warm up the area before focussing on kneading and tissue manipulation techniques.', 60, 45),
+('LB_hip', 'Hip treatment', 'trigger point', 'This session focuses on the different muscle groups that contain trigger points for hip joint pain.', 40, 35),
+('UB_arm', 'Arm & elbow treatment', 'deep tissue', 'A treatment for tennis elbow that starts with light techniques before using cross friction massage.', 30, 30),
+('UB_shoulder', 'Shoulder injury', 'deep tissue', 'This treatment begins with gentle stretching before using cross friction massage to relieve pain in the acromioclavicular (AC) joint.', 45, 40),
+('UB_neck', 'Neck injury', 'trigger point', 'Helps to release tension built up around the trapezius muscles in the neck, back and shoulders.', 30, 30),
+('UB_back', 'Back injury', 'trigger point', 'Relieves the tissues surrounding the muscles in the lower and upper back.', 60, 45),
+('C_further', 'Follow-up consultation', 'consultation', 'A further consultation to analyse the effects of previous treatments and recommend future treatments.', 45, 30),
+('C_plan', 'Rehabilitation plan', 'consultation', 'An in-depth injury diagnosis to identify and control the causes of pain. This will result in a plan focussed on improving the range of motions and strength training.', 90, 65);
