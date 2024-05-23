@@ -7,20 +7,20 @@ CREATE DATABASE SportsClub;
 
 -- Table creation --
 
-CREATE TABLE Member (
+CREATE TABLE IF NOT EXISTS Member (
      MemberId CHAR(6),
      FirstName VARCHAR(30),
      LastName VARCHAR (30),
      Phone VARCHAR(15),
      PRIMARY KEY (MemberId));
 
-CREATE TABLE Course (
+CREATE TABLE IF NOT EXISTS Course (
      CourseCode CHAR(6),
      Description VARCHAR(100),
      Fee DECIMAL (13,2),
      PRIMARY KEY (CourseCode));
 
-CREATE TABLE Instructor (
+CREATE TABLE IF NOT EXISTS Instructor (
      InstructorId INT,
      FirstName VARCHAR(30),
      LastName VARCHAR (30),
