@@ -42,11 +42,12 @@ CREATE TABLE Instructor (
 -- Inserting data --
 
 INSERT INTO Member (MemberID, FirstName, LastName, Phone) VALUES
-('012010','Emily','Marr','01433 181743'),
-('131092','Joe','Donald','01433 910007'),
-('132099','Abdel','Patel','01433 897267'),
-('145543','Precious','Jones','01433 982816'),
-('148765','Jack','Marr','01433 181743');
+('012010','Emily','Marr','01632 181743'),
+('131092','Joe','Donald','01632 910007'),
+('132099','Abdel','Patel','01632 897267'),
+('145543','Precious','Jones','01632 982816'),
+('148765','Jack','Marr','01632 181743'),
+('148999','Mo','Ahmed','01632 333657');
 
 
 INSERT INTO Course (CourseCode, Description, Fee) VALUES
@@ -60,11 +61,11 @@ INSERT INTO Course (CourseCode, Description, Fee) VALUES
 
 
 INSERT INTO Instructor (InstructorId, FirstName, LastName, Email) VALUES
-(1,'Sue','James','sue.james@me.co.uk'),
-(2,'Greta','Geuze', 'g.geuze@hotmail.com'),
-(3,'Mohammed','Franks', 'm.franks@hotmail.com'),
-(4,'Jay','Linton', 'Jay12@gmail.com'),
-(5,'Sue','Robbins', 'susan.robbins@gmail.com');
+(1,'Sue','James','sue.james@example.com'),
+(2,'Greta','Geuze', 'g.geuze@example.com'),
+(3,'Mohammed','Franks', 'm.franks@example.com'),
+(4,'Jay','Linton', 'Jay12@example.com'),
+(5,'Sue','Robbins', 'susan.robbins@example.com');
 
 
 INSERT INTO Certificate (MemberId, CourseCode, AssessmentDate, InstructorId) VALUES
