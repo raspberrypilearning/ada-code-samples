@@ -1,0 +1,124 @@
+https://sqliteonline.com/
+
+-- Database creation -- 
+
+CREATE DATABASE art_studio;
+
+
+-- Table creation --
+
+CREATE TABLE IF NOT EXISTS customer (
+     customer_id INTEGER,
+     last_name TEXT,
+     first_name TEXT,
+     email TEXT,
+     PRIMARY KEY (customer_id AUTOINCREMENT);
+	 
+CREATE TABLE IF NOT EXISTS painting (
+     painting_id INTEGER,
+     painting_name TEXT,
+     description TEXT,
+	 painting_year INTEGER,
+	 print_limit INTEGER,
+     PRIMARY KEY (painting_id));
+
+CREATE TABLE IF NOT EXISTS sale (
+     painting_id INTEGER,
+     print_number INTEGER,
+     customer_id INTEGER,
+     sale_date DATE,
+	 sale_price REAL,
+     PRIMARY KEY (painting_id, print_number),
+	 FOREIGN KEY (painting_id) REFERENCES painting (painting_id),
+	 FOREIGN KEY (customer_id) REFERENCES customer (customer_id);
+
+-- Inserting data --
+
+INSERT INTO customer (customer_id, last_name, first_name, email) VALUES
+ (1,'Smith','John','john.smith@example.com'),
+ (2,'Williams','Latoya','latoya.williams@example.com'),
+ (3,'Brown','Emily','emily.brown@example.com'),
+ (4,'Ahmed','Omar','omar.ahmed@example.com'),
+ (5,'Wilson','Sophie','sophie.wilson@example.com'),
+ (6,'Johnson','Daniel','daniel.johnson@example.com'),
+ (7,'Davies','Olivia','olivia.davies@example.com'),
+ (8,'Chen','Mei','mei.chen@example.com'),
+ (9,'Evans','Thomas','thomas.evans@example.com'),
+ (10,'Khan','Yasmin','yasmin.khan@example.com'),
+ (11,'Singh','Ravi','ravi.singh@example.com'),
+ (12,'Ali','Zainab','zainab.ali@example.com'),
+ (13,'Walker','Chloe','chloe.walker@example.com'),
+ (14,'Robinson','Jack','jack.robinson@example.com'),
+ (15,'Harris','Amelia','amelia.harris@example.com'),
+ (16,'Patel','Aisha','aisha.patel@example.com'),
+ (17,'Osei','Kwame','kwame.osei@example.com'),
+ (18,'Taylor','James','james.taylor@example.com'),
+ (19,'Kim','Ji-hoon','jihoon.kim@example.com'),
+ (20,'Fernandez','Maria','maria.fernandez@example.com');
+
+ 
+INSERT INTO painting (painting_id, painting_name, description, painting_year, print_limit) VALUES
+ (1,'Constellations','An abstract painting that represents the constellations in the Northern Hemisphere night sky.',2021,60),
+ (2,'The hunter','An owl perching on a branch in a tree watching a small mouse on the ground below. ',2021,75),
+ (3,'Windswept','A landscape that has been formed by stong winds with bowed trees and leaning hedges. ',2021,75),
+ (4,'Sunrise Serenity','A serene sunrise over a calm lake with gentle reflections.',2022,50),
+ (5,'Midnight Garden','A mysterious garden illuminated by moonlight, with glowing flowers.',2022,40),
+ (6,'Autumn Blaze','A vibrant depiction of autumn leaves in fiery colors.',2022,65),
+ (7,'Ocean Depths','An underwater scene showcasing the beauty of coral reefs and marine life.',2022,80),
+ (8,'Urban Jungle','A cityscape overgrown with lush, green foliage and wild vines.',2023,55),
+ (9,'Celestial Dreams','A dreamy portrayal of planets and stars in a swirling galaxy.',2023,70),
+ (11,'Whispering Pines','A quiet forest scene with tall pine trees and a gentle breeze.',2023,60),
+ (12,'Enchanted Forest','A magical forest with mystical creatures and sparkling lights.',2023,90),
+ (13,'Mountain Majesty','A grand view of snow-capped mountains under a clear blue sky.',2024,100),
+ (14,'Rainy Reflections','A rainy city street at night with reflections of lights on wet pavement.',2024,85),
+ (15,'Twilight Silhouette','A silhouette of a tree against a colorful twilight sky.',2024,75),
+ (20,'Desert Mirage','A desert landscape with a shimmering mirage of an oasis in the distance.',2023,45);
+ 
+ 
+INSERT INTO sale (painting_id, print_number, customer_id, sale_date, sale_price) VALUES
+ (1,1,1,'2021-06-15',150.0),
+ (1,2,2,'2021-07-20',140.0),
+ (1,3,3,'2021-08-10',145.0),
+ (1,4,4,'2021-09-01',150.0),
+ (1,5,5,'2021-10-10',155.0),
+ (2,1,1,'2021-09-05',160.0),
+ (2,2,6,'2021-09-25',155.0),
+ (2,3,7,'2021-10-15',165.0),
+ (2,4,8,'2021-11-05',170.0),
+ (3,1,9,'2021-11-01',170.0),
+ (3,2,2,'2021-11-20',180.0),
+ (3,3,10,'2021-12-05',175.0),
+ (3,4,4,'2022-01-10',185.0),
+ (3,5,11,'2022-02-15',190.0),
+ (4,1,1,'2021-06-15',150.0),
+ (4,2,12,'2021-07-20',140.0),
+ (4,3,13,'2021-08-10',145.0),
+ (4,4,14,'2021-09-01',150.0),
+ (4,5,15,'2021-10-10',155.0),
+ (5,1,7,'2021-09-05',160.0),
+ (5,2,16,'2021-09-25',155.0),
+ (5,3,17,'2021-10-15',165.0),
+ (6,1,7,'2022-01-10',170.0),
+ (6,2,9,'2022-02-05',180.0),
+ (7,1,18,'2022-04-18',200.0),
+ (7,2,19,'2022-05-24',210.0),
+ (8,1,20,'2022-07-10',230.0),
+ (9,1,1,'2022-10-05',190.0),
+ (9,2,8,'2022-11-15',195.0),
+ (9,3,14,'2022-12-25',185.0),
+ (10,1,19,'2022-01-15',160.0),
+ (10,2,3,'2022-02-20',165.0),
+ (1,6,17,'2023-01-10',180.0),
+ (4,6,15,'2023-02-15',185.0),
+ (7,3,1,'2023-04-10',195.0),
+ (5,4,8,'2023-07-10',210.0),
+ (2,5,17,'2023-08-15',215.0),
+ (10,3,3,'2023-10-10',225.0),
+ (8,2,4,'2023-01-10',240.0),
+ (1,7,15,'2024-01-10',200.0),
+ (9,4,1,'2024-04-10',215.0),
+ (1,8,7,'2024-05-15',220.0),
+ (9,5,13,'2024-07-10',230.0);
+
+
+ 
