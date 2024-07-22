@@ -11,45 +11,45 @@ DROP TABLE IF EXISTS treatment;
 
 CREATE TABLE customer(
   customer_id INTEGER NOT NULL,
-  first_name VARCHAR(40) NOT NULL,
-  last_name VARCHAR(40) NOT NULL,
-  email VARCHAR(60) NOT NULL,
-  telephone VARCHAR(15) NOT NULL CHECK(length(telephone) >= 10 AND length(telephone) <= 15),
-  had_consultation BOOL NOT NULL,
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  telephone TEXT NOT NULL CHECK(length(telephone) >= 10 AND length(telephone) <= 15),
+  had_consultation INTEGER NOT NULL,
   PRIMARY KEY(customer_id)
 );
 
 CREATE TABLE staff(
   staff_id INTEGER NOT NULL,
-  first_name VARCHAR(40) NOT NULL,
-  last_name VARCHAR(40) NOT NULL,
-  email VARCHAR(60) NOT NULL,
-  telephone VARCHAR(15) NOT NULL CHECK(length(telephone) >= 10 AND length(telephone) <= 15),
-  address1 VARCHAR(80) NOT NULL,
-  address2 VARCHAR(80),
-  city VARCHAR(60) NOT NULL,
-  county VARCHAR(30),
-  postcode VARCHAR(8) NOT NULL CHECK(length(postcode) >= 5 AND length(postcode) <= 8),
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  telephone TEXT NOT NULL CHECK(length(telephone) >= 10 AND length(telephone) <= 15),
+  address1 TEXT NOT NULL,
+  address2 TEXT,
+  city TEXT NOT NULL,
+  county TEXT,
+  postcode TEXT NOT NULL CHECK(length(postcode) >= 5 AND length(postcode) <= 8),
   PRIMARY KEY(staff_id)
 );
 
 CREATE TABLE treatment(
-  treatment_ref VARCHAR(20) NOT NULL,
-  treatment_name VARCHAR(255) NOT NULL,
-  type VARCHAR(255) NOT NULL CHECK (type IN ('consultation', 'deep tissue', 'trigger point')),
-  description MEDIUMTEXT,
+  treatment_ref TEXT NOT NULL,
+  treatment_name TEXT NOT NULL,
+  type TEXT NOT NULL CHECK (type IN ('consultation', 'deep tissue', 'trigger point')),
+  description TEXT,
   duration INTEGER NOT NULL,
-  price DECIMAL(5,2) NOT NULL,
+  price REAL NOT NULL,
   PRIMARY KEY(treatment_ref)
 );
 
 CREATE TABLE appointment(
   customer_id INTEGER NOT NULL,
-  treatment_ref VARCHAR(20) NOT NULL,
-  appointment_date DATE NOT NULL,
-  start_time TIME NOT NULL,
+  treatment_ref TEXT NOT NULL,
+  appointment_date TEXT NOT NULL,
+  start_time TEXT NOT NULL,
   staff_id INTEGER NOT NULL,
-  discount DECIMAL(5,4) CHECK (discount >= 0 AND discount <= 0.5),
+  discount REAL CHECK (discount >= 0 AND discount <= 0.5),
   PRIMARY KEY(customer_id, treatment_ref, appointment_date, start_time)
   FOREIGN KEY(customer_id) REFERENCES customer(customer_id),
   FOREIGN KEY(treatment_ref) REFERENCES treatment(treatment_ref),
