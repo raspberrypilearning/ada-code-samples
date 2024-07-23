@@ -1,42 +1,47 @@
-https://sqliteonline.com/
 
--- Database creation -- 
+-- Delete the tables if they already exist --
 
-CREATE DATABASE SportsClub;
+DROP TABLE IF EXISTS Certificate;
+DROP TABLE IF EXISTS Member;
+DROP TABLE IF EXISTS Course;
+DROP TABLE IF EXISTS Instructor;
 
 
 -- Table creation --
 
-CREATE TABLE IF NOT EXISTS Member (
-     MemberId CHAR(6),
-     FirstName VARCHAR(30),
-     LastName VARCHAR (30),
-     Phone VARCHAR(15),
-     PRIMARY KEY (MemberId));
+CREATE TABLE Member (
+  MemberId TEXT NOT NULL,
+  FirstName TEXT NOT NULL,
+  LastName TEXT NOT NULL,
+  Phone TEXT NOT NULL CHECK(length(Phone) >= 10 AND length(Phone) <= 15),
+  PRIMARY KEY (MemberId)
+);
 
-CREATE TABLE IF NOT EXISTS Course (
-     CourseCode CHAR(6),
-     Description VARCHAR(100),
-     Fee DECIMAL (13,2),
-     PRIMARY KEY (CourseCode));
+CREATE TABLE Course (
+  CourseCode TEXT NOT NULL,
+  Description TEXT,
+  Fee REAL NOT NULL,
+  PRIMARY KEY (CourseCode)
+);
 
-CREATE TABLE IF NOT EXISTS Instructor (
-     InstructorId INT,
-     FirstName VARCHAR(30),
-     LastName VARCHAR (30),
-     Email VARCHAR (30),
-     PRIMARY KEY (InstructorId));
+CREATE TABLE Instructor (
+  InstructorId INTEGER NOT NULL,
+  FirstName TEXT NOT NULL,
+  LastName TEXT NOT NULL,
+  Email TEXT NOT NULL,
+  PRIMARY KEY (InstructorId)
+);
 
- CREATE TABLE IF NOT EXISTS Certificate(
-  MemberID CHAR(6),
-  CourseCode CHAR(6),
-  AssessmentDate DATE,
-  InstructorID INT,
+CREATE TABLE Certificate(
+  MemberID TEXT NOT NULL,
+  CourseCode TEXT NOT NULL,
+  AssessmentDate TEXT NOT NULL,
+  InstructorID INTEGER NOT NULL,
   PRIMARY Key(MemberID, CourseCode),
   FOREIGN KEY(MemberID) REFERENCES Member(MemberID),
   FOREIGN KEY(CourseCode) REFERENCES Course(CourseCode),
   FOREIGN KEY(InstructorID) REFERENCES Instructor(InstructorID) 
- );
+);
 
 
 -- Inserting data --
