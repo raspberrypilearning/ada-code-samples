@@ -1,15 +1,7 @@
 
--- Delete the tables if they already exist --
-
-DROP TABLE IF EXISTS Certificate;
-DROP TABLE IF EXISTS Member;
-DROP TABLE IF EXISTS Course;
-DROP TABLE IF EXISTS Instructor;
-
-
 -- Table creation --
 
-CREATE TABLE Member (
+CREATE TABLE IF NOT EXISTS Member (
   MemberId TEXT NOT NULL,
   FirstName TEXT NOT NULL,
   LastName TEXT NOT NULL,
@@ -17,14 +9,14 @@ CREATE TABLE Member (
   PRIMARY KEY (MemberId)
 );
 
-CREATE TABLE Course (
+CREATE TABLE IF NOT EXISTS Course (
   CourseCode TEXT NOT NULL,
   Description TEXT,
   Fee REAL NOT NULL,
   PRIMARY KEY (CourseCode)
 );
 
-CREATE TABLE Instructor (
+CREATE TABLE IF NOT EXISTS Instructor (
   InstructorId INTEGER NOT NULL,
   FirstName TEXT NOT NULL,
   LastName TEXT NOT NULL,
@@ -32,7 +24,7 @@ CREATE TABLE Instructor (
   PRIMARY KEY (InstructorId)
 );
 
-CREATE TABLE Certificate(
+CREATE TABLE IF NOT EXISTS Certificate(
   MemberID TEXT NOT NULL,
   CourseCode TEXT NOT NULL,
   AssessmentDate TEXT NOT NULL,
@@ -65,12 +57,12 @@ INSERT INTO Course (CourseCode, Description, Fee) VALUES
 ('CR0014','Climbing',40);
 
 
-INSERT INTO Instructor (InstructorId, FirstName, LastName, Email) VALUES
-(1,'Sue','James','sue.james@example.com'),
-(2,'Greta','Geuze', 'g.geuze@example.com'),
-(3,'Mohammed','Franks', 'm.franks@example.com'),
-(4,'Jay','Linton', 'Jay12@example.com'),
-(5,'Sue','Robbins', 'susan.robbins@example.com');
+INSERT INTO Instructor (FirstName, LastName, Email) VALUES
+('Sue','James','sue.james@example.com'),
+('Greta','Geuze', 'g.geuze@example.com'),
+('Mohammed','Franks', 'm.franks@example.com'),
+('Jay','Linton', 'Jay12@example.com'),
+('Sue','Robbins', 'susan.robbins@example.com');
 
 
 INSERT INTO Certificate (MemberId, CourseCode, AssessmentDate, InstructorId) VALUES
