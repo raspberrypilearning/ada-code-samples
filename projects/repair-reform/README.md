@@ -28,8 +28,7 @@ The `.txt` files contain the SQL statements for creating the tables and insertin
 
 ### Usage
 
-The SQL statements are designed to be used with DB Browser (SQLite):
-https://sqlitebrowser.org/dl/
+The SQL statements are designed to be used with an SQLite database management system, such as DB Browser for SQLite https://sqlitebrowser.org or the browser based SQLite Online https://sqliteonline.com
 
 
 All of the resources in this topic have been developed to be used alongside the learning materials in Ada Computer Science by the Raspberry Pi Foundation. Usage licensed under CC BY-NC-SA 4.0 - https://creativecommons.org/licenses/by-nc-sa/4.0/
