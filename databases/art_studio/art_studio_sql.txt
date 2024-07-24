@@ -2,28 +2,28 @@
 -- Table creation --
 
 CREATE TABLE IF NOT EXISTS customer (
-  customer_id INTEGER,
-  last_name TEXT,
-  first_name TEXT,
-  email TEXT,
+  customer_id INTEGER NOT NULL,
+  last_name TEXT NOT NULL,
+  first_name TEXT NOT NULL,
+  email TEXT NOT NULL,
   PRIMARY KEY (customer_id)
 );
 	 
 CREATE TABLE IF NOT EXISTS painting (
-  painting_id INTEGER,
-  painting_name TEXT,
+  painting_id INTEGER NOT NULL,
+  painting_name TEXT NOT NULL,
   description TEXT,
-  painting_year INTEGER,
-  print_limit INTEGER,
+  painting_year INTEGER NOT NULL,
+  print_limit INTEGER NOT NULL,
   PRIMARY KEY (painting_id)
 );
 
 CREATE TABLE IF NOT EXISTS sale (
-  painting_id INTEGER,
-  print_number INTEGER,
-  customer_id INTEGER,
-  sale_date DATE,
-  sale_price REAL,
+  painting_id INTEGER NOT NULL,
+  print_number INTEGER NOT NULL,
+  customer_id INTEGER NOT NULL,
+  sale_date TEXT NOT NULL,
+  sale_price REAL NOT NULL,
   PRIMARY KEY (painting_id, print_number),
   FOREIGN KEY (painting_id) REFERENCES painting (painting_id),
   FOREIGN KEY (customer_id) REFERENCES customer (customer_id)
@@ -58,10 +58,10 @@ INSERT INTO customer (last_name, first_name, email) VALUES
 INSERT INTO painting (painting_name, description, painting_year, print_limit) VALUES
 ('Constellations','An abstract painting that represents the constellations in the Northern Hemisphere night sky.',2021,60),
 ('The hunter','An owl perching on a branch in a tree watching a small mouse on the ground below. ',2021,75),
-('Windswept','A landscape that has been formed by stong winds with bowed trees and leaning hedges. ',2021,75),
+('Windswept','A landscape that has been formed by strong winds with bowed trees and leaning hedges. ',2021,75),
 ('Sunrise Serenity','A serene sunrise over a calm lake with gentle reflections.',2022,50),
 ('Midnight Garden','A mysterious garden illuminated by moonlight, with glowing flowers.',2022,40),
-('Autumn Blaze','A vibrant depiction of autumn leaves in fiery colors.',2022,65),
+('Autumn Blaze','A vibrant depiction of autumn leaves in fiery colours.',2022,65),
 ('Ocean Depths','An underwater scene showcasing the beauty of coral reefs and marine life.',2022,80),
 ('Urban Jungle','A cityscape overgrown with lush, green foliage and wild vines.',2023,55),
 ('Celestial Dreams','A dreamy portrayal of planets and stars in a swirling galaxy.',2023,70),
@@ -69,7 +69,7 @@ INSERT INTO painting (painting_name, description, painting_year, print_limit) VA
 ('Enchanted Forest','A magical forest with mystical creatures and sparkling lights.',2023,90),
 ('Mountain Majesty','A grand view of snow-capped mountains under a clear blue sky.',2024,100),
 ('Rainy Reflections','A rainy city street at night with reflections of lights on wet pavement.',2024,85),
-('Twilight Silhouette','A silhouette of a tree against a colorful twilight sky.',2024,75),
+('Twilight Silhouette','A silhouette of a tree against a colourful twilight sky.',2024,75),
 ('Desert Mirage','A desert landscape with a shimmering mirage of an oasis in the distance.',2023,45);
 
 
