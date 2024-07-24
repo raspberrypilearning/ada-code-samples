@@ -26,6 +26,8 @@ The `.txt` files contain the SQL statements for creating the tables and insertin
 - `repair_reform_insert_all.txt` has the test data for all four tables
 - the remaining `.txt` files have the test data for each individual table separately
 
+More detailed PDF instructions are also provided, which include links to the Repair & Reform database and text files.
+
 ### Usage
 
 The SQL statements are designed to be used with an SQLite database management system, such as DB Browser for SQLite https://sqlitebrowser.org or the browser based SQLite Online https://sqliteonline.com
