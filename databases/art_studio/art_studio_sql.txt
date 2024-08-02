@@ -3,8 +3,8 @@
 
 CREATE TABLE IF NOT EXISTS customer (
   customer_id INTEGER NOT NULL,
-  last_name TEXT NOT NULL,
   first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
   email TEXT NOT NULL,
   PRIMARY KEY (customer_id)
 );
