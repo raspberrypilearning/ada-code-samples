@@ -55,10 +55,10 @@ def main():
   display_image_properties(img1)
   display_some_pixel_data(img1)
   # img2 - new image
-  img2 = np.zeros((100, 200, 3), img.dtype)
+  img2 = np.zeros((100, 200, 3), dtype=np.uint8)
   display_image_properties(img2)
   # img3 - new image same shape as img2
-  img3 = np.zeros(img2.shape, img.dtype)
+  img3 = np.zeros(img2.shape, img2.dtype)
   display_image_properties(img3) 
   turn_pixels_blue(img3) 
   imageio.imwrite("blue_image.jpg", img3)
