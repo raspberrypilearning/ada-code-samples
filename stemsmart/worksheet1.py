@@ -1,62 +1,72 @@
 # STEM SMART materials
 # See copyright information in the stemsmart folder
 
+import imageio.v2 as imageio
 import numpy as np
 
-RED_INDEX = 0
-GREEN_INDEX = 1
-BLUE_INDEX = 2
+# Index numbers for RGB values
+RED = 0
+GREEN = 1
+BLUE = 2
 
-ROW_INDEX = 0
-COL_INDEX = 1
-RGB_INDEX = 2
+def display_image_properties(img):
+  '''Display some information about the image.'''
+  print(f"Type: {type(img)}")
+  print(f"Shape: {img.shape}")
+  print(f"Data type: {img.dtype}")
+  print("\n")
+  
 
-def alter_brightness(img, factor):
-  '''Create and return a version of an image with adjusted contrast'''
-  multiplier = 1 + factor
-  new_img = np.zeros(img.shape, dtype=np.uint8)#create new numpy array
-  for row in range(img.shape[ROW_INDEX]): # process all rows
-    for col in range(img.shape[COL_INDEX]): # process all columns
-      for rgb in range(img.shape[RGB_INDEX]): # process all colours
-        new_value = max(min(rgb*multiplier, 255),0)
-        new_img[row][col][rgb] = new_value
-  return new_img
+def display_some_pixel_data(img):
+  '''Display some information about specific pixels.'''
+  # RGB values of the top left pixel.
+  print(f"RGB:", img[0][0])
+  # Red value of top left pixel.
+  print(f"R: {img[0][0][RED]}")
+  # Green value of top left pixel.
+  print(f"G: {img[0][0][GREEN]}")
+  # Blue value of the top left pixel.
+  print(f"B: {img[0][0][BLUE]}")
+  print("\n")
 
-def alter_contrast(img, factor, s):
-  '''Create and return a version of an image with adjusted contrast'''
-  multiplier = 1 + factor
-  new_img = np.zeros(img.shape, dtype=np.uint8)#create new numpy array
-  for row in range(img.shape[ROW_INDEX]): # process all rows
-    for col in range(img.shape[COL_INDEX]): # process all columns
-      for rgb in range(img.shape[RGB_INDEX]): # process all colours
-        new_value = max(min(multiplier*(rgb-s)+s, 255),0)
-        new_img[row][col][rgb] = new_value
-  return new_img
 
-def alter_contrastv2(img, factor, s):
-  '''Create and return a brighter version of an image'''
-  multiplier = 1 + factor
-  new_img = np.zeros(img.shape, dtype=np.uint8)#create new numpy array
-  for row in range(img.shape[ROW_INDEX]): # process all rows
-    for col in range(img.shape[COL_INDEX]): # process all columns
-      for rgb in range(img.shape[RGB_INDEX]): # process all colour codes
-        new_img[row,col,rgb] = max(min(((1.5*img[row,col,rgb])+50), 255),0)
-  return new_img
+def turn_pixels_blue(img):
+  '''Change colour of all pixels to blue.'''
+  for r in range(img.shape[0]):
+    for c in range(img.shape[1]):
+      img[r][c][RED] = 0
+      img[r][c][GREEN] = 0
+      img[r][c][BLUE] = 255
+      
+
+def create_yellow_square(img):
+  '''Create a yellow square within image.'''
+  for r in range(40, 60):
+    for c in range(90, 110):
+      img[r][c][RED] = 255
+      img[r][c][GREEN] = 255
+      img[r][c][BLUE] = 0
+
 
 def main():
-  # read in image file
-  infile = "balloon-100.jpg"
-  original_img = imageio.imread(infile)
-  # alter brightness (value between -1.0 and + 1.0
-  #amount = 0.9
-  #new_img = alter_brightness(original_img, amount)
-  #imageio.imwrite("adjusted_b.jpg", new_img)
-  # alter contrast
-  factor = 0.3
-  sample = 127
-  new_img = alter_contrastv2(original_img, factor, sample)
-  imageio.imwrite("adjusted_c_v3.jpg", new_img)
+  # img1 - existing image
+  infile = "balloon-100.jpg" 
+  img1 = imageio.imread(infile) 
+  display_image_properties(img1)
+  display_some_pixel_data(img1)
+  # img2 - new image
+  img2 = np.zeros((100, 200, 3), img.dtype)
+  display_image_properties(img2)
+  # img3 - new image same shape as img2
+  img3 = np.zeros(img2.shape, img.dtype)
+  display_image_properties(img3) 
+  turn_pixels_blue(img3) 
+  imageio.imwrite("blue_image.jpg", img3)
+  create_yellow_square(img3)
+  imageio.imwrite("yellow_square.jpg", img3)
 
   
 if __name__ == "__main__":
   main()
+
+
