@@ -1,3 +1,6 @@
+# STEM SMART materials
+# See copyright information in the stemsmart folder
+
 import imageio.v2 as imageio
 import numpy as np
 
