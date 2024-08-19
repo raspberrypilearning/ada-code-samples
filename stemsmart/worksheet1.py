@@ -1,4 +1,6 @@
-import imageio.v2 as imageio
+# STEM SMART materials
+# See copyright information in the stemsmart folder
+
 import numpy as np
 
 RED_INDEX = 0
