@@ -15,7 +15,7 @@ COL = 1
 
 def apply_sepia_transformation(img):
   '''Create and return a sepia version of an image'''
-  sepia_img = np.zeros(img.shape, dtype=np.uint8)#create new numpy array
+  sepia_img = np.zeros(img.shape, img.dtype)#create new numpy array
   for r in range(img.shape[ROW]): # process all rows
     for c in range(img.shape[COL]): # process all columns
       red = img[r, c, RED] # original red value
