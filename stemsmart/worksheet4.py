@@ -1,6 +1,5 @@
 import imageio.v2 as imageio
 import numpy as np
-import math
 
 # Index numbers for RGB values
 RED = 0
@@ -11,56 +10,54 @@ BLUE = 2
 ROW = 0
 COL = 1
 
+
 def reflect_image_vertical(img):
   '''Create and return a vertically reflectedimage'''
-  width = img.shape[COL]
   reflected_img = np.zeros(img.shape, img.dtype)# create new numpy array
-  for r in range(img.shape[ROW]): # process all rows
-    for c in range(img.shape[COL]): # process all columns
-      new_c = width - c - 1
-      reflected_img[r, new_c] = img[r, c]
+  width = img.shape[COL]
+  for row in range(img.shape[ROW]): # process all rows
+    for col in range(img.shape[COL]): # process all columns
+      new_col = width - col - 1
+      reflected_img[row, new_col] = img[row, col]
   return reflected_img
+
 
 def reflect_image_horizontal(img):
   '''Create and return a horizontally reflected image'''
-  height = img.shape[ROW]
   reflected_img = np.zeros(img.shape, img.dtype)# create new numpy array
-  for r in range(img.shape[ROW]): # process all rows
-    for c in range(img.shape[COL]): # process all columns
-      new_r = height - r - 1
-      reflected_img[new_r, c] = img[r, c]
+  height = img.shape[ROW]
+  for row in range(img.shape[ROW]): # process all rows
+    for col in range(img.shape[COL]): # process all columns
+      new_row = height - row - 1
+      reflected_img[new_row, col] = img[row, col]
   return reflected_img
+
 
 def rotate_180(img):
   '''Create and return a version of an image rotated through 180 degrees'''
+  rotated_img = np.zeros(img.shape, img.dtype)#create new numpy array
   width = img.shape[COL]
   height = img.shape[ROW]
-  rotated_img = np.zeros(img.shape, img.dtype)#create new numpy array
-  for r in range(img.shape[ROW]): # process all rows
-    for c in range(img.shape[COL]): # process all columns
-      new_r = height - r - 1
-      new_c = width - c - 1
-      rotated_img[new_r, new_c] = img[r, c]
+  for row in range(img.shape[ROW]): # process all rows
+    for col in range(img.shape[COL]): # process all columns
+      new_row = height - row - 1
+      new_col = width - col - 1
+      rotated_img[new_row, new_col] = img[row, col]
   return rotated_img
+
 
 def rotate_90(img):
   '''Create and return a version of an image rotated through 90 degrees'''
   # Make a new numpy array with first two dimensions flipped
-  print(img.shape)
-  rotated_img = np.zeros((img.shape[COL], img.shape[ROW], 3), img.dtype)
-  print(rotated_img.shape)
-  # Calculate mid points of original image
-  img_midr = int(img.shape[ROW]/2)
-  img_midc = int(img.shape[COL]/2)
-  # Store mid points of new image
-  rotated_midr = img_midc
-  rotated_midc = img_midr
-  for r in range(img.shape[ROW]): # process all rows
-    for c in range(img.shape[COL]): # process all columns
+  new_width = img.shape[ROW]
+  new_height = img.shape[COL]
+  rotated_img = np.zeros((new_height, new_width, 3), img.dtype)
+  for row in range(img.shape[ROW]): # process all rows in original image
+    for col in range(img.shape[COL]): # process all columns in original image
       # 90°rotation
-      new_r = ((c - img_midc) * 1) + ((r - img_midr) * 0) + rotated_midr - 1
-      new_c = ((c - img_midc) * 0) - ((r - img_midr) * 1) + rotated_midc - 1
-      rotated_img[new_r, new_c] = img[r, c]
+      new_row  = col
+      new_col = new_width - row - 1
+      rotated_img[new_row, new_col] = img[row, col]
   return rotated_img
 
 
@@ -70,32 +67,31 @@ def scale_image_50(img):
   rows = round(img.shape[ROW]/2)
   cols = round(img.shape[COL]/2)
   # Make a new numpy array of correct shape
-  scaled_image = np.zeros((rows, cols, 3), dtype=np.uint8)
+  scaled_img = np.zeros((rows, cols, 3), img.dtype)
   # Initialise indices
-  scaled_image_r = 0
-  scaled_image_c = 0
+  scaled_img_row = 0
+  scaled_img_col = 0
   # Iterate through image array
-  for r in range(0,img.shape[ROW],2): # process all rows, step 2
-    for c in range(0,img.shape[COL],2): # process all columns, step 2
+  for row in range(0,img.shape[ROW],2): # process all rows, step 2
+    for col in range(0,img.shape[COL],2): # process all columns, step 2
       # Calculate colour averages in blocks of 4
-      red_avg = min(round((int(img[r, c, RED]) + int(img[r+1, c, RED])+
-                 int(img[r, c+1, RED]) + int(img[r+1, c+1, RED]))/4),255)
-      green_avg = min(round((int(img[r, c, GREEN]) + int(img[r+1, c, GREEN])+
-                 int(img[r, c+1, GREEN]) + int(img[r+1, c+1, GREEN]))/4),255)
-      blue_avg = min(round((int(img[r, c, BLUE]) + int(img[r+1, c, BLUE])+
-                 int(img[r, c+1, BLUE]) + int(img[r+1, c+1, BLUE]))/4),255)
+      red_avg = min(round((int(img[row, col, RED]) + int(img[row+1, col, RED])+
+                 int(img[row, col+1, RED]) + int(img[row+1, col+1, RED]))/4),255)
+      green_avg = min(round((int(img[row, col, GREEN]) + int(img[row+1, col, GREEN])+
+                 int(img[row, col+1, GREEN]) + int(img[row+1, col+1, GREEN]))/4),255)
+      blue_avg = min(round((int(img[row, col, BLUE]) + int(img[row+1, col, BLUE])+
+                 int(img[row, col+1, BLUE]) + int(img[row+1, col+1, BLUE]))/4),255)
       # write average values to pixel in scaled image
-      scaled_image[scaled_image_r, scaled_image_c]=(red_avg, green_avg, blue_avg)    
-      scaled_image_c +=1 # Increment column index
-    scaled_image_r += 1 # Increment row index
-    scaled_image_c = 0 # Reset column index
-  return scaled_image
-
+      scaled_img[scaled_img_row, scaled_img_col]=(red_avg, green_avg, blue_avg)    
+      scaled_img_col +=1 # Increment column index
+    scaled_img += 1 # Increment row index
+    scaled_img_col = 0 # Reset column index
+  return scaled_img
 
 
 def main():
   # read in image file
-  infile = "balloon-100.jpg"
+  infile = "labrador-100.jpg"
   original_img = imageio.imread(infile)
   # reflect image vertically
   reflected_img = reflect_image_vertical(original_img)
