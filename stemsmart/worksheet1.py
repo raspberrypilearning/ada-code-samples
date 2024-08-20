@@ -1,7 +1,10 @@
 # STEM SMART materials
 # See copyright information in the stemsmart folder
 
-import imageio.v2 as imageio
+# STEM SMART materials
+# See copyright information in the stemsmart folder
+
+import imageio
 import numpy as np
 
 # Index numbers for RGB values
@@ -32,20 +35,20 @@ def display_some_pixel_data(img):
 
 def turn_pixels_blue(img):
   '''Change colour of all pixels to blue.'''
-  for r in range(img.shape[0]):
-    for c in range(img.shape[1]):
-      img[r][c][RED] = 0
-      img[r][c][GREEN] = 0
-      img[r][c][BLUE] = 255
+  for row in range(img.shape[0]):
+    for col in range(img.shape[1]):
+      img[row][col][RED] = 0
+      img[row][col][GREEN] = 0
+      img[row][col][BLUE] = 255
       
 
 def create_yellow_square(img):
   '''Create a yellow square within image.'''
-  for r in range(40, 60):
-    for c in range(90, 110):
-      img[r][c][RED] = 255
-      img[r][c][GREEN] = 255
-      img[r][c][BLUE] = 0
+  for row in range(40, 60):
+    for col in range(90, 110):
+      img[row][col][RED] = 255
+      img[row][col][GREEN] = 255
+      img[row][col][BLUE] = 0
 
 
 def main():
@@ -68,5 +71,3 @@ def main():
   
 if __name__ == "__main__":
   main()
-
-
