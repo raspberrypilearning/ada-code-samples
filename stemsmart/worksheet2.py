@@ -1,5 +1,6 @@
 # STEM SMART materials
 # See copyright information in the stemsmart folder
+# This worksheet uses numpy array indexing
 
 import imageio.v2 as imageio
 import numpy as np
