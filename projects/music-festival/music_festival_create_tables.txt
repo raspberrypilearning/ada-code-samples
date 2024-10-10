@@ -1,0 +1,28 @@
+
+-- Delete the four tables if they already exist --
+
+DROP TABLE IF EXISTS stage;
+DROP TABLE IF EXISTS performance;
+
+
+-- Create the two tables: stage and performance --
+
+CREATE TABLE "stage" (
+  "stage_ref"	TEXT NOT NULL CHECK(length("stage_ref" <= 8)),
+  "stage_name"	TEXT NOT NULL,
+  "capacity"	INTEGER NOT NULL CHECK("capacity" >= 100 AND "capacity" <= 500),
+  "location"	TEXT NOT NULL,
+  "description"	TEXT,
+  PRIMARY KEY("stage_ref")
+);
+
+CREATE TABLE "performance" (
+  "performance_id"	INTEGER NOT NULL,
+  "stage_ref"		TEXT NOT NULL,
+  "artist"		TEXT NOT NULL,
+  "genre"		TEXT NOT NULL,
+  "start_time"		TEXT NOT NULL,
+  "end_time"		TEXT NOT NULL,
+  PRIMARY KEY("performance_id"),
+  FOREIGN KEY("stage_ref") REFERENCES "stage"("stage_ref")
+);
