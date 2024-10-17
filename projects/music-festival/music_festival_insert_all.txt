@@ -14,7 +14,7 @@ INSERT INTO stage (stage_ref, stage_name, capacity, location, description) VALUE
 -- Insert the performance test data --
 
 INSERT INTO performance (performance_id, stage_ref, artist, genre, start_time, end_time) VALUES 
- (1,'sun','The Happy Hippo Band','Children''s','10:00:00','11:30:00'),
+ (1,'sun','The Happy Hippo Band','Children''s','11:30:00','12:30:00'),
  (2,'kids','The Sunny Day Singers','Folk','11:00:00','12:30:00'),
  (3,'melody','DJ Bubble Pop','Dance','12:30:00','14:30:00'),
  (4,'world','The Rainbow Drum Circle','World','13:30:00','14:30:00'),
