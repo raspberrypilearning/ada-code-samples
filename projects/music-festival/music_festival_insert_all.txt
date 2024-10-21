@@ -44,5 +44,5 @@ INSERT INTO performance (performance_id, stage_ref, artist, genre, start_time, e
  (28,'acous','Silent strings','Folk','11:00:00','11:45:00'),
  (29,'discov','The Puppet Pals','Puppetry','10:00:00','12:00:00'),
  (30,'sun','Kidz bop ','Pop','10:00:00','11:30:00'),
- (31,'acous','The Not-Its','Children"s','11:00:00','12:30:00'),
+ (31,'acous','The Not-Its','Children''s','11:00:00','12:30:00'),
  (32,'melody','The wiggles','Dance','12:30:00','14:30:00');
