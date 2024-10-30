@@ -16,10 +16,10 @@ To run this file you need to:
 using System;
 
 namespace AdaCodeSamples {
-    // Use a class to represent a player as a record
+    // Use a struct to represent a player as a record
     // Note: In C# 9 you can use record or record class 
     //       and in C# 10 you can use record struct
-    class PlayerRecord {
+    public struct PlayerRecord {
         public int playerNumber;
         public string firstName;
         public string lastName;

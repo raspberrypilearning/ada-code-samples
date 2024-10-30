@@ -16,10 +16,10 @@ To run this file you need to:
 using System;
 
 namespace AdaCodeSamples {
-    // Use a class to represent a player as a record
+    // Use a struct to represent a player as a record
     // Note: In C# 9 you can use record or record class 
     //       and in C# 10 you can use record struct
-    class PlayerRecord {
+    public struct PlayerRecord {
         public int playerNumber;
         public string firstName;
         public string lastName;
@@ -82,8 +82,8 @@ namespace AdaCodeSamples {
 
             // Repeat for each player in the players array of records
             foreach (PlayerRecord player in playersArray) {
-                // Check if the player record exists
-                if (player != null) {
+                // Check if the player number is not the default value
+                if (player.playerNumber != 0) {
                     // Display the player's number, name and position
                     Console.WriteLine($"\nNumber: {player.playerNumber}");
                     Console.WriteLine($"Name: {player.firstName} {player.lastName}");
