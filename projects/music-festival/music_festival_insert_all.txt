@@ -2,7 +2,7 @@
 -- Insert the stage test data --
 
 INSERT INTO stage (stage_ref, stage_name, capacity, location, description) VALUES
- ('sun','Sunshine Stage',500,'Main Field','The biggest stage, with plenty of room to dance!'),
+ ('sun','Sunshine Stand',500,'Main Field','The biggest stage, with plenty of room to dance!'),
  ('harmony','Harmony Grove',100,'Wooded Area','A cozy stage nestled among the trees'),
  ('melody','Melody Meadow',250,'Open Field','Relax and enjoy the music in the sunshine'),
  ('acous','Acoustic Alley',200,'Under the Tent','Unplugged performances and intimate vibes'),
@@ -10,10 +10,9 @@ INSERT INTO stage (stage_ref, stage_name, capacity, location, description) VALUE
  ('world','World Music Oasis',300,'Multicultural Village','Experience music from around the globe!'),
  ('kids','Kids'' Corner',100,'Near the Playground','Fun and games for the little ones!');
 
-
 -- Insert the performance test data --
 
-INSERT INTO performance (performance_id, stage_ref, artist, genre, start_time, end_time) VALUES 
+INSERT INTO performance (performance_id, stage_ref, artist, genre, start_time, end_time) VALUES
  (1,'sun','The Happy Hippo Band','Children''s','11:30:00','12:30:00'),
  (2,'kids','The Sunny Day Singers','Folk','11:00:00','12:30:00'),
  (3,'melody','DJ Bubble Pop','Dance','12:30:00','14:30:00'),
@@ -37,12 +36,12 @@ INSERT INTO performance (performance_id, stage_ref, artist, genre, start_time, e
  (21,'melody','Harmony Collective','Folk','11:00:00','12:00:00'),
  (22,'world','Tribal Beats','World','20:30:00','21:30:00'),
  (23,'harmony','Nature''s Echo','Acoustic','12:00:00','13:00:00'),
- (24,'harmony','Leafy strings','Folk','13:30:00','14:30:00'),
- (25,'discov','Space explorers','Electronic','14:00:00','15:00:00'),
- (26,'discov','Future sounds','Electronic','12:30:00','13:00:00'),
+ (24,'harmony','Leafy Strings','Folk','13:30:00','14:30:00'),
+ (25,'discov','Space Explorers','Electronic','14:00:00','15:00:00'),
+ (26,'discov','Future Sounds','Electronic','12:30:00','13:00:00'),
  (27,'acous','Mountain Melodies','Folk','16:00:00','17:30:00'),
- (28,'acous','Silent strings','Folk','11:00:00','11:45:00'),
+ (28,'acous','Silent Strings','Folk','11:00:00','11:45:00'),
  (29,'discov','The Puppet Pals','Puppetry','10:00:00','12:00:00'),
- (30,'sun','Kidz bop ','Pop','10:00:00','11:30:00'),
- (31,'acous','The Not-Its','Children''s','11:00:00','12:30:00'),
- (32,'melody','The wiggles','Dance','12:30:00','14:30:00');
+ (30,'sun','Kidz Bop ','Pop','10:00:00','11:30:00'),
+ (31,'acous','The Not-Its','Children"s','11:00:00','12:30:00'),
+ (32,'melody','The Wiggles','Dance','12:30:00','14:30:00');
