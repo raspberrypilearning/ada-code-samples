@@ -1,0 +1,74 @@
+
+-- Table creation --
+
+CREATE TABLE IF NOT EXISTS member (
+  member_id	TEXT NOT NULL,
+  first_name	TEXT NOT NULL,
+  last_name	TEXT NOT NULL,
+  phone_number	TEXT NOT NULL CHECK(length(phone_number) >= 10 AND length(phone_number) <= 15),
+  PRIMARY KEY(member_id)
+);
+
+CREATE TABLE IF NOT EXISTS activity (
+  activity_code		TEXT NOT NULL,
+  description		TEXT,
+  assessment_fee	REAL NOT NULL,
+  PRIMARY KEY(activity_code)
+);
+
+CREATE TABLE IF NOT EXISTS assessor (
+  assessor_id	INTEGER NOT NULL,
+  first_name	TEXT NOT NULL,
+  last_name	TEXT NOT NULL,
+  email		TEXT NOT NULL,
+  PRIMARY KEY(assessor_id)
+);
+
+CREATE TABLE IF NOT EXISTS certificate (
+  member_id		TEXT NOT NULL,
+  activity_code		TEXT NOT NULL,
+  assessment_date	TEXT NOT NULL,
+  assessor_id		INTEGER NOT NULL,
+  PRIMARY KEY(member_id, activity_code)
+  FOREIGN KEY(member_id) REFERENCES member(member_id),
+  FOREIGN KEY(activity_code) REFERENCES activity(activity_code),
+  FOREIGN KEY(assessor_id) REFERENCES assessor(assessor_id) 
+);
+
+
+-- Inserting data --
+
+INSERT INTO member (member_id, first_name, last_name, phone_number) VALUES
+ ('012010','Emily','Marr','01632 961743'),
+ ('131092','Joe','Donald','01632 960007'),
+ ('132099','Abdel','Patel','01632 967267'),
+ ('145543','Precious','Jones','01632 962816'),
+ ('148765','Bart','Marr','01632 961743');
+
+INSERT INTO activity (activity_code, description, assessment_fee) VALUES 
+ ('LS0001','First Aid',10.0),
+ ('LS0004','Cookery',10.0),
+ ('ST0002','Coding',5.0),
+ ('ST0010','Robotics',15.0),
+ ('ST0015','Astronomy',30.0),
+ ('LS0020','Self Defence',20.0),
+ ('CR0014','Drama',10.0);
+
+INSERT INTO assessor (assessor_id, first_name, last_name, email) VALUES
+ (1,'Sue','James','sue.james@example.com'),
+ (2,'Greta','Geuze','g.geuze@example.com'),
+ (3,'Mohammed','Franks','m.franks@example.com'),
+ (4,'Jay','Linton','Jay12@example.com'),
+ (5,'Sue','Robbins','susan.robbins@example.com');
+
+INSERT INTO certificate (member_id, activity_code, assessment_date, assessor_id) VALUES
+ ('145543','ST0010','2025-02-21',1),
+ ('132099','ST0015','2025-03-01',2),
+ ('132099','LS0004','2025-03-02',4),
+ ('131092','CR0014','2025-04-15',3),
+ ('012010','LS0020','2025-04-15',5),
+ ('132099','CR0014','2025-04-16',3),
+ ('012010','ST0010','2025-04-21',1),
+ ('145543','LS0004','2025-06-02',4),
+ ('148765','LS0001','2025-06-11',2),
+ ('145543','ST0002','2025-07-01',5);
