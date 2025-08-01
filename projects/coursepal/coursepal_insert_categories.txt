@@ -1,0 +1,11 @@
+INSERT INTO `categories` (`category_id`, `category_name`, `category_description`, `category_colour`) VALUES
+(1, 'Programming', 'Courses focusing on coding and software development.', 'blue'),
+(2, 'Web Development', 'Learn how to build and maintain websites.', 'green'),
+(3, 'Data Science', 'Explore courses on data analysis, visualization, and machine learning.', 'cyan'),
+(4, 'Cybersecurity', 'Learn to protect systems and data from cyber threats.', 'magenta'),
+(5, 'Cloud Computing', 'Courses about cloud infrastructure and services.', 'lightblue'),
+(6, 'Networking', 'Understand computer networks and connectivity.', 'darkred'),
+(7, 'Artificial Intelligence', 'Dive into AI, machine learning, and neural networks.', 'red'),
+(8, 'Graphic Design', 'Learn design principles and tools for creative work.', 'yellow'),
+(9, 'IT Support', 'Courses on troubleshooting and maintaining IT systems.', 'orange'),
+(10, 'Mobile App Development', 'Build applications for iOS and Android platforms.', 'purple');
