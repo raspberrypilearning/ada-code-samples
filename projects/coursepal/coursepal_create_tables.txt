@@ -1,0 +1,54 @@
+
+-- Delete the four tables if they already exist --
+
+DROP TABLE IF EXISTS courses;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS bookings;
+DROP TABLE IF EXISTS categories;
+DROP TABLE IF EXISTS user_categories;
+
+
+-- Create the four tables: customer, staff, treatment and appointment --
+
+CREATE TABLE courses (
+  course_id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(150) NOT NULL,
+  description MEDIUMTEXT NOT NULL,
+  category_id INT NOT NULL,
+  capacity INT NOT NULL,
+  date DATETIME NOT NULL,
+  course_image TEXT DEFAULT NULL,
+  PRIMARY KEY (course_id)
+);
+
+CREATE TABLE users (
+  user_id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  registration_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  is_admin INT DEFAULT 0,
+  PRIMARY KEY (user_id)
+);
+
+CREATE TABLE bookings (
+  booking_id INT NOT NULL AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  course_id INT NOT NULL,
+  booking_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (booking_id)
+);
+CREATE TABLE categories (
+  category_id INT NOT NULL AUTO_INCREMENT,
+  category_name VARCHAR(100) NOT NULL,
+  category_description VARCHAR(255) DEFAULT NULL,
+  category_colour VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (category_id)
+);
+CREATE TABLE user_categories (
+  user_id INT NOT NULL,
+  category_id INT NOT NULL,
+  PRIMARY KEY (user_id, category_id)
+)
