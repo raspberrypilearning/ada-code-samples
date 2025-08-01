@@ -40,6 +40,7 @@ CREATE TABLE bookings (
   booking_date DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (booking_id)
 );
+
 CREATE TABLE categories (
   category_id INT NOT NULL AUTO_INCREMENT,
   category_name VARCHAR(100) NOT NULL,
@@ -47,8 +48,9 @@ CREATE TABLE categories (
   category_colour VARCHAR(255) DEFAULT NULL,
   PRIMARY KEY (category_id)
 );
+
 CREATE TABLE user_categories (
   user_id INT NOT NULL,
   category_id INT NOT NULL,
   PRIMARY KEY (user_id, category_id)
-)
+);
