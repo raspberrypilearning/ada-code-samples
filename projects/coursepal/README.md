@@ -1,1 +1,1 @@
-This is teh supporting page for teh CoursePal Advanced Project on Ada CS
+This is the supporting page for teh CoursePal Advanced Project on Ada CS
