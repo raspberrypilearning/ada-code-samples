@@ -28,6 +28,16 @@ def apply_sepia_transformation(img):
       sepia_img[row, col] = (new_red, new_green, new_blue)
   return sepia_img
 
+def apply_greyscale_transformation(img):
+  '''Create and return a greyscale version of an image'''
+  grey_img = np.zeros(img.shape, img.dtype) # create new numpy array
+  for row in range(img.shape[ROW]): # process all rows
+    for col in range(img.shape[COL]): # process all columns
+      red = img[row, col, RED] # original red value
+      green = img[row, col, GREEN] # original green value
+      blue = img[row, col, BLUE] # original blue value
+      grey_img[row, col] = min((0.3*red)+(0.59*green)+(0.11*blue, 255))
+  return grey_img
 
 def main():
   # read in image file
@@ -35,7 +45,10 @@ def main():
   original_img = imageio.imread(infile)
   # sepia transformation
   sepia_img = apply_sepia_transformation(original_img)
-  imageio.imwrite("sepia.jpg", sepia_img) 
+  imageio.imwrite("sepia.jpg", sepia_img)
+  # greyscale transformation
+  grey_img = apply_greyscale_transformation(original_img)
+  imageio.imwrite("greyscale.jpg", grey_img) 
 
   
 if __name__ == "__main__":
