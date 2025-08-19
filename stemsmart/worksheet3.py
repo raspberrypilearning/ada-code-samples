@@ -5,9 +5,6 @@ import imageio.v2 as imageio
 import numpy as np
 
 # Index numbers for array
-ROW = 0
-COL = 1
-RGB = 2
 RED = 0
 GREEN = 1
 BLUE = 2
@@ -17,9 +14,9 @@ def alter_brightness(img, bias):
   new_img = np.zeros(img.shape, img.dtype)#create new numpy array
   for row in range(img.shape[0]): # process all rows
     for col in range(img.shape[1]): # process all columns
-      new_img[row,col,RED] = max(min(((int(img[row,col,RED]))+ int(bias)), 255),0)
-      new_img[row,col,GREEN] = max(min(((int(img[row,col, GREEN]))+ int(bias)), 255),0)
-      new_img[row,col,BLUE] = max(min(((int(img[row,col,BLUE]))+ int(bias)), 255),0)
+      new_img[row,col,RED] = max(min(((int(img[row,col,RED]))+ bias), 255),0)
+      new_img[row,col,GREEN] = max(min(((int(img[row,col, GREEN]))+ bias), 255),0)
+      new_img[row,col,BLUE] = max(min(((int(img[row,col,BLUE]))+ bias), 255),0)
   return new_img
 
 def alter_contrast(img, contrast_factor, s):
@@ -27,9 +24,9 @@ def alter_contrast(img, contrast_factor, s):
   new_img = np.zeros(img.shape, img.dtype)#create new numpy array
   for row in range(img.shape[0]): # process all rows
     for col in range(img.shape[1]): # process all columns
-        new_img[row,col,RED] =  (contrast_factor * (int(img[row,col,RED]) - int(s))) + s
-        new_img[row,col,GREEN] =  (contrast_factor * (int(img[row,col,GREEN]) - int(s))) + s
-        new_img[row,col,BLUE] =  (contrast_factor * (int(img[row,col,BLUE]) - int(s))) + s
+        new_img[row,col,RED] =  (contrast_factor * (int(img[row,col,RED]) - s)) + s
+        new_img[row,col,GREEN] =  (contrast_factor * (int(img[row,col,GREEN]) - s)) + s
+        new_img[row,col,BLUE] =  (contrast_factor * (int(img[row,col,BLUE]) - s)) + s
   return new_img
 
 
