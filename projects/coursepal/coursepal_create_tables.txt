@@ -1,5 +1,5 @@
 
--- Delete the four tables if they already exist --
+-- Delete the five tables if they already exist --
 
 DROP TABLE IF EXISTS courses;
 DROP TABLE IF EXISTS users;
@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS categories;
 DROP TABLE IF EXISTS user_categories;
 
 
--- Create the four tables: customer, staff, treatment and appointment --
+-- Create the five tables: courses, users, bookings, categories and user_categories --
 
 CREATE TABLE courses (
   course_id INT NOT NULL AUTO_INCREMENT,
