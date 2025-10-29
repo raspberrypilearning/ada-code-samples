@@ -1,4 +1,4 @@
 -- passwords are horsebatterystaple
 INSERT INTO `users` (`user_id`, `username`, `password`, `first_name`, `last_name`, `email`, `registration_date`, `is_admin`) VALUES
 (1, 'adalovelace', '$2y$10$wnQlqbbN046cZA8J4Ux8weqpD1bwKoPiF0P5.N9UKL4MIwJ7k4MKO', 'Ada', 'Lovelace', 'adalovelace@example.com', '2024-02-14 00:00:00', 1),
-(2, 'cbabbage', '$2y$10$wnQlqbbN046cZA8J4Ux8weqpD1bwKoPiF0P5.N9UKL4MIwJ7k4MKO', 'Charles', 'Babbage', 'cbabbage@icloud.com', '2024-01-10 00:00:00', 0);
+(2, 'cbabbage', '$2y$10$wnQlqbbN046cZA8J4Ux8weqpD1bwKoPiF0P5.N9UKL4MIwJ7k4MKO', 'Charles', 'Babbage', 'cbabbage@example.com', '2024-01-10 00:00:00', 0);
