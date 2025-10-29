@@ -1,1 +1,1 @@
-This is the supporting page for teh CoursePal Advanced Project on Ada CS
+This repository contains code to support the Course Pal web project on Ada Computer Science.
